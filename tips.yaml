@@ -1,0 +1,4 @@
+- date: 2025-04-14
+  tip: "`mv oldname.txt newname.txt && cat $_`"
+  explanation: "$_ can be used to get the last argument of the previous command."
+  tags: [bash, productivity]
