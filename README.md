@@ -1,3 +1,5 @@
+![Status](https://github.com/davetang/daily_tips/actions/workflows/daily-check.yml/badge.svg)
+
 # Daily tips
 
 One tip every day.
