@@ -4,6 +4,10 @@
 
 One tip every day.
 
+## 📡 RSS Feed
+
+[Commits RSS](https://github.com/davetang/daily_tips/commits/main.atom)
+
 # Tips
 
 | Date | Tip | Explanation | Tags |
