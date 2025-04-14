@@ -1,0 +1,35 @@
+name: Daily Commit Check
+
+on:
+  schedule:
+    - cron: '0 7 * * *'  # 16:00 JST
+  workflow_dispatch:     # Allows manual triggering
+
+jobs:
+  check-commits:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Check for today's commit
+        id: check
+        run: |
+          if git log --since=midnight --oneline | grep .; then
+            echo "commit_found=true" >> $GITHUB_OUTPUT
+          else
+            echo "commit_found=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Send mail
+        if: steps.check.outputs.commit_found == 'false'
+        uses: dawidd6/action-send-mail@v4
+        with:
+          server_address: webmail.davetang.org
+          server_port: 465
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: "No Tip Submitted Today"
+          to: me@davetang.org
+          from: "Daily Tip Reminder"
+          body: "No commits were made to the daily tips repo today. Time to add your tip!"
