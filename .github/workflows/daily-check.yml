@@ -10,15 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Check for today's commit
         id: check
         run: |
           if git log --since=midnight --oneline | grep .; then
             echo "commit_found=true" >> $GITHUB_OUTPUT
+            >&2 echo "Commit found"
           else
             echo "commit_found=false" >> $GITHUB_OUTPUT
+            >&2 echo "No commit"
           fi
 
       - name: Send mail
