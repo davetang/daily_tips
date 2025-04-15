@@ -2,3 +2,7 @@
   tip: "`mv oldname.txt newname.txt && cat $_`"
   explanation: "$_ can be used to get the last argument of the previous command."
   tags: [bash, productivity]
+- date: 2025-04-15
+  tip: "`Just type the name of the directory to autocd into it`"
+  explanation: "In Bash and Zsh autocd is on by default; use `shopt autocd` and `setopt | grep autocd` to check."
+  tags: [bash, zsh, productivity]
