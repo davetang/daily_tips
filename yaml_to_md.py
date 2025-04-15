@@ -8,7 +8,14 @@ def load_yaml(filepath):
     with open(filepath, 'r') as file:
         return yaml.safe_load(file)
 
+def escape_pipes(text):
+    return text.replace("|", r"\|")
+
 def to_markdown_table(data):
+    # Validate input
+    if not isinstance(data, list):
+        raise ValueError("YAML root must be a list of entries.")
+
     # Header
     headers = ["Date", "Tip", "Explanation", "Tags"]
     header_row = f"| {' | '.join(headers)} |"
@@ -17,10 +24,10 @@ def to_markdown_table(data):
 
     # Rows
     for entry in data:
-        date = entry.get("date", "")
-        tip = entry.get("tip", "").replace("\n", " ").strip()
-        explanation = entry.get("explanation", "").replace("\n", " ").strip()
-        tags = ", ".join(entry.get("tags", []))
+        date = escape_pipes(str(entry.get("date", "")))
+        tip = escape_pipes(str(entry.get("tip", "")).replace("\n", " ").strip())
+        explanation = escape_pipes(str(entry.get("explanation", "")).replace("\n", " ").strip())
+        tags = escape_pipes(", ".join(entry.get("tags", [])))
 
         row = f"| {date} | {tip} | {explanation} | {tags} |"
         rows.append(row)
@@ -28,15 +35,25 @@ def to_markdown_table(data):
     return "\n".join(rows)
 
 def main(yaml_path, output_path=None):
-    data = load_yaml(yaml_path)
-    markdown = to_markdown_table(data)
+    try:
+        data = load_yaml(yaml_path)
 
-    if output_path:
-        with open(output_path, 'w') as out_file:
-            out_file.write(markdown)
-        print(f"Markdown table written to {output_path}")
-    else:
-        print(markdown)
+        if not isinstance(data, list):
+            print("Error: YAML file should contain a list of tip entries.")
+            sys.exit(1)
+
+        markdown = to_markdown_table(data)
+
+        if output_path:
+            with open(output_path, 'w') as out_file:
+                out_file.write(markdown)
+            print(f"Markdown table written to {output_path}")
+        else:
+            print(markdown)
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        sys.exit(1)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
