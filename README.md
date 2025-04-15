@@ -13,4 +13,4 @@ One tip every day.
 | Date | Tip | Explanation | Tags |
 | --- | --- | --- | --- |
 | 2025-04-14 | `mv oldname.txt newname.txt && cat $_` | $_ can be used to get the last argument of the previous command. | bash, productivity |
-| 2025-04-15 | `Just type the name of the directory to autocd into it` | In Bash and Zsh autocd is on by default; use `shopt autocd` and `setopt | grep autocd` to check. | bash, zsh, productivity |
+| 2025-04-15 | `Just type the name of the directory to autocd into it` | In Bash and Zsh autocd is on by default; use `shopt autocd` and `setopt \| grep autocd` to check. | bash, zsh, productivity |
