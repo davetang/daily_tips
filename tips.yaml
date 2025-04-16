@@ -3,10 +3,10 @@
   explanation: "$_ can be used to get the last argument of the previous command."
   tags: [bash, productivity]
 - date: 2025-04-15
-  tip: "`Just type the name of the directory to autocd into it`"
+  tip: "Just type the name of the directory to autocd into it"
   explanation: "In Bash and Zsh autocd is on by default; use `shopt autocd` and `setopt | grep autocd` to check."
   tags: [bash, zsh, productivity]
 - date: 2025-04-16
-  tip: "Use purrr::walk() for side effects."
-  explanation: "When you do not care about the return value, use purrr::walk() instead of map()."
+  tip: "Use `purrr::walk()` for side effects."
+  explanation: "When you do not care about the return value, use `purrr::walk()` instead of `purrr::map()`."
   tags: [r, functional programming]
