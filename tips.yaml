@@ -1,12 +1,16 @@
 - date: 2025-04-14
   tip: "`mv oldname.txt newname.txt && cat $_`"
   explanation: "$_ can be used to get the last argument of the previous command."
-  tags: [bash, productivity]
+  tags: [shell, productivity]
 - date: 2025-04-15
   tip: "Just type the name of the directory to autocd into it"
   explanation: "In Bash and Zsh autocd is on by default; use `shopt autocd` and `setopt | grep autocd` to check."
-  tags: [bash, zsh, productivity]
+  tags: [shell, productivity]
 - date: 2025-04-16
   tip: "Use `purrr::walk()` for side effects."
   explanation: "When you do not care about the return value, use `purrr::walk()` instead of `purrr::map()`."
   tags: [r, functional programming]
+- date: 2025-04-17
+  tip: "Use `fc` to Fix Command."
+  explanation: "Opens your last command with `$EDITOR` and after you edit and save, the command runs immediately."
+  tags: [shell, productivity]
