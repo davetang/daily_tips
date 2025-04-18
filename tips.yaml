@@ -14,3 +14,7 @@
   tip: "Use `fc` to Fix Command."
   explanation: "Opens your last command with `$EDITOR` and after you edit and save, the command runs immediately."
   tags: [shell, productivity]
+- date: 2025-04-18
+  tip: "`diff -y file1.txt file2.txt`"
+  explanation: "`diff -y` provides a side-by-side comparison to easily spot differences."
+  tags: [shell, productivity]
