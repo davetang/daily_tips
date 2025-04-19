@@ -17,3 +17,4 @@ One tip every day.
 | 2025-04-16 | Use `purrr::walk()` for side effects. | When you do not care about the return value, use `purrr::walk()` instead of `purrr::map()`. | r, functional programming |
 | 2025-04-17 | Use `fc` to Fix Command. | Opens your last command with `$EDITOR` and after you edit and save, the command runs immediately. | shell, productivity |
 | 2025-04-18 | `diff -y file1.txt file2.txt` | `diff -y` provides a side-by-side comparison to easily spot differences. | shell, productivity |
+| 2025-04-19 | `script mysession.log` | `script` save entire shell session (incl. input/output) for logging; use `exit` to stop session. | shell, productivity |

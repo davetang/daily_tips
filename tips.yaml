@@ -18,3 +18,7 @@
   tip: "`diff -y file1.txt file2.txt`"
   explanation: "`diff -y` provides a side-by-side comparison to easily spot differences."
   tags: [shell, productivity]
+- date: 2025-04-19
+  tip: "`script mysession.log`"
+  explanation: "`script` save entire shell session (incl. input/output) for logging; use `exit` to stop session."
+  tags: [shell, productivity]
