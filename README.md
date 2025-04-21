@@ -19,3 +19,4 @@ One tip every day.
 | 2025-04-18 | `diff -y file1.txt file2.txt` | `diff -y` provides a side-by-side comparison to easily spot differences. | shell, productivity |
 | 2025-04-19 | `script mysession.log` | `script` save entire shell session (incl. input/output) for logging; use `exit` to stop session. | shell, productivity |
 | 2025-04-20 | Use `--containall` with Singularity for better isolation | Prevents container from reading or writing from the host; useful for testing in a minimal, clean environment. | singularity |
+| 2025-04-21 | `pstree -p PID` | Show processes in a tree with PID | shell, system |

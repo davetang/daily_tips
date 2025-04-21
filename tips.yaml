@@ -26,3 +26,7 @@
   tip: "Use `--containall` with Singularity for better isolation"
   explanation: "Prevents container from reading or writing from the host; useful for testing in a minimal, clean environment."
   tags: [singularity]
+- date: 2025-04-21
+  tip: "`pstree -p PID`"
+  explanation: "Show processes in a tree with PID"
+  tags: [shell, system]
