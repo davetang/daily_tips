@@ -30,3 +30,7 @@
   tip: "`pstree -p PID`"
   explanation: "Show processes in a tree with PID"
   tags: [shell, system]
+- date: 2025-04-22
+  tip: "Good enough now beats perfect later."
+  explanation: "A working solution now is more useful than a perfect one that never arrives."
+  tags: [project management]
