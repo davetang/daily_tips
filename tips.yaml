@@ -34,3 +34,7 @@
   tip: "Good enough now beats perfect later."
   explanation: "A working solution now is more useful than a perfect one that never arrives."
   tags: [project management]
+- date: 2025-04-23
+  tip: "Consider using `tryCatch()` over `stopifnot()`."
+  explanation: "`tryCatch()` can handle and recover from errors, while `stopifnot()` halts execution."
+  tags: [r, defensive programming]
