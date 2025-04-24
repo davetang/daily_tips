@@ -38,3 +38,7 @@
   tip: "Consider using `tryCatch()` over `stopifnot()`."
   explanation: "`tryCatch()` can handle and recover from errors, while `stopifnot()` halts execution."
   tags: [r, defensive programming]
+- date: 2025-04-24
+  tip: "`apropos unzip`"
+  explanation: "If you know what a command does, but not the name use `apropos` to search the man pages!"
+  tags: [shell, documentation]
