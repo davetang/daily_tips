@@ -23,3 +23,4 @@ One tip every day.
 | 2025-04-22 | Good enough now beats perfect later. | A working solution now is more useful than a perfect one that never arrives. | project management |
 | 2025-04-23 | Consider using `tryCatch()` over `stopifnot()`. | `tryCatch()` can handle and recover from errors, while `stopifnot()` halts execution. | r, defensive programming |
 | 2025-04-24 | `apropos unzip` | If you know what a command does, but not the name use `apropos` to search the man pages! | shell, documentation |
+| 2025-04-25 | Use `--cleanenv` with Singularity | Using `--cleanenv` prevents the container from inheriting most of the environment variables from the host. | singularity |

@@ -42,3 +42,7 @@
   tip: "`apropos unzip`"
   explanation: "If you know what a command does, but not the name use `apropos` to search the man pages!"
   tags: [shell, documentation]
+- date: 2025-04-25
+  tip: "Use `--cleanenv` with Singularity"
+  explanation: "Using `--cleanenv` prevents the container from inheriting most of the environment variables from the host."
+  tags: [singularity]
