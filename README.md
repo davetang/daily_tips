@@ -24,3 +24,4 @@ One tip every day.
 | 2025-04-23 | Consider using `tryCatch()` over `stopifnot()`. | `tryCatch()` can handle and recover from errors, while `stopifnot()` halts execution. | r, defensive programming |
 | 2025-04-24 | `apropos unzip` | If you know what a command does, but not the name use `apropos` to search the man pages! | shell, documentation |
 | 2025-04-25 | Use `--cleanenv` with Singularity | Using `--cleanenv` prevents the container from inheriting most of the environment variables from the host. | singularity |
+| 2025-04-26 | tar -cJf archive-name.tar.xz folder/ | xz typically compresses better than gz but is slower; use for long term backups. | shell, compression |

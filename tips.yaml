@@ -46,3 +46,7 @@
   tip: "Use `--cleanenv` with Singularity"
   explanation: "Using `--cleanenv` prevents the container from inheriting most of the environment variables from the host."
   tags: [singularity]
+- date: 2025-04-26
+  tip: "tar -cJf archive-name.tar.xz folder/"
+  explanation: "xz typically compresses better than gz but is slower; use for long term backups."
+  tags: [shell, compression]
