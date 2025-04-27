@@ -50,3 +50,7 @@
   tip: "tar -cJf archive-name.tar.xz folder/"
   explanation: "xz typically compresses better than gz but is slower; use for long term backups."
   tags: [shell, compression]
+- date: 2025-04-27
+  tip: "`watch vcgencmd measure_temp`"
+  explanation: "Measure the temperature every second."
+  tags: [raspberry pi]
