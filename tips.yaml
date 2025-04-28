@@ -54,3 +54,7 @@
   tip: "`watch vcgencmd measure_temp`"
   explanation: "Measure the temperature every second."
   tags: [raspberry pi]
+- date: 2025-04-28
+  tip: "Use the dot placeholder with {purrr}."
+  explanation: "`purrr::map_int(1:5, ~ . + 1)` vs. `purrr::map_int(1:5, function(x) x + 1)`."
+  tags: [r, functional programming]

@@ -26,3 +26,4 @@ One tip every day.
 | 2025-04-25 | Use `--cleanenv` with Singularity | Using `--cleanenv` prevents the container from inheriting most of the environment variables from the host. | singularity |
 | 2025-04-26 | tar -cJf archive-name.tar.xz folder/ | xz typically compresses better than gz but is slower; use for long term backups. | shell, compression |
 | 2025-04-27 | `watch vcgencmd measure_temp` | Measure the temperature every second. | raspberry pi |
+| 2025-04-28 | Use the dot placeholder with {purrr}. | `purrr::map_int(1:5, ~ . + 1)` vs. `purrr::map_int(1:5, function(x) x + 1)`. | r, functional programming |
