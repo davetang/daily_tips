@@ -58,3 +58,7 @@
   tip: "Use the dot placeholder with {purrr}."
   explanation: "`purrr::map_int(1:5, ~ . + 1)` vs. `purrr::map_int(1:5, function(x) x + 1)`."
   tags: [r, functional programming]
+- date: 2025-04-29
+  tip: "Use `date` and `bc` to measure elapsed time."
+  explanation: 'Use `$(date +%s.%N)` to get times then use `echo "${END} - ${START}" | bc` to get elapsed time.'
+  tags: [shell, benchmarking]
