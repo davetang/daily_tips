@@ -62,3 +62,7 @@
   tip: "Use `date` and `bc` to measure elapsed time."
   explanation: 'Use `$(date +%s.%N)` to get times then use `echo "${END} - ${START}" | bc` to get elapsed time.'
   tags: [shell, benchmarking]
+- date: 2025-04-30
+  tip: "Apply the aggregation of marginal gains."
+  explanation: 'Follow the philosophy of searching for a tiny margin of improvement in everything you do.'
+  tags: [self-help, habits]
