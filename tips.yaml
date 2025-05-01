@@ -66,3 +66,7 @@
   tip: "Apply the aggregation of marginal gains."
   explanation: 'Follow the philosophy of searching for a tiny margin of improvement in everything you do.'
   tags: [self-help, habits]
+- date: 2025-05-01
+  tip: "`find ~ -type f -size +100M`"
+  explanation: 'Find files in your home directory that are larger than 100M using `find`.'
+  tags: [shell, reminder]
