@@ -70,3 +70,7 @@
   tip: "`find ~ -type f -size +100M`"
   explanation: 'Find files in your home directory that are larger than 100M using `find`.'
   tags: [shell, reminder]
+- date: 2025-05-02
+  tip: '`purrr::discard(~ stringr::str_detect(., "old"))`'
+  explanation: 'Use `purrr::discard` to discard elements based on their values.'
+  tags: [r, functional programming]
