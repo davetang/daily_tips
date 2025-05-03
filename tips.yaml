@@ -74,3 +74,7 @@
   tip: '`purrr::discard(~ stringr::str_detect(., "old"))`'
   explanation: 'Use `purrr::discard` to discard elements based on their values.'
   tags: [r, functional programming]
+- date: 2025-05-03
+  tip: '`purrr::list_rbind(my_list, names_to = "id")`'
+  explanation: 'Use `purrr::list_rbind()` to combine list elements into a single data structure.'
+  tags: [r, functional programming]
