@@ -78,3 +78,7 @@
   tip: '`purrr::list_rbind(my_list, names_to = "id")`'
   explanation: 'Use `purrr::list_rbind()` to combine list elements into a single data structure.'
   tags: [r, functional programming]
+- date: 2025-05-04
+  tip: '`f <- purrr::compose(sqrt, abs)`'
+  explanation: 'Use `purrr::compose()` to combine multiple functions into one, chaining them from right to left.'
+  tags: [r, functional programming]
