@@ -82,3 +82,7 @@
   tip: '`f <- purrr::compose(sqrt, abs)`'
   explanation: 'Use `purrr::compose()` to combine multiple functions into one, chaining them from right to left.'
   tags: [r, functional programming]
+- date: 2025-05-05
+  tip: 'Use `shellcheck` to lint and find potential issues in your script.'
+  explanation: 'ShellCheck is a static analysis and linting tool for sh/bash scripts.'
+  tags: [shell, linting]
