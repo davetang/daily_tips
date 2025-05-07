@@ -90,3 +90,7 @@
   tip: 'Use the {gt} package to make nice looking tables in R.'
   explanation: 'The gt philosophy: we can construct a wide variety of useful tables with a cohesive set of table parts.'
   tags: [r, visualisation]
+- date: 2025-05-07
+  tip: '`seq 10 | datamash sum 1 mean 1`'
+  explanation: 'GNU datamash can perform basic numeric, textual and statistical operations on input textual data files.'
+  tags: [shell, productivity]
