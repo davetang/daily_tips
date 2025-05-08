@@ -94,3 +94,7 @@
   tip: '`seq 10 | datamash sum 1 mean 1`'
   explanation: 'GNU datamash can perform basic numeric, textual and statistical operations on input textual data files.'
   tags: [shell, productivity]
+- date: 2025-05-08
+  tip: 'Use `rsync` over `scp`'
+  explanation: '`rsync` only transfers differences, has better support for resuming transfers, and has more features.'
+  tags: [shell, productivity]
