@@ -37,3 +37,4 @@ One tip every day.
 | 2025-05-06 | Use the {gt} package to make nice looking tables in R. | The gt philosophy: we can construct a wide variety of useful tables with a cohesive set of table parts. | r, visualisation |
 | 2025-05-07 | `seq 10 \| datamash sum 1 mean 1` | GNU datamash can perform basic numeric, textual and statistical operations on input textual data files. | shell, productivity |
 | 2025-05-08 | Use `rsync` over `scp` | `rsync` only transfers differences, has better support for resuming transfers, and has more features. | shell, productivity |
+| 2025-05-09 | `tmpfile=$(mktemp)` | Use `mktemp` for secure, race-free temp file creation. | shell, scripting |

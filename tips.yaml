@@ -98,3 +98,7 @@
   tip: 'Use `rsync` over `scp`'
   explanation: '`rsync` only transfers differences, has better support for resuming transfers, and has more features.'
   tags: [shell, productivity]
+- date: 2025-05-09
+  tip: '`tmpfile=$(mktemp)`'
+  explanation: 'Use `mktemp` for secure, race-free temp file creation.'
+  tags: [shell, scripting]
