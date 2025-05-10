@@ -38,3 +38,4 @@ One tip every day.
 | 2025-05-07 | `seq 10 \| datamash sum 1 mean 1` | GNU datamash can perform basic numeric, textual and statistical operations on input textual data files. | shell, productivity |
 | 2025-05-08 | Use `rsync` over `scp` | `rsync` only transfers differences, has better support for resuming transfers, and has more features. | shell, productivity |
 | 2025-05-09 | `tmpfile=$(mktemp)` | Use `mktemp` for secure, race-free temp file creation. | shell, scripting |
+| 2025-05-10 | `find . -maxdepth 1 -type f ! -name "*.sh" ! -name "*.md" -exec ls {} +` | Use `!` with `find` to exclude files. | shell, productivity |
