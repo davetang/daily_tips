@@ -106,3 +106,7 @@
   tip: '`find . -maxdepth 1 -type f ! -name "*.sh" ! -name "*.md" -exec ls {} +`'
   explanation: 'Use `!` with `find` to exclude files.'
   tags: [shell, productivity]
+- date: 2025-05-11
+  tip: "`trap 'echo Caught a signal (EXIT, INT, or TERM).; exit' EXIT INT TERM`"
+  explanation: '`trap` is useful for cleaning up temporary files, restoring settings, or just handling interruptions gracefully.'
+  tags: [shell, scripting]
