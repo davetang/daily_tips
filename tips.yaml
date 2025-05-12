@@ -110,3 +110,7 @@
   tip: "`trap 'echo Caught a signal (EXIT, INT, or TERM).; exit' EXIT INT TERM`"
   explanation: '`trap` is useful for cleaning up temporary files, restoring settings, or just handling interruptions gracefully.'
   tags: [shell, scripting]
+- date: 2025-05-12
+  tip: "`echo Done with task at line $LINENO`"
+  explanation: '`$LINENO` gives the line number of the current command within a script or function.'
+  tags: [shell, scripting]
