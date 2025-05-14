@@ -118,3 +118,7 @@
   tip: "`du -h --max-depth=1 | sort -h`"
   explanation: 'Get size of files and top directories, then sort by human-readable sizes.'
   tags: [shell, reminder]
+- date: 2025-05-14
+  tip: "`git config --global help.autocorrect 1`"
+  explanation: 'Auto-correct typos in Git commands.'
+  tags: [shell, reminder]
