@@ -122,3 +122,7 @@
   tip: "`git config --global help.autocorrect 1`"
   explanation: 'Auto-correct typos in Git commands.'
   tags: [shell, reminder]
+- date: 2025-05-15
+  tip: '`readarray -t FILES < <(find .)`'
+  explanation: 'Use `readarray` to read stuff into an array.'
+  tags: [bash scripting]
