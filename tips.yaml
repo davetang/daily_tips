@@ -130,3 +130,7 @@
   tip: '`tidyr::separate(df, group, c("key", "value"), sep = "\\s", extra = "merge")`'
   explanation: 'Use `extra = "merge"` to force splitting to match length of third parameter (`into`).'
   tags: [tidyverse]
+- date: 2025-05-17
+  tip: 'Use `tidyr::separate_wider_delim()` instead of `tidyr::separate()`'
+  explanation: '`separate()` has been superseded in favour of `separate_wider_position()` and `separate_wider_delim()`.'
+  tags: [tidyverse]
