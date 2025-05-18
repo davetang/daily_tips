@@ -134,3 +134,7 @@
   tip: 'Use `tidyr::separate_wider_delim()` instead of `tidyr::separate()`'
   explanation: '`separate()` has been superseded in favour of `separate_wider_position()` and `separate_wider_delim()`.'
   tags: [tidyverse]
+- date: 2025-05-18
+  tip: 'Set boundaries with intention, not guilt.'
+  explanation: 'Treat your personal time with the same respect you would give to a work meeting.'
+  tags: [self-help]
