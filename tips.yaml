@@ -138,3 +138,7 @@
   tip: 'Set boundaries with intention, not guilt.'
   explanation: 'Treat your personal time with the same respect you would give to a work meeting.'
   tags: [self-help]
+- date: 2025-05-19
+  tip: 'Use `/etc/hosts` to set DNS mappings.'
+  explanation: 'Save yourself typing IP addresses by adding an entry in `/etc/hosts`.'
+  tags: [reminder, networking]
