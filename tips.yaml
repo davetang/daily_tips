@@ -142,3 +142,7 @@
   tip: 'Use `/etc/hosts` to set DNS mappings.'
   explanation: 'Save yourself typing IP addresses by adding an entry in `/etc/hosts`.'
   tags: [reminder, networking]
+- date: 2025-05-20
+  tip: 'Use the {targets} package to build workflows in R.'
+  explanation: 'The {targets} package allows you build reproducible workflows entirely within R.'
+  tags: [R, workflows]
