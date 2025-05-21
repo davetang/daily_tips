@@ -146,3 +146,7 @@
   tip: 'Use the {targets} package to build workflows in R.'
   explanation: 'The {targets} package allows you build reproducible workflows entirely within R.'
   tags: [R, workflows]
+- date: 2025-05-21
+  tip: '`git blame -w`'
+  explanation: 'Use `git blame -w` to see the commit hash and timestamp of each change, line by line.'
+  tags: [Git]
