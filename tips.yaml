@@ -150,3 +150,7 @@
   tip: '`git blame -w`'
   explanation: 'Use `git blame -w` to see the commit hash and timestamp of each change, line by line.'
   tags: [Git]
+- date: 2025-05-22
+  tip: '`git notes add -m "Add note to commit" 98ab5fd901ee38dcbfd3ae6bbd26c6ffdc801ff7`'
+  explanation: 'Use `git notes` to add notes to a commit; `git log` will show notes.'
+  tags: [Git]
