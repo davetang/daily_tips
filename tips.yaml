@@ -154,3 +154,7 @@
   tip: '`git notes add -m "Add note to commit" 98ab5fd901ee38dcbfd3ae6bbd26c6ffdc801ff7`'
   explanation: 'Use `git notes` to add notes to a commit; `git log` will show notes.'
   tags: [Git]
+- date: 2025-05-23
+  tip: '`cp -u some_file .`'
+  explanation: 'Copy only when the SOURCE file is newer than the destination file or when the destination file is missing.'
+  tags: [shell, productivity]
