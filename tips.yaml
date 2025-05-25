@@ -162,3 +162,7 @@
   tip: "`find . -type f -mtime -2`"
   explanation: 'Find files that were modified less than 2 days ago.'
   tags: [shell, reminder]
+- date: 2025-05-25
+  tip: "`grep -r --include="*.conf" "Listen" /etc`"
+  explanation: 'Search recursively `*.conf` files for "Listen" in `/etc`, including subdirectories.'
+  tags: [shell, productivity]
