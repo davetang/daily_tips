@@ -166,3 +166,7 @@
   tip: '`grep -r --include="*.conf" "Listen" /etc`'
   explanation: 'Search recursively `*.conf` files for "Listen" in `/etc`, including subdirectories.'
   tags: [shell, productivity]
+- date: 2025-05-26
+  tip: '`ps aux --sort=-%mem | head -n 3`'
+  explanation: 'Show top memory-consuming processes.'
+  tags: [shell, processes]
