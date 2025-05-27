@@ -170,3 +170,7 @@
   tip: '`ps aux --sort=-%mem | head -n 3`'
   explanation: 'Show top memory-consuming processes.'
   tags: [shell, processes]
+- date: 2025-05-27
+  tip: '`bash -x test.sh`'
+  explanation: 'Use `-x` for debugging Bash scripts.'
+  tags: [bash scripting]
