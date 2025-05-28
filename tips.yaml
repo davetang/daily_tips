@@ -174,3 +174,7 @@
   tip: '`bash -x test.sh`'
   explanation: 'Use `-x` for debugging Bash scripts.'
   tags: [bash scripting]
+- date: 2025-05-28
+  tip: '[expression for item in iterable if condition]'
+  explanation: 'List comprehension in Python (that I always forget).'
+  tags: [python, reminder]
