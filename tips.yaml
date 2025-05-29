@@ -178,3 +178,7 @@
   tip: '[expression for item in iterable if condition]'
   explanation: 'List comprehension in Python (that I always forget).'
   tags: [python, reminder]
+- date: 2025-05-29
+  tip: 'name<-"Rei"; glue::glue("Hello, {name}!")'
+  explanation: 'Use the glue package for string interpolation in R!'
+  tags: [r]

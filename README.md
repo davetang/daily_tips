@@ -57,3 +57,4 @@ One tip every day.
 | 2025-05-26 | `ps aux --sort=-%mem \| head -n 3` | Show top memory-consuming processes. | shell, processes |
 | 2025-05-27 | `bash -x test.sh` | Use `-x` for debugging Bash scripts. | bash scripting |
 | 2025-05-28 | [expression for item in iterable if condition] | List comprehension in Python (that I always forget). | python, reminder |
+| 2025-05-29 | name<-"Rei"; glue::glue("Hello, {name}!") | Use the glue package for string interpolation in R! | r |
