@@ -182,3 +182,7 @@
   tip: 'name<-"Rei"; glue::glue("Hello, {name}!")'
   explanation: 'Use the glue package for string interpolation in R!'
   tags: [r]
+- date: 2025-05-30
+  tip: 'singularity inspect my_image.sif'
+  explanation: 'Inspect metadata, labels, environment, and scripts of a Singularity image.'
+  tags: [singularity]
