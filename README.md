@@ -59,3 +59,4 @@ One tip every day.
 | 2025-05-28 | [expression for item in iterable if condition] | List comprehension in Python (that I always forget). | python, reminder |
 | 2025-05-29 | name<-"Rei"; glue::glue("Hello, {name}!") | Use the glue package for string interpolation in R! | r |
 | 2025-05-30 | singularity inspect my_image.sif | Inspect metadata, labels, environment, and scripts of a Singularity image. | singularity |
+| 2025-05-31 | `git log --pretty=format:"%h %ad \| %s%d [%an]" --date=short` | Customize `git log` output using `--pretty=format:`. | git, productivity |

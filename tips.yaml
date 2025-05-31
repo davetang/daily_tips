@@ -186,3 +186,7 @@
   tip: 'singularity inspect my_image.sif'
   explanation: 'Inspect metadata, labels, environment, and scripts of a Singularity image.'
   tags: [singularity]
+- date: 2025-05-31
+  tip: '`git log --pretty=format:"%h %ad | %s%d [%an]" --date=short`'
+  explanation: 'Customize `git log` output using `--pretty=format:`.'
+  tags: [git, productivity]
