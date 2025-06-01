@@ -60,3 +60,4 @@ One tip every day.
 | 2025-05-29 | name<-"Rei"; glue::glue("Hello, {name}!") | Use the glue package for string interpolation in R! | r |
 | 2025-05-30 | singularity inspect my_image.sif | Inspect metadata, labels, environment, and scripts of a Singularity image. | singularity |
 | 2025-05-31 | `git log --pretty=format:"%h %ad \| %s%d [%an]" --date=short` | Customize `git log` output using `--pretty=format:`. | git, productivity |
+| 2025-06-01 | `python3 -c "import sys; print(sys.version)"` | Use `-c` with Python (and Bash) to run a command from the command line. | python, bash, scripting |

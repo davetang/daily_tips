@@ -190,3 +190,7 @@
   tip: '`git log --pretty=format:"%h %ad | %s%d [%an]" --date=short`'
   explanation: 'Customize `git log` output using `--pretty=format:`.'
   tags: [git, productivity]
+- date: 2025-06-01
+  tip: '`python3 -c "import sys; print(sys.version)"`'
+  explanation: 'Use `-c` with Python (and Bash) to run a command from the command line.'
+  tags: [python, bash, scripting]
