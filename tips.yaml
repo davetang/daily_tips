@@ -3,7 +3,7 @@
   explanation: "$_ can be used to get the last argument of the previous command."
   tags: [shell, productivity]
 - date: 2025-04-15
-  tip: "Just type the name of the directory to autocd into it"
+  tip: "Just type the name of the directory to autocd into it."
   explanation: "In Bash and Zsh autocd is on by default; use `shopt autocd` and `setopt | grep autocd` to check."
   tags: [shell, productivity]
 - date: 2025-04-16
@@ -23,12 +23,12 @@
   explanation: "`script` save entire shell session (incl. input/output) for logging; use `exit` to stop session."
   tags: [shell, productivity]
 - date: 2025-04-20
-  tip: "Use `--containall` with Singularity for better isolation"
+  tip: "Use `--containall` with Singularity for better isolation."
   explanation: "Prevents container from reading or writing from the host; useful for testing in a minimal, clean environment."
   tags: [singularity]
 - date: 2025-04-21
   tip: "`pstree -p PID`"
-  explanation: "Show processes in a tree with PID"
+  explanation: "Show processes in a tree with PID."
   tags: [shell, system]
 - date: 2025-04-22
   tip: "Good enough now beats perfect later."
@@ -43,7 +43,7 @@
   explanation: "If you know what a command does, but not the name use `apropos` to search the man pages!"
   tags: [shell, documentation]
 - date: 2025-04-25
-  tip: "Use `--cleanenv` with Singularity"
+  tip: "Use `--cleanenv` with Singularity."
   explanation: "Using `--cleanenv` prevents the container from inheriting most of the environment variables from the host."
   tags: [singularity]
 - date: 2025-04-26
@@ -95,7 +95,7 @@
   explanation: 'GNU datamash can perform basic numeric, textual and statistical operations on input textual data files.'
   tags: [shell, productivity]
 - date: 2025-05-08
-  tip: 'Use `rsync` over `scp`'
+  tip: 'Use `rsync` over `scp`.'
   explanation: '`rsync` only transfers differences, has better support for resuming transfers, and has more features.'
   tags: [shell, productivity]
 - date: 2025-05-09
@@ -131,7 +131,7 @@
   explanation: 'Use `extra = "merge"` to force splitting to match length of third parameter (`into`).'
   tags: [tidyverse]
 - date: 2025-05-17
-  tip: 'Use `tidyr::separate_wider_delim()` instead of `tidyr::separate()`'
+  tip: 'Use `tidyr::separate_wider_delim()` instead of `tidyr::separate()`.'
   explanation: '`separate()` has been superseded in favour of `separate_wider_position()` and `separate_wider_delim()`.'
   tags: [tidyverse]
 - date: 2025-05-18
@@ -179,11 +179,11 @@
   explanation: 'List comprehension in Python (that I always forget).'
   tags: [python, reminder]
 - date: 2025-05-29
-  tip: 'name<-"Rei"; glue::glue("Hello, {name}!")'
-  explanation: 'Use the glue package for string interpolation in R!'
+  tip: '`name<-"Rei"; glue::glue("Hello, {name}!")`'
+  explanation: 'Use the {glue} package for string interpolation in R!'
   tags: [r]
 - date: 2025-05-30
-  tip: 'singularity inspect my_image.sif'
+  tip: '`singularity inspect my_image.sif`'
   explanation: 'Inspect metadata, labels, environment, and scripts of a Singularity image.'
   tags: [singularity]
 - date: 2025-05-31
