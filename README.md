@@ -4,6 +4,15 @@
 
 One tip every day.
 
+# Kaizen
+
+Kaizen (改善) is a Japanese word made up of two characters:
+
+* 改 (kai) — "change" or "correct"
+* 善 (zen) — "good" or "better"
+
+So literally, kaizen means "change for the better."
+
 ## 📡 RSS Feed
 
 [Commits RSS](https://github.com/davetang/daily_tips/commits/main.atom)
