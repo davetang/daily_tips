@@ -194,3 +194,7 @@
   tip: '`python3 -c "import sys; print(sys.version)"`'
   explanation: 'Use `-c` with Python (and Bash) to run a command from the command line.'
   tags: [python, bash, scripting]
+- date: 2025-06-02
+  tip: 'If you are not paying for the product, you are the product.'
+  explanation: 'When services are offered for free, your data, attention, or behaviour are monetised.'
+  tags: [reminder]
