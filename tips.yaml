@@ -198,3 +198,7 @@
   tip: 'If you are not paying for the product, you are the product.'
   explanation: 'When services are offered for free, your data, attention, or behaviour are monetised.'
   tags: [reminder]
+- date: 2025-06-03
+  tip: 'Set the seed for reproducibility.'
+  explanation: 'When dealing with randomness, set the seed to ensure that you get the same results.'
+  tags: [reminder]
