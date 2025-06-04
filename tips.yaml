@@ -202,3 +202,7 @@
   tip: 'Set the seed for reproducibility.'
   explanation: 'When dealing with randomness, set the seed to ensure that you get the same results.'
   tags: [reminder]
+- date: 2025-06-04
+  tip: '`getAnywhere("some_function")`'
+  explanation: '`getAnywhere()` searches all environments for any object matching a provided name.'
+  tags: [r, reminder]
