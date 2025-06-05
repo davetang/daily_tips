@@ -206,3 +206,7 @@
   tip: '`getAnywhere("some_function")`'
   explanation: '`getAnywhere()` searches all environments for any object matching a provided name.'
   tags: [r, reminder]
+- date: 2025-06-05
+  tip: 'Use Matrix Market for storing sparse matrices in human readable format.'
+  explanation: 'Sparse matrices are not efficiently stored in CSV or TSV format.'
+  tags: [r, file format]
