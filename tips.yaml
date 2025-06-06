@@ -210,3 +210,7 @@
   tip: 'Use Matrix Market for storing sparse matrices in human readable format.'
   explanation: 'Sparse matrices are not efficiently stored in CSV or TSV format.'
   tags: [r, file format]
+- date: 2025-06-06
+  tip: 'When committing changes, one change should equal one purpose.'
+  explanation: 'Each commit should do one thing: fix a bug, update docs, rename a variable, add a feature, etc.'
+  tags: [git, best practice]
