@@ -214,3 +214,7 @@
   tip: 'When committing changes, one change should equal one purpose.'
   explanation: 'Each commit should do one thing: fix a bug, update docs, rename a variable, add a feature, etc.'
   tags: [git, best practice]
+- date: 2025-06-07
+  tip: 'LABEL maintainer="Dave Tang <email_address>"'
+  explanation: 'Using MAINTAINER in Dockerfiles has been deprecated; use LABEL instead.'
+  tags: [docker, best practice]
