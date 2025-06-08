@@ -218,3 +218,7 @@
   tip: 'LABEL maintainer="Dave Tang <email_address>"'
   explanation: 'Using MAINTAINER in Dockerfiles has been deprecated; use LABEL instead.'
   tags: [docker, best practice]
+- date: 2025-06-08
+  tip: 'Always put double quotes around variables in Bash scripts.'
+  explanation: 'Filenames, arguments, or inputs might contain spaces, tabs, or special characters.'
+  tags: [bash scripting, best practice]
