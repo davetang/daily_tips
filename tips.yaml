@@ -222,3 +222,7 @@
   tip: 'Always put double quotes around variables in Bash scripts.'
   explanation: 'Filenames, arguments, or inputs might contain spaces, tabs, or special characters.'
   tags: [bash scripting, best practice]
+- date: 2025-06-09
+  tip: 'Use `withCallingHandlers()` to log messages and warnings in R.'
+  explanation: '`withCallingHandlers()` is an advanced error and condition handling function in R that can be used for logging and more.'
+  tags: [r, defensive programming]
