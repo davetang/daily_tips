@@ -226,3 +226,7 @@
   tip: 'Use `withCallingHandlers()` to log messages and warnings in R.'
   explanation: '`withCallingHandlers()` is an advanced error and condition handling function in R that can be used for logging and more.'
   tags: [r, defensive programming]
+- date: 2025-06-10
+  tip: '`find data -path *pca/res.txt -print`'
+  explanation: 'Will only find res.txt inside directories matching `*pca`.'
+  tags: [shell, productivity]
