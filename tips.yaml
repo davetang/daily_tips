@@ -238,3 +238,7 @@
   tip: 'Make a habit of using `alias` in the shell.'
   explanation: 'Use `alias` to create aliases so you have to type (and remember) less.'
   tags: [shell, productivity]
+- date: 2025-06-13
+  tip: "Remember the 3 R's of Habit Change"
+  explanation: 'Reminder (initiates the behaviour), Routine (the actual behaviour), and Reward (the benefit gained).'
+  tags: [good habits]
