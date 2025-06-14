@@ -82,3 +82,4 @@ So literally, kaizen means "change for the better."
 | 2025-06-11 | Know about the fallacy of personal validation. | The Barnum effect is when people give high accuracy ratings to descriptions of their personality but the descriptions are in fact vague and general. | psychology |
 | 2025-06-12 | Make a habit of using `alias` in the shell. | Use `alias` to create aliases so you have to type (and remember) less. | shell, productivity |
 | 2025-06-13 | Remember the 3 R's of Habit Change | Reminder (initiates the behaviour), Routine (the actual behaviour), and Reward (the benefit gained). | good habits |
+| 2025-06-14 | Use https://explainshell.com/ to explain shell commands. | The site contains parsed manpages from sections 1 and 8 found in Ubuntu's manpage repository. | shell, productivity |

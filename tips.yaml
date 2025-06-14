@@ -242,3 +242,7 @@
   tip: "Remember the 3 R's of Habit Change"
   explanation: 'Reminder (initiates the behaviour), Routine (the actual behaviour), and Reward (the benefit gained).'
   tags: [good habits]
+- date: 2025-06-14
+  tip: 'Use https://explainshell.com/ to explain shell commands.'
+  explanation: "The site contains parsed manpages from sections 1 and 8 found in Ubuntu's manpage repository."
+  tags: [shell, productivity]
