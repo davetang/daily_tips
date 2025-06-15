@@ -246,3 +246,7 @@
   tip: 'Use https://explainshell.com/ to explain shell commands.'
   explanation: "The site contains parsed manpages from sections 1 and 8 found in Ubuntu's manpage repository."
   tags: [shell, productivity]
+- date: 2025-06-15
+  tip: 'Use `CDPATH` to search in other specified paths besides the current directory.'
+  explanation: 'Instead of looking only in the current directory, the shell now checks directories set by `CDPATH`.'
+  tags: [shell, productivity]
