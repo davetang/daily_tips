@@ -250,3 +250,7 @@
   tip: 'Use `CDPATH` to search in other specified paths besides the current directory.'
   explanation: 'Instead of looking only in the current directory, the shell now checks directories set by `CDPATH`.'
   tags: [shell, productivity]
+- date: 2025-06-16
+  tip: 'find dir1 dir2 dir3 -type f -name "*.txt"'
+  explanation: 'Find works on multiple locations!'
+  tags: [shell, productivity]
