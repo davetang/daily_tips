@@ -85,3 +85,4 @@ So literally, kaizen means "change for the better."
 | 2025-06-14 | Use https://explainshell.com/ to explain shell commands. | The site contains parsed manpages from sections 1 and 8 found in Ubuntu's manpage repository. | shell, productivity |
 | 2025-06-15 | Use `CDPATH` to search in other specified paths besides the current directory. | Instead of looking only in the current directory, the shell now checks directories set by `CDPATH`. | shell, productivity |
 | 2025-06-16 | find dir1 dir2 dir3 -type f -name "*.txt" | Find works on multiple locations! | shell, productivity |
+| 2025-06-17 | compdef _gnu_generic find | Tab completion for find when using Zsh! | zsh, productivity |

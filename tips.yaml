@@ -254,3 +254,7 @@
   tip: 'find dir1 dir2 dir3 -type f -name "*.txt"'
   explanation: 'Find works on multiple locations!'
   tags: [shell, productivity]
+- date: 2025-06-17
+  tip: 'compdef _gnu_generic find'
+  explanation: 'Tab completion for find when using Zsh!'
+  tags: [zsh, productivity]
