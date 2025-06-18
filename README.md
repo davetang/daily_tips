@@ -86,3 +86,4 @@ So literally, kaizen means "change for the better."
 | 2025-06-15 | Use `CDPATH` to search in other specified paths besides the current directory. | Instead of looking only in the current directory, the shell now checks directories set by `CDPATH`. | shell, productivity |
 | 2025-06-16 | find dir1 dir2 dir3 -type f -name "*.txt" | Find works on multiple locations! | shell, productivity |
 | 2025-06-17 | compdef _gnu_generic find | Tab completion for find when using Zsh! | zsh, productivity |
+| 2025-06-18 | `sed -e 's/foo/bar/' -e 's/baz/qux/' file.txt` | Perform two separate substitution expressions with just one `sed` command. | sed, reminder |

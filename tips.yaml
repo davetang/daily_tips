@@ -258,3 +258,7 @@
   tip: 'compdef _gnu_generic find'
   explanation: 'Tab completion for find when using Zsh!'
   tags: [zsh, productivity]
+- date: 2025-06-18
+  tip: "`sed -e 's/foo/bar/' -e 's/baz/qux/' file.txt`"
+  explanation: 'Perform two separate substitution expressions with just one `sed` command.'
+  tags: [sed, reminder]
