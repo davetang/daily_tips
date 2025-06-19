@@ -262,3 +262,7 @@
   tip: "`sed -e 's/foo/bar/' -e 's/baz/qux/' file.txt`"
   explanation: 'Perform two separate substitution expressions with just one `sed` command.'
   tags: [sed, reminder]
+- date: 2025-06-19
+  tip: 'while IFS= read -r line; do echo "$line" done < filename.txt'
+  explanation: 'Read a file line by line, preserving all whitespace in a Bash script.'
+  tags: [Bash, reminder]
