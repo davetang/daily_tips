@@ -266,3 +266,7 @@
   tip: 'while IFS= read -r line; do echo "$line" done < filename.txt'
   explanation: 'Read a file line by line, preserving all whitespace in a Bash script.'
   tags: [Bash, reminder]
+- date: 2025-06-20
+  tip: 'Read the Bash Reference Manual'
+  explanation: 'You will probably need to read and/or a Bash script so read https://www.gnu.org/software/bash/manual/bash.html.'
+  tags: [Bash]
