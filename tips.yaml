@@ -268,5 +268,5 @@
   tags: [Bash, reminder]
 - date: 2025-06-20
   tip: 'Read the Bash Reference Manual'
-  explanation: 'You will probably need to read and/or a Bash script so read https://www.gnu.org/software/bash/manual/bash.html.'
+  explanation: 'You will probably need to read and/or write a Bash script, so read https://www.gnu.org/software/bash/manual/bash.html.'
   tags: [Bash]
