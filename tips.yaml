@@ -270,3 +270,7 @@
   tip: 'Read the Bash Reference Manual'
   explanation: 'You will probably need to read and/or write a Bash script, so read https://www.gnu.org/software/bash/manual/bash.html.'
   tags: [Bash]
+- date: 2025-06-21
+  tip: '`readarray` is synonym for `mapfile`.'
+  explanation: '`mapfile` read lines from the standard input into the indexed array.'
+  tags: [Bash]

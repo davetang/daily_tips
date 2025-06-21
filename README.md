@@ -89,3 +89,4 @@ So literally, kaizen means "change for the better."
 | 2025-06-18 | `sed -e 's/foo/bar/' -e 's/baz/qux/' file.txt` | Perform two separate substitution expressions with just one `sed` command. | sed, reminder |
 | 2025-06-19 | while IFS= read -r line; do echo "$line" done < filename.txt | Read a file line by line, preserving all whitespace in a Bash script. | Bash, reminder |
 | 2025-06-20 | Read the Bash Reference Manual | You will probably need to read and/or write a Bash script, so read https://www.gnu.org/software/bash/manual/bash.html. | Bash |
+| 2025-06-21 | `readarray` is synonym for `mapfile`. | `mapfile` read lines from the standard input into the indexed array. | Bash |
