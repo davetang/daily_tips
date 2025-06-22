@@ -90,3 +90,4 @@ So literally, kaizen means "change for the better."
 | 2025-06-19 | while IFS= read -r line; do echo "$line" done < filename.txt | Read a file line by line, preserving all whitespace in a Bash script. | Bash, reminder |
 | 2025-06-20 | Read the Bash Reference Manual | You will probably need to read and/or write a Bash script, so read https://www.gnu.org/software/bash/manual/bash.html. | Bash |
 | 2025-06-21 | `readarray` is synonym for `mapfile`. | `mapfile` read lines from the standard input into the indexed array. | Bash |
+| 2025-06-22 | Be aware of Cognitive Debt and don't build it up! | See study: Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task | good habits |

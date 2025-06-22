@@ -274,3 +274,7 @@
   tip: '`readarray` is synonym for `mapfile`.'
   explanation: '`mapfile` read lines from the standard input into the indexed array.'
   tags: [Bash]
+- date: 2025-06-22
+  tip: "Be aware of Cognitive Debt and don't build it up!"
+  explanation: 'See study: Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task'
+  tags: [good habits]
