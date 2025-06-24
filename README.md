@@ -33,7 +33,7 @@ So literally, kaizen means "change for the better."
 | 2025-04-23 | Consider using `tryCatch()` over `stopifnot()`. | `tryCatch()` can handle and recover from errors, while `stopifnot()` halts execution. | r, defensive programming |
 | 2025-04-24 | `apropos unzip` | If you know what a command does, but not the name use `apropos` to search the man pages! | shell, documentation |
 | 2025-04-25 | Use `--cleanenv` with Singularity. | Using `--cleanenv` prevents the container from inheriting most of the environment variables from the host. | singularity |
-| 2025-04-26 | tar -cJf archive-name.tar.xz folder/ | xz typically compresses better than gz but is slower; use for long term backups. | shell, compression |
+| 2025-04-26 | `tar -cJf archive-name.tar.xz folder/` | xz typically compresses better than gz but is slower; use for long term backups. | shell, compression |
 | 2025-04-27 | `watch vcgencmd measure_temp` | Measure the temperature every second. | raspberry pi |
 | 2025-04-28 | Use the dot placeholder with {purrr}. | `purrr::map_int(1:5, ~ . + 1)` vs. `purrr::map_int(1:5, function(x) x + 1)`. | r, functional programming |
 | 2025-04-29 | Use `date` and `bc` to measure elapsed time. | Use `$(date +%s.%N)` to get times then use `echo "${END} - ${START}" \| bc` to get elapsed time. | shell, benchmarking |
@@ -84,12 +84,12 @@ So literally, kaizen means "change for the better."
 | 2025-06-13 | Remember the 3 R's of Habit Change | Reminder (initiates the behaviour), Routine (the actual behaviour), and Reward (the benefit gained). | good habits |
 | 2025-06-14 | Use https://explainshell.com/ to explain shell commands. | The site contains parsed manpages from sections 1 and 8 found in Ubuntu's manpage repository. | shell, productivity |
 | 2025-06-15 | Use `CDPATH` to search in other specified paths besides the current directory. | Instead of looking only in the current directory, the shell now checks directories set by `CDPATH`. | shell, productivity |
-| 2025-06-16 | find dir1 dir2 dir3 -type f -name "*.txt" | Find works on multiple locations! | shell, productivity |
-| 2025-06-17 | compdef _gnu_generic find | Tab completion for find when using Zsh! | zsh, productivity |
+| 2025-06-16 | `find dir1 dir2 dir3 -type f -name "*.txt"` | Find works on multiple locations! | shell, productivity |
+| 2025-06-17 | `compdef _gnu_generic find` | Tab completion for find when using Zsh! | zsh, productivity |
 | 2025-06-18 | `sed -e 's/foo/bar/' -e 's/baz/qux/' file.txt` | Perform two separate substitution expressions with just one `sed` command. | sed, reminder |
-| 2025-06-19 | while IFS= read -r line; do echo "$line" done < filename.txt | Read a file line by line, preserving all whitespace in a Bash script. | Bash, reminder |
+| 2025-06-19 | `while IFS= read -r line; do echo "$line" done < filename.txt` | Read a file line by line, preserving all whitespace in a Bash script. | Bash, reminder |
 | 2025-06-20 | Read the Bash Reference Manual | You will probably need to read and/or write a Bash script, so read https://www.gnu.org/software/bash/manual/bash.html. | Bash |
 | 2025-06-21 | `readarray` is synonym for `mapfile`. | `mapfile` read lines from the standard input into the indexed array. | Bash |
 | 2025-06-22 | Be aware of Cognitive Debt and don't build it up! | See study: Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task | good habits |
 | 2025-06-23 | Check out `fzf`, a command-line fuzzy finder | `fzf` is an interactive filter program for any kind of list; files, command history, processes, hostnames, bookmarks, git commits, etc. | shell, productivity |
-| 2025-06-24 | find . -type f -print0 \| xargs -0 rm | Use `-print0` with `find` to explicitly mark the end of each filename with a null byte, which works nicely with `xargs`. | shell, best practice |
+| 2025-06-24 | `find . -type f -print0 \| xargs -0 rm` | Use `-print0` with `find` to explicitly mark the end of each filename with a null byte, which works nicely with `xargs`. | shell, best practice |

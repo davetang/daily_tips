@@ -47,7 +47,7 @@
   explanation: "Using `--cleanenv` prevents the container from inheriting most of the environment variables from the host."
   tags: [singularity]
 - date: 2025-04-26
-  tip: "tar -cJf archive-name.tar.xz folder/"
+  tip: "`tar -cJf archive-name.tar.xz folder/`"
   explanation: "xz typically compresses better than gz but is slower; use for long term backups."
   tags: [shell, compression]
 - date: 2025-04-27
@@ -251,11 +251,11 @@
   explanation: 'Instead of looking only in the current directory, the shell now checks directories set by `CDPATH`.'
   tags: [shell, productivity]
 - date: 2025-06-16
-  tip: 'find dir1 dir2 dir3 -type f -name "*.txt"'
+  tip: '`find dir1 dir2 dir3 -type f -name "*.txt"`'
   explanation: 'Find works on multiple locations!'
   tags: [shell, productivity]
 - date: 2025-06-17
-  tip: 'compdef _gnu_generic find'
+  tip: '`compdef _gnu_generic find`'
   explanation: 'Tab completion for find when using Zsh!'
   tags: [zsh, productivity]
 - date: 2025-06-18
@@ -263,7 +263,7 @@
   explanation: 'Perform two separate substitution expressions with just one `sed` command.'
   tags: [sed, reminder]
 - date: 2025-06-19
-  tip: 'while IFS= read -r line; do echo "$line" done < filename.txt'
+  tip: '`while IFS= read -r line; do echo "$line" done < filename.txt`'
   explanation: 'Read a file line by line, preserving all whitespace in a Bash script.'
   tags: [Bash, reminder]
 - date: 2025-06-20
@@ -283,6 +283,6 @@
   explanation: '`fzf` is an interactive filter program for any kind of list; files, command history, processes, hostnames, bookmarks, git commits, etc.'
   tags: [shell, productivity]
 - date: 2025-06-24
-  tip: "find . -type f -print0 | xargs -0 rm"
+  tip: "`find . -type f -print0 | xargs -0 rm`"
   explanation: 'Use `-print0` with `find` to explicitly mark the end of each filename with a null byte, which works nicely with `xargs`.'
   tags: [shell, best practice]
