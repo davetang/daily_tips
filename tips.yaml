@@ -286,3 +286,7 @@
   tip: "`find . -type f -print0 | xargs -0 rm`"
   explanation: 'Use `-print0` with `find` to explicitly mark the end of each filename with a null byte, which works nicely with `xargs`.'
   tags: [shell, best practice]
+- date: 2025-06-25
+  tip: "Buy The Secret Rules of the Terminal at https://wizardzines.com/zines/terminal/"
+  explanation: 'Understanding just a little more about the terminal can make your experience WAY better.'
+  tags: [shell, productivity]
