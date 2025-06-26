@@ -290,3 +290,7 @@
   tip: "Buy The Secret Rules of the Terminal at https://wizardzines.com/zines/terminal/"
   explanation: 'Understanding just a little more about the terminal can make your experience WAY better.'
   tags: [shell, productivity]
+- date: 2025-06-26
+  tip: "`which -a python3`"
+  explanation: 'Use `which -a` to show ALL matches in your PATH for a program, in order!'
+  tags: [shell, productivity]
