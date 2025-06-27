@@ -294,3 +294,7 @@
   tip: "`which -a python3`"
   explanation: 'Use `which -a` to show ALL matches in your PATH for a program, in order!'
   tags: [shell, productivity]
+- date: 2025-06-27
+  tip: "Use `pbcopy` and `pbpaste` to copy to the clipboard and paste from the clipboard"
+  explanation: '`pbcopy` and `pbpaste` are only available on macOS but can be mimicked using other tools on Linux.'
+  tags: [macOS, productivity]
