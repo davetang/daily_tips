@@ -298,3 +298,7 @@
   tip: "Use `pbcopy` and `pbpaste` to copy to the clipboard and paste from the clipboard"
   explanation: '`pbcopy` and `pbpaste` are only available on macOS but can be mimicked using other tools on Linux.'
   tags: [macOS, productivity]
+- date: 2025-06-28
+  tip: 'echo "export DISPLAY=localhost:10.0" >> ~/.screenrc'
+  explanation: 'Ensure that DISPLAY is set in all `screen` sessions by setting it in `~/.screenrc`.'
+  tags: [screen, productivity]

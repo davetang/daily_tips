@@ -96,3 +96,4 @@ So literally, kaizen means "change for the better."
 | 2025-06-25 | Buy The Secret Rules of the Terminal at https://wizardzines.com/zines/terminal/ | Understanding just a little more about the terminal can make your experience WAY better. | shell, productivity |
 | 2025-06-26 | `which -a python3` | Use `which -a` to show ALL matches in your PATH for a program, in order! | shell, productivity |
 | 2025-06-27 | Use `pbcopy` and `pbpaste` to copy to the clipboard and paste from the clipboard | `pbcopy` and `pbpaste` are only available on macOS but can be mimicked using other tools on Linux. | macOS, productivity |
+| 2025-06-28 | echo "export DISPLAY=localhost:10.0" >> ~/.screenrc | Ensure that DISPLAY is set in all `screen` sessions by setting it in `~/.screenrc`. | screen, productivity |
