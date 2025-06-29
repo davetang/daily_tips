@@ -302,3 +302,7 @@
   tip: 'echo "export DISPLAY=localhost:10.0" >> ~/.screenrc'
   explanation: 'Ensure that DISPLAY is set in all `screen` sessions by setting it in `~/.screenrc`.'
   tags: [screen, productivity]
+- date: 2025-06-29
+  tip: 'The terminal emulator is a translator.'
+  explanation: 'The terminal emulator translates all typing/clicks into bytes and and it takes all the bytes from a program and displays them on the screen.'
+  tags: [terminal]
