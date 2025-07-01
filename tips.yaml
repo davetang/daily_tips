@@ -310,3 +310,7 @@
   tip: 'The terminal emulator turns actions into text, escape codes or control characters.'
   explanation: 'Text is like `cat test.txt`, escape codes can tell the terminal what colour to display text in, and control characters like Ctrl+C (byte 3).'
   tags: [terminal]
+- date: 2025-07-01
+  tip: '`cat /sys/block/sda/queue/rotational`'
+  explanation: 'Check whether a block device (like /dev/sda) is an SSD (0) or HDD (1).'
+  tags: [linux]

@@ -99,3 +99,4 @@ So literally, kaizen means "change for the better."
 | 2025-06-28 | echo "export DISPLAY=localhost:10.0" >> ~/.screenrc | Ensure that DISPLAY is set in all `screen` sessions by setting it in `~/.screenrc`. | screen, productivity |
 | 2025-06-29 | The terminal emulator is a translator. | The terminal emulator translates all typing/clicks into bytes and and it takes all the bytes from a program and displays them on the screen. | terminal |
 | 2025-06-30 | The terminal emulator turns actions into text, escape codes or control characters. | Text is like `cat test.txt`, escape codes can tell the terminal what colour to display text in, and control characters like Ctrl+C (byte 3). | terminal |
+| 2025-07-01 | `cat /sys/block/sda/queue/rotational` | Check whether a block device (like /dev/sda) is an SSD (0) or HDD (1). | linux |
