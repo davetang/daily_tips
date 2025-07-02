@@ -314,3 +314,7 @@
   tip: '`cat /sys/block/sda/queue/rotational`'
   explanation: 'Check whether a block device (like /dev/sda) is an SSD (0) or HDD (1).'
   tags: [linux]
+- date: 2025-07-02
+  tip: '`csvlook file.csv` (after installing csvkit).'
+  explanation: 'Renders a CSV to the command line in a Markdown-compatible, fixed-width format.'
+  tags: [terminal, productivity]
