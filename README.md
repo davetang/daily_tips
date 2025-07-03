@@ -101,3 +101,4 @@ So literally, kaizen means "change for the better."
 | 2025-06-30 | The terminal emulator turns actions into text, escape codes or control characters. | Text is like `cat test.txt`, escape codes can tell the terminal what colour to display text in, and control characters like Ctrl+C (byte 3). | terminal |
 | 2025-07-01 | `cat /sys/block/sda/queue/rotational` | Check whether a block device (like /dev/sda) is an SSD (0) or HDD (1). | linux |
 | 2025-07-02 | `csvlook file.csv` (after installing csvkit). | Renders a CSV to the command line in a Markdown-compatible, fixed-width format. | terminal, productivity |
+| 2025-07-03 | The {ggeasy} package provides {ggplot2} shortcuts. | {ggeasy} is a helper package that makes it easier to make {ggplot2} plots! | r, helper |

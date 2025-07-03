@@ -318,3 +318,7 @@
   tip: '`csvlook file.csv` (after installing csvkit).'
   explanation: 'Renders a CSV to the command line in a Markdown-compatible, fixed-width format.'
   tags: [terminal, productivity]
+- date: 2025-07-03
+  tip: 'The {ggeasy} package provides {ggplot2} shortcuts.'
+  explanation: '{ggeasy} is a helper package that makes it easier to make {ggplot2} plots!'
+  tags: [r, helper]
