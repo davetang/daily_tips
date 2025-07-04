@@ -322,3 +322,7 @@
   tip: 'The {ggeasy} package provides {ggplot2} shortcuts.'
   explanation: '{ggeasy} is a helper package that makes it easier to make {ggplot2} plots!'
   tags: [r, helper]
+- date: 2025-07-04
+  tip: '`install.packages("torch")`'
+  explanation: 'R Interface to Torch!'
+  tags: [r, machine learning]
