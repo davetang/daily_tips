@@ -326,3 +326,7 @@
   tip: '`install.packages("torch")`'
   explanation: 'R Interface to Torch!'
   tags: [r, machine learning]
+- date: 2025-07-05
+  tip: 'Check out Miller!'
+  explanation: 'Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON!'
+  tags: [terminal, productivity]
