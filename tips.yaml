@@ -330,3 +330,7 @@
   tip: 'Check out Miller!'
   explanation: 'Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON!'
   tags: [terminal, productivity]
+- date: 2025-07-06
+  tip: 'Try changing up your environment or daily routine.'
+  explanation: 'Even small shifts can spark new motivation and boost your focus!'
+  tags: [productivity]
