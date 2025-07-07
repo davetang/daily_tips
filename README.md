@@ -105,3 +105,4 @@ So literally, kaizen means "change for the better."
 | 2025-07-04 | `install.packages("torch")` | R Interface to Torch! | r, machine learning |
 | 2025-07-05 | Check out Miller! | Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON! | terminal, productivity |
 | 2025-07-06 | Try changing up your environment or daily routine. | Even small shifts can spark new motivation and boost your focus! | productivity |
+| 2025-07-07 | Trust, but verify. | You can always trust that a tool performs as advertised but you should verify too. | adage |
