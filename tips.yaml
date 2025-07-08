@@ -338,3 +338,7 @@
   tip: 'Trust, but verify.'
   explanation: 'You can always trust that a tool performs as advertised but you should verify too.'
   tags: [adage]
+- date: 2025-07-08
+  tip: '`mlr --icsv --opprint cat example.csv`'
+  explanation: 'Use Miller to output a CSV file in a pretty format!'
+  tags: [terminal, productivity]
