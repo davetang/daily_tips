@@ -342,3 +342,7 @@
   tip: '`mlr --icsv --opprint cat example.csv`'
   explanation: 'Use Miller to output a CSV file in a pretty format!'
   tags: [terminal, productivity]
+- date: 2025-07-09
+  tip: '`sudo apt install lftp`'
+  explanation: 'Legacy `ftp` is deprecated; use `lftp`, a more modern FTP client.'
+  tags: [Linux]
