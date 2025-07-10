@@ -346,3 +346,7 @@
   tip: '`sudo apt install lftp`'
   explanation: 'Legacy `ftp` is deprecated; use `lftp`, a more modern FTP client.'
   tags: [Linux]
+- date: 2025-07-10
+  tip: 'Check out `tmux`'
+  explanation: 'I have been using GNU Screen for as long as I can remember; time to check out `tmux`?'
+  tags: [Linux, productivity]
