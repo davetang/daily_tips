@@ -350,3 +350,7 @@
   tip: 'Check out `tmux`'
   explanation: 'I have been using GNU Screen for as long as I can remember; time to check out `tmux`?'
   tags: [Linux, productivity]
+- date: 2025-07-11
+  tip: 'Use `"+y` to yank to the clipboard in Nvim!'
+  explanation: 'Instead of using the mouse to copy to the clipboard, use `"+y` to yank to the clipboard!'
+  tags: [Nvim]

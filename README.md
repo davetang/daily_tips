@@ -109,3 +109,4 @@ So literally, kaizen means "change for the better."
 | 2025-07-08 | `mlr --icsv --opprint cat example.csv` | Use Miller to output a CSV file in a pretty format! | terminal, productivity |
 | 2025-07-09 | `sudo apt install lftp` | Legacy `ftp` is deprecated; use `lftp`, a more modern FTP client. | Linux |
 | 2025-07-10 | Check out `tmux` | I have been using GNU Screen for as long as I can remember; time to check out `tmux`? | Linux, productivity |
+| 2025-07-11 | Use `"+y` to yank to the clipboard in Nvim! | Instead of using the mouse to copy to the clipboard, use `"+y` to yank to the clipboard! | Nvim |
