@@ -354,3 +354,7 @@
   tip: 'Use `"+y` to yank to the clipboard in Nvim!'
   explanation: 'Instead of using the mouse to copy to the clipboard, use `"+y` to yank to the clipboard!'
   tags: [Nvim]
+- date: 2025-07-12
+  tip: 'Use marks to set a specific position to jump back to in Nvim.'
+  explanation: "Use `ma` to mark current cursor position. Use `backtick+a` to jump to exact position and `'a` to jump to start of line."
+  tags: [Nvim]
