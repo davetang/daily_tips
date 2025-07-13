@@ -111,3 +111,4 @@ So literally, kaizen means "change for the better."
 | 2025-07-10 | Check out `tmux` | I have been using GNU Screen for as long as I can remember; time to check out `tmux`? | Linux, productivity |
 | 2025-07-11 | Use `"+y` to yank to the clipboard in Nvim! | Instead of using the mouse to copy to the clipboard, use `"+y` to yank to the clipboard! | Nvim |
 | 2025-07-12 | Use marks to set a specific position to jump back to in Nvim. | Use `ma` to mark current cursor position. Use `backtick+a` to jump to exact position and `'a` to jump to start of line. | Nvim |
+| 2025-07-13 | `Ctrl+o` and `Ctrl+i`: go backward and forward in jump history. | Great for moving back after using search or jumping to the start/end of a file. | Nvim |

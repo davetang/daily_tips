@@ -358,3 +358,7 @@
   tip: 'Use marks to set a specific position to jump back to in Nvim.'
   explanation: "Use `ma` to mark current cursor position. Use `backtick+a` to jump to exact position and `'a` to jump to start of line."
   tags: [Nvim]
+- date: 2025-07-13
+  tip: '`Ctrl+o` and `Ctrl+i`: go backward and forward in jump history.'
+  explanation: "Great for moving back after using search or jumping to the start/end of a file."
+  tags: [Nvim]
