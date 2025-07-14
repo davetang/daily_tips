@@ -362,3 +362,7 @@
   tip: '`Ctrl+o` and `Ctrl+i`: go backward and forward in jump history.'
   explanation: "Great for moving back after using search or jumping to the start/end of a file."
   tags: [Nvim]
+- date: 2025-07-14
+  tip: 'You can open two or more files in Nvim and work with them simultaneously!'
+  explanation: "Use `:ls` to list open buffers, i.e., files that are open, and `:b number` to switch between them."
+  tags: [Nvim]
