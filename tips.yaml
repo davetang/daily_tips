@@ -366,3 +366,7 @@
   tip: 'You can open two or more files in Nvim and work with them simultaneously!'
   explanation: "Use `:ls` to list open buffers, i.e., files that are open, and `:b number` to switch between them."
   tags: [Nvim]
+- date: 2025-07-15
+  tip: 'Use `:help` to bring up the help screen in Nvim.'
+  explanation: "The Nvim help pages are quite detailed; use `CTRL-]` to jump to a subject."
+  tags: [Nvim, reminder]
