@@ -114,3 +114,4 @@ So literally, kaizen means "change for the better."
 | 2025-07-13 | `Ctrl+o` and `Ctrl+i`: go backward and forward in jump history. | Great for moving back after using search or jumping to the start/end of a file. | Nvim |
 | 2025-07-14 | You can open two or more files in Nvim and work with them simultaneously! | Use `:ls` to list open buffers, i.e., files that are open, and `:b number` to switch between them. | Nvim |
 | 2025-07-15 | Use `:help` to bring up the help screen in Nvim. | The Nvim help pages are quite detailed; use `CTRL-]` to jump to a subject. | Nvim, reminder |
+| 2025-07-16 | `hexdump -C text.txt` | Display the input offset in hexadecimal and its ASCII representation in two columns. | terminal |

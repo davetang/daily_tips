@@ -370,3 +370,7 @@
   tip: 'Use `:help` to bring up the help screen in Nvim.'
   explanation: "The Nvim help pages are quite detailed; use `CTRL-]` to jump to a subject."
   tags: [Nvim, reminder]
+- date: 2025-07-16
+  tip: '`hexdump -C text.txt`'
+  explanation: "Display the input offset in hexadecimal and its ASCII representation in two columns."
+  tags: [terminal]
