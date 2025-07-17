@@ -374,3 +374,7 @@
   tip: '`hexdump -C text.txt`'
   explanation: "Display the input offset in hexadecimal and its ASCII representation in two columns."
   tags: [terminal]
+- date: 2025-07-17
+  tip: 'Check out `pixi`, a very fast package manager.'
+  explanation: "[7 Reasons to Switch from Conda to Pixi](https://prefix.dev/blog/pixi_a_fast_conda_alternative)."
+  tags: [productivity]
