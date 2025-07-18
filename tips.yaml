@@ -378,3 +378,7 @@
   tip: 'Check out `pixi`, a very fast package manager.'
   explanation: "[7 Reasons to Switch from Conda to Pixi](https://prefix.dev/blog/pixi_a_fast_conda_alternative)."
   tags: [productivity]
+- date: 2025-07-18
+  tip: 'A random variable is defined as the numerical outcome of a random experiment.'
+  explanation: 'A random experiment repeated many times will generate results governed by their probabilities.'
+  tags: [statistics, reminder]
