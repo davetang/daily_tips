@@ -117,3 +117,4 @@ So literally, kaizen means "change for the better."
 | 2025-07-16 | `hexdump -C text.txt` | Display the input offset in hexadecimal and its ASCII representation in two columns. | terminal |
 | 2025-07-17 | Check out `pixi`, a very fast package manager. | [7 Reasons to Switch from Conda to Pixi](https://prefix.dev/blog/pixi_a_fast_conda_alternative). | productivity |
 | 2025-07-18 | A random variable is defined as the numerical outcome of a random experiment. | A random experiment repeated many times will generate results governed by their probabilities. | statistics, reminder |
+| 2025-07-19 | Probability measures the _ratio_ of an outcome to the total possible outcomes. | When you want to find how likely something is, you are really asking what fraction of all possibilities does this represent? | statistics, reminder |

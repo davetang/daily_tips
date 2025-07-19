@@ -382,3 +382,7 @@
   tip: 'A random variable is defined as the numerical outcome of a random experiment.'
   explanation: 'A random experiment repeated many times will generate results governed by their probabilities.'
   tags: [statistics, reminder]
+- date: 2025-07-19
+  tip: 'Probability measures the _ratio_ of an outcome to the total possible outcomes.'
+  explanation: 'When you want to find how likely something is, you are really asking what fraction of all possibilities does this represent?'
+  tags: [statistics, reminder]
