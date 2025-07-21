@@ -390,3 +390,7 @@
   tip: 'Adding random variables combines different uncertain quantities to get a new uncertain quantity.'
   explanation: 'Adding random variables represents combining their outcomes in a single experiment.'
   tags: [statistics, reminder]
+- date: 2025-07-21
+  tip: 'A binomial distribution counts successes in $n$ independent trials, each with probability $p$.'
+  explanation: 'As $n$ gets large in a binomial distribution, it approaches a normal distribution.'
+  tags: [statistics, reminder]

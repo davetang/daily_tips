@@ -119,3 +119,4 @@ So literally, kaizen means "change for the better."
 | 2025-07-18 | A random variable is defined as the numerical outcome of a random experiment. | A random experiment repeated many times will generate results governed by their probabilities. | statistics, reminder |
 | 2025-07-19 | Probability measures the _ratio_ of an outcome to the total possible outcomes. | When you want to find how likely something is, you are really asking what fraction of all possibilities does this represent? | statistics, reminder |
 | 2025-07-20 | Adding random variables combines different uncertain quantities to get a new uncertain quantity. | Adding random variables represents combining their outcomes in a single experiment. | statistics, reminder |
+| 2025-07-21 | A binomial distribution counts successes in $n$ independent trials, each with probability $p$. | As $n$ gets large in a binomial distribution, it approaches a normal distribution. | statistics, reminder |
