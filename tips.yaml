@@ -394,3 +394,7 @@
   tip: 'A binomial distribution counts successes in $n$ independent trials, each with probability $p$.'
   explanation: 'As $n$ gets large in a binomial distribution, it approaches a normal distribution.'
   tags: [statistics, reminder]
+- date: 2025-07-22
+  tip: '`sudo do-release-upgrade`'
+  explanation: 'Upgrade Ubuntu from the terminal; but remember to fully update the system first: `sudo apt update && sudo apt upgrade -y; sudo apt dist-upgrade -y`.'
+  tags: [Ubuntu]
