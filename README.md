@@ -121,3 +121,4 @@ So literally, kaizen means "change for the better."
 | 2025-07-20 | Adding random variables combines different uncertain quantities to get a new uncertain quantity. | Adding random variables represents combining their outcomes in a single experiment. | statistics, reminder |
 | 2025-07-21 | A binomial distribution counts successes in $n$ independent trials, each with probability $p$. | As $n$ gets large in a binomial distribution, it approaches a normal distribution. | statistics, reminder |
 | 2025-07-22 | `sudo do-release-upgrade` | Upgrade Ubuntu from the terminal; but remember to fully update the system first: `sudo apt update && sudo apt upgrade -y; sudo apt dist-upgrade -y`. | Ubuntu |
+| 2025-07-23 | Always keep a "live install" image lying around for when your server runs into issues! | Get a live install Debian image from https://www.debian.org/CD/live/; in case you were wondering, this is unrelated to yesterday's tip! | Debian |

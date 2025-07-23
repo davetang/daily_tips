@@ -398,3 +398,7 @@
   tip: '`sudo do-release-upgrade`'
   explanation: 'Upgrade Ubuntu from the terminal; but remember to fully update the system first: `sudo apt update && sudo apt upgrade -y; sudo apt dist-upgrade -y`.'
   tags: [Ubuntu]
+- date: 2025-07-23
+  tip: 'Always keep a "live install" image lying around for when your server runs into issues!'
+  explanation: "Get a live install Debian image from https://www.debian.org/CD/live/; in case you were wondering, this is unrelated to yesterday's tip!"
+  tags: [Debian]
