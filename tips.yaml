@@ -406,3 +406,7 @@
   tip: 'Use `getSimpleName()` to get the path name without any extension in Nextflow.'
   explanation: "See https://nextflow.io/docs/latest/reference/stdlib-types.html for more utilities!"
   tags: [Nextflow]
+- date: 2025-07-25
+  tip: '`sudo fsck -fy /dev/sda2`'
+  explanation: "Use `fsck` (File System Consistency Check) to scan and fix disk errors automatically."
+  tags: [Linux, sysadmin]
