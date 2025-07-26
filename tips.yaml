@@ -410,3 +410,7 @@
   tip: '`sudo fsck -fy /dev/sda2`'
   explanation: "Use `fsck` (File System Consistency Check) to scan and fix disk errors automatically."
   tags: [Linux, sysadmin]
+- date: 2025-07-26
+  tip: '`imap(my_list, ~ paste0("Key ", .y, " has value ", .x))`'
+  explanation: "Use `imap()` if you want both the element and its name/index."
+  tags: [r, functional programming]
