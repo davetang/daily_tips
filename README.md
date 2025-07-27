@@ -125,3 +125,4 @@ So literally, kaizen means "change for the better."
 | 2025-07-24 | Use `getSimpleName()` to get the path name without any extension in Nextflow. | See https://nextflow.io/docs/latest/reference/stdlib-types.html for more utilities! | Nextflow |
 | 2025-07-25 | `sudo fsck -fy /dev/sda2` | Use `fsck` (File System Consistency Check) to scan and fix disk errors automatically. | Linux, sysadmin |
 | 2025-07-26 | `imap(my_list, ~ paste0("Key ", .y, " has value ", .x))` | Use `imap()` if you want both the element and its name/index. | r, functional programming |
+| 2025-07-27 | `safe_fn <- safely(some_function)` | `safely()` wraps a function and makes it return a result even if an error occurs. Instead of stopping execution, it returns a list with the actual result or error object. | r, functional programming |

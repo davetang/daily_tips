@@ -414,3 +414,7 @@
   tip: '`imap(my_list, ~ paste0("Key ", .y, " has value ", .x))`'
   explanation: "Use `imap()` if you want both the element and its name/index."
   tags: [r, functional programming]
+- date: 2025-07-27
+  tip: '`safe_fn <- safely(some_function)`'
+  explanation: "`safely()` wraps a function and makes it return a result even if an error occurs. Instead of stopping execution, it returns a list with the actual result or error object."
+  tags: [r, functional programming]
