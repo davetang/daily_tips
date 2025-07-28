@@ -418,3 +418,7 @@
   tip: '`safe_fn <- safely(some_function)`'
   explanation: "`safely()` wraps a function and makes it return a result even if an error occurs. Instead of stopping execution, it returns a list with the actual result or error object."
   tags: [r, functional programming]
+- date: 2025-07-28
+  tip: '`purrr::pmap(list(list(1900), list(80), list(4)), \(x,y,z) x+y+z)`'
+  explanation: "Use `purrr::pmap()` to map over multiple input simultaneously."
+  tags: [r, functional programming]
