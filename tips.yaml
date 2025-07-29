@@ -422,3 +422,7 @@
   tip: '`purrr::pmap(list(list(1900), list(80), list(4)), \(x,y,z) x+y+z)`'
   explanation: "Use `purrr::pmap()` to map over multiple input simultaneously."
   tags: [r, functional programming]
+- date: 2025-07-29
+  tip: 'Learn [Lua](https://www.lua.org/start.html)!'
+  explanation: "Lua is a powerful and fast programming language that is easy to learn and use and to embed into your application."
+  tags: [Lua]
