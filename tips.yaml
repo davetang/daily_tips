@@ -426,3 +426,7 @@
   tip: 'Learn [Lua](https://www.lua.org/start.html)!'
   explanation: "Lua is a powerful and fast programming language that is easy to learn and use and to embed into your application."
   tags: [Lua]
+- date: 2025-07-30
+  tip: 'Use the [systemadmin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/systemadmin) plugin in ohmyzsh.'
+  explanation: "This plugin adds a series of aliases and functions which make a System Administrator's life easier."
+  tags: [ohmyzsh]

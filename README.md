@@ -128,3 +128,4 @@ So literally, kaizen means "change for the better."
 | 2025-07-27 | `safe_fn <- safely(some_function)` | `safely()` wraps a function and makes it return a result even if an error occurs. Instead of stopping execution, it returns a list with the actual result or error object. | r, functional programming |
 | 2025-07-28 | `purrr::pmap(list(list(1900), list(80), list(4)), \(x,y,z) x+y+z)` | Use `purrr::pmap()` to map over multiple input simultaneously. | r, functional programming |
 | 2025-07-29 | Learn [Lua](https://www.lua.org/start.html)! | Lua is a powerful and fast programming language that is easy to learn and use and to embed into your application. | Lua |
+| 2025-07-30 | Use the [systemadmin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/systemadmin) plugin in ohmyzsh. | This plugin adds a series of aliases and functions which make a System Administrator's life easier. | ohmyzsh |
