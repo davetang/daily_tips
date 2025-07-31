@@ -130,3 +130,4 @@ So literally, kaizen means "change for the better."
 | 2025-07-29 | Learn [Lua](https://www.lua.org/start.html)! | Lua is a powerful and fast programming language that is easy to learn and use and to embed into your application. | Lua |
 | 2025-07-30 | Use the [systemadmin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/systemadmin) plugin in ohmyzsh. | This plugin adds a series of aliases and functions which make a System Administrator's life easier. | ohmyzsh |
 | 2025-07-31 | Check out marimo! | marimo is an open-source reactive notebook for Python - reproducible, Git-friendly, AI-native, SQL built-in, executable as a script, shareable as an app. | python |
+| 2025-08-01 | Using GNU screen, `Ctrl-a [`, space, space, Esc, and then `Ctrl-a ]` to paste! | You can copy and paste from one GNU screen to another without using the mouse! | screen |
