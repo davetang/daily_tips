@@ -438,3 +438,7 @@
   tip: 'Using GNU screen, `Ctrl-a [`, space, space, Esc, and then `Ctrl-a ]` to paste!'
   explanation: "You can copy and paste from one GNU screen to another without using the mouse!"
   tags: [screen]
+- date: 2025-08-02
+  tip: '[Sign your Git commits](https://github.com/davetang/getting_started_with_git?tab=readme-ov-file#signing-commits) to confirm that you made the commit.'
+  explanation: "A signed commit is cryptographic proof that the commit came from you, using your GPG or SSH key."
+  tags: [git, github]
