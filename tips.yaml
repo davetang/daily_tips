@@ -442,3 +442,7 @@
   tip: '[Sign your Git commits](https://github.com/davetang/getting_started_with_git?tab=readme-ov-file#signing-commits) to confirm that you made the commit.'
   explanation: "A signed commit is cryptographic proof that the commit came from you, using your GPG or SSH key."
   tags: [git, github]
+- date: 2025-08-03
+  tip: 'Use GPG to encrypt and decrypt files.'
+  explanation: "Some notes on using GPG on my [bioinformatics tips page](https://davetang.github.io/bioinformatics_tips/security.html)."
+  tags: [security]

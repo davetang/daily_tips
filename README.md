@@ -132,3 +132,4 @@ So literally, kaizen means "change for the better."
 | 2025-07-31 | Check out marimo! | marimo is an open-source reactive notebook for Python - reproducible, Git-friendly, AI-native, SQL built-in, executable as a script, shareable as an app. | python |
 | 2025-08-01 | Using GNU screen, `Ctrl-a [`, space, space, Esc, and then `Ctrl-a ]` to paste! | You can copy and paste from one GNU screen to another without using the mouse! | screen |
 | 2025-08-02 | [Sign your Git commits](https://github.com/davetang/getting_started_with_git?tab=readme-ov-file#signing-commits) to confirm that you made the commit. | A signed commit is cryptographic proof that the commit came from you, using your GPG or SSH key. | git, github |
+| 2025-08-03 | Use GPG to encrypt and decrypt files. | Some notes on using GPG on my [bioinformatics tips page](https://davetang.github.io/bioinformatics_tips/security.html). | security |
