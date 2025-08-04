@@ -446,3 +446,7 @@
   tip: 'Use GPG to encrypt and decrypt files.'
   explanation: "Some notes on using GPG on my [bioinformatics tips page](https://davetang.github.io/bioinformatics_tips/security.html)."
   tags: [security]
+- date: 2025-08-04
+  tip: 'In `.screenrc` you can specify how many windows to create when you start `screen`!'
+  explanation: "Add `screen -t monitor 0 glances` where `monitor` is the name, `0` is the screen number, and `glances` is the command to run. Add as many entries as you need!"
+  tags: [screen]
