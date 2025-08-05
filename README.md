@@ -134,3 +134,4 @@ So literally, kaizen means "change for the better."
 | 2025-08-02 | [Sign your Git commits](https://github.com/davetang/getting_started_with_git?tab=readme-ov-file#signing-commits) to confirm that you made the commit. | A signed commit is cryptographic proof that the commit came from you, using your GPG or SSH key. | git, github |
 | 2025-08-03 | Use GPG to encrypt and decrypt files. | Some notes on using GPG on my [bioinformatics tips page](https://davetang.github.io/bioinformatics_tips/security.html). | security |
 | 2025-08-04 | In `.screenrc` you can specify how many windows to create when you start `screen`! | Add `screen -t monitor 0 glances` where `monitor` is the name, `0` is the screen number, and `glances` is the command to run. Add as many entries as you need! | screen |
+| 2025-08-05 | `ssh-copy-id -i ~/.ssh/id_rsa.pub username@server-ip` | Use `ssh-copy-id` to copy a public key to a server, so you can SSH using your private key. | Linux |

@@ -450,3 +450,7 @@
   tip: 'In `.screenrc` you can specify how many windows to create when you start `screen`!'
   explanation: "Add `screen -t monitor 0 glances` where `monitor` is the name, `0` is the screen number, and `glances` is the command to run. Add as many entries as you need!"
   tags: [screen]
+- date: 2025-08-05
+  tip: '`ssh-copy-id -i ~/.ssh/id_rsa.pub username@server-ip`'
+  explanation: "Use `ssh-copy-id` to copy a public key to a server, so you can SSH using your private key."
+  tags: [Linux]
