@@ -136,3 +136,4 @@ So literally, kaizen means "change for the better."
 | 2025-08-04 | In `.screenrc` you can specify how many windows to create when you start `screen`! | Add `screen -t monitor 0 glances` where `monitor` is the name, `0` is the screen number, and `glances` is the command to run. Add as many entries as you need! | screen |
 | 2025-08-05 | `ssh-copy-id -i ~/.ssh/id_rsa.pub username@server-ip` | Use `ssh-copy-id` to copy a public key to a server, so you can SSH using your private key. | Linux |
 | 2025-08-06 | Put `bindkey -v` in `~/.zshrc` to enable Zsh Vi mode! | Your Zsh shell behaves like a mini Vim editor for command-line editing! | zsh |
+| 2025-08-07 | `git clone https://github.com/jeffreytse/zsh-vi-mode $ZSH_CUSTOM/plugins/zsh-vi-mode` | [zsh-vi-mode](https://github.com/jeffreytse/zsh-vi-mode) is a better and friendly vi(vim) mode plugin for Zsh. | zsh |

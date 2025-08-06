@@ -458,3 +458,7 @@
   tip: 'Put `bindkey -v` in `~/.zshrc` to enable Zsh Vi mode!'
   explanation: "Your Zsh shell behaves like a mini Vim editor for command-line editing!"
   tags: [zsh]
+- date: 2025-08-07
+  tip: '`git clone https://github.com/jeffreytse/zsh-vi-mode $ZSH_CUSTOM/plugins/zsh-vi-mode`'
+  explanation: '[zsh-vi-mode](https://github.com/jeffreytse/zsh-vi-mode) is a better and friendly vi(vim) mode plugin for Zsh.'
+  tags: [zsh]
