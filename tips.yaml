@@ -454,3 +454,7 @@
   tip: '`ssh-copy-id -i ~/.ssh/id_rsa.pub username@server-ip`'
   explanation: "Use `ssh-copy-id` to copy a public key to a server, so you can SSH using your private key."
   tags: [Linux]
+- date: 2025-08-06
+  tip: 'Put `bindkey -v` in `~/.zshrc` to enable Zsh Vi mode!'
+  explanation: "Your Zsh shell behaves like a mini Vim editor for command-line editing!"
+  tags: [zsh]
