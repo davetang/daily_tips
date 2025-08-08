@@ -137,3 +137,4 @@ So literally, kaizen means "change for the better."
 | 2025-08-05 | `ssh-copy-id -i ~/.ssh/id_rsa.pub username@server-ip` | Use `ssh-copy-id` to copy a public key to a server, so you can SSH using your private key. | Linux |
 | 2025-08-06 | Put `bindkey -v` in `~/.zshrc` to enable Zsh Vi mode! | Your Zsh shell behaves like a mini Vim editor for command-line editing! | zsh |
 | 2025-08-07 | `git clone https://github.com/jeffreytse/zsh-vi-mode $ZSH_CUSTOM/plugins/zsh-vi-mode` | [zsh-vi-mode](https://github.com/jeffreytse/zsh-vi-mode) is a better and friendly vi(vim) mode plugin for Zsh. | zsh |
+| 2025-08-08 | `:Gdiffsplit` | When using the vim-fugitive plugin `:Gdiffsplit` will show you the previous version in a split window! | vim |

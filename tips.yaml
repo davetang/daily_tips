@@ -462,3 +462,7 @@
   tip: '`git clone https://github.com/jeffreytse/zsh-vi-mode $ZSH_CUSTOM/plugins/zsh-vi-mode`'
   explanation: '[zsh-vi-mode](https://github.com/jeffreytse/zsh-vi-mode) is a better and friendly vi(vim) mode plugin for Zsh.'
   tags: [zsh]
+- date: 2025-08-08
+  tip: '`:Gdiffsplit`'
+  explanation: 'When using the vim-fugitive plugin `:Gdiffsplit` will show you the previous version in a split window!'
+  tags: [vim]
