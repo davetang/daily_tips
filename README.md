@@ -139,3 +139,4 @@ So literally, kaizen means "change for the better."
 | 2025-08-07 | `git clone https://github.com/jeffreytse/zsh-vi-mode $ZSH_CUSTOM/plugins/zsh-vi-mode` | [zsh-vi-mode](https://github.com/jeffreytse/zsh-vi-mode) is a better and friendly vi(vim) mode plugin for Zsh. | zsh |
 | 2025-08-08 | `:Gdiffsplit` | When using the vim-fugitive plugin `:Gdiffsplit` will show you the previous version in a split window! | vim |
 | 2025-08-09 | Use `^` to go to the first non-blank character. | Instead of pressing `0` and `w`, just press `^` to move to the first non-blank character on the current line; great for indented code! | vim |
+| 2025-08-10 | Use `zf` to fold lines and `zo` to open folded lines in Vim. | Sometimes it is useful to fold, i.e., hide, lines; use `zf` and `zo` to fold and open, respectively in Vim. | vim |
