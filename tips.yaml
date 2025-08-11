@@ -474,3 +474,7 @@
   tip: 'Use `zf` to fold lines and `zo` to open folded lines in Vim.'
   explanation: 'Sometimes it is useful to fold, i.e., hide, lines; use `zf` and `zo` to fold and open, respectively in Vim.'
   tags: [vim]
+- date: 2025-08-11
+  tip: 'Use ` `` ` to move back and forth between the last jump in Vim.'
+  explanation: 'Searching, marks, `gg`, and more counts as jumps. For example, after searching use ` `` ` to move back to where you were!'
+  tags: [vim]

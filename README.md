@@ -140,3 +140,4 @@ So literally, kaizen means "change for the better."
 | 2025-08-08 | `:Gdiffsplit` | When using the vim-fugitive plugin `:Gdiffsplit` will show you the previous version in a split window! | vim |
 | 2025-08-09 | Use `^` to go to the first non-blank character. | Instead of pressing `0` and `w`, just press `^` to move to the first non-blank character on the current line; great for indented code! | vim |
 | 2025-08-10 | Use `zf` to fold lines and `zo` to open folded lines in Vim. | Sometimes it is useful to fold, i.e., hide, lines; use `zf` and `zo` to fold and open, respectively in Vim. | vim |
+| 2025-08-11 | Use ` `` ` to move back and forth between the last jump in Vim. | Searching, marks, `gg`, and more counts as jumps. For example, after searching use ` `` ` to move back to where you were! | vim |
