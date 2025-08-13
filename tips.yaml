@@ -482,3 +482,7 @@
   tip: 'Press `Shift+Command+G` to bring up the Go To window in Finder.'
   explanation: 'At least on my computer, Finder does not have a shortcut to click on to bring me to the root directory.'
   tags: [macOS]
+- date: 2025-08-13
+  tip: 'Use `local` inside functions of shell scripts to restrict the scope!'
+  explanation: 'Variables are global within a shell script unless you explicitly mark them local inside a function!'
+  tags: [shell, scripting]

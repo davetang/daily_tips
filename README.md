@@ -142,3 +142,4 @@ So literally, kaizen means "change for the better."
 | 2025-08-10 | Use `zf` to fold lines and `zo` to open folded lines in Vim. | Sometimes it is useful to fold, i.e., hide, lines; use `zf` and `zo` to fold and open, respectively in Vim. | vim |
 | 2025-08-11 | Use ` `` ` to move back and forth between the last jump in Vim. | Searching, marks, `gg`, and more counts as jumps. For example, after searching use ` `` ` to move back to where you were! | vim |
 | 2025-08-12 | Press `Shift+Command+G` to bring up the Go To window in Finder. | At least on my computer, Finder does not have a shortcut to click on to bring me to the root directory. | macOS |
+| 2025-08-13 | Use `local` inside functions of shell scripts to restrict the scope! | Variables are global within a shell script unless you explicitly mark them local inside a function! | shell, scripting |
