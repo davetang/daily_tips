@@ -486,3 +486,7 @@
   tip: 'Use `local` inside functions of shell scripts to restrict the scope!'
   explanation: 'Variables are global within a shell script unless you explicitly mark them local inside a function!'
   tags: [shell, scripting]
+- date: 2025-08-14
+  tip: 'If you edit Markdown files using Vim, use `[[` and `]]` to jump header to header!'
+  explanation: '`[[` and `]]` are used to jump from function to function but works for headers in Markdown files!'
+  tags: [vim, markdown]
