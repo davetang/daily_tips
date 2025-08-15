@@ -144,3 +144,4 @@ So literally, kaizen means "change for the better."
 | 2025-08-12 | Press `Shift+Command+G` to bring up the Go To window in Finder. | At least on my computer, Finder does not have a shortcut to click on to bring me to the root directory. | macOS |
 | 2025-08-13 | Use `local` inside functions of shell scripts to restrict the scope! | Variables are global within a shell script unless you explicitly mark them local inside a function! | shell, scripting |
 | 2025-08-14 | If you edit Markdown files using Vim, use `[[` and `]]` to jump header to header! | `[[` and `]]` are used to jump from function to function but works for headers in Markdown files! | vim, markdown |
+| 2025-08-15 | Use `:reg` to view the contents of registers in Vim. | In Vim, registers are like named clipboards; after seeing the registers using `:reg`, type `"2p` to paste from the second register. | vim |

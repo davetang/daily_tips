@@ -490,3 +490,7 @@
   tip: 'If you edit Markdown files using Vim, use `[[` and `]]` to jump header to header!'
   explanation: '`[[` and `]]` are used to jump from function to function but works for headers in Markdown files!'
   tags: [vim, markdown]
+- date: 2025-08-15
+  tip: 'Use `:reg` to view the contents of registers in Vim.'
+  explanation: 'In Vim, registers are like named clipboards; after seeing the registers using `:reg`, type `"2p` to paste from the second register.'
+  tags: [vim]
