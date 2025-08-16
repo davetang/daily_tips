@@ -494,3 +494,7 @@
   tip: 'Use `:reg` to view the contents of registers in Vim.'
   explanation: 'In Vim, registers are like named clipboards; after seeing the registers using `:reg`, type `"2p` to paste from the second register.'
   tags: [vim]
+- date: 2025-08-16
+  tip: 'Use `screen -x` to attach to the same session simultaneously!!'
+  explanation: 'Find the screen session using `screen -ls` then `screen -x 284771` where 284771 is the screen session ID.'
+  tags: [screen]
