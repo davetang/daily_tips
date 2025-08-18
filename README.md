@@ -147,3 +147,4 @@ So literally, kaizen means "change for the better."
 | 2025-08-15 | Use `:reg` to view the contents of registers in Vim. | In Vim, registers are like named clipboards; after seeing the registers using `:reg`, type `"2p` to paste from the second register. | vim |
 | 2025-08-16 | Use `screen -x` to attach to the same session simultaneously!! | Find the screen session using `screen -ls` then `screen -x 284771` where 284771 is the screen session ID. | screen |
 | 2025-08-17 | According to Shannon, information is present whenever a signal is transmitted from one place (sender) to another (receiver). | It does not matter what kind of signal, it could be words, a picture, or even electric impulses. | information theory |
+| 2025-08-18 | In Linux, `<`, `<<`, and `<<<` are redirection operators used for input handling. | `<` reads from an existing file; `<<` creates temporary multi-line input; `<<<` provides immediate string input. | Linux |

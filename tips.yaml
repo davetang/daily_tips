@@ -502,3 +502,7 @@
   tip: 'According to Shannon, information is present whenever a signal is transmitted from one place (sender) to another (receiver).'
   explanation: 'It does not matter what kind of signal, it could be words, a picture, or even electric impulses.'
   tags: [information theory]
+- date: 2025-08-18
+  tip: 'In Linux, `<`, `<<`, and `<<<` are redirection operators used for input handling.'
+  explanation: '`<` reads from an existing file; `<<` creates temporary multi-line input; `<<<` provides immediate string input.'
+  tags: [Linux]
