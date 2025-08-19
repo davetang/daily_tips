@@ -506,3 +506,7 @@
   tip: 'In Linux, `<`, `<<`, and `<<<` are redirection operators used for input handling.'
   explanation: '`<` reads from an existing file; `<<` creates temporary multi-line input; `<<<` provides immediate string input.'
   tags: [Linux]
+- date: 2025-08-19
+  tip: 'Use a block, i.e., `{}` to group together packages to keep quiet: `suppressPackageStartupMessages({ library(ggplot2) })`'
+  explanation: '`{}` denote a block and they allow you to group multiple expressions together and treat them as a single expression.'
+  tags: [r]
