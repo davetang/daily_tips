@@ -510,3 +510,7 @@
   tip: 'Use a block, i.e., `{}` to group together packages to keep quiet: `suppressPackageStartupMessages({ library(ggplot2) })`'
   explanation: '`{}` denote a block and they allow you to group multiple expressions together and treat them as a single expression.'
   tags: [r]
+- date: 2025-08-20
+  tip: '`git config --global completion.branch true`'
+  explanation: 'Enable autocompletion for branch names.'
+  tags: [git, config]
