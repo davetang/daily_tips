@@ -514,3 +514,7 @@
   tip: '`git config --global completion.branch true`'
   explanation: 'Enable autocompletion for branch names.'
   tags: [git, config]
+- date: 2025-08-21
+  tip: 'In GNU Make `=` is recursive/late assignment and `:=` simple/early assignment.'
+  explanation: '`=` is similar to lazy evaluation whereas `:=` is similar to eager evaluation.'
+  tags: [make, reminder]
