@@ -151,3 +151,4 @@ So literally, kaizen means "change for the better."
 | 2025-08-19 | Use a block, i.e., `{}` to group together packages to keep quiet: `suppressPackageStartupMessages({ library(ggplot2) })` | `{}` denote a block and they allow you to group multiple expressions together and treat them as a single expression. | r |
 | 2025-08-20 | `git config --global completion.branch true` | Enable autocompletion for branch names. | git, config |
 | 2025-08-21 | In GNU Make `=` is recursive/late assignment and `:=` simple/early assignment. | `=` is similar to lazy evaluation whereas `:=` is similar to eager evaluation. | make, reminder |
+| 2025-08-22 | `pandoc README.md -s -o index.html -f gfm --highlight-style=pygments` | Convert a GitHub flavoured Markdown file to standalone HTML with syntax highlighting! | pandoc |

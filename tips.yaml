@@ -518,3 +518,7 @@
   tip: 'In GNU Make `=` is recursive/late assignment and `:=` simple/early assignment.'
   explanation: '`=` is similar to lazy evaluation whereas `:=` is similar to eager evaluation.'
   tags: [make, reminder]
+- date: 2025-08-22
+  tip: '`pandoc README.md -s -o index.html -f gfm --highlight-style=pygments`'
+  explanation: 'Convert a GitHub flavoured Markdown file to standalone HTML with syntax highlighting!'
+  tags: [pandoc]
