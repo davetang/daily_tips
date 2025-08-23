@@ -152,3 +152,4 @@ So literally, kaizen means "change for the better."
 | 2025-08-20 | `git config --global completion.branch true` | Enable autocompletion for branch names. | git, config |
 | 2025-08-21 | In GNU Make `=` is recursive/late assignment and `:=` simple/early assignment. | `=` is similar to lazy evaluation whereas `:=` is similar to eager evaluation. | make, reminder |
 | 2025-08-22 | `pandoc README.md -s -o index.html -f gfm --highlight-style=pygments` | Convert a GitHub flavoured Markdown file to standalone HTML with syntax highlighting! | pandoc |
+| 2025-08-23 | Use the [z](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/z) ohmyzsh plugin to access commonly visited directories. | This plugin defines the z command that tracks your most visited directories and allows you to access them with very few keystrokes. | ohmyzsh |

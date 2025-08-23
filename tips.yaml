@@ -522,3 +522,7 @@
   tip: '`pandoc README.md -s -o index.html -f gfm --highlight-style=pygments`'
   explanation: 'Convert a GitHub flavoured Markdown file to standalone HTML with syntax highlighting!'
   tags: [pandoc]
+- date: 2025-08-23
+  tip: 'Use the [z](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/z) ohmyzsh plugin to access commonly visited directories.'
+  explanation: 'This plugin defines the z command that tracks your most visited directories and allows you to access them with very few keystrokes.'
+  tags: [ohmyzsh]
