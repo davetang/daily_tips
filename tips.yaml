@@ -526,3 +526,7 @@
   tip: 'Use the [z](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/z) ohmyzsh plugin to access commonly visited directories.'
   explanation: 'This plugin defines the z command that tracks your most visited directories and allows you to access them with very few keystrokes.'
   tags: [ohmyzsh]
+- date: 2025-08-24
+  tip: 'Use the [copybuffer](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copybuffer) ohmyzsh plugin to copy the current text in the command line to the system clipboard!'
+  explanation: 'Instead of using the mouse to highlight and copy text in the command line, just press `ctrl-o` with the copybuffer plugin!'
+  tags: [ohmyzsh]
