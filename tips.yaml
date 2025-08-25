@@ -530,3 +530,7 @@
   tip: 'Use the [copybuffer](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copybuffer) ohmyzsh plugin to copy the current text in the command line to the system clipboard!'
   explanation: 'Instead of using the mouse to highlight and copy text in the command line, just press `ctrl-o` with the copybuffer plugin!'
   tags: [ohmyzsh]
+- date: 2025-08-25
+  tip: 'Use [lazy.nvim](https://github.com/folke/lazy.nvim) to manage plugins for Nvim.'
+  explanation: 'Plugins add a lot more functionality into Nvim!'
+  tags: [Nvim]
