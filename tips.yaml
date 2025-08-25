@@ -15,8 +15,8 @@
   explanation: "Opens your last command with `$EDITOR` and after you edit and save, the command runs immediately."
   tags: [shell, productivity]
 - date: 2025-04-18
-  tip: "`diff -y file1.txt file2.txt`"
-  explanation: "`diff -y` provides a side-by-side comparison to easily spot differences."
+  tip: "`diff -y --color=always file1.txt file2.txt`"
+  explanation: "`diff -y` provides a side-by-side comparison to easily spot differences with colour!"
   tags: [shell, productivity]
 - date: 2025-04-19
   tip: "`script mysession.log`"
