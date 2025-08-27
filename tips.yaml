@@ -538,3 +538,7 @@
   tip: "`singularity exec my_image /bin/bash -c 'echo $SINGULARITY_NAME'`"
   explanation: "Use `$SINGULARITY_NAME` to get the name of the Singularity image when inside a container!"
   tags: [singularity]
+- date: 2025-08-27
+  tip: '`build/output.txt: input.txt | build`'
+  explanation: 'Use order-only prerequisites to only make sure something exists, but do not force rebuilds if they change!'
+  tags: [make]

@@ -156,3 +156,4 @@ So literally, kaizen means "change for the better."
 | 2025-08-24 | Use the [copybuffer](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copybuffer) ohmyzsh plugin to copy the current text in the command line to the system clipboard! | Instead of using the mouse to highlight and copy text in the command line, just press `ctrl-o` with the copybuffer plugin! | ohmyzsh |
 | 2025-08-25 | Use [lazy.nvim](https://github.com/folke/lazy.nvim) to manage plugins for Nvim. | Plugins add a lot more functionality into Nvim! | Nvim |
 | 2025-08-26 | `singularity exec my_image /bin/bash -c 'echo $SINGULARITY_NAME'` | Use `$SINGULARITY_NAME` to get the name of the Singularity image when inside a container! | singularity |
+| 2025-08-27 | `build/output.txt: input.txt \| build` | Use order-only prerequisites to only make sure something exists, but do not force rebuilds if they change! | make |
