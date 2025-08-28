@@ -542,3 +542,7 @@
   tip: '`build/output.txt: input.txt | build`'
   explanation: 'Use order-only prerequisites to only make sure something exists, but do not force rebuilds if they change!'
   tags: [make]
+- date: 2025-08-28
+  tip: 'Run GNU make with `-d` like `make -d` to get debugging information!'
+  explanation: 'I spent the last hour trying to figure out why my target kept rebuilding and finally found out why with `-d`!'
+  tags: [make]

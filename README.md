@@ -157,3 +157,4 @@ So literally, kaizen means "change for the better."
 | 2025-08-25 | Use [lazy.nvim](https://github.com/folke/lazy.nvim) to manage plugins for Nvim. | Plugins add a lot more functionality into Nvim! | Nvim |
 | 2025-08-26 | `singularity exec my_image /bin/bash -c 'echo $SINGULARITY_NAME'` | Use `$SINGULARITY_NAME` to get the name of the Singularity image when inside a container! | singularity |
 | 2025-08-27 | `build/output.txt: input.txt \| build` | Use order-only prerequisites to only make sure something exists, but do not force rebuilds if they change! | make |
+| 2025-08-28 | Run GNU make with `-d` like `make -d` to get debugging information! | I spent the last hour trying to figure out why my target kept rebuilding and finally found out why with `-d`! | make |
