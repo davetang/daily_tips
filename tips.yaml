@@ -546,3 +546,7 @@
   tip: 'Run GNU make with `-d` like `make -d` to get debugging information!'
   explanation: 'I spent the last hour trying to figure out why my target kept rebuilding and finally found out why with `-d`!'
   tags: [make]
+- date: 2025-08-29
+  tip: "`tail -f !$`"
+  explanation: "`!$` expands to the last argument of the previous command; you can even type `!$` and press tab to get the last argument!"
+  tags: [shell, productivity]
