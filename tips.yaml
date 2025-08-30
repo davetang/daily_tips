@@ -550,3 +550,7 @@
   tip: "`tail -f !$`"
   explanation: "`!$` expands to the last argument of the previous command; you can even type `!$` and press tab to get the last argument!"
   tags: [shell, productivity]
+- date: 2025-08-30
+  tip: "Don't ignore your personal life because it affects your professional life!"
+  explanation: 'I wrote a short blog post [on professionalism](https://davetang.org/muse/2025/08/30/on-professionalism/).'
+  tags: [self-help, habits]
