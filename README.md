@@ -160,3 +160,4 @@ So literally, kaizen means "change for the better."
 | 2025-08-28 | Run GNU make with `-d` like `make -d` to get debugging information! | I spent the last hour trying to figure out why my target kept rebuilding and finally found out why with `-d`! | make |
 | 2025-08-29 | `tail -f !$` | `!$` expands to the last argument of the previous command; you can even type `!$` and press tab to get the last argument! | shell, productivity |
 | 2025-08-30 | Don't ignore your personal life because it affects your professional life! | I wrote a short blog post [on professionalism](https://davetang.org/muse/2025/08/30/on-professionalism/). | self-help, habits |
+| 2025-08-31 | Discrete Mutual Information (DMI) measures how much information one categorical variable contains about another. | If two variables are independent, DMI = 0 (knowing one does not help you guess the other). | information theory |
