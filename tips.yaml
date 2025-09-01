@@ -558,3 +558,7 @@
   tip: 'Discrete Mutual Information (DMI) measures how much information one categorical variable contains about another.'
   explanation: 'If two variables are independent, DMI = 0 (knowing one does not help you guess the other).'
   tags: [information theory]
+- date: 2025-09-01
+  tip: 'Use [quarto-ext/lightbox](https://github.com/quarto-ext/lightbox) to create lightbox treatments for images in your HTML documents!'
+  explanation: 'See the [Example Lightbox Document](https://quarto-ext.github.io/lightbox/) for a demo!'
+  tags: [quarto]
