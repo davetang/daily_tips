@@ -162,3 +162,4 @@ So literally, kaizen means "change for the better."
 | 2025-08-30 | Don't ignore your personal life because it affects your professional life! | I wrote a short blog post [on professionalism](https://davetang.org/muse/2025/08/30/on-professionalism/). | self-help, habits |
 | 2025-08-31 | Discrete Mutual Information (DMI) measures how much information one categorical variable contains about another. | If two variables are independent, DMI = 0 (knowing one does not help you guess the other). | information theory |
 | 2025-09-01 | Use [quarto-ext/lightbox](https://github.com/quarto-ext/lightbox) to create lightbox treatments for images in your HTML documents! | See the [Example Lightbox Document](https://quarto-ext.github.io/lightbox/) for a demo! | quarto |
+| 2025-09-02 | `convert input.png -trim +repage output.png` | Use ImageMagick to trim the whitespace from an image; the `+repage` parameter will reset the page size. | imagemagick |

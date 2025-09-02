@@ -562,3 +562,7 @@
   tip: 'Use [quarto-ext/lightbox](https://github.com/quarto-ext/lightbox) to create lightbox treatments for images in your HTML documents!'
   explanation: 'See the [Example Lightbox Document](https://quarto-ext.github.io/lightbox/) for a demo!'
   tags: [quarto]
+- date: 2025-09-02
+  tip: '`convert input.png -trim +repage output.png`'
+  explanation: 'Use ImageMagick to trim the whitespace from an image; the `+repage` parameter will reset the page size.'
+  tags: [imagemagick]
