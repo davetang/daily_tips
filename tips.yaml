@@ -566,3 +566,7 @@
   tip: '`convert input.png -trim +repage output.png`'
   explanation: 'Use ImageMagick to trim the whitespace from an image; the `+repage` parameter will reset the page size.'
   tags: [imagemagick]
+- date: 2025-09-03
+  tip: '[Queueing theory](https://en.wikipedia.org/wiki/Queueing_theory) is the mathematical study of waiting lines, or queues.'
+  explanation: 'A queueing model is constructed so that queue lengths and waiting time can be predicted.'
+  tags: [queueing]

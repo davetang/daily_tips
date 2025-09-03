@@ -163,3 +163,4 @@ So literally, kaizen means "change for the better."
 | 2025-08-31 | Discrete Mutual Information (DMI) measures how much information one categorical variable contains about another. | If two variables are independent, DMI = 0 (knowing one does not help you guess the other). | information theory |
 | 2025-09-01 | Use [quarto-ext/lightbox](https://github.com/quarto-ext/lightbox) to create lightbox treatments for images in your HTML documents! | See the [Example Lightbox Document](https://quarto-ext.github.io/lightbox/) for a demo! | quarto |
 | 2025-09-02 | `convert input.png -trim +repage output.png` | Use ImageMagick to trim the whitespace from an image; the `+repage` parameter will reset the page size. | imagemagick |
+| 2025-09-03 | [Queueing theory](https://en.wikipedia.org/wiki/Queueing_theory) is the mathematical study of waiting lines, or queues. | A queueing model is constructed so that queue lengths and waiting time can be predicted. | queueing |
