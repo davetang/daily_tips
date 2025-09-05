@@ -165,3 +165,4 @@ So literally, kaizen means "change for the better."
 | 2025-09-02 | `convert input.png -trim +repage output.png` | Use ImageMagick to trim the whitespace from an image; the `+repage` parameter will reset the page size. | imagemagick |
 | 2025-09-03 | [Queueing theory](https://en.wikipedia.org/wiki/Queueing_theory) is the mathematical study of waiting lines, or queues. | A queueing model is constructed so that queue lengths and waiting time can be predicted. | queueing |
 | 2025-09-04 | `nvim -d file1 file2` | Start Nvim in diff mode which can highlight differences between files side by side and apply changes between files! | Nvim |
+| 2025-09-05 | `git log -p -- file.txt` | By default, `git log` does not generate any diff output; use `-p` or `--patch` to show all changes of `file.txt`! | git |

@@ -574,3 +574,7 @@
   tip: '`nvim -d file1 file2`'
   explanation: 'Start Nvim in diff mode which can highlight differences between files side by side and apply changes between files!'
   tags: [Nvim]
+- date: 2025-09-05
+  tip: '`git log -p -- file.txt`'
+  explanation: 'By default, `git log` does not generate any diff output; use `-p` or `--patch` to show all changes of `file.txt`!'
+  tags: [git]
