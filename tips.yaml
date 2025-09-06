@@ -578,3 +578,7 @@
   tip: '`git log -p -- file.txt`'
   explanation: 'By default, `git log` does not generate any diff output; use `-p` or `--patch` to show all changes of `file.txt`!'
   tags: [git]
+- date: 2025-09-06
+  tip: 'Use Common Table Expressions (CTEs) (`WITH`) to simplify complex queries!'
+  explanation: 'A CTE is a temporary, named result set defined at the start of a query using the `WITH` keyword; it is like creating a "virtual table" that you can reuse inside your query!'
+  tags: [sql]
