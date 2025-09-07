@@ -167,3 +167,4 @@ So literally, kaizen means "change for the better."
 | 2025-09-04 | `nvim -d file1 file2` | Start Nvim in diff mode which can highlight differences between files side by side and apply changes between files! | Nvim |
 | 2025-09-05 | `git log -p -- file.txt` | By default, `git log` does not generate any diff output; use `-p` or `--patch` to show all changes of `file.txt`! | git |
 | 2025-09-06 | Use Common Table Expressions (CTEs) (`WITH`) to simplify complex queries! | A CTE is a temporary, named result set defined at the start of a query using the `WITH` keyword; it is like creating a "virtual table" that you can reuse inside your query! | sql |
+| 2025-09-07 | Press Shift+Insert to paste in MobaXTerm. | Instead of using the right mouse button to paste, use Shift+Insert to paste when using MobaXTerm! | MobaXTerm |

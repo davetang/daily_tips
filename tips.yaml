@@ -582,3 +582,7 @@
   tip: 'Use Common Table Expressions (CTEs) (`WITH`) to simplify complex queries!'
   explanation: 'A CTE is a temporary, named result set defined at the start of a query using the `WITH` keyword; it is like creating a "virtual table" that you can reuse inside your query!'
   tags: [sql]
+- date: 2025-09-07
+  tip: 'Press Shift+Insert to paste in MobaXTerm.'
+  explanation: 'Instead of using the right mouse button to paste, use Shift+Insert to paste when using MobaXTerm!'
+  tags: [MobaXTerm]
