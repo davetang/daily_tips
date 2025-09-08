@@ -168,3 +168,4 @@ So literally, kaizen means "change for the better."
 | 2025-09-05 | `git log -p -- file.txt` | By default, `git log` does not generate any diff output; use `-p` or `--patch` to show all changes of `file.txt`! | git |
 | 2025-09-06 | Use Common Table Expressions (CTEs) (`WITH`) to simplify complex queries! | A CTE is a temporary, named result set defined at the start of a query using the `WITH` keyword; it is like creating a "virtual table" that you can reuse inside your query! | sql |
 | 2025-09-07 | Press Shift+Insert to paste in MobaXTerm. | Instead of using the right mouse button to paste, use Shift+Insert to paste when using MobaXTerm! | MobaXTerm |
+| 2025-09-08 | `awk '$1=$1' test.txt` | AWK trick to turn one or more spaces (by default) into just one space. | awk |

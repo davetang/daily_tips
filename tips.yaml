@@ -586,3 +586,7 @@
   tip: 'Press Shift+Insert to paste in MobaXTerm.'
   explanation: 'Instead of using the right mouse button to paste, use Shift+Insert to paste when using MobaXTerm!'
   tags: [MobaXTerm]
+- date: 2025-09-08
+  tip: "`awk '$1=$1' test.txt`"
+  explanation: 'AWK trick to turn one or more spaces (by default) into just one space.'
+  tags: [awk]
