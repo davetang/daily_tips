@@ -590,3 +590,7 @@
   tip: "`awk '$1=$1' test.txt`"
   explanation: 'AWK trick to turn one or more spaces (by default) into just one space.'
   tags: [awk]
+- date: 2025-09-09
+  tip: "Use the `combn()` function in base R to generate pairwise combinations"
+  explanation: '`combn()` [can also be used with a function](https://github.com/davetang/learning_r?tab=readme-ov-file#useful-tips) to apply the function across pairwise combinations!'
+  tags: [r]
