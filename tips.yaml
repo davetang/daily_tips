@@ -598,3 +598,7 @@
   tip: 'Use `(` and `)` to jump to the previous and next sentence. Use `{` and `}` for paragraphs!'
   explanation: 'If you edit written text in Vim, make sure you use `(`, `)`, `{`, and `}`!'
   tags: [vim]
+- date: 2025-09-11
+  tip: 'After yanking a word, use `cw<C-r>0` to replace a word with the yanked word!'
+  explanation: '`<C-r>` is Control+r and `0` is register zero, which holds the text from the most recent yank.'
+  tags: [vim]
