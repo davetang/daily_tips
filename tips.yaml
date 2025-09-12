@@ -602,3 +602,7 @@
   tip: 'After yanking a word, use `cw<C-r>0` to replace a word with the yanked word!'
   explanation: '`<C-r>` is Control+r and `0` is register zero, which holds the text from the most recent yank.'
   tags: [vim]
+- date: 2025-09-12
+  tip: 'Use `]c` and `[c` to jump to the next and previous hunk. Use `]d` and `[d` to jump to the next and previous diagnostic.'
+  explanation: 'In Vim use `]c`, `[c`, `]d`, and `[d` to jump to hunks and diagnostics!'
+  tags: [vim]

@@ -172,3 +172,4 @@ So literally, kaizen means "change for the better."
 | 2025-09-09 | Use the `combn()` function in base R to generate pairwise combinations | `combn()` [can also be used with a function](https://github.com/davetang/learning_r?tab=readme-ov-file#useful-tips) to apply the function across pairwise combinations! | r |
 | 2025-09-10 | Use `(` and `)` to jump to the previous and next sentence. Use `{` and `}` for paragraphs! | If you edit written text in Vim, make sure you use `(`, `)`, `{`, and `}`! | vim |
 | 2025-09-11 | After yanking a word, use `cw<C-r>0` to replace a word with the yanked word! | `<C-r>` is Control+r and `0` is register zero, which holds the text from the most recent yank. | vim |
+| 2025-09-12 | Use `]c` and `[c` to jump to the next and previous hunk. Use `]d` and `[d` to jump to the next and previous diagnostic. | In Vim use `]c`, `[c`, `]d`, and `[d` to jump to hunks and diagnostics! | vim |
