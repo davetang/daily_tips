@@ -174,3 +174,4 @@ So literally, kaizen means "change for the better."
 | 2025-09-11 | After yanking a word, use `cw<C-r>0` to replace a word with the yanked word! | `<C-r>` is Control+r and `0` is register zero, which holds the text from the most recent yank. | vim |
 | 2025-09-12 | Use `]c` and `[c` to jump to the next and previous hunk. Use `]d` and `[d` to jump to the next and previous diagnostic. | In Vim use `]c`, `[c`, `]d`, and `[d` to jump to hunks and diagnostics! | vim |
 | 2025-09-13 | `vim.keymap.set({mode}, {lhs}, {rhs}, {opts})` | Use `vim.keymap.set()` to set key maps in Nvim. | Nvim |
+| 2025-09-14 | Use `:terminal` to run an interactive shell inside a Neovim buffer! | When in the terminal, hold Ctrl, press \, then n to go to Normal mode where you can yank stuff etc. | Nvim |

@@ -610,3 +610,7 @@
   tip: '`vim.keymap.set({mode}, {lhs}, {rhs}, {opts})`'
   explanation: 'Use `vim.keymap.set()` to set key maps in Nvim.'
   tags: [Nvim]
+- date: 2025-09-14
+  tip: 'Use `:terminal` to run an interactive shell inside a Neovim buffer!'
+  explanation: 'When in the terminal, hold Ctrl, press \, then n to go to Normal mode where you can yank stuff etc.'
+  tags: [Nvim]
