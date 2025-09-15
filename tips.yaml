@@ -9,7 +9,7 @@
 - date: 2025-04-16
   tip: "Use `purrr::walk()` for side effects."
   explanation: "When you do not care about the return value, use `purrr::walk()` instead of `purrr::map()`."
-  tags: [r, functional programming]
+  tags: [rstats, functional programming]
 - date: 2025-04-17
   tip: "Use `fc` to Fix Command."
   explanation: "Opens your last command with `$EDITOR` and after you edit and save, the command runs immediately."
@@ -37,7 +37,7 @@
 - date: 2025-04-23
   tip: "Consider using `tryCatch()` over `stopifnot()`."
   explanation: "`tryCatch()` can handle and recover from errors, while `stopifnot()` halts execution."
-  tags: [r, defensive programming]
+  tags: [rstats, defensive programming]
 - date: 2025-04-24
   tip: "`apropos unzip`"
   explanation: "If you know what a command does, but not the name use `apropos` to search the man pages!"
@@ -57,7 +57,7 @@
 - date: 2025-04-28
   tip: "Use the dot placeholder with {purrr}."
   explanation: "`purrr::map_int(1:5, ~ . + 1)` vs. `purrr::map_int(1:5, function(x) x + 1)`."
-  tags: [r, functional programming]
+  tags: [rstats, functional programming]
 - date: 2025-04-29
   tip: "Use `date` and `bc` to measure elapsed time."
   explanation: 'Use `$(date +%s.%N)` to get times then use `echo "${END} - ${START}" | bc` to get elapsed time.'
@@ -73,15 +73,15 @@
 - date: 2025-05-02
   tip: '`purrr::discard(~ stringr::str_detect(., "old"))`'
   explanation: 'Use `purrr::discard` to discard elements based on their values.'
-  tags: [r, functional programming]
+  tags: [rstats, functional programming]
 - date: 2025-05-03
   tip: '`purrr::list_rbind(my_list, names_to = "id")`'
   explanation: 'Use `purrr::list_rbind()` to combine list elements into a single data structure.'
-  tags: [r, functional programming]
+  tags: [rstats, functional programming]
 - date: 2025-05-04
   tip: '`f <- purrr::compose(sqrt, abs)`'
   explanation: 'Use `purrr::compose()` to combine multiple functions into one, chaining them from right to left.'
-  tags: [r, functional programming]
+  tags: [rstats, functional programming]
 - date: 2025-05-05
   tip: 'Use `shellcheck` to lint and find potential issues in your script.'
   explanation: 'ShellCheck is a static analysis and linting tool for sh/bash scripts.'
@@ -89,7 +89,7 @@
 - date: 2025-05-06
   tip: 'Use the {gt} package to make nice looking tables in R.'
   explanation: 'The gt philosophy: we can construct a wide variety of useful tables with a cohesive set of table parts.'
-  tags: [r, visualisation]
+  tags: [rstats, visualisation]
 - date: 2025-05-07
   tip: '`seq 10 | datamash sum 1 mean 1`'
   explanation: 'GNU datamash can perform basic numeric, textual and statistical operations on input textual data files.'
@@ -145,15 +145,15 @@
 - date: 2025-05-20
   tip: 'Use the {targets} package to build workflows in R.'
   explanation: 'The {targets} package allows you build reproducible workflows entirely within R.'
-  tags: [R, workflows]
+  tags: [rstats, workflows]
 - date: 2025-05-21
   tip: '`git blame -w`'
   explanation: 'Use `git blame -w` to see the commit hash and timestamp of each change, line by line.'
-  tags: [Git]
+  tags: [git]
 - date: 2025-05-22
   tip: '`git notes add -m "Add note to commit" 98ab5fd901ee38dcbfd3ae6bbd26c6ffdc801ff7`'
   explanation: 'Use `git notes` to add notes to a commit; `git log` will show notes.'
-  tags: [Git]
+  tags: [git]
 - date: 2025-05-23
   tip: '`cp -u some_file .`'
   explanation: 'Copy only when the SOURCE file is newer than the destination file or when the destination file is missing.'
@@ -181,7 +181,7 @@
 - date: 2025-05-29
   tip: '`name<-"Rei"; glue::glue("Hello, {name}!")`'
   explanation: 'Use the {glue} package for string interpolation in R!'
-  tags: [r]
+  tags: [rstats]
 - date: 2025-05-30
   tip: '`singularity inspect my_image.sif`'
   explanation: 'Inspect metadata, labels, environment, and scripts of a Singularity image.'
@@ -205,11 +205,11 @@
 - date: 2025-06-04
   tip: '`getAnywhere("some_function")`'
   explanation: '`getAnywhere()` searches all environments for any object matching a provided name.'
-  tags: [r, reminder]
+  tags: [rstats, reminder]
 - date: 2025-06-05
   tip: 'Use Matrix Market for storing sparse matrices in human readable format.'
   explanation: 'Sparse matrices are not efficiently stored in CSV or TSV format.'
-  tags: [r, file format]
+  tags: [rstats, file format]
 - date: 2025-06-06
   tip: 'When committing changes, one change should equal one purpose.'
   explanation: 'Each commit should do one thing: fix a bug, update docs, rename a variable, add a feature, etc.'
@@ -225,7 +225,7 @@
 - date: 2025-06-09
   tip: 'Use `withCallingHandlers()` to log messages and warnings in R.'
   explanation: '`withCallingHandlers()` is an advanced error and condition handling function in R that can be used for logging and more.'
-  tags: [r, defensive programming]
+  tags: [rstats, defensive programming]
 - date: 2025-06-10
   tip: '`find data -path *pca/res.txt -print`'
   explanation: 'Will only find res.txt inside directories matching `*pca`.'
@@ -265,15 +265,15 @@
 - date: 2025-06-19
   tip: '`while IFS= read -r line; do echo "$line" done < filename.txt`'
   explanation: 'Read a file line by line, preserving all whitespace in a Bash script.'
-  tags: [Bash, reminder]
+  tags: [bash, reminder]
 - date: 2025-06-20
   tip: 'Read the Bash Reference Manual'
   explanation: 'You will probably need to read and/or write a Bash script, so read https://www.gnu.org/software/bash/manual/bash.html.'
-  tags: [Bash]
+  tags: [bash]
 - date: 2025-06-21
   tip: '`readarray` is synonym for `mapfile`.'
   explanation: '`mapfile` read lines from the standard input into the indexed array.'
-  tags: [Bash]
+  tags: [bash]
 - date: 2025-06-22
   tip: "Be aware of Cognitive Debt and don't build it up!"
   explanation: 'See study: Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task'
@@ -321,11 +321,11 @@
 - date: 2025-07-03
   tip: 'The {ggeasy} package provides {ggplot2} shortcuts.'
   explanation: '{ggeasy} is a helper package that makes it easier to make {ggplot2} plots!'
-  tags: [r, helper]
+  tags: [rstats, helper]
 - date: 2025-07-04
   tip: '`install.packages("torch")`'
   explanation: 'R Interface to Torch!'
-  tags: [r, machine learning]
+  tags: [rstats, machine learning]
 - date: 2025-07-05
   tip: 'Check out Miller!'
   explanation: 'Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON!'
@@ -345,7 +345,7 @@
 - date: 2025-07-09
   tip: '`sudo apt install lftp`'
   explanation: 'Legacy `ftp` is deprecated; use `lftp`, a more modern FTP client.'
-  tags: [Linux]
+  tags: [linux]
 - date: 2025-07-10
   tip: 'Check out `tmux`'
   explanation: 'I have been using GNU Screen for as long as I can remember; time to check out `tmux`?'
@@ -353,23 +353,23 @@
 - date: 2025-07-11
   tip: 'Use `"+y` to yank to the clipboard in Nvim!'
   explanation: 'Instead of using the mouse to copy to the clipboard, use `"+y` to yank to the clipboard!'
-  tags: [Nvim]
+  tags: [nvim]
 - date: 2025-07-12
   tip: 'Use marks to set a specific position to jump back to in Nvim.'
   explanation: "Use `ma` to mark current cursor position. Use `backtick+a` to jump to exact position and `'a` to jump to start of line."
-  tags: [Nvim]
+  tags: [nvim]
 - date: 2025-07-13
   tip: '`Ctrl+o` and `Ctrl+i`: go backward and forward in jump history.'
   explanation: "Great for moving back after using search or jumping to the start/end of a file."
-  tags: [Nvim]
+  tags: [nvim]
 - date: 2025-07-14
   tip: 'You can open two or more files in Nvim and work with them simultaneously!'
   explanation: "Use `:ls` to list open buffers, i.e., files that are open, and `:b number` to switch between them."
-  tags: [Nvim]
+  tags: [nvim]
 - date: 2025-07-15
   tip: 'Use `:help` to bring up the help screen in Nvim.'
   explanation: "The Nvim help pages are quite detailed; use `CTRL-]` to jump to a subject."
-  tags: [Nvim, reminder]
+  tags: [nvim, reminder]
 - date: 2025-07-16
   tip: '`hexdump -C text.txt`'
   explanation: "Display the input offset in hexadecimal and its ASCII representation in two columns."
@@ -397,35 +397,35 @@
 - date: 2025-07-22
   tip: '`sudo do-release-upgrade`'
   explanation: 'Upgrade Ubuntu from the terminal; but remember to fully update the system first: `sudo apt update && sudo apt upgrade -y; sudo apt dist-upgrade -y`.'
-  tags: [Ubuntu]
+  tags: [ubuntu]
 - date: 2025-07-23
   tip: 'Always keep a "live install" image lying around for when your server runs into issues!'
   explanation: "Get a live install Debian image from https://www.debian.org/CD/live/; in case you were wondering, this is unrelated to yesterday's tip!"
-  tags: [Debian]
+  tags: [debian]
 - date: 2025-07-24
   tip: 'Use `getSimpleName()` to get the path name without any extension in Nextflow.'
   explanation: "See https://nextflow.io/docs/latest/reference/stdlib-types.html for more utilities!"
-  tags: [Nextflow]
+  tags: [nextflow]
 - date: 2025-07-25
   tip: '`sudo fsck -fy /dev/sda2`'
   explanation: "Use `fsck` (File System Consistency Check) to scan and fix disk errors automatically."
-  tags: [Linux, sysadmin]
+  tags: [linux, sysadmin]
 - date: 2025-07-26
   tip: '`imap(my_list, ~ paste0("Key ", .y, " has value ", .x))`'
   explanation: "Use `imap()` if you want both the element and its name/index."
-  tags: [r, functional programming]
+  tags: [rstats, functional programming]
 - date: 2025-07-27
   tip: '`safe_fn <- safely(some_function)`'
   explanation: "`safely()` wraps a function and makes it return a result even if an error occurs. Instead of stopping execution, it returns a list with the actual result or error object."
-  tags: [r, functional programming]
+  tags: [rstats, functional programming]
 - date: 2025-07-28
   tip: '`purrr::pmap(list(list(1900), list(80), list(4)), \(x,y,z) x+y+z)`'
   explanation: "Use `purrr::pmap()` to map over multiple input simultaneously."
-  tags: [r, functional programming]
+  tags: [rstats, functional programming]
 - date: 2025-07-29
   tip: 'Learn [Lua](https://www.lua.org/start.html)!'
   explanation: "Lua is a powerful and fast programming language that is easy to learn and use and to embed into your application."
-  tags: [Lua]
+  tags: [lua]
 - date: 2025-07-30
   tip: 'Use the [systemadmin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/systemadmin) plugin in ohmyzsh.'
   explanation: "This plugin adds a series of aliases and functions which make a System Administrator's life easier."
@@ -453,7 +453,7 @@
 - date: 2025-08-05
   tip: '`ssh-copy-id -i ~/.ssh/id_rsa.pub username@server-ip`'
   explanation: "Use `ssh-copy-id` to copy a public key to a server, so you can SSH using your private key."
-  tags: [Linux]
+  tags: [linux]
 - date: 2025-08-06
   tip: 'Put `bindkey -v` in `~/.zshrc` to enable Zsh Vi mode!'
   explanation: "Your Zsh shell behaves like a mini Vim editor for command-line editing!"
@@ -461,7 +461,7 @@
 - date: 2025-08-07
   tip: '`git clone https://github.com/jeffreytse/zsh-vi-mode $ZSH_CUSTOM/plugins/zsh-vi-mode`'
   explanation: '[zsh-vi-mode](https://github.com/jeffreytse/zsh-vi-mode) is a better and friendly vi(vim) mode plugin for Zsh.'
-  tags: [zsh]
+  tags: [zsh, ohmyzsh]
 - date: 2025-08-08
   tip: '`:Gdiffsplit`'
   explanation: 'When using the vim-fugitive plugin `:Gdiffsplit` will show you the previous version in a split window!'
@@ -481,7 +481,7 @@
 - date: 2025-08-12
   tip: 'Press `Shift+Command+G` to bring up the Go To window in Finder.'
   explanation: 'At least on my computer, Finder does not have a shortcut to click on to bring me to the root directory.'
-  tags: [macOS]
+  tags: [macos]
 - date: 2025-08-13
   tip: 'Use `local` inside functions of shell scripts to restrict the scope!'
   explanation: 'Variables are global within a shell script unless you explicitly mark them local inside a function!'
@@ -505,11 +505,11 @@
 - date: 2025-08-18
   tip: 'In Linux, `<`, `<<`, and `<<<` are redirection operators used for input handling.'
   explanation: '`<` reads from an existing file; `<<` creates temporary multi-line input; `<<<` provides immediate string input.'
-  tags: [Linux]
+  tags: [linux]
 - date: 2025-08-19
   tip: 'Use a block, i.e., `{}` to group together packages to keep quiet: `suppressPackageStartupMessages({ library(ggplot2) })`'
   explanation: '`{}` denote a block and they allow you to group multiple expressions together and treat them as a single expression.'
-  tags: [r]
+  tags: [rstats]
 - date: 2025-08-20
   tip: '`git config --global completion.branch true`'
   explanation: 'Enable autocompletion for branch names.'
@@ -533,7 +533,7 @@
 - date: 2025-08-25
   tip: 'Use [lazy.nvim](https://github.com/folke/lazy.nvim) to manage plugins for Nvim.'
   explanation: 'Plugins add a lot more functionality into Nvim!'
-  tags: [Nvim]
+  tags: [nvim]
 - date: 2025-08-26
   tip: "`singularity exec my_image /bin/bash -c 'echo $SINGULARITY_NAME'`"
   explanation: "Use `$SINGULARITY_NAME` to get the name of the Singularity image when inside a container!"
@@ -573,7 +573,7 @@
 - date: 2025-09-04
   tip: '`nvim -d file1 file2`'
   explanation: 'Start Nvim in diff mode which can highlight differences between files side by side and apply changes between files!'
-  tags: [Nvim]
+  tags: [nvim]
 - date: 2025-09-05
   tip: '`git log -p -- file.txt`'
   explanation: 'By default, `git log` does not generate any diff output; use `-p` or `--patch` to show all changes of `file.txt`!'
@@ -585,7 +585,7 @@
 - date: 2025-09-07
   tip: 'Press Shift+Insert to paste in MobaXTerm.'
   explanation: 'Instead of using the right mouse button to paste, use Shift+Insert to paste when using MobaXTerm!'
-  tags: [MobaXTerm]
+  tags: [mobaxterm]
 - date: 2025-09-08
   tip: "`awk '$1=$1' test.txt`"
   explanation: 'AWK trick to turn one or more spaces (by default) into just one space.'
@@ -593,7 +593,7 @@
 - date: 2025-09-09
   tip: "Use the `combn()` function in base R to generate pairwise combinations"
   explanation: '`combn()` [can also be used with a function](https://github.com/davetang/learning_r?tab=readme-ov-file#useful-tips) to apply the function across pairwise combinations!'
-  tags: [r]
+  tags: [rstats]
 - date: 2025-09-10
   tip: 'Use `(` and `)` to jump to the previous and next sentence. Use `{` and `}` for paragraphs!'
   explanation: 'If you edit written text in Vim, make sure you use `(`, `)`, `{`, and `}`!'
@@ -609,8 +609,8 @@
 - date: 2025-09-13
   tip: '`vim.keymap.set({mode}, {lhs}, {rhs}, {opts})`'
   explanation: 'Use `vim.keymap.set()` to set key maps in Nvim.'
-  tags: [Nvim]
+  tags: [nvim]
 - date: 2025-09-14
   tip: 'Use `:terminal` to run an interactive shell inside a Neovim buffer!'
   explanation: 'When in the terminal, hold Ctrl, press \, then n to go to Normal mode where you can yank stuff etc.'
-  tags: [Nvim]
+  tags: [nvim]
