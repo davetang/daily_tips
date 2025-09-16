@@ -618,3 +618,7 @@
   tip: 'Use [shfmt](https://github.com/mvdan/sh#shfmt) to format shell scripts consistently!'
   explanation: '`shfmt` is a shell parser, formatter, and interpreter'
   tags: [shell, scripting]
+- date: 2025-09-16
+  tip: 'Use the [bash-language-server](https://github.com/bash-lsp/bash-language-server) to make it easier to write Bash scripts!'
+  explanation: 'A language server is a background program that provides language-specific features to your code editor.'
+  tags: [bash, scripting]
