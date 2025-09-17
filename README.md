@@ -177,3 +177,4 @@ So literally, kaizen means "change for the better."
 | 2025-09-14 | Use `:terminal` to run an interactive shell inside a Neovim buffer! | When in the terminal, hold Ctrl, press \, then n to go to Normal mode where you can yank stuff etc. | nvim |
 | 2025-09-15 | Use [shfmt](https://github.com/mvdan/sh#shfmt) to format shell scripts consistently! | `shfmt` is a shell parser, formatter, and interpreter | shell, scripting |
 | 2025-09-16 | Use the [bash-language-server](https://github.com/bash-lsp/bash-language-server) to make it easier to write Bash scripts! | A language server is a background program that provides language-specific features to your code editor. | bash, scripting |
+| 2025-09-17 | If it seems too good to be true, it probably is! | In Cantonese, we say 咁大隻蛤乸隨街跳! | adage |
