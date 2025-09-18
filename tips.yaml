@@ -626,3 +626,7 @@
   tip: 'If it seems too good to be true, it probably is!'
   explanation: 'In Cantonese, we say 咁大隻蛤乸隨街跳!'
   tags: [adage]
+- date: 2025-09-18
+  tip: "`ls tips.yaml README.md; head !*`"
+  explanation: "`$_` gets the last argument of the previous command; `!*` gets all arguments but relies on history expansion."
+  tags: [shell, productivity]
