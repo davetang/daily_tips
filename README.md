@@ -174,7 +174,7 @@ So literally, kaizen means "change for the better."
 | 2025-09-11 | After yanking a word, use `cw<C-r>0` to replace a word with the yanked word! | `<C-r>` is Control+r and `0` is register zero, which holds the text from the most recent yank. | vim |
 | 2025-09-12 | Use `]c` and `[c` to jump to the next and previous hunk. Use `]d` and `[d` to jump to the next and previous diagnostic. | In Vim use `]c`, `[c`, `]d`, and `[d` to jump to hunks and diagnostics! | vim |
 | 2025-09-13 | `vim.keymap.set({mode}, {lhs}, {rhs}, {opts})` | Use `vim.keymap.set()` to set key maps in Nvim. | nvim |
-| 2025-09-14 | Use `:terminal` to run an interactive shell inside a Neovim buffer! | When in the terminal, hold Ctrl, press \, then n to go to Normal mode where you can yank stuff etc. | nvim |
+| 2025-09-14 | Use `:terminal` to run an interactive shell inside a Neovim buffer! | When in the terminal, hold `Ctrl`, press `\`, then `n` to go to Normal mode where you can yank stuff etc. | nvim |
 | 2025-09-15 | Use [shfmt](https://github.com/mvdan/sh#shfmt) to format shell scripts consistently! | `shfmt` is a shell parser, formatter, and interpreter | shell, scripting |
 | 2025-09-16 | Use the [bash-language-server](https://github.com/bash-lsp/bash-language-server) to make it easier to write Bash scripts! | A language server is a background program that provides language-specific features to your code editor. | bash, scripting |
 | 2025-09-17 | If it seems too good to be true, it probably is! | In Cantonese, we say 咁大隻蛤乸隨街跳! | adage |

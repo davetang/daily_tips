@@ -612,7 +612,7 @@
   tags: [nvim]
 - date: 2025-09-14
   tip: 'Use `:terminal` to run an interactive shell inside a Neovim buffer!'
-  explanation: 'When in the terminal, hold Ctrl, press \, then n to go to Normal mode where you can yank stuff etc.'
+  explanation: 'When in the terminal, hold `Ctrl`, press `\`, then `n` to go to Normal mode where you can yank stuff etc.'
   tags: [nvim]
 - date: 2025-09-15
   tip: 'Use [shfmt](https://github.com/mvdan/sh#shfmt) to format shell scripts consistently!'
