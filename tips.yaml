@@ -630,3 +630,7 @@
   tip: "`ls tips.yaml README.md; head !*`"
   explanation: "`$_` gets the last argument of the previous command; `!*` gets all arguments but relies on history expansion."
   tags: [shell, productivity]
+- date: 2025-09-19
+  tip: "`alias diff='diff --color=always'`"
+  explanation: 'Run `diff` with `--color=always` so you can see colour when piping to `less`.'
+  tags: [shell, productivity]

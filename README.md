@@ -179,3 +179,4 @@ So literally, kaizen means "change for the better."
 | 2025-09-16 | Use the [bash-language-server](https://github.com/bash-lsp/bash-language-server) to make it easier to write Bash scripts! | A language server is a background program that provides language-specific features to your code editor. | bash, scripting |
 | 2025-09-17 | If it seems too good to be true, it probably is! | In Cantonese, we say 咁大隻蛤乸隨街跳! | adage |
 | 2025-09-18 | `ls tips.yaml README.md; head !*` | `$_` gets the last argument of the previous command; `!*` gets all arguments but relies on history expansion. | shell, productivity |
+| 2025-09-19 | `alias diff='diff --color=always'` | Run `diff` with `--color=always` so you can see colour when piping to `less`. | shell, productivity |
