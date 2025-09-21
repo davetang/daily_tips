@@ -638,3 +638,7 @@
   tip: 'Open files with Vim, e.g. `nvim *.yml`, and use `:n` and `:N` to navigate to the next and previous file.'
   explanation: 'The argument list is the list of files opened; use `:args` to see the files and `:n` and `:N` to navigate between them.'
   tags: [vim]
+- date: 2025-09-21
+  tip: 'Once inside Vim, `:grep checkout **/*.yml` will create a quickfix list containing files and locations matching the grep.'
+  explanation: 'The quickfix list is a special buffer in Vim that stores file positions (filename + line + column). Use it to create a list of things to fix!'
+  tags: [vim]

@@ -181,3 +181,4 @@ So literally, kaizen means "change for the better."
 | 2025-09-18 | `ls tips.yaml README.md; head !*` | `$_` gets the last argument of the previous command; `!*` gets all arguments but relies on history expansion. | shell, productivity |
 | 2025-09-19 | `alias diff='diff --color=always'` | Run `diff` with `--color=always` so you can see colour when piping to `less`. | shell, productivity |
 | 2025-09-20 | Open files with Vim, e.g. `nvim *.yml`, and use `:n` and `:N` to navigate to the next and previous file. | The argument list is the list of files opened; use `:args` to see the files and `:n` and `:N` to navigate between them. | vim |
+| 2025-09-21 | Once inside Vim, `:grep checkout **/*.yml` will create a quickfix list containing files and locations matching the grep. | The quickfix list is a special buffer in Vim that stores file positions (filename + line + column). Use it to create a list of things to fix! | vim |
