@@ -642,3 +642,7 @@
   tip: 'Once inside Vim, `:grep checkout **/*.yml` will create a quickfix list containing files and locations matching the grep.'
   explanation: 'The quickfix list is a special buffer in Vim that stores file positions (filename + line + column). Use it to create a list of things to fix!'
   tags: [vim]
+- date: 2025-09-22
+  tip: '`ls **/*.py`'
+  explanation: 'Finds all files ending in `.py` in the current directory and all subdirectories (recursively)!'
+  tags: [zsh, productivity]
