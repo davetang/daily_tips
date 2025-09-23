@@ -646,3 +646,7 @@
   tip: '`ls **/*.py`'
   explanation: 'Finds all files ending in `.py` in the current directory and all subdirectories (recursively)!'
   tags: [zsh, productivity]
+- date: 2025-09-23
+  tip: 'Use the [WhichKey](https://github.com/folke/which-key.nvim) plugin to help you remember your Nvim keymaps!'
+  explanation: 'WhichKey helps you remember your Neovim keymaps, by showing available keybindings in a popup as you type!'
+  tags: [nvim, gamechanger]
