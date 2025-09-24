@@ -184,3 +184,4 @@ So literally, kaizen means "change for the better."
 | 2025-09-21 | Once inside Vim, `:grep checkout **/*.yml` will create a quickfix list containing files and locations matching the grep. | The quickfix list is a special buffer in Vim that stores file positions (filename + line + column). Use it to create a list of things to fix! | vim |
 | 2025-09-22 | `ls **/*.py` | Finds all files ending in `.py` in the current directory and all subdirectories (recursively)! | zsh, productivity |
 | 2025-09-23 | Use the [WhichKey](https://github.com/folke/which-key.nvim) plugin to help you remember your Nvim keymaps! | WhichKey helps you remember your Neovim keymaps, by showing available keybindings in a popup as you type! | nvim, gamechanger |
+| 2025-09-24 | `comm a b` | Use `comm` to compare two sorted files, showing entries that are unique and common between them. | shell, productivity |

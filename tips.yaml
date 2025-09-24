@@ -650,3 +650,7 @@
   tip: 'Use the [WhichKey](https://github.com/folke/which-key.nvim) plugin to help you remember your Nvim keymaps!'
   explanation: 'WhichKey helps you remember your Neovim keymaps, by showing available keybindings in a popup as you type!'
   tags: [nvim, gamechanger]
+- date: 2025-09-24
+  tip: '`comm a b`'
+  explanation: 'Use `comm` to compare two sorted files, showing entries that are unique and common between them.'
+  tags: [shell, productivity]
