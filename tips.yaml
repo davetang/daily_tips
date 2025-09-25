@@ -654,3 +654,7 @@
   tip: '`comm a b`'
   explanation: 'Use `comm` to compare two sorted files, showing entries that are unique and common between them.'
   tags: [shell, productivity]
+- date: 2025-09-25`
+  tip: '`xdg-open file.pdf`'
+  explanation: 'Use `xdg-open` to mimic the macOS `open` command on Debian.'
+  tags: [shell, productivity]
