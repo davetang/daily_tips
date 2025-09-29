@@ -185,4 +185,4 @@ So literally, kaizen means "change for the better."
 | 2025-09-22 | `ls **/*.py` | Finds all files ending in `.py` in the current directory and all subdirectories (recursively)! | zsh, productivity |
 | 2025-09-23 | Use the [WhichKey](https://github.com/folke/which-key.nvim) plugin to help you remember your Nvim keymaps! | WhichKey helps you remember your Neovim keymaps, by showing available keybindings in a popup as you type! | nvim, gamechanger |
 | 2025-09-24 | `comm a b` | Use `comm` to compare two sorted files, showing entries that are unique and common between them. | shell, productivity |
-| 2025-09-25` | `xdg-open file.pdf` | Use `xdg-open` to mimic the macOS `open` command on Debian. | shell, productivity |
+| 2025-09-25 | `xdg-open file.pdf` | Use `xdg-open` to mimic the macOS `open` command on Debian. | shell, productivity |
