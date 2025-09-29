@@ -186,3 +186,6 @@ So literally, kaizen means "change for the better."
 | 2025-09-23 | Use the [WhichKey](https://github.com/folke/which-key.nvim) plugin to help you remember your Nvim keymaps! | WhichKey helps you remember your Neovim keymaps, by showing available keybindings in a popup as you type! | nvim, gamechanger |
 | 2025-09-24 | `comm a b` | Use `comm` to compare two sorted files, showing entries that are unique and common between them. | shell, productivity |
 | 2025-09-25 | `xdg-open file.pdf` | Use `xdg-open` to mimic the macOS `open` command on Debian. | shell, productivity |
+| 2025-09-26 | Remember to take a holiday! | Every one needs a break! Remember to take a holiday to refresh yourself, physically and mentally. | self-help, productivity |
+| 2025-09-27 | Using [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter), press `gnn` to perform incremental selection, and `grn`/`grm` to increase/decrease! | nvim-treesitter makes it easy to select different levels of nested code blocks! | nvim, gamechanger |
+| 2025-09-28 | Using [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim), press `<leader>ff` to find and preview files then `<C-n>`/`<C-p>` to go to the next/previous file. | Instead of leaving Nvim to look for files, use telescope.nvim to find, preview, and open files (in a buffer)! | nvim |

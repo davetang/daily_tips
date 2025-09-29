@@ -658,3 +658,15 @@
   tip: '`xdg-open file.pdf`'
   explanation: 'Use `xdg-open` to mimic the macOS `open` command on Debian.'
   tags: [shell, productivity]
+- date: 2025-09-26
+  tip: 'Remember to take a holiday!'
+  explanation: 'Every one needs a break! Remember to take a holiday to refresh yourself, physically and mentally.'
+  tags: [self-help, productivity]
+- date: 2025-09-27
+  tip: 'Using [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter), press `gnn` to perform incremental selection, and `grn`/`grm` to increase/decrease!'
+  explanation: 'nvim-treesitter makes it easy to select different levels of nested code blocks!'
+  tags: [nvim, gamechanger]
+- date: 2025-09-28
+  tip: 'Using [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim), press `<leader>ff` to find and preview files then `<C-n>`/`<C-p>` to go to the next/previous file.'
+  explanation: 'Instead of leaving Nvim to look for files, use telescope.nvim to find, preview, and open files (in a buffer)!'
+  tags: [nvim]
