@@ -670,3 +670,11 @@
   tip: 'Using [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim), press `<leader>ff` to find and preview files then `<C-n>`/`<C-p>` to go to the next/previous file.'
   explanation: 'Instead of leaving Nvim to look for files, use telescope.nvim to find, preview, and open files (in a buffer)!'
   tags: [nvim]
+- date: 2025-09-29
+  tip: '`dplyr::rename_with(my_df, ~ gsub("\\.", "-", .x))`'
+  explanation: 'Use `dplyr::rename_with()` to rename columns using a function!'
+  tags: [dplyr, functional programming, reminder]
+- date: 2025-09-30
+  tip: '`dplyr::summarise(mtcars, dplyr::across(c(mpg, cyl), list(mean = mean, sd = sd)))`'
+  explanation: 'Use `dplyr::across()` to specify columns to perform an operation on!'
+  tags: [dplyr, reminder]
