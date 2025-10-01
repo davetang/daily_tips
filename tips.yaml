@@ -678,3 +678,7 @@
   tip: '`dplyr::summarise(mtcars, dplyr::across(c(mpg, cyl), list(mean = mean, sd = sd)))`'
   explanation: 'Use `dplyr::across()` to specify columns to perform an operation on!'
   tags: [dplyr, reminder]
+- date: 2025-10-01
+  tip: 'Use `embed-resources: true` in your Quarto files to create self contained HTML output!'
+  explanation: 'Using `embed-resources: true` will produce a [standalone](https://quarto.org/docs/output-formats/html-basics.html#self-contained) HTML file with no external dependencies!'
+  tags: [quarto]
