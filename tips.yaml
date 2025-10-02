@@ -682,3 +682,7 @@
   tip: 'Use `embed-resources: true` in your Quarto files to create self contained HTML output!'
   explanation: 'Using `embed-resources: true` will produce a [standalone](https://quarto.org/docs/output-formats/html-basics.html#self-contained) HTML file with no external dependencies!'
   tags: [quarto]
+- date: 2025-10-02
+  tip: 'Use Quarto projects to nicely organise multiple Quarto documents!'
+  explanation: '[Quarto projects](https://quarto.org/docs/projects/quarto-projects.html) provides a way to render all files with a single command, share configurations, and more!'
+  tags: [quarto]

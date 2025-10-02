@@ -192,3 +192,4 @@ So literally, kaizen means "change for the better."
 | 2025-09-29 | `dplyr::rename_with(my_df, ~ gsub("\\.", "-", .x))` | Use `dplyr::rename_with()` to rename columns using a function! | dplyr, functional programming, reminder |
 | 2025-09-30 | `dplyr::summarise(mtcars, dplyr::across(c(mpg, cyl), list(mean = mean, sd = sd)))` | Use `dplyr::across()` to specify columns to perform an operation on! | dplyr, reminder |
 | 2025-10-01 | Use `embed-resources: true` in your Quarto files to create self contained HTML output! | Using `embed-resources: true` will produce a [standalone](https://quarto.org/docs/output-formats/html-basics.html#self-contained) HTML file with no external dependencies! | quarto |
+| 2025-10-02 | Use Quarto projects to nicely organise multiple Quarto documents! | [Quarto projects](https://quarto.org/docs/projects/quarto-projects.html) provides a way to render all files with a single command, share configurations, and more! | quarto |
