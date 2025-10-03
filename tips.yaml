@@ -686,3 +686,7 @@
   tip: 'Use Quarto projects to nicely organise multiple Quarto documents!'
   explanation: '[Quarto projects](https://quarto.org/docs/projects/quarto-projects.html) provides a way to render all files with a single command, share configurations, and more!'
   tags: [quarto]
+- date: 2025-10-03
+  tip: 'Use [gitlab-ci-local](https://github.com/firecow/gitlab-ci-local) for testing CI/CD locally!'
+  explanation: 'Tired of pushing to test your .gitlab-ci.yml? Use gitlab-ci-local!'
+  tags: [gitlab]

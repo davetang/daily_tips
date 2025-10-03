@@ -193,3 +193,4 @@ So literally, kaizen means "change for the better."
 | 2025-09-30 | `dplyr::summarise(mtcars, dplyr::across(c(mpg, cyl), list(mean = mean, sd = sd)))` | Use `dplyr::across()` to specify columns to perform an operation on! | dplyr, reminder |
 | 2025-10-01 | Use `embed-resources: true` in your Quarto files to create self contained HTML output! | Using `embed-resources: true` will produce a [standalone](https://quarto.org/docs/output-formats/html-basics.html#self-contained) HTML file with no external dependencies! | quarto |
 | 2025-10-02 | Use Quarto projects to nicely organise multiple Quarto documents! | [Quarto projects](https://quarto.org/docs/projects/quarto-projects.html) provides a way to render all files with a single command, share configurations, and more! | quarto |
+| 2025-10-03 | Use [gitlab-ci-local](https://github.com/firecow/gitlab-ci-local) for testing CI/CD locally! | Tired of pushing to test your .gitlab-ci.yml? Use gitlab-ci-local! | gitlab |
