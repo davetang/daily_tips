@@ -690,3 +690,7 @@
   tip: 'Use [gitlab-ci-local](https://github.com/firecow/gitlab-ci-local) for testing CI/CD locally!'
   explanation: 'Tired of pushing to test your .gitlab-ci.yml? Use gitlab-ci-local!'
   tags: [gitlab]
+- date: 2025-10-04
+  tip: '`sudo mount -t exfat /dev/sdb2 /mnt/media/data -o uid=1000,gid=1000`'
+  explanation: 'When using `mount` the mountpoint and its contents are owned by root by default. Use `-o` to specify a user and group.'
+  tags: [linux]
