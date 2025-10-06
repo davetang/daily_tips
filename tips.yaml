@@ -698,3 +698,7 @@
   tip: 'Find more positive-sum activities and engage in them, instead of zero-sum games!'
   explanation: '[Zero-sum games](https://nonzerosum.games/whatarenonzerosumgames.html) are where two parties compete and in order for one party to win the other must lose. Positive-sum games result in win-win scenarios!'
   tags: [altruism]
+- date: 2025-10-06
+  tip: "Use Cohen's Kappa to measure agreement between two raters; use Fleiss' Kappa when there are more than two raters."
+  explanation: '[Measures](https://davetang.github.io/muse/rater.html) of inter-rater reliability provide an index indicating how much agreement there is between raters, correcting for chance.'
+  tags: [index]
