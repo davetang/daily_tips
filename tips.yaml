@@ -702,3 +702,7 @@
   tip: "Use Cohen's Kappa to measure agreement between two raters; use Fleiss' Kappa when there are more than two raters."
   explanation: '[Measures](https://davetang.github.io/muse/rater.html) of inter-rater reliability provide an index indicating how much agreement there is between raters, correcting for chance.'
   tags: [index]
+- date: 2025-10-07
+  tip: 'Little by little.'
+  explanation: "When things become overwhelming, just do a little. When you don't want to practice something, just do a little. And soon, little by little, a little becomes a lot!"
+  tags: [mantra, reminder]
