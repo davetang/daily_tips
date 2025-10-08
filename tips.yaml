@@ -706,3 +706,7 @@
   tip: 'Little by little.'
   explanation: "When things become overwhelming, just do a little. When you don't want to practice something, just do a little. And soon, little by little, a little becomes a lot!"
   tags: [mantra, reminder]
+- date: 2025-10-08
+  tip: "To measure agreement between two or more raters when the ratings are continuous, use the Intraclass Correlation Coefficient (ICC)."
+  explanation: 'The [ICC](https://davetang.github.io/muse/icc.html) is a descriptive statistic that measures both consistency and agreement between two or more raters that rate the same set of subjects on a continuous scale.'
+  tags: [index]
