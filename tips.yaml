@@ -710,3 +710,7 @@
   tip: "To measure agreement between two or more raters when the ratings are continuous, use the Intraclass Correlation Coefficient (ICC)."
   explanation: 'The [ICC](https://davetang.github.io/muse/icc.html) is a descriptive statistic that measures both consistency and agreement between two or more raters that rate the same set of subjects on a continuous scale.'
   tags: [index]
+- date: 2025-10-09
+  tip: "The {renv} package helps you create reproducible environments for your R projects."
+  explanation: '[Introduction to renv](https://rstudio.github.io/renv/articles/renv.html) provides a quick summary of the package.'
+  tags: [rstats]
