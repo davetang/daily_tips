@@ -714,3 +714,7 @@
   tip: "The {renv} package helps you create reproducible environments for your R projects."
   explanation: '[Introduction to renv](https://rstudio.github.io/renv/articles/renv.html) provides a quick summary of the package.'
   tags: [rstats]
+- date: 2025-10-10
+  tip: "After searching in Vim, use `:%s//new_word/` to substitute it!"
+  explanation: 'After searching (`/`), Vim remembers the last search pattern, so you can just use `//` without specifying the pattern!'
+  tags: [vim]
