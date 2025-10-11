@@ -718,3 +718,7 @@
   tip: "After searching in Vim, use `:%s//new_word/` to substitute it!"
   explanation: 'After searching (`/`), Vim remembers the last search pattern, so you can just use `//` without specifying the pattern!'
   tags: [vim]
+- date: 2025-10-11
+  tip: '`openssl enc -aes-256-cbc -pbkdf2 -salt -in file.txt -out file.txt.enc`'
+  explanation: 'Use OpenSSL to encrypt files; use `-d` to decrypt the encrypted file.'
+  tags: [security]
