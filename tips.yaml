@@ -722,3 +722,7 @@
   tip: '`openssl enc -aes-256-cbc -pbkdf2 -salt -in file.txt -out file.txt.enc`'
   explanation: 'Use OpenSSL to encrypt files; use `-d` to decrypt the encrypted file.'
   tags: [security]
+- date: 2025-10-12
+  tip: 'Use `docker-compose.yml` instead of remembering a long `docker run` command with many flags!'
+  explanation: 'I always thought Docker Compose was for multi-containers but it is also useful for running one container; see [Compose file reference](https://docs.docker.com/reference/compose-file/).'
+  tags: [docker]
