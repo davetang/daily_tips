@@ -203,3 +203,4 @@ So literally, kaizen means "change for the better."
 | 2025-10-10 | After searching in Vim, use `:%s//new_word/` to substitute it! | After searching (`/`), Vim remembers the last search pattern, so you can just use `//` without specifying the pattern! | vim |
 | 2025-10-11 | `openssl enc -aes-256-cbc -pbkdf2 -salt -in file.txt -out file.txt.enc` | Use OpenSSL to encrypt files; use `-d` to decrypt the encrypted file. | security |
 | 2025-10-12 | Use `docker-compose.yml` instead of remembering a long `docker run` command with many flags! | I always thought Docker Compose was for multi-containers but it is also useful for running one container; see [Compose file reference](https://docs.docker.com/reference/compose-file/). | docker |
+| 2025-10-13 | A sunk cost is money, time, or resources you've already spent that you can't get back. | A sunk cost is irreversible and therefore it should not affect future decisions. Only future costs and benefits should. | economics |
