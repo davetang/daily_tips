@@ -730,3 +730,7 @@
   tip: "A sunk cost is money, time, or resources you've already spent that you can't get back."
   explanation: 'A sunk cost is irreversible and therefore it should not affect future decisions. Only future costs and benefits should.'
   tags: [economics]
+- date: 2025-10-14
+  tip: "`python3 -m venv /opt/venv && . /opt/venv/bin/activate`"
+  explanation: 'To adhere to PEP 668 – Marking Python base environments as "externally managed", install packages in virtual environments even in containers.'
+  tags: [python]
