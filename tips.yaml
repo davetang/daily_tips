@@ -734,3 +734,7 @@
   tip: "`python3 -m venv /opt/venv && . /opt/venv/bin/activate`"
   explanation: 'To adhere to PEP 668 – Marking Python base environments as "externally managed", install packages in virtual environments even in containers.'
   tags: [python]
+- date: 2025-10-15
+  tip: "The {renv} package can keep a cache of R packages so you don't need to download and compile again!"
+  explanation: 'See my notes on using [renv](https://davetang.github.io/learning_renv/) for more details about the package!'
+  tags: [rstats]
