@@ -738,3 +738,7 @@
   tip: "The {renv} package can keep a cache of R packages so you don't need to download and compile again!"
   explanation: 'See my notes on using [renv](https://davetang.github.io/learning_renv/) for more details about the package!'
   tags: [rstats]
+- date: 2025-10-16
+  tip: "Use the Node Version Manager to manage multiple active node.js versions."
+  explanation: '[nvm](https://github.com/nvm-sh/nvm) allows you to quickly install and use different versions of node via the command line.'
+  tags: [node]
