@@ -742,3 +742,7 @@
   tip: "Use the Node Version Manager to manage multiple active node.js versions."
   explanation: '[nvm](https://github.com/nvm-sh/nvm) allows you to quickly install and use different versions of node via the command line.'
   tags: [node]
+- date: 2025-10-17
+  tip: "Use Traggo to keep track of how you spend your time!"
+  explanation: '[Traggo](https://traggo.net/) is a tag-based time tracking tool that you self host giving you complete control!'
+  tags: [productivity]
