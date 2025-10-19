@@ -750,3 +750,7 @@
   tip: 'Successful Common-Pool Resource Management describes how communities can sustainably govern shared resources through locally developed rules, monitoring, and mutual trust.'
   explanation: "Elinor Ostrom's work shows that with cooperation and accountability, the tragedy of the commons is not inevitable."
   tags: [economics]
+- date: 2025-10-19
+  tip: 'Economic scarcity is the condition in which limited resources cannot satisfy all human wants.'
+  explanation: "People make decisions under economic scarcity by weighing trade-offs, comparing the benefits and costs of each option."
+  tags: [economics]
