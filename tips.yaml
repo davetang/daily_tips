@@ -754,3 +754,7 @@
   tip: 'Economic scarcity is the condition in which limited resources cannot satisfy all human wants.'
   explanation: "People make decisions under economic scarcity by weighing trade-offs, comparing the benefits and costs of each option."
   tags: [economics]
+- date: 2025-10-20
+  tip: 'If you select lines in Visual mode and then press `:`, Vim will insert the range for you automatically!'
+  explanation: 'Instead of manually typing the range, use Visual mode to help you quickly define it!'
+  tags: [vim]
