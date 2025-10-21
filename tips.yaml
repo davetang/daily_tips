@@ -758,3 +758,7 @@
   tip: 'If you select lines in Visual mode and then press `:`, Vim will insert the range for you automatically!'
   explanation: 'Instead of manually typing the range, use Visual mode to help you quickly define it!'
   tags: [vim]
+- date: 2025-10-21
+  tip: 'In Vim, perform a substitution on the current line using `.`; then move to another line and press `@:` to repeat it!'
+  explanation: 'A `.` can be used to specify the current line; `@:` will repeat the last `:` command.'
+  tags: [vim]
