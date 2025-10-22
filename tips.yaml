@@ -762,3 +762,7 @@
   tip: 'In Vim, perform a substitution on the current line using `.`; then move to another line and press `@:` to repeat it!'
   explanation: 'A `.` can be used to specify the current line; `@:` will repeat the last `:` command.'
   tags: [vim]
+- date: 2025-10-22
+  tip: 'Press `Cmd + Shift + R` to perform a hard reload of a webpage on Google Chrome.'
+  explanation: 'Pressing just `Cmd + R` sometimes just reloads the cache; use `Cmd + Shift + R` to refresh without the cache.'
+  tags: [chrome]
