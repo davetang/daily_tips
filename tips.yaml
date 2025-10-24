@@ -766,3 +766,7 @@
   tip: 'Press `Cmd + Shift + R` to perform a hard reload of a webpage on Google Chrome.'
   explanation: 'Pressing just `Cmd + R` sometimes just reloads the cache; use `Cmd + Shift + R` to refresh without the cache.'
   tags: [chrome]
+- date: 2025-10-23
+  tip: 'Statistical power is the probability that we will correctly reject the Null Hypothesis.'
+  explanation: 'Power is the probability that a statistical test correctly rejects the null hypothesis when the alternative hypothesis is actually true.'
+  tags: [statistics]

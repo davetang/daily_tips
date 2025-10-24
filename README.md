@@ -213,3 +213,4 @@ So literally, kaizen means "change for the better."
 | 2025-10-20 | If you select lines in Visual mode and then press `:`, Vim will insert the range for you automatically! | Instead of manually typing the range, use Visual mode to help you quickly define it! | vim |
 | 2025-10-21 | In Vim, perform a substitution on the current line using `.`; then move to another line and press `@:` to repeat it! | A `.` can be used to specify the current line; `@:` will repeat the last `:` command. | vim |
 | 2025-10-22 | Press `Cmd + Shift + R` to perform a hard reload of a webpage on Google Chrome. | Pressing just `Cmd + R` sometimes just reloads the cache; use `Cmd + Shift + R` to refresh without the cache. | chrome |
+| 2025-10-23 | Statistical power is the probability that we will correctly reject the Null Hypothesis. | Power is the probability that a statistical test correctly rejects the null hypothesis when the alternative hypothesis is actually true. | statistics |
