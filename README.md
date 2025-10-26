@@ -215,3 +215,4 @@ So literally, kaizen means "change for the better."
 | 2025-10-22 | Press `Cmd + Shift + R` to perform a hard reload of a webpage on Google Chrome. | Pressing just `Cmd + R` sometimes just reloads the cache; use `Cmd + Shift + R` to refresh without the cache. | chrome |
 | 2025-10-23 | Statistical power is the probability that we will correctly reject the Null Hypothesis. | Power is the probability that a statistical test correctly rejects the null hypothesis when the alternative hypothesis is actually true. | statistics |
 | 2025-10-24 | You can make UpSet plots using the {ComplexHeatmap} package in R! | The original package for making UpSet plots in R is no longer maintained; use [ComplexHeatmap](https://jokergoo.github.io/ComplexHeatmap-reference/book/upset-plot.html) instead! | rstats |
+| 2025-10-25 | `aspell -c file` | Interactively check, and optionally correct, the spelling of all words in file. | productivity |

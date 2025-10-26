@@ -774,3 +774,7 @@
   tip: 'You can make UpSet plots using the {ComplexHeatmap} package in R!'
   explanation: 'The original package for making UpSet plots in R is no longer maintained; use [ComplexHeatmap](https://jokergoo.github.io/ComplexHeatmap-reference/book/upset-plot.html) instead!'
   tags: [rstats]
+- date: 2025-10-25
+  tip: '`aspell -c file`'
+  explanation: 'Interactively check, and optionally correct, the spelling of all words in file.'
+  tags: [productivity]
