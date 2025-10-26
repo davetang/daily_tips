@@ -778,3 +778,7 @@
   tip: '`aspell -c file`'
   explanation: 'Interactively check, and optionally correct, the spelling of all words in file.'
   tags: [productivity]
+- date: 2025-10-26
+  tip: '`spell file`'
+  explanation: 'The `spell` command prints all words in `file` that are misspelled, according to its dictionary.'
+  tags: [productivity]
