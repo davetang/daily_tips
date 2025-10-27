@@ -217,3 +217,4 @@ So literally, kaizen means "change for the better."
 | 2025-10-24 | You can make UpSet plots using the {ComplexHeatmap} package in R! | The original package for making UpSet plots in R is no longer maintained; use [ComplexHeatmap](https://jokergoo.github.io/ComplexHeatmap-reference/book/upset-plot.html) instead! | rstats |
 | 2025-10-25 | `aspell -c file` | Interactively check, and optionally correct, the spelling of all words in file. | productivity |
 | 2025-10-26 | `spell file` | The `spell` command prints all words in `file` that are misspelled, according to its dictionary. | productivity |
+| 2025-10-27 | Target triples, e.g., x86_64-unknown-linux-gnu, describe what kind of system a binary is built for. | A target triple is usually <architecture>-<vendor>-<system>-<abi>; the Application Binary Interface (ABI), usually implies the C standard library used. | productivity |

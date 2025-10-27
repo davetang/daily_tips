@@ -782,3 +782,7 @@
   tip: '`spell file`'
   explanation: 'The `spell` command prints all words in `file` that are misspelled, according to its dictionary.'
   tags: [productivity]
+- date: 2025-10-27
+  tip: 'Target triples, e.g., x86_64-unknown-linux-gnu, describe what kind of system a binary is built for.'
+  explanation: 'A target triple is usually <architecture>-<vendor>-<system>-<abi>; the Application Binary Interface (ABI), usually implies the C standard library used.'
+  tags: [productivity]
