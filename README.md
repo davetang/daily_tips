@@ -218,3 +218,4 @@ So literally, kaizen means "change for the better."
 | 2025-10-25 | `aspell -c file` | Interactively check, and optionally correct, the spelling of all words in file. | productivity |
 | 2025-10-26 | `spell file` | The `spell` command prints all words in `file` that are misspelled, according to its dictionary. | productivity |
 | 2025-10-27 | Target triples, e.g., x86_64-unknown-linux-gnu, describe what kind of system a binary is built for. | A target triple is usually <architecture>-<vendor>-<system>-<abi>; the Application Binary Interface (ABI), usually implies the C standard library used. | productivity |
+| 2025-10-28 | Use `: {tbl-colwidths="[45,55]"}` to control column widths in Quarto. | You can [explicitly specify columns widths](https://quarto.org/docs/authoring/tables.html#column-widths) using the `tbl-colwidths` attribute. | quarto |
