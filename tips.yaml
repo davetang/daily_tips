@@ -790,3 +790,7 @@
   tip: 'Use `: {tbl-colwidths="[45,55]"}` to control column widths in Quarto.'
   explanation: 'You can [explicitly specify columns widths](https://quarto.org/docs/authoring/tables.html#column-widths) using the `tbl-colwidths` attribute.'
   tags: [quarto]
+- date: 2025-10-29
+  tip: 'A stateless container is one that does not depend on any internal, persistent data stored inside itself.'
+  explanation: 'A stateless container can be destroyed and recreated at any time, and the application will continue to work correctly.'
+  tags: [containerisation]
