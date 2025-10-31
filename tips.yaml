@@ -798,3 +798,7 @@
   tip: 'In Vim use `/search_term` to search forwards and `?search_term` to search backwards.'
   explanation: 'I got into the bad habit of just using `/` and then pressing `N` to search backwards.'
   tags: [vim, reminder]
+- date: 2025-10-31
+  tip: 'Use the [countdown](https://github.com/gadenbuie/countdown) plugin to add a timer to Quarto presentations!'
+  explanation: 'Check out the [example](https://github.com/gadenbuie/countdown/blob/main/quarto/example.qmd) to see how to use the plugin.'
+  tags: [quarto]
