@@ -794,3 +794,7 @@
   tip: 'A stateless container is one that does not depend on any internal, persistent data stored inside itself.'
   explanation: 'A stateless container can be destroyed and recreated at any time, and the application will continue to work correctly.'
   tags: [containerisation]
+- date: 2025-10-30
+  tip: 'In Vim use `/search_term` to search forwards and `?search_term` to search backwards.'
+  explanation: 'I got into the bad habit of just using `/` and then pressing `N` to search backwards.'
+  tags: [vim, reminder]
