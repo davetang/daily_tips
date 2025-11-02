@@ -223,3 +223,4 @@ So literally, kaizen means "change for the better."
 | 2025-10-30 | In Vim use `/search_term` to search forwards and `?search_term` to search backwards. | I got into the bad habit of just using `/` and then pressing `N` to search backwards. | vim, reminder |
 | 2025-10-31 | Use the [countdown](https://github.com/gadenbuie/countdown) plugin to add a timer to Quarto presentations! | Check out the [example](https://github.com/gadenbuie/countdown/blob/main/quarto/example.qmd) to see how to use the plugin. | quarto |
 | 2025-11-01 | `start <- Sys.time(); Sys.sleep(3); end <- Sys.time(); elapsed_secs <- as.numeric(difftime(end, start, units = "secs"))` | Use `difftime()` in R to calculate differences in times. | rstats, reminder |
+| 2025-11-02 | Check out the [Quarto Extensions](https://quarto.org/docs/extensions/) page for useful extentions! | Extensions are a powerful way to modify and extend the behavior of Quarto. | quarto |

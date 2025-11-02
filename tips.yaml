@@ -806,3 +806,7 @@
   tip: '`start <- Sys.time(); Sys.sleep(3); end <- Sys.time(); elapsed_secs <- as.numeric(difftime(end, start, units = "secs"))`'
   explanation: 'Use `difftime()` in R to calculate differences in times.'
   tags: [rstats, reminder]
+- date: 2025-11-02
+  tip: 'Check out the [Quarto Extensions](https://quarto.org/docs/extensions/) page for useful extentions!'
+  explanation: 'Extensions are a powerful way to modify and extend the behavior of Quarto.'
+  tags: [quarto]
