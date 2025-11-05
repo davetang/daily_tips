@@ -818,3 +818,7 @@
   tip: '`build/output.txt: input.txt | build`'
   explanation: 'Use an order-only prerequisite (`|`) just to make sure something exists; no need to rebuild.'
   tags: [make, reminder]
+- date: 2025-11-05
+  tip: 'In a Makefile it is possible to have multiple targets: `first.txt second.txt:`. The associated command/s will run once per target.'
+  explanation: 'It is also possible to build multiple targets in one step using [grouped targets](https://github.com/davetang/learning_linux/blob/main/gnu_make/multi_target/Makefile).'
+  tags: [make, reminder]
