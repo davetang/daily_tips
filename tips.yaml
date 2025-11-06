@@ -822,3 +822,7 @@
   tip: 'In a Makefile it is possible to have multiple targets: `first.txt second.txt:`. The associated command/s will run once per target.'
   explanation: 'It is also possible to build multiple targets in one step using [grouped targets](https://github.com/davetang/learning_linux/blob/main/gnu_make/multi_target/Makefile).'
   tags: [make, reminder]
+- date: 2025-11-06
+  tip: '`possibly_read <- purrr::possibly(readr::read_csv, otherwise = NA)`'
+  explanation: 'Use `purrr::possibly()` to return some default value, like NA, instead of an error!'
+  tags: [rstats, functional programming]
