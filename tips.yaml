@@ -826,3 +826,7 @@
   tip: '`possibly_read <- purrr::possibly(readr::read_csv, otherwise = NA)`'
   explanation: 'Use `purrr::possibly()` to return some default value, like NA, instead of an error!'
   tags: [rstats, functional programming]
+- date: 2025-11-07
+  tip: '`base::split(mtcars, ~cyl)`'
+  explanation: '`base::split()` can be used to split a data frame into a list based on a grouping!'
+  tags: [rstats]

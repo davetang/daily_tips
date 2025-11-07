@@ -228,3 +228,4 @@ So literally, kaizen means "change for the better."
 | 2025-11-04 | `build/output.txt: input.txt \| build` | Use an order-only prerequisite (`\|`) just to make sure something exists; no need to rebuild. | make, reminder |
 | 2025-11-05 | In a Makefile it is possible to have multiple targets: `first.txt second.txt:`. The associated command/s will run once per target. | It is also possible to build multiple targets in one step using [grouped targets](https://github.com/davetang/learning_linux/blob/main/gnu_make/multi_target/Makefile). | make, reminder |
 | 2025-11-06 | `possibly_read <- purrr::possibly(readr::read_csv, otherwise = NA)` | Use `purrr::possibly()` to return some default value, like NA, instead of an error! | rstats, functional programming |
+| 2025-11-07 | `base::split(mtcars, ~cyl)` | `base::split()` can be used to split a data frame into a list based on a grouping! | rstats |
