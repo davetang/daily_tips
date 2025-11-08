@@ -830,3 +830,7 @@
   tip: '`base::split(mtcars, ~cyl)`'
   explanation: '`base::split()` can be used to split a data frame into a list based on a grouping!'
   tags: [rstats]
+- date: 2025-11-08
+  tip: '`stringr::str_extract_all(text, "(?<==)[^=]+(?==)")`'
+  explanation: 'Extract content between `=` pairs using a positive lookbehind and positive lookahead!'
+  tags: [regex]
