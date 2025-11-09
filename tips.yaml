@@ -834,3 +834,7 @@
   tip: '`stringr::str_extract_all(text, "(?<==)[^=]+(?==)")`'
   explanation: 'Extract content between `=` pairs using a positive lookbehind and positive lookahead!'
   tags: [regex]
+- date: 2025-11-09
+  tip: '`dplyr::mutate(data, prev = dplyr::lag(value), next_val = dplyr::lead(value), is_peak = value > prev & value > next_val)`'
+  explanation: 'Use `lag()` and `lead()` from the {dplyr} package to easily find peaks!'
+  tags: [dplyr]
