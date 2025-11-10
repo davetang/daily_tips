@@ -231,3 +231,4 @@ So literally, kaizen means "change for the better."
 | 2025-11-07 | `base::split(mtcars, ~cyl)` | `base::split()` can be used to split a data frame into a list based on a grouping! | rstats |
 | 2025-11-08 | `stringr::str_extract_all(text, "(?<==)[^=]+(?==)")` | Extract content between `=` pairs using a positive lookbehind and positive lookahead! | regex |
 | 2025-11-09 | `dplyr::mutate(data, prev = dplyr::lag(value), next_val = dplyr::lead(value), is_peak = value > prev & value > next_val)` | Use `lag()` and `lead()` from the {dplyr} package to easily find peaks! | dplyr |
+| 2025-11-10 | `csplit tips.yaml '/- date/' '{*}'` | `csplit` can split a file based on patterns or line numbers! The example splits `tips.yaml` based on a pattern and into as many files as possible! | linux |

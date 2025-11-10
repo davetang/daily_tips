@@ -838,3 +838,7 @@
   tip: '`dplyr::mutate(data, prev = dplyr::lag(value), next_val = dplyr::lead(value), is_peak = value > prev & value > next_val)`'
   explanation: 'Use `lag()` and `lead()` from the {dplyr} package to easily find peaks!'
   tags: [dplyr]
+- date: 2025-11-10
+  tip: "`csplit tips.yaml '/- date/' '{*}'`"
+  explanation: '`csplit` can split a file based on patterns or line numbers! The example splits `tips.yaml` based on a pattern and into as many files as possible!'
+  tags: [linux]
