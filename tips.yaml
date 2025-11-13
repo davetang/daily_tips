@@ -850,3 +850,7 @@
   tip: '`route get 8.8.8.8`'
   explanation: 'Show how traffic to 8.8.8.8 (Google DNS) will be routed.'
   tags: [macos]
+- date: 2025-11-13
+  tip: '`sudo port install tesseract` and `sudo port install tesseract-eng`'
+  explanation: 'Install Tesseract (Open Source OCR Engine) using MacPorts on macOS.'
+  tags: [macos]
