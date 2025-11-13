@@ -233,3 +233,4 @@ So literally, kaizen means "change for the better."
 | 2025-11-09 | `dplyr::mutate(data, prev = dplyr::lag(value), next_val = dplyr::lead(value), is_peak = value > prev & value > next_val)` | Use `lag()` and `lead()` from the {dplyr} package to easily find peaks! | dplyr |
 | 2025-11-10 | `csplit tips.yaml '/- date/' '{*}'` | `csplit` can split a file based on patterns or line numbers! The example splits `tips.yaml` based on a pattern and into as many files as possible! | linux |
 | 2025-11-11 | `files = glob.glob("/path/to/data/**/*.h5ad", recursive=True)` | Use the glob package in Python to list files in a way that resembles the R function `list.files()`. | python |
+| 2025-11-12 | `route get 8.8.8.8` | Show how traffic to 8.8.8.8 (Google DNS) will be routed. | macos |

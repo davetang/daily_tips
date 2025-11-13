@@ -846,3 +846,7 @@
   tip: '`files = glob.glob("/path/to/data/**/*.h5ad", recursive=True)`'
   explanation: 'Use the glob package in Python to list files in a way that resembles the R function `list.files()`.'
   tags: [python]
+- date: 2025-11-12
+  tip: '`route get 8.8.8.8`'
+  explanation: 'Show how traffic to 8.8.8.8 (Google DNS) will be routed.'
+  tags: [macos]
