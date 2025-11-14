@@ -854,3 +854,7 @@
   tip: '`sudo port install tesseract` and `sudo port install tesseract-eng`'
   explanation: 'Install Tesseract (Open Source OCR Engine) using MacPorts on macOS.'
   tags: [macos]
+- date: 2025-11-14
+  tip: 'The Likelihood Ratio Test compares how well two competing models explain the observed data.'
+  explanation: 'The Likelihood Ratio Test measures how much better a more complex model fits the data compared to a simpler (null) model.'
+  tags: [statistics, reminder]

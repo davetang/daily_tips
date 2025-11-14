@@ -235,3 +235,4 @@ So literally, kaizen means "change for the better."
 | 2025-11-11 | `files = glob.glob("/path/to/data/**/*.h5ad", recursive=True)` | Use the glob package in Python to list files in a way that resembles the R function `list.files()`. | python |
 | 2025-11-12 | `route get 8.8.8.8` | Show how traffic to 8.8.8.8 (Google DNS) will be routed. | macos |
 | 2025-11-13 | `sudo port install tesseract` and `sudo port install tesseract-eng` | Install Tesseract (Open Source OCR Engine) using MacPorts on macOS. | macos |
+| 2025-11-14 | The Likelihood Ratio Test compares how well two competing models explain the observed data. | The Likelihood Ratio Test measures how much better a more complex model fits the data compared to a simpler (null) model. | statistics, reminder |
