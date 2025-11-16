@@ -862,3 +862,7 @@
   tip: 'Use a gedankenexperiment to explore the implications of something before actually doing it.'
   explanation: 'Gedankenexperiment is German for thought experiment, which is a mental exercise where you imagine a scenario to explore its implications without actually conducting a physical experiment.'
   tags: [science]
+- date: 2025-11-16
+  tip: "History doesn't repeat itself, but it often rhymes. --Mark Twain"
+  explanation: "History doesn't repeat past events _exactly_, but you see similar patterns."
+  tags: [quotes]

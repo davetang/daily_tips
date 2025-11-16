@@ -237,3 +237,4 @@ So literally, kaizen means "change for the better."
 | 2025-11-13 | `sudo port install tesseract` and `sudo port install tesseract-eng` | Install Tesseract (Open Source OCR Engine) using MacPorts on macOS. | macos |
 | 2025-11-14 | The Likelihood Ratio Test compares how well two competing models explain the observed data. | The Likelihood Ratio Test measures how much better a more complex model fits the data compared to a simpler (null) model. | statistics, reminder |
 | 2025-11-15 | Use a gedankenexperiment to explore the implications of something before actually doing it. | Gedankenexperiment is German for thought experiment, which is a mental exercise where you imagine a scenario to explore its implications without actually conducting a physical experiment. | science |
+| 2025-11-16 | History doesn't repeat itself, but it often rhymes. --Mark Twain | History doesn't repeat past events _exactly_, but you see similar patterns. | quotes |
