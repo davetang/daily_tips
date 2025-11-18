@@ -866,3 +866,7 @@
   tip: "History doesn't repeat itself, but it often rhymes. --Mark Twain"
   explanation: "History doesn't repeat past events _exactly_, but you see similar patterns."
   tags: [quotes]
+- date: 2025-11-17
+  tip: '`apt-cache depends chromium`'
+  explanation: '`apt-cache depends` lists the direct dependencies of a package showing what other packages need to be installed.'
+  tags: [debian]
