@@ -239,3 +239,4 @@ So literally, kaizen means "change for the better."
 | 2025-11-15 | Use a gedankenexperiment to explore the implications of something before actually doing it. | Gedankenexperiment is German for thought experiment, which is a mental exercise where you imagine a scenario to explore its implications without actually conducting a physical experiment. | science |
 | 2025-11-16 | History doesn't repeat itself, but it often rhymes. --Mark Twain | History doesn't repeat past events _exactly_, but you see similar patterns. | quotes |
 | 2025-11-17 | `apt-cache depends chromium` | `apt-cache depends` lists the direct dependencies of a package showing what other packages need to be installed. | debian |
+| 2025-11-18 | `ldd $(which samtools)` | `ldd $(which samtools)` shows all the shared libraries (dynamic dependencies) that `samtools` needs in order to run. | debian, reminder |

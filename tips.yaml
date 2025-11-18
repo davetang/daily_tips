@@ -870,3 +870,7 @@
   tip: '`apt-cache depends chromium`'
   explanation: '`apt-cache depends` lists the direct dependencies of a package showing what other packages need to be installed.'
   tags: [debian]
+- date: 2025-11-18
+  tip: '`ldd $(which samtools)`'
+  explanation: '`ldd $(which samtools)` shows all the shared libraries (dynamic dependencies) that `samtools` needs in order to run.'
+  tags: [debian, reminder]
