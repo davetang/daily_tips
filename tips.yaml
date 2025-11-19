@@ -874,3 +874,7 @@
   tip: '`ldd $(which samtools)`'
   explanation: '`ldd $(which samtools)` shows all the shared libraries (dynamic dependencies) that `samtools` needs in order to run.'
   tags: [debian, reminder]
+- date: 2025-11-19
+  tip: '`file ~/bin/go-1.25.1/go/bin/go`'
+  explanation: 'You can use `file` to check whether a binary is statically linked or not!'
+  tags: [linux, reminder]
