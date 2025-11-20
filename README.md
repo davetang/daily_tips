@@ -241,3 +241,4 @@ So literally, kaizen means "change for the better."
 | 2025-11-17 | `apt-cache depends chromium` | `apt-cache depends` lists the direct dependencies of a package showing what other packages need to be installed. | debian |
 | 2025-11-18 | `ldd $(which samtools)` | `ldd $(which samtools)` shows all the shared libraries (dynamic dependencies) that `samtools` needs in order to run. | debian, reminder |
 | 2025-11-19 | `file ~/bin/go-1.25.1/go/bin/go` | You can use `file` to check whether a binary is statically linked or not! | linux, reminder |
+| 2025-11-20 | `dpkg -S /usr/bin/env` | Use `dpkg -S` to find which package a file belongs to! | linux, reminder |

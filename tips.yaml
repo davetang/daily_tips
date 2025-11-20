@@ -878,3 +878,7 @@
   tip: '`file ~/bin/go-1.25.1/go/bin/go`'
   explanation: 'You can use `file` to check whether a binary is statically linked or not!'
   tags: [linux, reminder]
+- date: 2025-11-20
+  tip: '`dpkg -S /usr/bin/env`'
+  explanation: 'Use `dpkg -S` to find which package a file belongs to!'
+  tags: [linux, reminder]
