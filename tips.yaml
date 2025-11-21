@@ -882,3 +882,7 @@
   tip: '`dpkg -S /usr/bin/env`'
   explanation: 'Use `dpkg -S` to find which package a file belongs to!'
   tags: [linux, reminder]
+- date: 2025-11-21
+  tip: '`setopt extended_glob`'
+  explanation: "Use Zsh's extended globbing to allow for more additional globbing patterns."
+  tags: [zsh]
