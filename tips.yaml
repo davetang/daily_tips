@@ -886,3 +886,7 @@
   tip: '`setopt extended_glob`'
   explanation: "Use Zsh's extended globbing to allow for more additional globbing patterns."
   tags: [zsh]
+- date: 2025-11-22
+  tip: 'Pareto Efficiency: A state where no one can be made better off without making someone else worse off.'
+  explanation: "This represents an optimal allocation where any redistribution would benefit some only at the expense of others."
+  tags: [economics]

@@ -243,3 +243,4 @@ So literally, kaizen means "change for the better."
 | 2025-11-19 | `file ~/bin/go-1.25.1/go/bin/go` | You can use `file` to check whether a binary is statically linked or not! | linux, reminder |
 | 2025-11-20 | `dpkg -S /usr/bin/env` | Use `dpkg -S` to find which package a file belongs to! | linux, reminder |
 | 2025-11-21 | `setopt extended_glob` | Use Zsh's extended globbing to allow for more additional globbing patterns. | zsh |
+| 2025-11-22 | Pareto Efficiency: A state where no one can be made better off without making someone else worse off. | This represents an optimal allocation where any redistribution would benefit some only at the expense of others. | economics |
