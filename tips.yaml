@@ -890,3 +890,7 @@
   tip: 'Pareto Efficiency: A state where no one can be made better off without making someone else worse off.'
   explanation: "This represents an optimal allocation where any redistribution would benefit some only at the expense of others."
   tags: [economics]
+- date: 2025-11-23
+  tip: '`git bisect`'
+  explanation: '`git bisect` is a debugging tool that uses binary search to find the exact commit that introduced a bug or broke something.'
+  tags: [git]
