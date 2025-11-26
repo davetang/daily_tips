@@ -894,3 +894,7 @@
   tip: '`git bisect`'
   explanation: '`git bisect` is a debugging tool that uses binary search to find the exact commit that introduced a bug or broke something.'
   tags: [git]
+- date: 2025-11-24
+  tip: 'A costly signal is the opposite of cheap talk.'
+  explanation: "A costly signal is an action or expenditure that credibly communicates information about someone's quality, commitment, or type because the signal itself is expensive to produce or maintain."
+  tags: [economics]
