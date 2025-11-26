@@ -898,3 +898,7 @@
   tip: 'A costly signal is the opposite of cheap talk.'
   explanation: "A costly signal is an action or expenditure that credibly communicates information about someone's quality, commitment, or type because the signal itself is expensive to produce or maintain."
   tags: [economics]
+- date: 2025-11-25
+  tip: 'Opportunity cost is the value of the next best alternative you give up when you make a choice.'
+  explanation: "When you choose to do one thing, you can't do something else. The opportunity cost is what you lose by not choosing that alternative."
+  tags: [economics]
