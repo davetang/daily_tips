@@ -902,3 +902,7 @@
   tip: 'Opportunity cost is the value of the next best alternative you give up when you make a choice.'
   explanation: "When you choose to do one thing, you can't do something else. The opportunity cost is what you lose by not choosing that alternative."
   tags: [economics]
+- date: 2025-11-26
+  tip: 'Comparative advantage is the ability to produce something at a lower opportunity cost than another producer.'
+  explanation: "If producing something costs you less (in terms of what you give up) than it costs someone else, you should specialise in that thing and trade for what you need."
+  tags: [economics]
