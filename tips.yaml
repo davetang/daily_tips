@@ -906,3 +906,7 @@
   tip: 'Comparative advantage is the ability to produce something at a lower opportunity cost than another producer.'
   explanation: "If producing something costs you less (in terms of what you give up) than it costs someone else, you should specialise in that thing and trade for what you need."
   tags: [economics]
+- date: 2025-11-27
+  tip: "[R-universe](https://r-universe.dev/) is rOpenSci's platform for improving publication and discovery of research software in R."
+  explanation: "R-universe is an open platform for running personal cran-like package repositories."
+  tags: [rstats]
