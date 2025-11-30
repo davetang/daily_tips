@@ -251,3 +251,4 @@ So literally, kaizen means "change for the better."
 | 2025-11-27 | [R-universe](https://r-universe.dev/) is rOpenSci's platform for improving publication and discovery of research software in R. | R-universe is an open platform for running personal cran-like package repositories. | rstats |
 | 2025-11-28 | Use `$\|` to get all order-only prerequisites. | Order-only prerequisites are prerequisites that must exist before building a target but timestamp changes don't trigger rebuilds. | make, reminder |
 | 2025-11-29 | `git checkout feature && git rebase main` | `git rebase` replays your commits on top of another branch to keep your history linear and up-to-date. | git |
+| 2025-11-30 | `git revert commit_hash` | `git revert` creates a new commit that undoes the changes from a specific previous commit. | git, reminder |

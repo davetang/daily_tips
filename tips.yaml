@@ -918,3 +918,7 @@
   tip: '`git checkout feature && git rebase main`'
   explanation: '`git rebase` replays your commits on top of another branch to keep your history linear and up-to-date.'
   tags: [git]
+- date: 2025-11-30
+  tip: '`git revert commit_hash`'
+  explanation: '`git revert` creates a new commit that undoes the changes from a specific previous commit.'
+  tags: [git, reminder]
