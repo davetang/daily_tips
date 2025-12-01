@@ -922,3 +922,7 @@
   tip: '`git revert commit_hash`'
   explanation: '`git revert` creates a new commit that undoes the changes from a specific previous commit.'
   tags: [git, reminder]
+- date: 2025-12-01
+  tip: '`git diff main feature_branch`'
+  explanation: '`git diff main feature_branch` allows you to compare branches.'
+  tags: [git, reminder]
