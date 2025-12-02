@@ -926,3 +926,7 @@
   tip: '`git diff main feature_branch`'
   explanation: '`git diff main feature_branch` allows you to compare branches.'
   tags: [git, reminder]
+- date: 2025-12-02
+  tip: 'An exact test computes precise probabilities by enumerating all possible outcomes rather than using approximations.'
+  explanation: "An approximation uses simpler math (like approximating with the normal distribution) that's close enough but not exact."
+  tags: [statistics, reminder]

@@ -253,3 +253,4 @@ So literally, kaizen means "change for the better."
 | 2025-11-29 | `git checkout feature && git rebase main` | `git rebase` replays your commits on top of another branch to keep your history linear and up-to-date. | git |
 | 2025-11-30 | `git revert commit_hash` | `git revert` creates a new commit that undoes the changes from a specific previous commit. | git, reminder |
 | 2025-12-01 | `git diff main feature_branch` | `git diff main feature_branch` allows you to compare branches. | git, reminder |
+| 2025-12-02 | An exact test computes precise probabilities by enumerating all possible outcomes rather than using approximations. | An approximation uses simpler math (like approximating with the normal distribution) that's close enough but not exact. | statistics, reminder |
