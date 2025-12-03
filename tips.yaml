@@ -930,3 +930,7 @@
   tip: 'An exact test computes precise probabilities by enumerating all possible outcomes rather than using approximations.'
   explanation: "An approximation uses simpler math (like approximating with the normal distribution) that's close enough but not exact."
   tags: [statistics, reminder]
+- date: 2025-12-03
+  tip: 'Adverse selection occurs when information asymmetry causes markets to attract low-quality participants and repel high-quality ones.'
+  explanation: 'Information asymmetry means one party knows more about the product or transaction than the other.'
+  tags: [economics]
