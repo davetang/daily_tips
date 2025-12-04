@@ -938,3 +938,7 @@
   tip: "When individuals can enjoy the benefits of something without contributing to its cost, they have an incentive to free ride on others' contributions."
   explanation: "If everyone tries to free ride, the good may not be provided at all or will be provided at levels far below what's socially optimal."
   tags: [economics]
+- date: 2025-12-05
+  tip: '`sudo nvme smart-log /dev/nvme0`'
+  explanation: 'Install `nvme` using `sudo apt install nvme-cli` and use it to get NVMe statistics such as the temperature.'
+  tags: [linux, sysadmin]
