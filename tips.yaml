@@ -934,3 +934,7 @@
   tip: 'Adverse selection occurs when information asymmetry causes markets to attract low-quality participants and repel high-quality ones.'
   explanation: 'Information asymmetry means one party knows more about the product or transaction than the other.'
   tags: [economics]
+- date: 2025-12-04
+  tip: "When individuals can enjoy the benefits of something without contributing to its cost, they have an incentive to free ride on others' contributions."
+  explanation: "If everyone tries to free ride, the good may not be provided at all or will be provided at levels far below what's socially optimal."
+  tags: [economics]
