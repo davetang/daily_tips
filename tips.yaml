@@ -942,3 +942,7 @@
   tip: '`sudo nvme smart-log /dev/nvme0`'
   explanation: 'Install `nvme` using `sudo apt install nvme-cli` and use it to get NVMe statistics such as the temperature.'
   tags: [linux, sysadmin]
+- date: 2025-12-06
+  tip: '`quarto create-project . --type website`'
+  explanation: 'Use `quarto create-project` to initialise the current directory as a Quarto website project.'
+  tags: [quarto]

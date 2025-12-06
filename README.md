@@ -257,3 +257,4 @@ So literally, kaizen means "change for the better."
 | 2025-12-03 | Adverse selection occurs when information asymmetry causes markets to attract low-quality participants and repel high-quality ones. | Information asymmetry means one party knows more about the product or transaction than the other. | economics |
 | 2025-12-04 | When individuals can enjoy the benefits of something without contributing to its cost, they have an incentive to free ride on others' contributions. | If everyone tries to free ride, the good may not be provided at all or will be provided at levels far below what's socially optimal. | economics |
 | 2025-12-05 | `sudo nvme smart-log /dev/nvme0` | Install `nvme` using `sudo apt install nvme-cli` and use it to get NVMe statistics such as the temperature. | linux, sysadmin |
+| 2025-12-06 | `quarto create-project . --type website` | Use `quarto create-project` to initialise the current directory as a Quarto website project. | quarto |
