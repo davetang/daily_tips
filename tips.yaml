@@ -946,3 +946,7 @@
   tip: '`quarto create-project . --type website`'
   explanation: 'Use `quarto create-project` to initialise the current directory as a Quarto website project.'
   tags: [quarto]
+- date: 2025-12-07
+  tip: '`hash -r`'
+  explanation: 'Use `hash -r` to reset the cached command lookup table, forcing the shell to re-search your PATH next time you run a command.'
+  tags: [linux, reminder]

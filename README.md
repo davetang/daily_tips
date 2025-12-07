@@ -258,3 +258,4 @@ So literally, kaizen means "change for the better."
 | 2025-12-04 | When individuals can enjoy the benefits of something without contributing to its cost, they have an incentive to free ride on others' contributions. | If everyone tries to free ride, the good may not be provided at all or will be provided at levels far below what's socially optimal. | economics |
 | 2025-12-05 | `sudo nvme smart-log /dev/nvme0` | Install `nvme` using `sudo apt install nvme-cli` and use it to get NVMe statistics such as the temperature. | linux, sysadmin |
 | 2025-12-06 | `quarto create-project . --type website` | Use `quarto create-project` to initialise the current directory as a Quarto website project. | quarto |
+| 2025-12-07 | `hash -r` | Use `hash -r` to reset the cached command lookup table, forcing the shell to re-search your PATH next time you run a command. | linux, reminder |
