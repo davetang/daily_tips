@@ -260,3 +260,4 @@ So literally, kaizen means "change for the better."
 | 2025-12-06 | `quarto create-project . --type website` | Use `quarto create-project` to initialise the current directory as a Quarto website project. | quarto |
 | 2025-12-07 | `hash -r` | Use `hash -r` to reset the cached command lookup table, forcing the shell to re-search your PATH next time you run a command. | linux, reminder |
 | 2025-12-08 | `sudo systemctl --type=service --state=running` | List all running services only. | linux, sysadmin |
+| 2025-12-09 | `sudo iotop -ao` | Use `iotop` to show which processes are using the most disk read/write. | linux, sysadmin |
