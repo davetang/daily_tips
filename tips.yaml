@@ -958,3 +958,7 @@
   tip: '`sudo iotop -ao`'
   explanation: 'Use `iotop` to show which processes are using the most disk read/write.'
   tags: [linux, sysadmin]
+- date: 2025-12-10
+  tip: '`sudo journalctl -b -1 -r`'
+  explanation: '`journalctl -b -1 -r` shows the logs from the previous boot in reverse chronological order.'
+  tags: [linux, sysadmin]
