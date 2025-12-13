@@ -962,3 +962,7 @@
   tip: '`sudo journalctl -b -1 -r`'
   explanation: '`journalctl -b -1 -r` shows the logs from the previous boot in reverse chronological order.'
   tags: [linux, sysadmin]
+- date: 2025-12-11
+  tip: '`sudo mount /dev/cdrom /media/cdrom0`'
+  explanation: 'Use `sudo mount /dev/cdrom /media/cdrom0` to mount a CD-ROM.'
+  tags: [linux, reminder]
