@@ -970,3 +970,7 @@
   tip: '`make --debug=b --dry-run`'
   explanation: 'There are various debug levels with `make`; use `--debug=b` for basic and `--debug=a` for all (most verbose).'
   tags: [make, reminder]
+- date: 2025-12-13
+  tip: '`mv --exchange a b`'
+  explanation: 'With `mv` (GNU coreutils) 9.9 there is an `--exchange` parameter that can be used to swap files!'
+  tags: [shell, productivity]
