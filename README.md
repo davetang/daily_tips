@@ -263,3 +263,4 @@ So literally, kaizen means "change for the better."
 | 2025-12-09 | `sudo iotop -ao` | Use `iotop` to show which processes are using the most disk read/write. | linux, sysadmin |
 | 2025-12-10 | `sudo journalctl -b -1 -r` | `journalctl -b -1 -r` shows the logs from the previous boot in reverse chronological order. | linux, sysadmin |
 | 2025-12-11 | `sudo mount /dev/cdrom /media/cdrom0` | Use `sudo mount /dev/cdrom /media/cdrom0` to mount a CD-ROM. | linux, reminder |
+| 2025-12-12 | `make --debug=b --dry-run` | There are various debug levels with `make`; use `--debug=b` for basic and `--debug=a` for all (most verbose). | make, reminder |

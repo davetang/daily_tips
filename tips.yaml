@@ -966,3 +966,7 @@
   tip: '`sudo mount /dev/cdrom /media/cdrom0`'
   explanation: 'Use `sudo mount /dev/cdrom /media/cdrom0` to mount a CD-ROM.'
   tags: [linux, reminder]
+- date: 2025-12-12
+  tip: '`make --debug=b --dry-run`'
+  explanation: 'There are various debug levels with `make`; use `--debug=b` for basic and `--debug=a` for all (most verbose).'
+  tags: [make, reminder]
