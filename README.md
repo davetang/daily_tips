@@ -265,3 +265,4 @@ So literally, kaizen means "change for the better."
 | 2025-12-11 | `sudo mount /dev/cdrom /media/cdrom0` | Use `sudo mount /dev/cdrom /media/cdrom0` to mount a CD-ROM. | linux, reminder |
 | 2025-12-12 | `make --debug=b --dry-run` | There are various debug levels with `make`; use `--debug=b` for basic and `--debug=a` for all (most verbose). | make, reminder |
 | 2025-12-13 | `mv --exchange a b` | With `mv` (GNU coreutils) 9.9 there is an `--exchange` parameter that can be used to swap files! | shell, productivity |
+| 2025-12-14 | P = (s + 1)/(n + 2) | If an event has occurred s times out of n trials, the probability it occurs on the next trial is P = (s + 1)/(n + 2). | statistics |
