@@ -982,3 +982,7 @@
   tip: 'Check out AkaRank, an improved Alexa Rank substitute.'
   explanation: '[AkaRank](https://www.akamai.com/security-research/akarank) provides these critical global rank metrics to the infosec and security research community as a public service'
   tags: [internet]
+- date: 2025-12-16
+  tip: 'Follow the two-minute rule.'
+  explanation: 'The two-minute rule: if something takes less than 2 minutes, do it now rather than defer it.'
+  tags: [productivity]

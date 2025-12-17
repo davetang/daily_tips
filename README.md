@@ -267,3 +267,4 @@ So literally, kaizen means "change for the better."
 | 2025-12-13 | `mv --exchange a b` | With `mv` (GNU coreutils) 9.9 there is an `--exchange` parameter that can be used to swap files! | shell, productivity |
 | 2025-12-14 | P = (s + 1)/(n + 2) | If an event has occurred s times out of n trials, the probability it occurs on the next trial is P = (s + 1)/(n + 2). | statistics |
 | 2025-12-15 | Check out AkaRank, an improved Alexa Rank substitute. | [AkaRank](https://www.akamai.com/security-research/akarank) provides these critical global rank metrics to the infosec and security research community as a public service | internet |
+| 2025-12-16 | Follow the two-minute rule. | The two-minute rule: if something takes less than 2 minutes, do it now rather than defer it. | productivity |
