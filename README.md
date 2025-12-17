@@ -269,3 +269,4 @@ So literally, kaizen means "change for the better."
 | 2025-12-15 | Check out AkaRank, an improved Alexa Rank substitute. | [AkaRank](https://www.akamai.com/security-research/akarank) provides these critical global rank metrics to the infosec and security research community as a public service | internet |
 | 2025-12-16 | Follow the two-minute rule. | The two-minute rule: if something takes less than 2 minutes, do it now rather than defer it. | productivity |
 | 2025-12-17 | Use `.DELETE_ON_ERROR:` in a Makefile to automatically delete target files if recipe fails. | Make has several special targets that modify Make's behaviour such as DELETE_ON_ERROR. | make |
+| 2025-12-18 | Before negotiations, research fair prices independently and don't let the first number anchor your expectations. | Anchoring bias is a cognitive bias where people rely too heavily on the first piece of information they encounter (the "anchor") when making decisions. | economics |

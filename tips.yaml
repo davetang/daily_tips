@@ -990,3 +990,7 @@
   tip: 'Use `.DELETE_ON_ERROR:` in a Makefile to automatically delete target files if recipe fails.'
   explanation: "Make has several special targets that modify Make's behaviour such as DELETE_ON_ERROR."
   tags: [make]
+- date: 2025-12-18
+  tip: "Before negotiations, research fair prices independently and don't let the first number anchor your expectations."
+  explanation: 'Anchoring bias is a cognitive bias where people rely too heavily on the first piece of information they encounter (the "anchor") when making decisions.'
+  tags: [economics]
