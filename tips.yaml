@@ -994,3 +994,7 @@
   tip: "Before negotiations, research fair prices independently and don't let the first number anchor your expectations."
   explanation: 'Anchoring bias is a cognitive bias where people rely too heavily on the first piece of information they encounter (the "anchor") when making decisions.'
   tags: [economics]
+- date: 2025-12-19
+  tip: '`command > all.out 2>&1`'
+  explanation: 'Use `command > all.out 2>&1` as the POSIX-compliant way to redirect both STDOUT and STDERR to `all.out`.'
+  tags: [shell, productivity]
