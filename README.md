@@ -271,3 +271,4 @@ So literally, kaizen means "change for the better."
 | 2025-12-17 | Use `.DELETE_ON_ERROR:` in a Makefile to automatically delete target files if recipe fails. | Make has several special targets that modify Make's behaviour such as DELETE_ON_ERROR. | make |
 | 2025-12-18 | Before negotiations, research fair prices independently and don't let the first number anchor your expectations. | Anchoring bias is a cognitive bias where people rely too heavily on the first piece of information they encounter (the "anchor") when making decisions. | economics |
 | 2025-12-19 | `command > all.out 2>&1` | Use `command > all.out 2>&1` as the POSIX-compliant way to redirect both STDOUT and STDERR to `all.out`. | shell, productivity |
+| 2025-12-20 | `pv SRAmetadb.sqlite.gz \| md5sum` | Use `pv` to show the progress for data flowing through a pipe! | linux, gamechanger |

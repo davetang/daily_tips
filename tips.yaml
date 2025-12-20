@@ -998,3 +998,7 @@
   tip: '`command > all.out 2>&1`'
   explanation: 'Use `command > all.out 2>&1` as the POSIX-compliant way to redirect both STDOUT and STDERR to `all.out`.'
   tags: [shell, productivity]
+- date: 2025-12-20
+  tip: '`pv SRAmetadb.sqlite.gz | md5sum`'
+  explanation: 'Use `pv` to show the progress for data flowing through a pipe!'
+  tags: [linux, gamechanger]
