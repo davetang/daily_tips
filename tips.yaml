@@ -1002,3 +1002,7 @@
   tip: '`pv SRAmetadb.sqlite.gz | md5sum`'
   explanation: 'Use `pv` to show the progress for data flowing through a pipe!'
   tags: [linux, gamechanger]
+- date: 2025-12-21
+  tip: 'Use `:changes` to show the change history and `g;` to jump to the previous change location and `g,` to the next.'
+  explanation: 'The output of `:changes` is `change`, `line`, `col`, `text`; it is useful if you make changes throughout the file.'
+  tags: [vim]
