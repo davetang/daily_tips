@@ -1010,3 +1010,7 @@
   tip: '`:%norm A;`'
   explanation: '`:%norm A;` is the same as running `A;` on every line (`%`) in normal mode (`:norm`)!'
   tags: [vim]
+- date: 2025-12-23
+  tip: '`:.,$norm I#`'
+  explanation: 'Use `:.,$norm I#` to add a `#` to the current line until the end; use `:1,.norm I# for start to current line.`'
+  tags: [vim]
