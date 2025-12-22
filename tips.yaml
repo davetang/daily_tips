@@ -1006,3 +1006,7 @@
   tip: 'Use `:changes` to show the change history and `g;` to jump to the previous change location and `g,` to the next.'
   explanation: 'The output of `:changes` is `change`, `line`, `col`, `text`; it is useful if you make changes throughout the file.'
   tags: [vim]
+- date: 2025-12-22
+  tip: '`:%norm A;`'
+  explanation: '`:%norm A;` is the same as running `A;` on every line (`%`) in normal mode (`:norm`)!'
+  tags: [vim]
