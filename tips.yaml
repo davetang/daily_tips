@@ -1014,3 +1014,7 @@
   tip: '`:.,$norm I#`'
   explanation: 'Use `:.,$norm I#` to add a `#` to the current line until the end; use `:1,.norm I# for start to current line.`'
   tags: [vim]
+- date: 2025-12-24
+  tip: 'Data serialisation is like "packaging" data for travel.'
+  explanation: 'Data serialisation is the process of converting data structures or objects from their in-memory representation into a format that can be stored or transmitted over a network and later reconstructed.'
+  tags: [data]

@@ -275,3 +275,4 @@ So literally, kaizen means "change for the better."
 | 2025-12-21 | Use `:changes` to show the change history and `g;` to jump to the previous change location and `g,` to the next. | The output of `:changes` is `change`, `line`, `col`, `text`; it is useful if you make changes throughout the file. | vim |
 | 2025-12-22 | `:%norm A;` | `:%norm A;` is the same as running `A;` on every line (`%`) in normal mode (`:norm`)! | vim |
 | 2025-12-23 | `:.,$norm I#` | Use `:.,$norm I#` to add a `#` to the current line until the end; use `:1,.norm I# for start to current line.` | vim |
+| 2025-12-24 | Data serialisation is like "packaging" data for travel. | Data serialisation is the process of converting data structures or objects from their in-memory representation into a format that can be stored or transmitted over a network and later reconstructed. | data |
