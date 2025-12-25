@@ -1018,3 +1018,7 @@
   tip: 'Data serialisation is like "packaging" data for travel.'
   explanation: 'Data serialisation is the process of converting data structures or objects from their in-memory representation into a format that can be stored or transmitted over a network and later reconstructed.'
   tags: [data]
+- date: 2025-12-25
+  tip: 'A payload refers to the actual data or information that is being transmitted over a network or within a message.'
+  explanation: 'The payload is the actual data that is separate from any metadata or headers used for managing the communication process.'
+  tags: [data]
