@@ -1022,3 +1022,7 @@
   tip: 'A payload refers to the actual data or information that is being transmitted over a network or within a message.'
   explanation: 'The payload is the actual data that is separate from any metadata or headers used for managing the communication process.'
   tags: [data]
+- date: 2025-12-26
+  tip: 'Deadweight loss is a term that economists use to mean, basically, something that destroys value in the economy, making society worse off.'
+  explanation: 'Deadweight loss is an economic concept that refers to the loss of total welfare or efficiency in a market, which occurs when resources are not allocated optimally.'
+  tags: [economics]
