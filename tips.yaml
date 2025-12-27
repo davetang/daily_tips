@@ -1026,3 +1026,7 @@
   tip: 'Deadweight loss is a term that economists use to mean, basically, something that destroys value in the economy, making society worse off.'
   explanation: 'Deadweight loss is an economic concept that refers to the loss of total welfare or efficiency in a market, which occurs when resources are not allocated optimally.'
   tags: [economics]
+- date: 2025-12-27
+  tip: 'Preemptive scheduling allows interrupting running tasks; non-preemptive runs each task to completion.'
+  explanation: 'The tradeoff between preemptive and non-preemptive scheduling is responsiveness versus simplicity.'
+  tags: [scheduling]
