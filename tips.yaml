@@ -1030,3 +1030,7 @@
   tip: 'Preemptive scheduling allows interrupting running tasks; non-preemptive runs each task to completion.'
   explanation: 'The tradeoff between preemptive and non-preemptive scheduling is responsiveness versus simplicity.'
   tags: [scheduling]
+- date: 2025-12-28
+  tip: 'Variability is the enemy.'
+  explanation: 'High variance in arrival or service times increases wait times dramatically, even at the same average utilisation.'
+  tags: [scheduling]
