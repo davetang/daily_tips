@@ -1038,3 +1038,7 @@
   tip: '`g0`'
   explanation: 'Use `g0` to go to the first tab and `g$` to go the last tab.'
   tags: [vimium]
+- date: 2025-12-30
+  tip: '`X`'
+  explanation: 'Use `x` to close the current tab and `X` to restore the closed tab.'
+  tags: [vimium]

@@ -281,3 +281,4 @@ So literally, kaizen means "change for the better."
 | 2025-12-27 | Preemptive scheduling allows interrupting running tasks; non-preemptive runs each task to completion. | The tradeoff between preemptive and non-preemptive scheduling is responsiveness versus simplicity. | scheduling |
 | 2025-12-28 | Variability is the enemy. | High variance in arrival or service times increases wait times dramatically, even at the same average utilisation. | scheduling |
 | 2025-12-29 | `g0` | Use `g0` to go to the first tab and `g$` to go the last tab. | vimium |
+| 2025-12-30 | `X` | Use `x` to close the current tab and `X` to restore the closed tab. | vimium |
