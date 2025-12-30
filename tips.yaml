@@ -1034,3 +1034,7 @@
   tip: 'Variability is the enemy.'
   explanation: 'High variance in arrival or service times increases wait times dramatically, even at the same average utilisation.'
   tags: [scheduling]
+- date: 2025-12-29
+  tip: '`g0`'
+  explanation: 'Use `g0` to go to the first tab and `g$` to go the last tab.'
+  tags: [vimium]
