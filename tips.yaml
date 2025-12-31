@@ -1042,3 +1042,7 @@
   tip: '`X`'
   explanation: 'Use `x` to close the current tab and `X` to restore the closed tab.'
   tags: [vimium]
+- date: 2025-12-31
+  tip: 'Make your resolutions specific and actionable rather than vague.'
+  explanation: 'Specific goals are easier to track, you will know clearly whether you are succeeding, and they are more motivating because progress is visible.'
+  tags: [self-help, reminder]

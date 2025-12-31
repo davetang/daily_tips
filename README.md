@@ -282,3 +282,4 @@ So literally, kaizen means "change for the better."
 | 2025-12-28 | Variability is the enemy. | High variance in arrival or service times increases wait times dramatically, even at the same average utilisation. | scheduling |
 | 2025-12-29 | `g0` | Use `g0` to go to the first tab and `g$` to go the last tab. | vimium |
 | 2025-12-30 | `X` | Use `x` to close the current tab and `X` to restore the closed tab. | vimium |
+| 2025-12-31 | Make your resolutions specific and actionable rather than vague. | Specific goals are easier to track, you will know clearly whether you are succeeding, and they are more motivating because progress is visible. | self-help, reminder |
