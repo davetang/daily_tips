@@ -1047,6 +1047,10 @@
   explanation: 'Specific goals are easier to track, you will know clearly whether you are succeeding, and they are more motivating because progress is visible.'
   tags: [self-help, reminder]
 - date: 2026-01-01
-  tip: "Don't Break the Chain"
+  tip: "Don't Break the Chain."
   explanation: 'For each day you complete your target task, mark a big X on that day and keep it going.'
+  tags: [self-help, reminder]
+- date: 2026-01-02
+  tip: "Never Miss Twice."
+  explanation: 'The first mistake is never the one that ruins you. It is the spiral of repeated mistakes that follows. Missing once is an accident. Missing twice is the start of a new habit.'
   tags: [self-help, reminder]

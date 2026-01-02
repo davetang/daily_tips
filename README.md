@@ -283,4 +283,5 @@ So literally, kaizen means "change for the better."
 | 2025-12-29 | `g0` | Use `g0` to go to the first tab and `g$` to go the last tab. | vimium |
 | 2025-12-30 | `X` | Use `x` to close the current tab and `X` to restore the closed tab. | vimium |
 | 2025-12-31 | Make your resolutions specific and actionable rather than vague. | Specific goals are easier to track, you will know clearly whether you are succeeding, and they are more motivating because progress is visible. | self-help, reminder |
-| 2026-01-01 | Don't Break the Chain | For each day you complete your target task, mark a big X on that day and keep it going. | self-help, reminder |
+| 2026-01-01 | Don't Break the Chain. | For each day you complete your target task, mark a big X on that day and keep it going. | self-help, reminder |
+| 2026-01-02 | Never Miss Twice. | The first mistake is never the one that ruins you. It is the spiral of repeated mistakes that follows. Missing once is an accident. Missing twice is the start of a new habit. | self-help, reminder |
