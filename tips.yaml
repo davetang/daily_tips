@@ -1046,3 +1046,7 @@
   tip: 'Make your resolutions specific and actionable rather than vague.'
   explanation: 'Specific goals are easier to track, you will know clearly whether you are succeeding, and they are more motivating because progress is visible.'
   tags: [self-help, reminder]
+- date: 2026-01-01
+  tip: "Don't Break the Chain"
+  explanation: 'For each day you complete your target task, mark a big X on that day and keep it going.'
+  tags: [self-help, reminder]
