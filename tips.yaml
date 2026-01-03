@@ -1054,3 +1054,7 @@
   tip: "Never Miss Twice."
   explanation: 'The first mistake is never the one that ruins you. It is the spiral of repeated mistakes that follows. Missing once is an accident. Missing twice is the start of a new habit.'
   tags: [self-help, reminder]
+- date: 2026-01-03
+  tip: "The [illusion of control](https://en.wikipedia.org/wiki/Illusion_of_control) is the tendency for people to overestimate their ability to control events."
+  explanation: 'The illusion of control is the tendency for people to overestimate their ability to control events, for example, when someone feels a sense of control over outcomes that they demonstrably do not influence.'
+  tags: [self-help]
