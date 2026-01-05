@@ -1062,3 +1062,7 @@
   tip: 'A Python iterator is an object that implements `__next__()` and `__iter__()` (which returns `self`).'
   explanation: 'Note that iterators are typically exhausted after one pass-through; once you have iterated through an iterator, it is empty.'
   tags: [python, reminder]
+- date: 2026-01-05
+  tip: '`lambda arguments: expression`'
+  explanation: 'Creates anonymous functions in Python using `lambda arguments: expression`; for example: `lambda x, y: x + y`.'
+  tags: [python, reminder]
