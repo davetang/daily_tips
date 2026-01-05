@@ -1058,3 +1058,7 @@
   tip: "The [illusion of control](https://en.wikipedia.org/wiki/Illusion_of_control) is the tendency for people to overestimate their ability to control events."
   explanation: 'The illusion of control is the tendency for people to overestimate their ability to control events, for example, when someone feels a sense of control over outcomes that they demonstrably do not influence.'
   tags: [self-help]
+- date: 2026-01-04
+  tip: 'A Python iterator is an object that implements `__next__()` and `__iter__()` (which returns `self`).'
+  explanation: 'Note that iterators are typically exhausted after one pass-through; once you have iterated through an iterator, it is empty.'
+  tags: [python, reminder]
