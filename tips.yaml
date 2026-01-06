@@ -1066,3 +1066,7 @@
   tip: '`lambda arguments: expression`'
   explanation: 'Creates anonymous functions in Python using `lambda arguments: expression`; for example: `lambda x, y: x + y`.'
   tags: [python, reminder]
+- date: 2026-01-06
+  tip: 'Incentives are the cornerstone of modern life.'
+  explanation: 'Understanding incentives or ferreting them out is the key to solving just about any riddle.'
+  tags: [freakonomics]
