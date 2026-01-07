@@ -289,3 +289,4 @@ So literally, kaizen means "change for the better."
 | 2026-01-04 | A Python iterator is an object that implements `__next__()` and `__iter__()` (which returns `self`). | Note that iterators are typically exhausted after one pass-through; once you have iterated through an iterator, it is empty. | python, reminder |
 | 2026-01-05 | `lambda arguments: expression` | Creates anonymous functions in Python using `lambda arguments: expression`; for example: `lambda x, y: x + y`. | python, reminder |
 | 2026-01-06 | Incentives are the cornerstone of modern life. | Understanding incentives or ferreting them out is the key to solving just about any riddle. | freakonomics |
+| 2026-01-07 | There are three basic flavours of incentive: economic, social, and moral. | Each type of incentive has different effects depending on the situation; sometimes social incentives are very strong and sometimes economic incentives are very weak. | freakonomics |
