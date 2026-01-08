@@ -290,3 +290,4 @@ So literally, kaizen means "change for the better."
 | 2026-01-05 | `lambda arguments: expression` | Creates anonymous functions in Python using `lambda arguments: expression`; for example: `lambda x, y: x + y`. | python, reminder |
 | 2026-01-06 | Incentives are the cornerstone of modern life. | Understanding incentives or ferreting them out is the key to solving just about any riddle. | freakonomics |
 | 2026-01-07 | There are three basic flavours of incentive: economic, social, and moral. | Each type of incentive has different effects depending on the situation; sometimes social incentives are very strong and sometimes economic incentives are very weak. | freakonomics |
+| 2026-01-08 | A consumable resource is a resource that Grid Engine tracks and subtracts as jobs are scheduled. | If a resource is not a consumable resource it will not be taken into account when Grid Engine schedules jobs. | sge |
