@@ -1078,3 +1078,7 @@
   tip: 'A consumable resource is a resource that Grid Engine tracks and subtracts as jobs are scheduled.'
   explanation: 'If a resource is not a consumable resource it will not be taken into account when Grid Engine schedules jobs.'
   tags: [sge]
+- date: 2026-01-09
+  tip: 'In bioinformatics, we are often not interested in absolute gene/transcript expression levels but in relative changes.'
+  explanation: 'One set of results only makes sense with respect or in contrast to another set of results!'
+  tags: [bioinformatics, reminder]
