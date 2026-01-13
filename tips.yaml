@@ -1086,3 +1086,7 @@
   tip: "`pigz --decompress --stdout --processes 4 file.gz`"
   explanation: 'Use `pigz` instead of gzip for faster compression/decompression.'
   tags: [shell, productivity]
+- date: 2026-01-11
+  tip: '`seqkit stats reads.fastq.gz`'
+  explanation: 'SeqKit is a cross-platform and ultrafast toolkit written in Go for FASTA/Q file manipulation.'
+  tags: [bioinformatics, reminder]

@@ -293,3 +293,4 @@ So literally, kaizen means "change for the better."
 | 2026-01-08 | A consumable resource is a resource that Grid Engine tracks and subtracts as jobs are scheduled. | If a resource is not a consumable resource it will not be taken into account when Grid Engine schedules jobs. | sge |
 | 2026-01-09 | In bioinformatics, we are often not interested in absolute gene/transcript expression levels but in relative changes. | One set of results only makes sense with respect or in contrast to another set of results! | bioinformatics, reminder |
 | 2026-01-10 | `pigz --decompress --stdout --processes 4 file.gz` | Use `pigz` instead of gzip for faster compression/decompression. | shell, productivity |
+| 2026-01-11 | `seqkit stats reads.fastq.gz` | SeqKit is a cross-platform and ultrafast toolkit written in Go for FASTA/Q file manipulation. | bioinformatics, reminder |
