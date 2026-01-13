@@ -1082,3 +1082,7 @@
   tip: 'In bioinformatics, we are often not interested in absolute gene/transcript expression levels but in relative changes.'
   explanation: 'One set of results only makes sense with respect or in contrast to another set of results!'
   tags: [bioinformatics, reminder]
+- date: 2026-01-10
+  tip: "`pigz --decompress --stdout --processes 4 file.gz`"
+  explanation: 'Use `pigz` instead of gzip for faster compression/decompression.'
+  tags: [shell, productivity]
