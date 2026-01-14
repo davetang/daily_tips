@@ -1090,3 +1090,7 @@
   tip: '`seqkit stats reads.fastq.gz`'
   explanation: 'SeqKit is a cross-platform and ultrafast toolkit written in Go for FASTA/Q file manipulation.'
   tags: [bioinformatics, reminder]
+- date: 2026-01-12
+  tip: '`ps -fp <PID>`'
+  explanation: 'Get more information about a process using `ps -fp <PID>`.'
+  tags: [shell, productivity]
