@@ -1094,3 +1094,7 @@
   tip: '`ps -fp <PID>`'
   explanation: 'Get more information about a process using `ps -fp <PID>`.'
   tags: [shell, productivity]
+- date: 2026-01-13
+  tip: '`ge`'
+  explanation: 'Use `ge` to edit the current URL and `gE` to edit and open in a new tab.'
+  tags: [vimium]
