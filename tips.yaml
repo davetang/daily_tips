@@ -1098,3 +1098,7 @@
   tip: '`ge`'
   explanation: 'Use `ge` to edit the current URL and `gE` to edit and open in a new tab.'
   tags: [vimium]
+- date: 2026-01-14
+  tip: 'Use the Feynman Technique for learning.'
+  explanation: 'Choose a concept to learn; teach it to someone else; learn more if you get stuck; simplify explanations and create analogies.'
+  tags: [self-help]

@@ -296,3 +296,4 @@ So literally, kaizen means "change for the better."
 | 2026-01-11 | `seqkit stats reads.fastq.gz` | SeqKit is a cross-platform and ultrafast toolkit written in Go for FASTA/Q file manipulation. | bioinformatics, reminder |
 | 2026-01-12 | `ps -fp <PID>` | Get more information about a process using `ps -fp <PID>`. | shell, productivity |
 | 2026-01-13 | `ge` | Use `ge` to edit the current URL and `gE` to edit and open in a new tab. | vimium |
+| 2026-01-14 | Use the Feynman Technique for learning. | Choose a concept to learn; teach it to someone else; learn more if you get stuck; simplify explanations and create analogies. | self-help |
