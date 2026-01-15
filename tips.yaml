@@ -1102,3 +1102,7 @@
   tip: 'Use the Feynman Technique for learning.'
   explanation: 'Choose a concept to learn; teach it to someone else; learn more if you get stuck; simplify explanations and create analogies.'
   tags: [self-help]
+- date: 2026-01-15
+  tip: 'Always look at your data before analysing it; plots reveal what summary statistics hide.'
+  explanation: 'Visualise your data early and often; patterns not seen in tables are quite obvious in plots.'
+  tags: [analysis]
