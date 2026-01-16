@@ -1106,3 +1106,7 @@
   tip: 'Always look at your data before analysing it; plots reveal what summary statistics hide.'
   explanation: 'Visualise your data early and often; patterns not seen in tables are quite obvious in plots.'
   tags: [analysis]
+- date: 2026-01-16
+  tip: 'A dissimilarity matrix measures how different two objects are.'
+  explanation: 'The lower bound of a dissimilarity matrix is always 0 and the upper bound can be unbounded or bounded (normalised).'
+  tags: [statistics, reminder]

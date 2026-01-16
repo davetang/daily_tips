@@ -298,3 +298,4 @@ So literally, kaizen means "change for the better."
 | 2026-01-13 | `ge` | Use `ge` to edit the current URL and `gE` to edit and open in a new tab. | vimium |
 | 2026-01-14 | Use the Feynman Technique for learning. | Choose a concept to learn; teach it to someone else; learn more if you get stuck; simplify explanations and create analogies. | self-help |
 | 2026-01-15 | Always look at your data before analysing it; plots reveal what summary statistics hide. | Visualise your data early and often; patterns not seen in tables are quite obvious in plots. | analysis |
+| 2026-01-16 | A dissimilarity matrix measures how different two objects are. | The lower bound of a dissimilarity matrix is always 0 and the upper bound can be unbounded or bounded (normalised). | statistics, reminder |
