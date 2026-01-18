@@ -1114,3 +1114,7 @@
   tip: 'The anticipation of most types of rewards increases the level of [dopamine](https://en.wikipedia.org/wiki/Dopamine) in the brain.'
   explanation: 'In the brain, dopamine functions as a neurotransmitter, a chemical released by neurons (nerve cells) to send signals to other nerve cells.'
   tags: [neuroscience]
+- date: 2026-01-18
+  tip: "[While](https://pmc.ncbi.nlm.nih.gov/articles/PMC6842680/) dopamine was first synthesised in 1910, it wasn't until 1957 that dopamine was found in the human brain."
+  explanation: "Prior to the discovery that dopamine was found in the human brain, dopamine had only been found in peripheral tissues and body fluids of mammalian animals and was assumed to be just a precursor to other catecholamines."
+  tags: [neuroscience]
