@@ -1118,3 +1118,7 @@
   tip: "[While](https://pmc.ncbi.nlm.nih.gov/articles/PMC6842680/) dopamine was first synthesised in 1910, it wasn't until 1957 that dopamine was found in the human brain."
   explanation: "Prior to the discovery that dopamine was found in the human brain, dopamine had only been found in peripheral tissues and body fluids of mammalian animals and was assumed to be just a precursor to other catecholamines."
   tags: [neuroscience]
+- date: 2026-01-19
+  tip: '`realpath --relative-to=$HOME ./README.md`'
+  explanation: 'You can use `realpath` to get the full and the relative path of a file!'
+  tags: [shell, productivity]
