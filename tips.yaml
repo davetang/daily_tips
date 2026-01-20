@@ -1122,3 +1122,7 @@
   tip: '`realpath --relative-to=$HOME ./README.md`'
   explanation: 'You can use `realpath` to get the full and the relative path of a file!'
   tags: [shell, productivity]
+- date: 2026-01-20
+  tip: 'Use `fpc::cluster.stats()` to calculate an assortment of statistics that can be used to assess clustering results.'
+  explanation: 'The Flexible Procedures for Clustering {fpc} R package contains various methods for clustering and cluster validation.'
+  tags: [rstats]
