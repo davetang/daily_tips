@@ -1126,3 +1126,7 @@
   tip: 'Use `fpc::cluster.stats()` to calculate an assortment of statistics that can be used to assess clustering results.'
   explanation: 'The Flexible Procedures for Clustering {fpc} R package contains various methods for clustering and cluster validation.'
   tags: [rstats]
+- date: 2026-01-21
+  tip: 'Effect size quantifies the magnitude of a difference or relationship between variables, independent of sample size.'
+  explanation: 'P-values tell you whether an effect exists and the effect size tells you how large or practically meaningful that effect is.'
+  tags: [statistics, reminder]
