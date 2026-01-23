@@ -1134,3 +1134,7 @@
   tip: 'Alpha diversity is the diversity within a single site and beta diversity is the diversity between different sites, samples, or habitats.'
   explanation: "Examples of alpha diversity include Simpson's Index and examples of beta diversity include Bray-Curtis dissimilarity."
   tags: [ecology]
+- date: 2026-01-23
+  tip: 'The Horn-Morisita is a quantitative measure of similarity between two samples that accounts for species abundances.'
+  explanation: "The Horn-Morisita emphasises abundant species, is less affected by sample size and species richness, and good for abundance data."
+  tags: [ecology]
