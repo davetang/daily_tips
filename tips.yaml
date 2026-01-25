@@ -1138,3 +1138,7 @@
   tip: 'The Horn-Morisita is a quantitative measure of similarity between two samples that accounts for species abundances.'
   explanation: "The Horn-Morisita emphasises abundant species, is less affected by sample size and species richness, and good for abundance data."
   tags: [ecology]
+- date: 2026-01-24
+  tip: '`ncdu`'
+  explanation: 'Ncdu is a disk usage analyzer with an interactive text-mode user interface.'
+  tags: [shell, productivity]
