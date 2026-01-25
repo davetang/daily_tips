@@ -1142,3 +1142,7 @@
   tip: '`ncdu`'
   explanation: 'Ncdu is a disk usage analyzer with an interactive text-mode user interface.'
   tags: [shell, productivity]
+- date: 2026-01-25
+  tip: 'Moral hazard occurs when one party takes on more risk because another party bears the consequences of that risk.'
+  explanation: 'A person with comprehensive car insurance might drive more recklessly because the insurance company, not them, will pay for any damage.'
+  tags: [economics]
