@@ -1146,3 +1146,7 @@
   tip: 'Moral hazard occurs when one party takes on more risk because another party bears the consequences of that risk.'
   explanation: 'A person with comprehensive car insurance might drive more recklessly because the insurance company, not them, will pay for any damage.'
   tags: [economics]
+- date: 2026-01-26
+  tip: "For a habit to stick, you need motivation, the ability to do the action, and a reminder or cue to do it."
+  explanation: "Behavioural scientist BJ Fogg, founder of Stanford's Behaviour Design Lab, says when those three things come together, the behaviour happens."
+  tags: [self-help, habits]
