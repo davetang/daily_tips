@@ -309,3 +309,4 @@ So literally, kaizen means "change for the better."
 | 2026-01-24 | `ncdu` | Ncdu is a disk usage analyzer with an interactive text-mode user interface. | shell, productivity |
 | 2026-01-25 | Moral hazard occurs when one party takes on more risk because another party bears the consequences of that risk. | A person with comprehensive car insurance might drive more recklessly because the insurance company, not them, will pay for any damage. | economics |
 | 2026-01-26 | For a habit to stick, you need motivation, the ability to do the action, and a reminder or cue to do it. | Behavioural scientist BJ Fogg, founder of Stanford's Behaviour Design Lab, says when those three things come together, the behaviour happens. | self-help, habits |
+| 2026-01-27 | `exists("some_var")` | Use `exists()` in R to check if a variable exists in an environment. | rstats |

@@ -1150,3 +1150,7 @@
   tip: "For a habit to stick, you need motivation, the ability to do the action, and a reminder or cue to do it."
   explanation: "Behavioural scientist BJ Fogg, founder of Stanford's Behaviour Design Lab, says when those three things come together, the behaviour happens."
   tags: [self-help, habits]
+- date: 2026-01-27
+  tip: '`exists("some_var")`'
+  explanation: 'Use `exists()` in R to check if a variable exists in an environment.'
+  tags: [rstats]
