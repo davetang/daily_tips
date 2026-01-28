@@ -1154,3 +1154,7 @@
   tip: '`exists("some_var")`'
   explanation: 'Use `exists()` in R to check if a variable exists in an environment.'
   tags: [rstats]
+- date: 2026-01-28
+  tip: 'Yank the current line into register `a` using `"ayy` and paste using `"ap`.'
+  explanation: '`"` introduces a register in Vim and the next single character is the name. '
+  tags: [vim]
