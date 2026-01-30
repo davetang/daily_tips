@@ -1158,3 +1158,7 @@
   tip: 'Yank the current line into register `a` using `"ayy` and paste using `"ap`.'
   explanation: '`"` introduces a register in Vim and the next single character is the name. '
   tags: [vim]
+- date: 2026-01-29
+  tip: '`sudo journalctl -f`'
+  explanation: '`sudo journalctl -f` will continuously displays new log entries as they are written.'
+  tags: [linux, sysadmin]

@@ -311,3 +311,4 @@ So literally, kaizen means "change for the better."
 | 2026-01-26 | For a habit to stick, you need motivation, the ability to do the action, and a reminder or cue to do it. | Behavioural scientist BJ Fogg, founder of Stanford's Behaviour Design Lab, says when those three things come together, the behaviour happens. | self-help, habits |
 | 2026-01-27 | `exists("some_var")` | Use `exists()` in R to check if a variable exists in an environment. | rstats |
 | 2026-01-28 | Yank the current line into register `a` using `"ayy` and paste using `"ap`. | `"` introduces a register in Vim and the next single character is the name. | vim |
+| 2026-01-29 | `sudo journalctl -f` | `sudo journalctl -f` will continuously displays new log entries as they are written. | linux, sysadmin |
