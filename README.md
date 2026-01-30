@@ -312,3 +312,4 @@ So literally, kaizen means "change for the better."
 | 2026-01-27 | `exists("some_var")` | Use `exists()` in R to check if a variable exists in an environment. | rstats |
 | 2026-01-28 | Yank the current line into register `a` using `"ayy` and paste using `"ap`. | `"` introduces a register in Vim and the next single character is the name. | vim |
 | 2026-01-29 | `sudo journalctl -f` | `sudo journalctl -f` will continuously displays new log entries as they are written. | linux, sysadmin |
+| 2026-01-30 | `sudo apt-get install fail2ban` | `fail2ban` automatically blocks IP addresses that show malicious behaviour, like repeated failed login attempts. | linux, sysadmin |

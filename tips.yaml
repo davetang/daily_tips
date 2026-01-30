@@ -1162,3 +1162,7 @@
   tip: '`sudo journalctl -f`'
   explanation: '`sudo journalctl -f` will continuously displays new log entries as they are written.'
   tags: [linux, sysadmin]
+- date: 2026-01-30
+  tip: '`sudo apt-get install fail2ban`'
+  explanation: '`fail2ban` automatically blocks IP addresses that show malicious behaviour, like repeated failed login attempts.'
+  tags: [linux, sysadmin]
