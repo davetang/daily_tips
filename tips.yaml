@@ -1170,3 +1170,7 @@
   tip: '`sudo iotop -oPa`'
   explanation: '`sudo iotop -oPa` only show processes doing I/O, show processes (not threads), and accumulated mode to show processes since running iotop.'
   tags: [linux, sysadmin]
+- date: 2026-02-01
+  tip: '`:sort nu`'
+  explanation: 'Use `:sort nu` to sort a file numerically and uniquely inside Vim.'
+  tags: [vim]
