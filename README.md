@@ -315,3 +315,4 @@ So literally, kaizen means "change for the better."
 | 2026-01-30 | `sudo apt-get install fail2ban` | `fail2ban` automatically blocks IP addresses that show malicious behaviour, like repeated failed login attempts. | linux, sysadmin |
 | 2026-01-31 | `sudo iotop -oPa` | `sudo iotop -oPa` only show processes doing I/O, show processes (not threads), and accumulated mode to show processes since running iotop. | linux, sysadmin |
 | 2026-02-01 | `:sort nu` | Use `:sort nu` to sort a file numerically and uniquely inside Vim. | vim |
+| 2026-02-02 | Use sandbox mode when building Singularity images to enable experimentation before writing a definition file. | A sandbox is a writable directory structure that represents a container; sandboxes allow you to interactively modify the container's filesystem. | singularity |

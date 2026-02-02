@@ -1174,3 +1174,7 @@
   tip: '`:sort nu`'
   explanation: 'Use `:sort nu` to sort a file numerically and uniquely inside Vim.'
   tags: [vim]
+- date: 2026-02-02
+  tip: "Use sandbox mode when building Singularity images to enable experimentation before writing a definition file."
+  explanation: "A sandbox is a writable directory structure that represents a container; sandboxes allow you to interactively modify the container's filesystem."
+  tags: [singularity]
