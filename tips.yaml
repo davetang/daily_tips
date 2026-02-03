@@ -1178,3 +1178,7 @@
   tip: "Use sandbox mode when building Singularity images to enable experimentation before writing a definition file."
   explanation: "A sandbox is a writable directory structure that represents a container; sandboxes allow you to interactively modify the container's filesystem."
   tags: [singularity]
+- date: 2026-02-03
+  tip: 'Tacit knowledge is the dispersed, context-specific knowledge of time and place held by individuals that cannot be fully centralised or formally articulated, yet is essential for economic coordination (Hayek, 1945).'
+  explanation: 'It is the local, experience-based knowledge people use in practice that markets coordinate through prices rather than through explicit instructions.'
+  tags: [economics]
