@@ -1182,3 +1182,7 @@
   tip: 'Tacit knowledge is the dispersed, context-specific knowledge of time and place held by individuals that cannot be fully centralised or formally articulated, yet is essential for economic coordination (Hayek, 1945).'
   explanation: 'It is the local, experience-based knowledge people use in practice that markets coordinate through prices rather than through explicit instructions.'
   tags: [economics]
+- date: 2026-02-04
+  tip: '`ssh -o "ConnectTimeout 10"`'
+  explanation: 'Use `ssh -o "ConnectTimeout 10"` to stop SSH trying to connect after 10 seconds.'
+  tags: [shell, productivity]
