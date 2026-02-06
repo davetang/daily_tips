@@ -319,3 +319,4 @@ So literally, kaizen means "change for the better."
 | 2026-02-03 | Tacit knowledge is the dispersed, context-specific knowledge of time and place held by individuals that cannot be fully centralised or formally articulated, yet is essential for economic coordination (Hayek, 1945). | It is the local, experience-based knowledge people use in practice that markets coordinate through prices rather than through explicit instructions. | economics |
 | 2026-02-04 | `ssh -o "ConnectTimeout 10"` | Use `ssh -o "ConnectTimeout 10"` to stop SSH trying to connect after 10 seconds. | shell, productivity |
 | 2026-02-05 | `make.names(c("123", "1)3"))` | `make.names()` is a function in base R that can make syntactically valid names out of character vectors. | rstats |
+| 2026-02-06 | `sudo apt install apache2-utils` | `apache2-utils` installs a collection of utility programs for Apache, including `htpasswd` for managing password files for basic authentication. | linux, sysadmin |
