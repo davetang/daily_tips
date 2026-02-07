@@ -320,3 +320,4 @@ So literally, kaizen means "change for the better."
 | 2026-02-04 | `ssh -o "ConnectTimeout 10"` | Use `ssh -o "ConnectTimeout 10"` to stop SSH trying to connect after 10 seconds. | shell, productivity |
 | 2026-02-05 | `make.names(c("123", "1)3"))` | `make.names()` is a function in base R that can make syntactically valid names out of character vectors. | rstats |
 | 2026-02-06 | `sudo apt install apache2-utils` | `apache2-utils` installs a collection of utility programs for Apache, including `htpasswd` for managing password files for basic authentication. | linux, sysadmin |
+| 2026-02-07 | In Singularity, [persistent overlays](https://docs.sylabs.io/guides/latest/user-guide/persistent_overlays.html) allow you to overlay a writable file system on an immutable read-only container for the illusion of read-write access. | A persistent overlay in Singularity is a directory or file system image that “sits on top” of your immutable SIF container. | singularity |
