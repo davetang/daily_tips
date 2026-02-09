@@ -1202,3 +1202,7 @@
   tip: '`sudo journalctl -xe`'
   explanation: '`sudo journalctl -xe` is a quick way to see the latest log messages with as much context as the system can provide; very useful as a first step when something just broke.'
   tags: [linux, sysadmin]
+- date: 2026-02-09
+  tip: '`pheatmap::pheatmap(my_mat, breaks=seq(-2, 2, length.out=101))`.'
+  explanation: 'With {pheatmap}, when breaks do not cover the range of values, then any value higher or lower will just get the highest or lowest colour.'
+  tags: [rstats]
