@@ -1206,3 +1206,7 @@
   tip: '`pheatmap::pheatmap(my_mat, breaks=seq(-2, 2, length.out=101))`.'
   explanation: 'With {pheatmap}, when breaks do not cover the range of values, then any value higher or lower will just get the highest or lowest colour.'
   tags: [rstats]
+- date: 2026-02-10
+  tip: '`ssh-copy-id -i key.pub user@ipaddr`'
+  explanation: 'Use `ssh-copy-id -i key.pub user@ipaddr` to easily set up SSHing with a key (instead of manually preparing `~/.ssh/authorized_keys`).'
+  tags: [shell, productivity]
