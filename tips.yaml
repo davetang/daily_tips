@@ -1210,3 +1210,7 @@
   tip: '`ssh-copy-id -i key.pub user@ipaddr`'
   explanation: 'Use `ssh-copy-id -i key.pub user@ipaddr` to easily set up SSHing with a key (instead of manually preparing `~/.ssh/authorized_keys`).'
   tags: [shell, productivity]
+- date: 2026-02-11
+  tip: 'Use the [Quarto clean theme](https://github.com/grantmcdermott/quarto-revealjs-clean) for a minimalist and elegant presentation theme.'
+  explanation: 'The clean theme provides an elegant and academic-friendly design, which looks very nice.'
+  tags: [quarto]
