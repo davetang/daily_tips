@@ -1214,3 +1214,7 @@
   tip: 'Use the [Quarto clean theme](https://github.com/grantmcdermott/quarto-revealjs-clean) for a minimalist and elegant presentation theme.'
   explanation: 'The clean theme provides an elegant and academic-friendly design, which looks very nice.'
   tags: [quarto]
+- date: 2026-02-12
+  tip: '`gosu` is a tool specifically designed for Docker containers to cleanly switch from root to another user and execute a command.'
+  explanation: '`gosu` is the standard, recommended way to drop privileges in Docker entrypoint scripts.'
+  tags: [docker]
