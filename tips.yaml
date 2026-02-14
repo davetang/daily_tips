@@ -1222,3 +1222,7 @@
   tip: "If you're using Docker and user permissions are acting strange, check whether you are using rootless mode!"
   explanation: 'Use `docker info` and under Security Options you will see "rootless" if you are using rootless mode!'
   tags: [docker]
+- date: 2026-02-14
+  tip: 'Use `docker volume` to keep data even after you stop a container.'
+  explanation: 'Containers are ephemeral but volumes are not; use `docker volume create mydata`, then mount it with `-v mydata:/data` to keep data safe across container rebuilds and restarts.'
+  tags: [docker]
