@@ -1226,3 +1226,7 @@
   tip: 'Use `docker volume` to keep data even after you stop a container.'
   explanation: 'Containers are ephemeral but volumes are not; use `docker volume create mydata`, then mount it with `-v mydata:/data` to keep data safe across container rebuilds and restarts.'
   tags: [docker]
+- date: 2026-02-15
+  tip: 'Use multi-stage builds to keep Docker images small.'
+  explanation: 'Compile or build in one stage, then `COPY --from=builder` only the final artifacts into a minimal runtime image; this avoids shipping compilers, build tools, and intermediate files.'
+  tags: [docker, best practice]
