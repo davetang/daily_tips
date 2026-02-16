@@ -1230,3 +1230,7 @@
   tip: 'Use multi-stage builds to keep Docker images small.'
   explanation: 'Compile or build in one stage, then `COPY --from=builder` only the final artifacts into a minimal runtime image; this avoids shipping compilers, build tools, and intermediate files.'
   tags: [docker, best practice]
+- date: 2026-02-16
+  tip: 'Use `define`/`endef` in GNU Make to create canned recipes for reusable command sequences.'
+  explanation: 'Canned recipes let you define a sequence of commands once with `define run-tests ... endef` and reuse it across multiple rules with `$(run-tests)`, keeping your Makefile DRY.'
+  tags: [make, productivity]
