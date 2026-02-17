@@ -1234,3 +1234,7 @@
   tip: 'Use `define`/`endef` in GNU Make to create canned recipes for reusable command sequences.'
   explanation: 'Canned recipes let you define a sequence of commands once with `define run-tests ... endef` and reuse it across multiple rules with `$(run-tests)`, keeping your Makefile DRY.'
   tags: [make, productivity]
+- date: 2026-02-17
+  tip: '`docker system df`'
+  explanation: 'Use `docker system df` to show Docker disk usage broken down by images, containers, volumes, and build cache; use `-v` for detailed output.'
+  tags: [docker]
