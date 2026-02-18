@@ -1238,3 +1238,7 @@
   tip: '`docker system df`'
   explanation: 'Use `docker system df` to show Docker disk usage broken down by images, containers, volumes, and build cache; use `-v` for detailed output.'
   tags: [docker]
+- date: 2026-02-18
+  tip: '`sudo dmesg -T --level=err,warn`'
+  explanation: 'Use `dmesg -T` for human-readable timestamps and `--level` to filter by severity; great for quickly spotting hardware or driver issues.'
+  tags: [linux, sysadmin]
