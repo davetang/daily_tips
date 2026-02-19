@@ -1242,3 +1242,7 @@
   tip: '`sudo dmesg -T --level=err,warn`'
   explanation: 'Use `dmesg -T` for human-readable timestamps and `--level` to filter by severity; great for quickly spotting hardware or driver issues.'
   tags: [linux, sysadmin]
+- date: 2026-02-19
+  tip: '`sudo nvme smart-log /dev/nvme0`'
+  explanation: 'Check NVMe drive health; look at `media_errors`, `percentage_used`, and `available_spare` to assess whether your drive needs replacing.'
+  tags: [linux, sysadmin]

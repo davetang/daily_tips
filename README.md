@@ -332,3 +332,4 @@ So literally, kaizen means "change for the better."
 | 2026-02-16 | Use `define`/`endef` in GNU Make to create canned recipes for reusable command sequences. | Canned recipes let you define a sequence of commands once with `define run-tests ... endef` and reuse it across multiple rules with `$(run-tests)`, keeping your Makefile DRY. | make, productivity |
 | 2026-02-17 | `docker system df` | Use `docker system df` to show Docker disk usage broken down by images, containers, volumes, and build cache; use `-v` for detailed output. | docker |
 | 2026-02-18 | `sudo dmesg -T --level=err,warn` | Use `dmesg -T` for human-readable timestamps and `--level` to filter by severity; great for quickly spotting hardware or driver issues. | linux, sysadmin |
+| 2026-02-19 | `sudo nvme smart-log /dev/nvme0` | Check NVMe drive health; look at `media_errors`, `percentage_used`, and `available_spare` to assess whether your drive needs replacing. | linux, sysadmin |
