@@ -1246,3 +1246,7 @@
   tip: '`sudo nvme smart-log /dev/nvme0`'
   explanation: 'Check NVMe drive health; look at `media_errors`, `percentage_used`, and `available_spare` to assess whether your drive needs replacing.'
   tags: [linux, sysadmin]
+- date: 2026-02-20
+  tip: '`pdftotext file.pdf file.txt`'
+  explanation: 'Extracts text from a PDF and saves it to a plain text file. Install via `sudo apt install poppler-utils` on Debian/Ubuntu).'
+  tags: [linux, productivity]
