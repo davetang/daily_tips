@@ -1250,3 +1250,7 @@
   tip: '`pdftotext file.pdf file.txt`'
   explanation: 'Extracts text from a PDF and saves it to a plain text file. Install via `sudo apt install poppler-utils` on Debian/Ubuntu).'
   tags: [linux, productivity]
+- date: 2026-02-21
+  tip: '`flock -n /tmp/myjob.lock ./myjob.sh`'
+  explanation: 'Runs `myjob.sh` only if no other instance is running; `-n` exits immediately if the lock is already held rather than waiting. The lock is kernel-level, not file-existence-based, so it is released automatically when the process ends - no cleanup needed.'
+  tags: [linux, shell, scripting]
