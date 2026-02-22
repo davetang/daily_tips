@@ -1254,3 +1254,7 @@
   tip: '`flock -n /tmp/myjob.lock ./myjob.sh`'
   explanation: 'Runs `myjob.sh` only if no other instance is running; `-n` exits immediately if the lock is already held rather than waiting. The lock is kernel-level, not file-existence-based, so it is released automatically when the process ends - no cleanup needed.'
   tags: [linux, shell, scripting]
+- date: 2026-02-22
+  tip: '`sudo unshare --net ./my_tool`'
+  explanation: 'Runs `my_tool` in an isolated network namespace with no interfaces, routes, or connectivity - useful for testing whether a tool works without network access. The namespace is kernel-level and disappears automatically when the process exits.'
+  tags: [linux, networking, testing]
