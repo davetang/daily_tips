@@ -1262,3 +1262,7 @@
   tip: '`pgrep -la pattern`'
   explanation: 'List all running processes matching a name pattern, with their PIDs and full command lines. `pkill pattern` kills them all. Much friendlier than `ps aux | grep ...`.'
   tags: [linux, shell, productivity]
+- date: 2026-02-24
+  tip: '`log(x=4, base=2)`'
+  explanation: 'In R, instead of using `log2` or `log10` use `log(base=2)` or `log(base=10)` because that way you can generalise to any base!'
+  tags: [rstats]
