@@ -1266,3 +1266,7 @@
   tip: '`log(x=4, base=2)`'
   explanation: 'In R, instead of using `log2` or `log10` use `log(base=2)` or `log(base=10)` because that way you can generalise to any base!'
   tags: [rstats]
+- date: 2026-02-25
+  tip: 'Use `dplyr::row_number()` to rank by a column.'
+  explanation: '`dplyr::row_number()` accepts a column argument and ranks directly; as noted in the documentation, by default, the smallest values will get the smallest ranks.'
+  tags: [rstats, dplyr]
