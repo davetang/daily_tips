@@ -1270,3 +1270,7 @@
   tip: 'Use `dplyr::row_number()` to rank by a column.'
   explanation: '`dplyr::row_number()` accepts a column argument and ranks directly; as noted in the documentation, by default, the smallest values will get the smallest ranks.'
   tags: [rstats, dplyr]
+- date: 2026-02-26
+  tip: 'Use `dplyr::coalesce()` to find the first non-missing value across columns.'
+  explanation: '`dplyr::coalesce(x, y, z)` returns the first non-`NA` value for each element, checking `x` first, then `y`, then `z`; great for consolidating multiple imperfect columns into one.'
+  tags: [rstats, dplyr]
