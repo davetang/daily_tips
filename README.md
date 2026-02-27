@@ -340,3 +340,4 @@ So literally, kaizen means "change for the better."
 | 2026-02-24 | `log(x=4, base=2)` | In R, instead of using `log2` or `log10` use `log(base=2)` or `log(base=10)` because that way you can generalise to any base! | rstats |
 | 2026-02-25 | Use `dplyr::row_number()` to rank by a column. | `dplyr::row_number()` accepts a column argument and ranks directly; as noted in the documentation, by default, the smallest values will get the smallest ranks. | rstats, dplyr |
 | 2026-02-26 | Use `dplyr::coalesce()` to find the first non-missing value across columns. | `dplyr::coalesce(x, y, z)` returns the first non-`NA` value for each element, checking `x` first, then `y`, then `z`; great for consolidating multiple imperfect columns into one. | rstats, dplyr |
+| 2026-02-27 | `find . -name "*.log" -o -name "*.tmp"` | The `-o` flag is the OR operator in `find`; use it to match multiple patterns in a single command. | shell, find |

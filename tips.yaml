@@ -1274,3 +1274,7 @@
   tip: 'Use `dplyr::coalesce()` to find the first non-missing value across columns.'
   explanation: '`dplyr::coalesce(x, y, z)` returns the first non-`NA` value for each element, checking `x` first, then `y`, then `z`; great for consolidating multiple imperfect columns into one.'
   tags: [rstats, dplyr]
+- date: 2026-02-27
+  tip: '`find . -name "*.log" -o -name "*.tmp"`'
+  explanation: 'The `-o` flag is the OR operator in `find`; use it to match multiple patterns in a single command.'
+  tags: [shell, find]
