@@ -1278,3 +1278,7 @@
   tip: '`find . -name "*.log" -o -name "*.tmp"`'
   explanation: 'The `-o` flag is the OR operator in `find`; use it to match multiple patterns in a single command.'
   tags: [shell, find]
+- date: 2026-02-28
+  tip: 'Use `dplyr::add_count(df, dplyr::across(everything())) |> dplyr::filter(n > 1)` to find duplicate rows.'
+  explanation: '`dplyr::add_count()` appends an `n` column counting identical rows without collapsing the data; `dplyr::across(everything())` groups by all columns so only true duplicates get `n > 1`.'
+  tags: [rstats, dplyr]
