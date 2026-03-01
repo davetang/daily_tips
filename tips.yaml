@@ -1282,3 +1282,7 @@
   tip: 'Use `dplyr::add_count(df, dplyr::across(everything())) |> dplyr::filter(n > 1)` to find duplicate rows.'
   explanation: '`dplyr::add_count()` appends an `n` column counting identical rows without collapsing the data; `dplyr::across(everything())` groups by all columns so only true duplicates get `n > 1`.'
   tags: [rstats, dplyr]
+- date: 2026-03-01
+  tip: 'Use `dplyr::case_when()` for vectorised if-else logic.'
+  explanation: '`dplyr::case_when(x > 10 ~ "high", x > 5 ~ "medium", .default = "low")` evaluates conditions in order and returns the corresponding value; the `.default` argument handles all unmatched cases.'
+  tags: [rstats, dplyr]
