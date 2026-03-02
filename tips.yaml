@@ -1286,3 +1286,7 @@
   tip: 'Use `dplyr::case_when()` for vectorised if-else logic.'
   explanation: '`dplyr::case_when(x > 10 ~ "high", x > 5 ~ "medium", .default = "low")` evaluates conditions in order and returns the corresponding value; the `.default` argument handles all unmatched cases.'
   tags: [rstats, dplyr]
+- date: 2026-03-02
+  tip: 'Use `dplyr::anti_join()` to filter out a blocklist.'
+  explanation: '`dplyr::anti_join(users, banned, by = "user_id")` removes every banned user in one readable step, without needing `%in%` or a manual `filter(!id %in% other$id)`.'
+  tags: [rstats, dplyr]
