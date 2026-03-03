@@ -1290,3 +1290,7 @@
   tip: 'Use `dplyr::anti_join()` to filter out a blocklist.'
   explanation: '`dplyr::anti_join(users, banned, by = "user_id")` removes every banned user in one readable step, without needing `%in%` or a manual `filter(!id %in% other$id)`.'
   tags: [rstats, dplyr]
+- date: 2026-03-03
+  tip: 'Prefer `dplyr::if_else(x > 0, "positive", "non-positive")` over base `ifelse()`.'
+  explanation: '`dplyr::if_else()` enforces that the `true` and `false` values are the same type, catching subtle bugs; it also handles `NA` explicitly via the `missing` argument.'
+  tags: [rstats, dplyr]
