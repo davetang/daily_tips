@@ -1294,3 +1294,7 @@
   tip: 'Prefer `dplyr::if_else(x > 0, "positive", "non-positive")` over base `ifelse()`.'
   explanation: '`dplyr::if_else()` enforces that the `true` and `false` values are the same type, catching subtle bugs; it also handles `NA` explicitly via the `missing` argument.'
   tags: [rstats, dplyr]
+- date: 2026-03-04
+  tip: '`zgrep "ERROR" app.log.gz`'
+  explanation: 'Searches inside a gzipped file without decompressing it first. The whole `z*` family works the same way: `zcat`, `zless`, `zdiff`, and `zawk` all accept `.gz` files directly.'
+  tags: [shell, linux, productivity]
