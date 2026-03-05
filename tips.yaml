@@ -1298,3 +1298,7 @@
   tip: '`zgrep "ERROR" app.log.gz`'
   explanation: 'Searches inside a gzipped file without decompressing it first. The whole `z*` family works the same way: `zcat`, `zless`, `zdiff`, and `zawk` all accept `.gz` files directly.'
   tags: [shell, linux, productivity]
+- date: 2026-03-05
+  tip: '`find dir1 dir2 dir3 -name "*.txt"`'
+  explanation: '`find` accepts multiple starting paths; fewer people know this than other `find` tricks, and it avoids running the command multiple times or using a loop.'
+  tags: [shell, find]
