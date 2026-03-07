@@ -1306,3 +1306,7 @@
   tip: 'Use `systemctl --user enable --now myservice.service` to run your own services without root.'
   explanation: 'Place a unit file in `~/.config/systemd/user/` and `systemctl --user` manages it entirely in your own session — no sudo needed. Use `systemctl --user status` to inspect all your personal services.'
   tags: [shell, linux, systemd]
+- date: 2026-03-07
+  tip: 'Use `disown %1` to detach a background job so it survives logout.'
+  explanation: 'After running `cmd &`, use `jobs` to see job numbers, then `disown %1` removes job 1 from the shell''s job table. Unlike `nohup`, it works on already-running jobs you forgot to protect.'
+  tags: [shell, linux, productivity]
