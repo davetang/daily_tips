@@ -1318,3 +1318,7 @@
   tip: '`swapon --show` displays all active swap spaces and their usage.'
   explanation: 'The output columns are: `NAME` (device or file path), `TYPE` (partition or file), `SIZE` (total swap space), `USED` (currently occupied), and `PRIO` (priority — higher values are used first; ties go to the earlier-activated swap).'
   tags: [shell, linux, sysadmin]
+- date: 2026-03-10
+  tip: 'Use `Ctrl-a M` in GNU screen to monitor a background window for activity.'
+  explanation: 'Screen highlights the window and alerts you when new output appears, so you can work elsewhere without constantly switching to check on a running job. Press `Ctrl-a M` again in the same window to toggle monitoring off.'
+  tags: [screen, productivity]
