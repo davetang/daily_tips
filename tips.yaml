@@ -1322,3 +1322,7 @@
   tip: 'Use `Ctrl-a M` in GNU screen to monitor a background window for activity.'
   explanation: 'Screen highlights the window and alerts you when new output appears, so you can work elsewhere without constantly switching to check on a running job. Press `Ctrl-a M` again in the same window to toggle monitoring off.'
   tags: [screen, productivity]
+- date: 2026-03-11
+  tip: '`all(x %% 1 == 0)`'
+  explanation: 'In R, `is.integer()` will return `FALSE` even if you have all integers but stored in class numeric; use `all(x %% 1 == 0)`.'
+  tags: [rstats]
