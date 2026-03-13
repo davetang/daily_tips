@@ -1330,3 +1330,7 @@
   tip: 'Use `sudo journalctl -k --grep="oom_reaper"` to find kernel OOM kill events.'
   explanation: '`journalctl -k` reads kernel messages from the persistent systemd journal and `--grep` filters entries by a regex pattern applied to the message field.'
   tags: [shell, linux, sysadmin]
+- date: 2026-03-13
+  tip: 'Use `.groups = "drop"` in `dplyr::summarise()` to avoid silently retaining grouping.'
+  explanation: 'After `group_by() |> summarise()`, the result remains grouped by all but the last grouping variable; passing `.groups = "drop"` makes the output a plain data frame and prevents subtle bugs in downstream operations.'
+  tags: [rstats, dplyr]
