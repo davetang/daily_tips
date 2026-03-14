@@ -1334,3 +1334,7 @@
   tip: 'Use `.groups = "drop"` in `dplyr::summarise()` to avoid silently retaining grouping.'
   explanation: 'After `group_by() |> summarise()`, the result remains grouped by all but the last grouping variable; passing `.groups = "drop"` makes the output a plain data frame and prevents subtle bugs in downstream operations.'
   tags: [rstats, dplyr]
+- date: 2026-03-14
+  tip: 'Prefer `dplyr::bind_rows()` over `rbind()` for stacking data frames.'
+  explanation: '`bind_rows()` matches columns by name rather than position, and fills any missing columns with `NA` instead of erroring; it also accepts a list of data frames and an `.id` argument to record which source each row came from.'
+  tags: [rstats, dplyr]
