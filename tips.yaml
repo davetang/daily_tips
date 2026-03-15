@@ -1338,3 +1338,7 @@
   tip: 'Prefer `dplyr::bind_rows()` over `rbind()` for stacking data frames.'
   explanation: '`bind_rows()` matches columns by name rather than position, and fills any missing columns with `NA` instead of erroring; it also accepts a list of data frames and an `.id` argument to record which source each row came from.'
   tags: [rstats, dplyr]
+- date: 2026-03-15
+  tip: 'Use `dplyr::consecutive_id()` to label consecutive runs of identical values.'
+  explanation: '`dplyr::mutate(df, run = dplyr::consecutive_id(x))` increments the ID each time `x` differs from the previous row.'
+  tags: [rstats, dplyr]
