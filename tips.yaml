@@ -1350,3 +1350,7 @@
   tip: 'Use `readr::read_csv(f, name_repair = "universal")` to auto-fix messy column names.'
   explanation: 'The `"universal"` strategy applies `vctrs::vec_as_names()` with `repair = "universal"`, which replaces spaces and special characters with `.`, prepends `...` to names that start with a number, and appends `...N` to disambiguate duplicates — guaranteeing every column name is unique, syntactically valid, and usable without backticks.'
   tags: [rstats, readr]
+- date: 2026-03-18
+  tip: 'Use `ssh-keygen -R hostname` to remove a stale host key from `known_hosts`.'
+  explanation: 'When a SSH key changes, SSH refuses to connect with a scary "host key verification failed" warning. `ssh-keygen -R hostname` deletes only that host''s entry from `~/.ssh/known_hosts`.'
+  tags: [shell, linux, ssh]
