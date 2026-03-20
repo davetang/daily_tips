@@ -1358,3 +1358,7 @@
   tip: 'Use `git add -u` to stage only modified and deleted files, skipping untracked files.'
   explanation: 'Unlike `git add -A` or `git add .`, which stage everything including new untracked files, `git add -u` restricts staging to files already tracked by Git. This is useful when you have scratch files, logs, or experiments in your working tree that you do not want to accidentally commit.'
   tags: [git]
+- date: 2026-03-20
+  tip: 'Use `git checkout origin/main -- path/to/file` to grab a single updated file from the remote.'
+  explanation: '`git pull` always fetches and merges entire commits. To update just one file, run `git fetch origin` first, then `git checkout origin/main -- path/to/file` to overwrite your local copy with the remote version without merging everything else.'
+  tags: [git]
