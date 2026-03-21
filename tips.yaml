@@ -1362,3 +1362,7 @@
   tip: 'Use `git checkout origin/main -- path/to/file` to grab a single updated file from the remote.'
   explanation: '`git pull` always fetches and merges entire commits. To update just one file, run `git fetch origin` first, then `git checkout origin/main -- path/to/file` to overwrite your local copy with the remote version without merging everything else.'
   tags: [git]
+- date: 2026-03-21
+  tip: 'Use a Git worktree when you need to context-switch without disrupting your current in-progress work.'
+  explanation: 'By default, a Git repo has one worktree (your main checkout). With `git worktree add ../hotfix hotfix-branch`, you create an additional directory on disk that checks out a different branch. Each worktree has its own files and index but shares the same Git history, so there is no need to stash or commit before switching tasks.'
+  tags: [git, productivity]
