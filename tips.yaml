@@ -1366,3 +1366,7 @@
   tip: 'Use a Git worktree when you need to context-switch without disrupting your current in-progress work.'
   explanation: 'By default, a Git repo has one worktree (your main checkout). With `git worktree add ../hotfix hotfix-branch`, you create an additional directory on disk that checks out a different branch. Each worktree has its own files and index but shares the same Git history, so there is no need to stash or commit before switching tasks.'
   tags: [git, productivity]
+- date: 2026-03-22
+  tip: 'Think on the margin: base decisions on the additional cost and benefit of one more unit, not on totals or averages.'
+  explanation: 'Marginal thinking asks "should I do one more?" rather than "should I do this at all?" For example, whether to work an extra hour depends on what that specific hour yields versus what it costs you, not on how many hours you have already put in. Sunk costs are irrelevant; only the next unit matters.'
+  tags: [economics]
