@@ -1370,3 +1370,7 @@
   tip: 'Think on the margin: base decisions on the additional cost and benefit of one more unit, not on totals or averages.'
   explanation: 'Marginal thinking asks "should I do one more?" rather than "should I do this at all?" For example, whether to work an extra hour depends on what that specific hour yields versus what it costs you, not on how many hours you have already put in. Sunk costs are irrelevant; only the next unit matters.'
   tags: [economics]
+- date: 2026-03-23
+  tip: 'Use `cut -f2-` to extract from the second field onwards.'
+  explanation: 'The `-f` flag in `cut` accepts range specifiers: `2-` means field 2 through the last field, `1-3` means fields 1 to 3, and `-4` means fields 1 to 4.'
+  tags: [shell, reminder]
