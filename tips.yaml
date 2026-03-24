@@ -1374,3 +1374,7 @@
   tip: 'Use `cut -f2-` to extract from the second field onwards.'
   explanation: 'The `-f` flag in `cut` accepts range specifiers: `2-` means field 2 through the last field, `1-3` means fields 1 to 3, and `-4` means fields 1 to 4.'
   tags: [shell, reminder]
+- date: 2026-03-24
+  tip: 'Use `my_list[[1]]` as the first argument and `my_list[-1]` as the second to pass a list to a function that expects a single element plus a list.'
+  explanation: 'When a function like `merge()` takes one object as `x` and a list of objects as `y`, use `merge(my_list[[1]], my_list[-1])` to split a list into its first element and the remainder using negative indexing, avoiding loops or repeated calls.'
+  tags: [rstats]
