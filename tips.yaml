@@ -1378,3 +1378,7 @@
   tip: 'Use `my_list[[1]]` as the first argument and `my_list[-1]` as the second to pass a list to a function that expects a single element plus a list.'
   explanation: 'When a function like `merge()` takes one object as `x` and a list of objects as `y`, use `merge(my_list[[1]], my_list[-1])` to split a list into its first element and the remainder using negative indexing, avoiding loops or repeated calls.'
   tags: [rstats]
+- date: 2026-03-25
+  tip: 'Reduce friction for good habits and increase it for bad ones.'
+  explanation: 'Make the desired behaviour the path of least resistance: lay out your running shoes the night before, keep healthy snacks at eye level, or delete distracting apps from your home screen. The more effort a behaviour requires, the less likely it is to happen, so design your environment to work for you rather than against you.'
+  tags: [self-help, habits]
