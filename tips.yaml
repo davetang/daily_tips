@@ -1386,3 +1386,7 @@
   tip: "Use Bash parameter expansion `${var//pattern/replacement}` for global substitution without calling `sed`."
   explanation: "A single slash `${var/pattern/replacement}` replaces the first match; a double slash replaces all. The pattern and replacement can use `$'...'` quoting for special characters, e.g. `${FOOBAR//$'\\n'/_}` replaces every newline with an underscore."
   tags: [shell, bash, reminder]
+- date: 2026-03-27
+  tip: "Use `${BASH_SOURCE[0]}` instead of `$0` to get the script's own path."
+  explanation: "`$0` changes when a script is sourced (it becomes the caller's name), but `${BASH_SOURCE[0]}` always refers to the file where the code is written."
+  tags: [shell, bash, reminder]
