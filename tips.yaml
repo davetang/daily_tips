@@ -1390,3 +1390,7 @@
   tip: "Use `${BASH_SOURCE[0]}` instead of `$0` to get the script's own path."
   explanation: "`$0` changes when a script is sourced (it becomes the caller's name), but `${BASH_SOURCE[0]}` always refers to the file where the code is written."
   tags: [shell, bash, reminder]
+- date: 2026-03-28
+  tip: 'Use a here-string `<<< "$var"` instead of `echo "$var" | cmd`.'
+  explanation: 'A here-string feeds a string directly to a command''s stdin without spawning a subshell for `echo` and a pipe, e.g. `wc -w <<< "$sentence"`.'
+  tags: [shell, bash, reminder]
