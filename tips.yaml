@@ -1402,3 +1402,7 @@
   tip: 'Compare yourself to who you were yesterday, not to who someone else is today.'
   explanation: 'Measuring progress against others invites envy and discouragement because you are comparing yourself with their highlight reel. The only meaningful benchmark is your own trajectory.'
   tags: [self-help, reminder]
+- date: 2026-03-31
+  tip: 'Use `readRDS(url("https://example.com/file.rds", "rb"))` to load an RDS file directly from a URL.'
+  explanation: 'Wrapping a URL in `url(..., "rb")` opens a binary connection that `readRDS()` can read from directly, so you can skip downloading the file to disk first.'
+  tags: [rstats, reminder]
