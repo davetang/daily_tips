@@ -1406,3 +1406,7 @@
   tip: 'Use `readRDS(url("https://example.com/file.rds", "rb"))` to load an RDS file directly from a URL.'
   explanation: 'Wrapping a URL in `url(..., "rb")` opens a binary connection that `readRDS()` can read from directly, so you can skip downloading the file to disk first.'
   tags: [rstats, reminder]
+- date: 2026-04-01
+  tip: 'Exclude `.map` files from your NPM package by adding them to `.npmignore` or using the `files` field in `package.json`.'
+  explanation: 'Source maps (`.js.map`) are debug files that map minified JavaScript back to original TypeScript. They are useful during development but should never ship to production or be published to NPM, as they expose your original source code and bloat the package.'
+  tags: [javascript, typescript, reminder]
