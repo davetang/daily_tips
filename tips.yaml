@@ -1410,3 +1410,7 @@
   tip: 'Exclude `.map` files from your NPM package by adding them to `.npmignore` or using the `files` field in `package.json`.'
   explanation: 'Source maps (`.js.map`) are debug files that map minified JavaScript back to original TypeScript. They are useful during development but should never ship to production or be published to NPM, as they expose your original source code and bloat the package.'
   tags: [javascript, typescript, reminder]
+- date: 2026-04-02
+  tip: 'Use spaced repetition to retain what you learn.'
+  explanation: 'Review material at increasing intervals, e.g. after 1 day, 3 days, 1 week, then 2 weeks, to exploit the spacing effect. Anki is a free, open-source flashcard app that automates this schedule for you, but even a simple calendar reminder works.'
+  tags: [self-help, learning]
