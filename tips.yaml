@@ -1414,3 +1414,7 @@
   tip: 'Use spaced repetition to retain what you learn.'
   explanation: 'Review material at increasing intervals, e.g. after 1 day, 3 days, 1 week, then 2 weeks, to exploit the spacing effect. Anki is a free, open-source flashcard app that automates this schedule for you, but even a simple calendar reminder works.'
   tags: [self-help, learning]
+- date: 2026-04-03
+  tip: 'A 2 by 2 contingency table can help illustrate marginal and conditional probability.'
+  explanation: 'Marginal probabilities are the row and column proportions, and conditional probabilities are the respective ratios on rows and columns.'
+  tags: [learning]
