@@ -1418,3 +1418,7 @@
   tip: 'A 2 by 2 contingency table can help illustrate marginal and conditional probability.'
   explanation: 'Marginal probabilities are the row and column proportions, and conditional probabilities are the respective ratios on rows and columns.'
   tags: [learning]
+- date: 2026-04-04
+  tip: 'People respond to incentives, so if you want to change behaviour, change the incentives.'
+  explanation: 'Incentives can be financial, social, or moral. A well-designed incentive aligns individual self-interest with the desired outcome; a poorly designed one invites gaming and unintended consequences.'
+  tags: [economics]
