@@ -1422,3 +1422,7 @@
   tip: 'People respond to incentives, so if you want to change behaviour, change the incentives.'
   explanation: 'Incentives can be financial, social, or moral. A well-designed incentive aligns individual self-interest with the desired outcome; a poorly designed one invites gaming and unintended consequences.'
   tags: [economics]
+- date: 2026-04-05
+  tip: '`autoload zcalc && zcalc`'
+  explanation: '`zcalc` is a Zsh built-in calculator that supports floating point, variables, and math functions like `sin()` and `log()`. It keeps a history of results accessible via `$1`, `$2`, etc. No need to install `bc` or `python` just to do quick maths.'
+  tags: [shell, zsh, productivity]
