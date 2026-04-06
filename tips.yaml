@@ -1426,3 +1426,7 @@
   tip: '`autoload zcalc && zcalc`'
   explanation: '`zcalc` is a Zsh built-in calculator that supports floating point, variables, and math functions like `sin()` and `log()`. It keeps a history of results accessible via `$1`, `$2`, etc. No need to install `bc` or `python` just to do quick maths.'
   tags: [shell, zsh, productivity]
+- date: 2026-04-06
+  tip: 'DBSCAN clusters by density, so it can find arbitrarily shaped clusters and naturally identifies outliers as noise.'
+  explanation: 'Unlike k-means, DBSCAN does not require you to specify the number of clusters in advance and is not biased toward spherical shapes. Points in sparse regions are labelled as noise (cluster 0), making it a great first choice when your data has irregular structure or outliers.'
+  tags: [statistics, clustering]
