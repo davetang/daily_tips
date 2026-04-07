@@ -1430,3 +1430,7 @@
   tip: 'DBSCAN clusters by density, so it can find arbitrarily shaped clusters and naturally identifies outliers as noise.'
   explanation: 'Unlike k-means, DBSCAN does not require you to specify the number of clusters in advance and is not biased toward spherical shapes. Points in sparse regions are labelled as noise (cluster 0), making it a great first choice when your data has irregular structure or outliers.'
   tags: [statistics, clustering]
+- date: 2026-04-07
+  tip: 'Spectral clustering uses the eigenvectors of a similarity graph to find clusters that k-means alone would miss.'
+  explanation: 'A similarity graph is built by connecting each point to its nearest neighbours (or all points within a radius) with edges weighted by a kernel such as the Gaussian. Then the spectrum (eigenvalues) of the graph Laplacian embeds points into a lower-dimensional space where standard k-means works well.'
+  tags: [statistics, clustering]
