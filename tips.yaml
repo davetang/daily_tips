@@ -1438,3 +1438,7 @@
   tip: '`ggplot(df, aes(x = forcats::fct_reorder(category, value), y = value))`'
   explanation: '`fct_reorder()` reorders factor levels by a summary of another variable (median by default). This is the easiest way to turn an alphabetically sorted bar or box plot into one sorted by magnitude, which is almost always more informative.'
   tags: [rstats, ggplot2, visualisation]
+- date: 2026-04-09
+  tip: 'Use `data.table::fread()` instead of `read.csv()` or `readr::read_csv()` for large files.'
+  explanation: '`fread()` is typically 5-10x faster than `readr::read_csv()` and orders of magnitude faster than base `read.csv()`. It auto-detects delimiters, column types, and handles compressed files, and you can use the `select` argument to read only the columns you need.'
+  tags: [rstats, reminder]
