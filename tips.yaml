@@ -1442,3 +1442,7 @@
   tip: 'Use `data.table::fread()` instead of `read.csv()` or `readr::read_csv()` for large files.'
   explanation: '`fread()` is typically 5-10x faster than `readr::read_csv()` and orders of magnitude faster than base `read.csv()`. It auto-detects delimiters, column types, and handles compressed files, and you can use the `select` argument to read only the columns you need.'
   tags: [rstats, reminder]
+- date: 2026-04-10
+  tip: '`stringr::str_glue("Hello {name}, you have {n} items")`'
+  explanation: 'String interpolation for R just like Python f-strings; any R expression inside `{}` is evaluated, so `{Sys.Date()}`, `{nrow(df)}`, and `{paste0(x, collapse = ", ")}` all work. Much cleaner than nested `paste0()` calls and works inside `mutate()` too.'
+  tags: [rstats, stringr, tidyverse]
