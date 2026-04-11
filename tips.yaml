@@ -1446,3 +1446,7 @@
   tip: '`stringr::str_glue("Hello {name}, you have {n} items")`'
   explanation: 'String interpolation for R just like Python f-strings; any R expression inside `{}` is evaluated, so `{Sys.Date()}`, `{nrow(df)}`, and `{paste0(x, collapse = ", ")}` all work. Much cleaner than nested `paste0()` calls and works inside `mutate()` too.'
   tags: [rstats, stringr, tidyverse]
+- date: 2026-04-11
+  tip: "Tobler's First Law of Geography: 'Everything is related to everything else, but near things are more related than distant things.'"
+  explanation: "This principle underpins spatial statistics and methods like kriging, inverse-distance weighting, and spatial autocorrelation (Moran's I). If your data has a location component, ignoring spatial proximity often means ignoring the strongest signal in the data."
+  tags: [statistics, geography]
