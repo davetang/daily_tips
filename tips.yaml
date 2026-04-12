@@ -1450,3 +1450,7 @@
   tip: "Tobler's First Law of Geography: 'Everything is related to everything else, but near things are more related than distant things.'"
   explanation: "This principle underpins spatial statistics and methods like kriging, inverse-distance weighting, and spatial autocorrelation (Moran's I). If your data has a location component, ignoring spatial proximity often means ignoring the strongest signal in the data."
   tags: [statistics, geography]
+- date: 2026-04-12
+  tip: 'Simpson''s Paradox: a trend in subgroups can reverse when the groups are combined.'
+  explanation: 'Imagine comparing two drugs. Drug A has a higher survival rate than Drug B among mild cases and also among severe cases. But if most patients given Drug B had mild cases (who survive more easily regardless of treatment), Drug B can appear better overall. The uneven mix of mild and severe patients between the two groups distorts the combined result.'
+  tags: [statistics, reminder]
