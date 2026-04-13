@@ -1454,3 +1454,7 @@
   tip: 'Simpson''s Paradox: a trend in subgroups can reverse when the groups are combined.'
   explanation: 'Imagine comparing two drugs. Drug A has a higher survival rate than Drug B among mild cases and also among severe cases. But if most patients given Drug B had mild cases (who survive more easily regardless of treatment), Drug B can appear better overall. The uneven mix of mild and severe patients between the two groups distorts the combined result.'
   tags: [statistics, reminder]
+- date: 2026-04-13
+  tip: 'In Markdown pipe tables, the relative length of the hyphens in the separator row controls column width.'
+  explanation: '`| Name | Description |` followed by `|------|--------------------------|` makes the second column roughly four times wider than the first. The ratio of hyphens is what matters, not the absolute count. This works in Pandoc-based renderers like Quarto and R Markdown but is ignored by GitHub-flavoured Markdown.'
+  tags: [markdown, quarto, reminder]
