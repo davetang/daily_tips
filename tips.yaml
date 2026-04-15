@@ -1462,3 +1462,7 @@
   tip: '`ubuntu-drivers devices`'
   explanation: 'Lists your hardware and the recommended drivers for each device, most commonly for NVIDIA GPUs. Follow up with `sudo ubuntu-drivers autoinstall` to install the recommended driver, or `sudo apt install nvidia-driver-XXX` to pick a specific version. Saves you from manually matching your GPU model to the right driver package.'
   tags: [linux, sysadmin, ubuntu]
+- date: 2026-04-15
+  tip: 'The [Central Limit Theorem](https://davetang.github.io/muse/clt.html) is why many statistical tests work even when your data are not normally distributed.'
+  explanation: 'The CLT says that the distribution of sample means approaches a normal distribution as the sample size grows, regardless of the shape of the underlying population.'
+  tags: [statistics, reminder]
