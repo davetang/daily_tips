@@ -1466,3 +1466,7 @@
   tip: 'The [Central Limit Theorem](https://davetang.github.io/muse/clt.html) is why many statistical tests work even when your data are not normally distributed.'
   explanation: 'The CLT says that the distribution of sample means approaches a normal distribution as the sample size grows, regardless of the shape of the underlying population.'
   tags: [statistics, reminder]
+- date: 2026-04-16
+  tip: '`qstat -f -u ''*''`'
+  explanation: 'Shows a full-format queue listing for all users, including per-queue load and slot usage. Useful for understanding cluster state before submitting; you see which queues are full and where your job is likely to land.'
+  tags: [sge, hpc]
