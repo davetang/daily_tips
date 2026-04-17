@@ -1470,3 +1470,7 @@
   tip: '`qstat -f -u ''*''`'
   explanation: 'Shows a full-format queue listing for all users, including per-queue load and slot usage. Useful for understanding cluster state before submitting; you see which queues are full and where your job is likely to land.'
   tags: [sge, hpc]
+- date: 2026-04-17
+  tip: '`apt-file search <filename>`'
+  explanation: '`apt-file` finds which package contains a given file, even if the package is not installed. Install with `sudo apt install apt-file && sudo apt-file update`, then run `apt-file search /usr/include/zlib.h` to discover you need `zlib1g-dev`.'
+  tags: [debian, ubuntu, sysadmin]
