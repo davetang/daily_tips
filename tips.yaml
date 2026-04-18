@@ -1474,3 +1474,7 @@
   tip: '`apt-file search <filename>`'
   explanation: '`apt-file` finds which package contains a given file, even if the package is not installed. Install with `sudo apt install apt-file && sudo apt-file update`, then run `apt-file search /usr/include/zlib.h` to discover you need `zlib1g-dev`.'
   tags: [debian, ubuntu, sysadmin]
+- date: 2026-04-18
+  tip: '`alias -g G=''| grep''` defines a Zsh global alias that expands anywhere on the command line.'
+  explanation: 'Regular aliases only expand as the first word of a command, but Zsh global aliases (`alias -g`) expand wherever the token appears. With `alias -g G=''| grep''` and `alias -g L=''| less''`, you can write `ps aux G ssh L` instead of `ps aux | grep ssh | less`.'
+  tags: [shell, zsh, productivity]
