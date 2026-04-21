@@ -1486,3 +1486,7 @@
   tip: 'Loss aversion: people feel the pain of a loss roughly twice as strongly as the pleasure of an equivalent gain.'
   explanation: 'Loss aversion explains why investors hold losing stocks too long hoping to break even, why "don''t lose $10" motivates more than "gain $10", and why free trials convert well (once you have something, giving it up feels like a loss).'
   tags: [economics]
+- date: 2026-04-21
+  tip: 'Satisficing: pick the first option that is "good enough" instead of searching for the optimum.'
+  explanation: 'Coined by Herbert Simon as part of his theory of bounded rationality, satisficing recognises that the cost of continued search usually exceeds the marginal gain from finding a slightly better option.'
+  tags: [economics, decision-making]
