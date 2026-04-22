@@ -1490,3 +1490,7 @@
   tip: 'Satisficing: pick the first option that is "good enough" instead of searching for the optimum.'
   explanation: 'Coined by Herbert Simon as part of his theory of bounded rationality, satisficing recognises that the cost of continued search usually exceeds the marginal gain from finding a slightly better option.'
   tags: [economics, decision-making]
+- date: 2026-04-22
+  tip: 'When reading an annual report, start with the shareholder letter, then jump straight to MD&A.'
+  explanation: 'The Chairman or CEO''s letter is written in plain English and signals what management thinks matters; the Management''s Discussion and Analysis (MD&A) section then explains why the numbers changed year-over-year.'
+  tags: [finance]
