@@ -1494,3 +1494,7 @@
   tip: 'When reading an annual report, start with the shareholder letter, then jump straight to MD&A.'
   explanation: 'The Chairman or CEO''s letter is written in plain English and signals what management thinks matters; the Management''s Discussion and Analysis (MD&A) section then explains why the numbers changed year-over-year.'
   tags: [finance]
+- date: 2026-04-23
+  tip: 'Load a 10x Xenium output bundle into Seurat with `Seurat::LoadXenium("path/to/outs")`.'
+  explanation: 'Reads the `cell_feature_matrix.h5` counts, `cells.parquet` metadata, segmentation boundaries, and `transcripts.parquet` molecule coordinates into a single Seurat v5 object with a `Xenium` assay and an FOV ready for `ImageDimPlot()` / `ImageFeaturePlot()`. Follow it with `subset(xen, nCount_Xenium > 0)` to drop empty cells, and note that control/blank codeword probes land in their own assays for QC.'
+  tags: [rstats, seurat, spatial-transcriptomics]
