@@ -1498,3 +1498,7 @@
   tip: 'Load a 10x Xenium output bundle into Seurat with `Seurat::LoadXenium("path/to/outs")`.'
   explanation: 'Reads the `cell_feature_matrix.h5` counts, `cells.parquet` metadata, segmentation boundaries, and `transcripts.parquet` molecule coordinates into a single Seurat v5 object with a `Xenium` assay and an FOV ready for `ImageDimPlot()` / `ImageFeaturePlot()`. Follow it with `subset(xen, nCount_Xenium > 0)` to drop empty cells, and note that control/blank codeword probes land in their own assays for QC.'
   tags: [rstats, seurat, spatial-transcriptomics]
+- date: 2026-04-24
+  tip: 'Wrap a chunk with `tictoc::tic(); ...; tictoc::toc()` to print elapsed wall-clock time.'
+  explanation: '`toc()` prints something like `2.314 sec elapsed` and invisibly returns a list with `tic`, `toc`, `msg`, and `callback_msg` so you can capture the timing in a variable.'
+  tags: [rstats, productivity]
