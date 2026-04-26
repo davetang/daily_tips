@@ -1510,3 +1510,7 @@
   tip: 'Pipe a freshly-read data frame through `janitor::clean_names()` to convert messy column names to snake_case in one step.'
   explanation: '`janitor::clean_names()` handles spaces, punctuation, accented characters, leading numbers, and duplicates automatically.'
   tags: [rstats]
+- date: 2026-04-27
+  tip: 'Save large data frames as Parquet with `arrow::write_parquet(df, "data.parquet")` instead of CSV.'
+  explanation: 'Parquet stores types, is column-compressed, and reads roughly 10–100x faster than the equivalent CSV with `arrow::read_parquet()`. Pair with `arrow::open_dataset("dir/")` to query a folder of partitioned Parquet files lazily via `dplyr` verbs without loading everything into memory.'
+  tags: [rstats, arrow]
