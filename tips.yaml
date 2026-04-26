@@ -1506,3 +1506,7 @@
   tip: 'Use `waldo::compare(x, y)` instead of `all.equal()` for human-readable diffs of two R objects.'
   explanation: '`all.equal()` returns terse strings like `"Mean relative difference: 0.04"` that tell you something differs but not where; `waldo::compare()` prints a coloured, side-by-side diff pinpointing each mismatched element, attribute, or list slot.'
   tags: [rstats, debugging]
+- date: 2026-04-26
+  tip: 'Pipe a freshly-read data frame through `janitor::clean_names()` to convert messy column names to snake_case in one step.'
+  explanation: '`janitor::clean_names()` handles spaces, punctuation, accented characters, leading numbers, and duplicates automatically.'
+  tags: [rstats]
