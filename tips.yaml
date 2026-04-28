@@ -1514,3 +1514,7 @@
   tip: 'Save large data frames as Parquet with `arrow::write_parquet(df, "data.parquet")` instead of CSV.'
   explanation: 'Parquet stores types, is column-compressed, and reads roughly 10–100x faster than the equivalent CSV with `arrow::read_parquet()`. Pair with `arrow::open_dataset("dir/")` to query a folder of partitioned Parquet files lazily via `dplyr` verbs without loading everything into memory.'
   tags: [rstats, arrow]
+- date: 2026-04-28
+  tip: 'Bootstrap project boilerplate with `usethis::use_*()` calls, e.g., `use_git()`, `use_readme_md()`, `use_mit_license()`, `use_github_action("check-standard")`.'
+  explanation: 'Each helper makes the smallest correct change: `use_git()` initialises the repo and stages the right files, `use_github_action()` drops the YAML in `.github/workflows/`, and `use_release_issue()` generates a release checklist.'
+  tags: [rstats, productivity]
