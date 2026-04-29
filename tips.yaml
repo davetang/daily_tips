@@ -1518,3 +1518,7 @@
   tip: 'Bootstrap project boilerplate with `usethis::use_*()` calls, e.g., `use_git()`, `use_readme_md()`, `use_mit_license()`, `use_github_action("check-standard")`.'
   explanation: 'Each helper makes the smallest correct change: `use_git()` initialises the repo and stages the right files, `use_github_action()` drops the YAML in `.github/workflows/`, and `use_release_issue()` generates a release checklist.'
   tags: [rstats, productivity]
+- date: 2026-04-29
+  tip: 'Adverse selection: when one side of a market knows more than the other, the worst options crowd out the best.'
+  explanation: 'Akerlof''s "Market for Lemons" showed that if used-car buyers cannot distinguish good cars from lemons, they will only pay an average price, which drives sellers of good cars away, leaving mostly lemons. The same dynamic explains why insurance pools attract sicker enrollees and why job markets without credentials struggle.'
+  tags: [economics]
