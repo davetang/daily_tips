@@ -1519,6 +1519,10 @@
   explanation: 'Each helper makes the smallest correct change: `use_git()` initialises the repo and stages the right files, `use_github_action()` drops the YAML in `.github/workflows/`, and `use_release_issue()` generates a release checklist.'
   tags: [rstats, productivity]
 - date: 2026-04-29
-  tip: 'Adverse selection: when one side of a market knows more than the other, the worst options crowd out the best.'
-  explanation: 'Akerlof''s "Market for Lemons" showed that if used-car buyers cannot distinguish good cars from lemons, they will only pay an average price, which drives sellers of good cars away, leaving mostly lemons. The same dynamic explains why insurance pools attract sicker enrollees and why job markets without credentials struggle.'
+  tip: 'Goodhart''s law: when a measure becomes a target, it ceases to be a good measure.'
+  explanation: 'Optimising for a proxy distorts behaviour around the proxy itself: schools teaching to the test, call centres rushing calls to hit handle-time targets, ML models gaming a flawed loss function. Useful caution whenever a single KPI is being elevated to a goal — the metric usually drifts away from what you actually wanted to improve.'
+  tags: [economics, reminder]
+- date: 2026-04-30
+  tip: 'An externality is a cost or benefit of an action that falls on someone who did not choose to take part.'
+  explanation: 'Pollution is the textbook negative externality (the factory profits, neighbours bear the cost); vaccination is a positive one (your immunity protects others). Markets systematically over-supply activities with negative externalities and under-supply ones with positive externalities, which is the standard rationale for taxes, subsidies, and regulation.'
   tags: [economics]
