@@ -1526,3 +1526,7 @@
   tip: 'An externality is a cost or benefit of an action that falls on someone who did not choose to take part.'
   explanation: 'Pollution is the textbook negative externality (the factory profits, neighbours bear the cost); vaccination is a positive one (your immunity protects others). Markets systematically over-supply activities with negative externalities and under-supply ones with positive externalities, which is the standard rationale for taxes, subsidies, and regulation.'
   tags: [economics]
+- date: 2026-05-01
+  tip: 'Ship small, frequent pull requests instead of one big-bang merge.'
+  explanation: 'Small PRs get reviewed within hours rather than days, surface design problems before you have built on top of them, are dramatically easier to revert, and keep the team unblocked because nobody is waiting on a 2,000-line review'
+  tags: [teamwork, code-review]
