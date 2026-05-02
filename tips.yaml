@@ -1530,3 +1530,7 @@
   tip: 'Ship small, frequent pull requests instead of one big-bang merge.'
   explanation: 'Small PRs get reviewed within hours rather than days, surface design problems before you have built on top of them, are dramatically easier to revert, and keep the team unblocked because nobody is waiting on a 2,000-line review'
   tags: [teamwork, code-review]
+- date: 2026-05-02
+  tip: 'Write a team working agreement: an explicit, one-page contract for *how* you work together.'
+  explanation: 'A working agreement codifies the norms that usually live in people''s heads; core hours, code-review SLA, decision-making process, definition of done, meeting etiquette. Making them explicit means new joiners onboard in minutes instead of months, and disagreements become "let''s revisit the agreement" rather than interpersonal conflict.'
+  tags: [teamwork, working-agreement]
