@@ -1546,3 +1546,7 @@
   tip: 'Use "Five Whys" in incident analysis: keep asking *why?* until you reach a root cause, not just a trigger.'
   explanation: 'Pioneered at Toyota, Five Whys forces the conversation past the surface ("the deploy script crashed") to the systemic cause ("we have no integration test that exercises the deploy path"). The number five is a heuristic, sometimes three is enough, sometimes you need seven, but the discipline of repeatedly asking *why* is what turns a bug fix into a class of bugs prevented.'
   tags: [teamwork, incident-response]
+- date: 2026-05-06
+  tip: 'Conway''s law: any system''s structure mirrors the communication structure of the organisation that built it.'
+  explanation: 'Coined by Mel Conway in 1967, the observation is that a four-team compiler will tend to be a four-pass compiler, because team boundaries become module boundaries by default. Once you see it, you spot it everywhere: micro-services that match team org-charts, monoliths shipped by single-team startups, weird APIs whose seams trace exactly to the meeting where two teams agreed on an interface.'
+  tags: [teamwork, software-architecture]
