@@ -1550,3 +1550,7 @@
   tip: 'Conway''s law: any system''s structure mirrors the communication structure of the organisation that built it.'
   explanation: 'Coined by Mel Conway in 1967, the observation is that a four-team compiler will tend to be a four-pass compiler, because team boundaries become module boundaries by default. Once you see it, you spot it everywhere: micro-services that match team org-charts, monoliths shipped by single-team startups, weird APIs whose seams trace exactly to the meeting where two teams agreed on an interface.'
   tags: [teamwork, software-architecture]
+- date: 2026-05-07
+  tip: 'Hold strong opinions, weakly: state your position with conviction, but update fast when evidence contradicts it.'
+  explanation: 'Attributed to futurist Paul Saffo, the heuristic dodges two failure modes: the wishy-washy contributor who never commits to a view, and the stubborn one who treats their first take as identity.'
+  tags: [teamwork, decision-making]
