@@ -1554,3 +1554,7 @@
   tip: 'Hold strong opinions, weakly: state your position with conviction, but update fast when evidence contradicts it.'
   explanation: 'Attributed to futurist Paul Saffo, the heuristic dodges two failure modes: the wishy-washy contributor who never commits to a view, and the stubborn one who treats their first take as identity.'
   tags: [teamwork, decision-making]
+- date: 2026-05-08
+  tip: 'Before opening a book or paper, write down the one question you want it to answer.'
+  explanation: 'Reading without a target turns into passive scrolling; an explicit question gives every page a pass/fail test ("does this help me answer X?") and makes it obvious when to skim, slow down, or stop. Even a vague question like "why does this method beat baseline?" beats no question at all.'
+  tags: [self-help, reading, productivity]
