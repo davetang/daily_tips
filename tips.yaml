@@ -1558,3 +1558,7 @@
   tip: 'Before opening a book or paper, write down the one question you want it to answer.'
   explanation: 'Reading without a target turns into passive scrolling; an explicit question gives every page a pass/fail test ("does this help me answer X?") and makes it obvious when to skim, slow down, or stop. Even a vague question like "why does this method beat baseline?" beats no question at all.'
   tags: [self-help, reading, productivity]
+- date: 2026-05-09
+  tip: 'Convert vague intentions into "I will [behaviour] at [time] in [location]".'
+  explanation: 'Peter Gollwitzer''s research shows that this if-then specificity roughly doubles follow-through versus "I will exercise more". "I will meditate at 7am in the living room" gives your future self an unambiguous cue and removes the in-the-moment negotiation that usually loses.'
+  tags: [self-help, habits]
