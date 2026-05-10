@@ -1562,3 +1562,7 @@
   tip: 'Convert vague intentions into "I will [behaviour] at [time] in [location]".'
   explanation: 'Peter Gollwitzer''s research shows that this if-then specificity roughly doubles follow-through versus "I will exercise more". "I will meditate at 7am in the living room" gives your future self an unambiguous cue and removes the in-the-moment negotiation that usually loses.'
   tags: [self-help, habits]
+- date: 2026-05-10
+  tip: 'Use `git rm --cached file` to stop tracking a file without deleting it from your working tree.'
+  explanation: 'Plain `git rm file` deletes the file from both the index and your disk; the `--cached` flag removes it only from the index, so the next commit no longer tracks it but the file itself is preserved. Useful when you accidentally committed something that should have been ignored.'
+  tags: [git]
