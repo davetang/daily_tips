@@ -1566,3 +1566,7 @@
   tip: 'Use `git rm --cached file` to stop tracking a file without deleting it from your working tree.'
   explanation: 'Plain `git rm file` deletes the file from both the index and your disk; the `--cached` flag removes it only from the index, so the next commit no longer tracks it but the file itself is preserved. Useful when you accidentally committed something that should have been ignored.'
   tags: [git]
+- date: 2026-05-11
+  tip: 'Pin Docker base images by digest: `FROM ubuntu@sha256:abc123...` instead of `FROM ubuntu:24.04`.'
+  explanation: 'Tags like `:24.04` or `:latest` are mutable; the maintainers can repush them tomorrow and your build silently changes. Get the immutable digest with `docker buildx imagetools inspect ubuntu:24.04` and paste it into the `FROM` line so the same Dockerfile pulls the exact same bytes a year from now.'
+  tags: [docker, best practice]
