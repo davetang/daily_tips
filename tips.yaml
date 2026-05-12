@@ -1570,3 +1570,7 @@
   tip: 'Pin Docker base images by digest: `FROM ubuntu@sha256:abc123...` instead of `FROM ubuntu:24.04`.'
   explanation: 'Tags like `:24.04` or `:latest` are mutable; the maintainers can repush them tomorrow and your build silently changes. Get the immutable digest with `docker buildx imagetools inspect ubuntu:24.04` and paste it into the `FROM` line so the same Dockerfile pulls the exact same bytes a year from now.'
   tags: [docker, best practice]
+- date: 2026-05-12
+  tip: 'Use `uv` (from Astral) as a single, fast replacement for `pip`, `venv`, `pip-tools`, and `pyenv`.'
+  explanation: 'Written in Rust, `uv` resolves and installs packages 10-100x faster than `pip` and rolls virtual environments, lockfiles, and Python version management into one tool. Install with `curl -LsSf https://astral.sh/uv/install.sh | sh`, then `uv --help` to see the full command surface.'
+  tags: [python]
