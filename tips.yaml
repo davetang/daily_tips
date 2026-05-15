@@ -1582,3 +1582,7 @@
   tip: 'Run `file mystery.bin` to find out what a file really is; extensions can lie, `file` reads the bytes.'
   explanation: '`file` consults libmagic''s database of "magic numbers" (signature bytes at known offsets) to identify the format, so a `.txt` that is actually a PNG, or a `.csv` that is actually UTF-16 with a BOM, is immediately exposed. Useful when a tool complains about an "invalid format" and you do not yet know what you have.'
   tags: [linux, shell]
+- date: 2026-05-15
+  tip: 'Schedule low-intensity maintenance practice for skills you have already learned, not just new ones.'
+  explanation: 'Skills decay measurably without use: pilots lose instrument-flying precision in weeks, surgeons lose suturing speed in months, languages lose fluency in a year or two. Treating a skill as "done" once acquired is the failure mode; a small recurring slot on the calendar (even monthly) is what keeps it from quietly slipping away.'
+  tags: [self-help, learning]
