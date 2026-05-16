@@ -1586,3 +1586,7 @@
   tip: 'Schedule low-intensity maintenance practice for skills you have already learned, not just new ones.'
   explanation: 'Skills decay measurably without use: pilots lose instrument-flying precision in weeks, surgeons lose suturing speed in months, languages lose fluency in a year or two. Treating a skill as "done" once acquired is the failure mode; a small recurring slot on the calendar (even monthly) is what keeps it from quietly slipping away.'
   tags: [self-help, learning]
+- date: 2026-05-16
+  tip: 'Run `git worktree list` to audit every checkout attached to the repo and spot stale or detached ones.'
+  explanation: 'The output shows the path, current commit, and branch (or `(detached HEAD)`) for every worktree, plus `[locked]` and `[prunable]` markers. It is the fastest way to find a worktree you forgot about, one that is on a detached HEAD, or two checkouts accidentally pointing at the same branch.'
+  tags: [git, productivity]
