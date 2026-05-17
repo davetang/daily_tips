@@ -1590,3 +1590,7 @@
   tip: 'Run `git worktree list` to audit every checkout attached to the repo and spot stale or detached ones.'
   explanation: 'The output shows the path, current commit, and branch (or `(detached HEAD)`) for every worktree, plus `[locked]` and `[prunable]` markers. It is the fastest way to find a worktree you forgot about, one that is on a detached HEAD, or two checkouts accidentally pointing at the same branch.'
   tags: [git, productivity]
+- date: 2026-05-17
+  tip: 'Before risky network changes on a headless box, run `sudo shutdown -r +10` as a dead-man''s switch.'
+  explanation: 'If you lock yourself out, the box reboots in 10 minutes with the old config still on disk and you regain SSH. Once you have confirmed the new setup works from a separate connection, cancel the pending reboot with `sudo shutdown -c`. Cheap, reversible, and avoids a console trip or a remote-hands ticket.'
+  tags: [linux, sysadmin, networking]
