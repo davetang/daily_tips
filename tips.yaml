@@ -1598,3 +1598,7 @@
   tip: 'Run `traceroute 1.1.1.1` to find which network hop is dropping or slowing your traffic.'
   explanation: 'Your packets pass through a chain of routers on the way to a destination, and `traceroute` lists each one with how long it took to respond. If the times stay small for the first few hops and then jump from 20ms to 300ms at hop 7, the slowness is on the link between hop 6 and hop 7, and not your laptop, not Cloudflare. `1.1.1.1` is just a handy target: Cloudflare''s public DNS, reachable from almost anywhere, and short to type.'
   tags: [linux, networking]
+- date: 2026-05-19
+  tip: '"Absence of evidence is not evidence of absence"; failing to find X only rules X out if you looked hard enough to have found it.'
+  explanation: 'Popularised by Carl Sagan, the rule warns that "I did not find X" stays inconclusive on two counts: *coverage* (did you search everywhere X could be?) and *sensitivity* (would your method have detected X if it were there?). A two-minute Google fails the coverage test; a blood test with 60% sensitivity coming back negative fails the sensitivity one.'
+  tags: [self-help, decision-making]
