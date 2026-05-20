@@ -1602,3 +1602,7 @@
   tip: '"Absence of evidence is not evidence of absence"; failing to find X only rules X out if you looked hard enough to have found it.'
   explanation: 'Popularised by Carl Sagan, the rule warns that "I did not find X" stays inconclusive on two counts: *coverage* (did you search everywhere X could be?) and *sensitivity* (would your method have detected X if it were there?). A two-minute Google fails the coverage test; a blood test with 60% sensitivity coming back negative fails the sensitivity one.'
   tags: [self-help, decision-making]
+- date: 2026-05-20
+  tip: '`cmd >file 2>&1` and `cmd 2>&1 >file` are not the same because redirections apply left to right.'
+  explanation: 'The shell processes redirections in order: `>file 2>&1` first sends stdout to the file, then duplicates stderr onto that same destination: both end up in the file. `2>&1 >file` duplicates stderr to *whatever stdout currently is* (still the terminal), and only afterwards redirects stdout to the file, so stderr keeps going to the terminal.'
+  tags: [shell, bash]
