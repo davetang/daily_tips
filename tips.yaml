@@ -1606,3 +1606,7 @@
   tip: '`cmd >file 2>&1` and `cmd 2>&1 >file` are not the same because redirections apply left to right.'
   explanation: 'The shell processes redirections in order: `>file 2>&1` first sends stdout to the file, then duplicates stderr onto that same destination: both end up in the file. `2>&1 >file` duplicates stderr to *whatever stdout currently is* (still the terminal), and only afterwards redirects stdout to the file, so stderr keeps going to the terminal.'
   tags: [shell, bash]
+- date: 2026-05-21
+  tip: 'In `{future}`, prefer `plan(multisession)` over `plan(multicore)` because each worker is a fresh R process with its own file handles and connections.'
+  explanation: '`multicore` forks the current R process, so workers inherit (and accidentally share) open file handles, database connections, and the RNG state, leading to corrupted output or deadlocks. `multisession` spawns clean R processes communicating over sockets; slower to start, but safer and cross-platform (`multicore` does not work on Windows or in RStudio).'
+  tags: [rstats, parallel]
