@@ -1610,3 +1610,7 @@
   tip: 'In `{future}`, prefer `plan(multisession)` over `plan(multicore)` because each worker is a fresh R process with its own file handles and connections.'
   explanation: '`multicore` forks the current R process, so workers inherit (and accidentally share) open file handles, database connections, and the RNG state, leading to corrupted output or deadlocks. `multisession` spawns clean R processes communicating over sockets; slower to start, but safer and cross-platform (`multicore` does not work on Windows or in RStudio).'
   tags: [rstats, parallel]
+- date: 2026-05-22
+  tip: 'After parallel work with `plan(multisession)`, call `plan(sequential)` to shut the worker R processes down.'
+  explanation: 'Each `multisession` worker is a full R process that stays alive in the background until explicitly terminated; left running, they hold memory, open connections, and clutter your process list. `plan(sequential)` tears down the cluster cleanly and restores the default execution mode.'
+  tags: [rstats, parallel]
