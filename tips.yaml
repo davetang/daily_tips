@@ -1614,3 +1614,7 @@
   tip: 'After parallel work with `plan(multisession)`, call `plan(sequential)` to shut the worker R processes down.'
   explanation: 'Each `multisession` worker is a full R process that stays alive in the background until explicitly terminated; left running, they hold memory, open connections, and clutter your process list. `plan(sequential)` tears down the cluster cleanly and restores the default execution mode.'
   tags: [rstats, parallel]
+- date: 2026-05-23
+  tip: 'For SSH over a flaky link, set `ServerAliveInterval 30` and `ServerAliveCountMax 10` in `~/.ssh/config` so the session tolerates moments of silence before giving up.'
+  explanation: 'The client probes the server every 30 seconds when the link is idle and waits for ten consecutive failures before declaring the session dead. On a healthy connection nothing changes; on a flaky one, brief drop-outs come back without killing your shell, your editor, or your half-finished command.'
+  tags: [linux, ssh]
