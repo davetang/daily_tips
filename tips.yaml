@@ -1622,3 +1622,7 @@
   tip: 'Run `ssh-add ~/.ssh/id_ed25519` once per login to type your key passphrase once and have every later `ssh` connection authenticate silently.'
   explanation: '`ssh-agent` is a local background process that holds decrypted private keys in memory and listens on a Unix socket at `$SSH_AUTH_SOCK`. `ssh-add` reads a key, decrypts it with your passphrase, and hands it to the agent; every subsequent `ssh` client asks the agent to sign the auth challenge; the key never leaves the agent, never touches the network.'
   tags: [linux, ssh]
+- date: 2026-05-25
+  tip: 'Marcus Aurelius noticed that none of us could survive a day if forced to speak every thought aloud: proof of how much we hide to manage other people''s opinions of us.'
+  explanation: 'In *Meditations* 12.4, he points out the absurdity that we love ourselves more than other people yet care more about *their* opinion of us than our own and the gap between mind and mouth is the evidence. Useful as a sincerity check: notice when you are editing a thought purely for the audience, and ask whether that is the kind of editing you can live with.'
+  tags: [self-help, reminder]
