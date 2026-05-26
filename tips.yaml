@@ -1626,3 +1626,7 @@
   tip: 'Marcus Aurelius noticed that none of us could survive a day if forced to speak every thought aloud: proof of how much we hide to manage other people''s opinions of us.'
   explanation: 'In *Meditations* 12.4, he points out the absurdity that we love ourselves more than other people yet care more about *their* opinion of us than our own and the gap between mind and mouth is the evidence. Useful as a sincerity check: notice when you are editing a thought purely for the audience, and ask whether that is the kind of editing you can live with.'
   tags: [self-help, reminder]
+- date: 2026-05-26
+  tip: 'In the browser DevTools console, run `document.querySelector("video").playbackRate = 2.5` to speed up any HTML5 video, even on sites whose UI caps at 2x.'
+  explanation: 'The `playbackRate` property accepts arbitrary positive numbers (1.5, 2.5, 4), bypassing whatever speed buttons the site exposes. Useful for training videos, webinars, and lecture replays that ship with no built-in speed control.'
+  tags: [javascript, productivity]
