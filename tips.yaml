@@ -1630,3 +1630,7 @@
   tip: 'In the browser DevTools console, run `document.querySelector("video").playbackRate = 2.5` to speed up any HTML5 video, even on sites whose UI caps at 2x.'
   explanation: 'The `playbackRate` property accepts arbitrary positive numbers (1.5, 2.5, 4), bypassing whatever speed buttons the site exposes. Useful for training videos, webinars, and lecture replays that ship with no built-in speed control.'
   tags: [javascript, productivity]
+- date: 2026-05-27
+  tip: 'Run `zsh -xl 2>&1 | head -80` to trace every command Zsh executes during login startup.'
+  explanation: '`-x` prints each command before it runs (like Bash''s `set -x`), `-l` simulates a login shell so all startup files (`/etc/zprofile`, `~/.zprofile`, `~/.zshrc`, `~/.zlogin`) are sourced. Redirect stderr with `2>&1` because trace output goes to stderr.'
+  tags: [zsh, debugging]
