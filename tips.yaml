@@ -1634,3 +1634,7 @@
   tip: 'Run `zsh -xl 2>&1 | head -80` to trace every command Zsh executes during login startup.'
   explanation: '`-x` prints each command before it runs (like Bash''s `set -x`), `-l` simulates a login shell so all startup files (`/etc/zprofile`, `~/.zprofile`, `~/.zshrc`, `~/.zlogin`) are sourced. Redirect stderr with `2>&1` because trace output goes to stderr.'
   tags: [zsh, debugging]
+- date: 2026-05-28
+  tip: 'A hard link is a second name for the same inode; a symlink is a small file that just stores a path to another name.'
+  explanation: 'An inode is the on-disk record holding a file''s metadata (permissions, size, timestamps) and pointers to its actual data blocks; everything except the filename. Run `ls -i` to see inode numbers: a hard link (`ln target name`) shares the exact same inode as its target, so both names are equal peers pointing at one set of data blocks, while a symlink (`ln -s target name`) has its own inode and merely contains the target''s path as text.'
+  tags: [linux, shell]
