@@ -1642,3 +1642,7 @@
   tip: 'Run `df -hT` to see disk usage in human-readable sizes with each filesystem''s type.'
   explanation: '`-h` prints sizes in K/M/G instead of raw blocks. The `-T` flag shows the filesystem type alongside each mount. You''ll see the type column showing `smbfs`, `nfs`, `apfs`, etc., which makes it easy to tell network mounts from local disks at a glance.'
   tags: [linux, shell]
+- date: 2026-05-30
+  tip: 'Use `lsof -p <pid>` to see every file, socket, and pipe a process currently has open.'
+  explanation: '`lsof` ("list open files") treats every kernel descriptor as a file, so the output covers regular files, network sockets, pipes, and devices. Invaluable for "what is holding this file open?" (`lsof /path/to/file`) or "which process is listening on port 8080?" (`lsof -i :8080`).'
+  tags: [linux, sysadmin]
