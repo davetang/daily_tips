@@ -1646,3 +1646,7 @@
   tip: 'Use `lsof -p <pid>` to see every file, socket, and pipe a process currently has open.'
   explanation: '`lsof` ("list open files") treats every kernel descriptor as a file, so the output covers regular files, network sockets, pipes, and devices. Invaluable for "what is holding this file open?" (`lsof /path/to/file`) or "which process is listening on port 8080?" (`lsof -i :8080`).'
   tags: [linux, sysadmin]
+- date: 2026-05-31
+  tip: 'Use `pwdx <pid>` to see the current working directory of a running process.'
+  explanation: '`pwdx` reads the `cwd` symlink in `/proc/<pid>/` and prints its target. Useful when a script is writing files relative to its working directory and you cannot tell from `ps` alone where the output is actually landing.'
+  tags: [linux, sysadmin]
