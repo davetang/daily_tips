@@ -1650,3 +1650,7 @@
   tip: 'Use `pwdx <pid>` to see the current working directory of a running process.'
   explanation: '`pwdx` reads the `cwd` symlink in `/proc/<pid>/` and prints its target. Useful when a script is writing files relative to its working directory and you cannot tell from `ps` alone where the output is actually landing.'
   tags: [linux, sysadmin]
+- date: 2026-06-01
+  tip: 'Use `prlimit --pid <pid>` to inspect (and live-modify) a running process''s resource limits.'
+  explanation: 'Shows all `ulimit` values (open files, address space, core dump size, and CPU time) for an already-running process, without restarting it. Pass `--nofile=8192` to raise the open-files cap on a daemon that is failing with `EMFILE` mid-run, no service restart required.'
+  tags: [linux, sysadmin]
