@@ -1654,3 +1654,7 @@
   tip: 'Use `prlimit --pid <pid>` to inspect (and live-modify) a running process''s resource limits.'
   explanation: 'Shows all `ulimit` values (open files, address space, core dump size, and CPU time) for an already-running process, without restarting it. Pass `--nofile=8192` to raise the open-files cap on a daemon that is failing with `EMFILE` mid-run, no service restart required.'
   tags: [linux, sysadmin]
+- date: 2026-06-02
+  tip: 'For tired-and-wired, take a short walk outside, ideally on something green.'
+  explanation: 'Gregory Bratman''s 2015 Stanford study (PNAS 112:8567) showed that a 90-minute walk in nature reduced rumination and subgenual prefrontal cortex activity versus an urban walk, suggesting that green space (not just movement) does the work. A short outdoor break is no substitute for the full 90 minutes but still gets sunlight on the retina to reset the circadian system — useful when the underlying problem is fatigue, not motivation.'
+  tags: [self-help, reminder]
