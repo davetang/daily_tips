@@ -1658,3 +1658,7 @@
   tip: 'For tired-and-wired, take a short walk outside, ideally on something green.'
   explanation: 'Gregory Bratman''s 2015 Stanford study (PNAS 112:8567) showed that a 90-minute walk in nature reduced rumination and subgenual prefrontal cortex activity versus an urban walk, suggesting that green space (not just movement) does the work. A short outdoor break is no substitute for the full 90 minutes but still gets sunlight on the retina to reset the circadian system — useful when the underlying problem is fatigue, not motivation.'
   tags: [self-help, reminder]
+- date: 2026-06-03
+  tip: 'When you need to `git pull` but have uncommitted changes, run `git stash push`, then `git pull`, then `git stash pop` to reapply your work on top.'
+  explanation: '`git stash push` shelves your uncommitted changes onto a stack and gives you a clean working tree, so `git pull` can fast-forward without conflicts. `git stash pop` then reapplies the stashed changes and removes them from the stack; if the merge introduces conflicts, resolve them and the stash entry is dropped only after a successful pop, so nothing is lost.'
+  tags: [git, productivity]
