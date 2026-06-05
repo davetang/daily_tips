@@ -1666,3 +1666,7 @@
   tip: 'Use `git restore --staged file` to unstage and `git restore file` to discard working-tree changes.'
   explanation: 'These modern commands (introduced in Git 2.23) split the confusing dual role of `git reset` and `git checkout` into two clearly named verbs. `git restore --staged` is the new way to undo `git add`; plain `git restore file` is the new way to throw away unsaved edits.'
   tags: [git, productivity]
+- date: 2026-06-05
+  tip: 'Use `git switch -c new-branch` instead of `git checkout -b new-branch` to create and switch branches.'
+  explanation: 'Before Git 2.23, `git checkout` was the only way to switch branches (`git checkout main`, `git checkout -b feature`). The catch was that the same verb also overwrote files (`git checkout -- file`), so a slip like `git checkout .` could silently wipe uncommitted work. Git 2.23 split it into `git switch` (branches) and `git restore` (files).'
+  tags: [git, productivity]
