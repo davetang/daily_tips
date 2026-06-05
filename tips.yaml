@@ -4,7 +4,7 @@
   tags: [shell, productivity]
 - date: 2025-04-15
   tip: "Just type the name of the directory to autocd into it."
-  explanation: "In Bash and Zsh autocd is on by default; use `shopt autocd` and `setopt | grep autocd` to check."
+  explanation: "Off by default in both Bash and Zsh; enable it with `shopt -s autocd` (Bash) or `setopt autocd` (Zsh) and check the current state with `shopt autocd` or `setopt | grep autocd`."
   tags: [shell, productivity]
 - date: 2025-04-16
   tip: "Use `purrr::walk()` for side effects."
@@ -239,8 +239,8 @@
   explanation: 'Use `alias` to create aliases so you have to type (and remember) less.'
   tags: [shell, productivity]
 - date: 2025-06-13
-  tip: "Remember the 3 R's of Habit Change"
-  explanation: 'Reminder (initiates the behaviour), Routine (the actual behaviour), and Reward (the benefit gained).'
+  tip: "Remember the habit loop: Cue, Routine, Reward."
+  explanation: 'Popularised by Charles Duhigg in *The Power of Habit* (2012): a Cue triggers the Routine (the actual behaviour), and the Reward reinforces it. A common variant restates this as the "3 R''s" with "Reminder" in place of "Cue".'
   tags: [good habits]
 - date: 2025-06-14
   tip: 'Use https://explainshell.com/ to explain shell commands.'
@@ -863,8 +863,8 @@
   explanation: 'Gedankenexperiment is German for thought experiment, which is a mental exercise where you imagine a scenario to explore its implications without actually conducting a physical experiment.'
   tags: [science]
 - date: 2025-11-16
-  tip: "History doesn't repeat itself, but it often rhymes. --Mark Twain"
-  explanation: "History doesn't repeat past events _exactly_, but you see similar patterns."
+  tip: "History doesn't repeat itself, but it often rhymes."
+  explanation: "Commonly attributed to Mark Twain, but he never wrote or said it; the earliest known close match is psychoanalyst Theodor Reik in 1965, and the Twain attribution dates only to 1970. The point still stands: history doesn't repeat past events _exactly_, but you see similar patterns."
   tags: [quotes]
 - date: 2025-11-17
   tip: '`apt-cache depends chromium`'
@@ -972,7 +972,7 @@
   tags: [make, reminder]
 - date: 2025-12-13
   tip: '`mv --exchange a b`'
-  explanation: 'With `mv` (GNU coreutils) 9.9 there is an `--exchange` parameter that can be used to swap files!'
+  explanation: 'Since `mv` (GNU coreutils) 9.5 (March 2024) there is an `--exchange` parameter that can be used to swap files atomically when source and destination are on the same filesystem.'
   tags: [shell, productivity]
 - date: 2025-12-14
   tip: 'P = (s + 1)/(n + 2)'
@@ -1179,8 +1179,8 @@
   explanation: "A sandbox is a writable directory structure that represents a container; sandboxes allow you to interactively modify the container's filesystem."
   tags: [singularity]
 - date: 2026-02-03
-  tip: 'Tacit knowledge is the dispersed, context-specific knowledge of time and place held by individuals that cannot be fully centralised or formally articulated, yet is essential for economic coordination (Hayek, 1945).'
-  explanation: 'It is the local, experience-based knowledge people use in practice that markets coordinate through prices rather than through explicit instructions.'
+  tip: 'Markets coordinate the dispersed, context-specific "knowledge of the particular circumstances of time and place" held by individuals that cannot be fully centralised (Hayek, 1945).'
+  explanation: 'In *The Use of Knowledge in Society*, Hayek argued that prices act as a decentralised signal that aggregates this local, experience-based knowledge that no central planner could collect. The closely related term "tacit knowledge" — knowing more than you can tell — was coined later by Michael Polanyi (*Personal Knowledge*, 1958; *The Tacit Dimension*, 1966) and is often conflated with Hayek''s concept.'
   tags: [economics]
 - date: 2026-02-04
   tip: '`ssh -o "ConnectTimeout 10"`'
@@ -1428,7 +1428,7 @@
   tags: [shell, zsh, productivity]
 - date: 2026-04-06
   tip: 'DBSCAN clusters by density, so it can find arbitrarily shaped clusters and naturally identifies outliers as noise.'
-  explanation: 'Unlike k-means, DBSCAN does not require you to specify the number of clusters in advance and is not biased toward spherical shapes. Points in sparse regions are labelled as noise (cluster 0), making it a great first choice when your data has irregular structure or outliers.'
+  explanation: 'Unlike k-means, DBSCAN does not require you to specify the number of clusters in advance and is not biased toward spherical shapes. Points in sparse regions are labelled as noise (`-1` in sklearn), making it a great first choice when your data has irregular structure or outliers.'
   tags: [statistics, clustering]
 - date: 2026-04-07
   tip: 'Spectral clustering uses the eigenvectors of a similarity graph to find clusters that k-means alone would miss.'
@@ -1519,8 +1519,8 @@
   explanation: 'Each helper makes the smallest correct change: `use_git()` initialises the repo and stages the right files, `use_github_action()` drops the YAML in `.github/workflows/`, and `use_release_issue()` generates a release checklist.'
   tags: [rstats, productivity]
 - date: 2026-04-29
-  tip: 'Goodhart''s law: when a measure becomes a target, it ceases to be a good measure.'
-  explanation: 'Optimising for a proxy distorts behaviour around the proxy itself: schools teaching to the test, call centres rushing calls to hit handle-time targets, ML models gaming a flawed loss function. Useful caution whenever a single KPI is being elevated to a goal — the metric usually drifts away from what you actually wanted to improve.'
+  tip: 'When a measure becomes a target, it ceases to be a good measure.'
+  explanation: 'This famous one-liner is anthropologist Marilyn Strathern''s 1997 reformulation of Goodhart''s law; Charles Goodhart''s 1975 original was the drier "any observed statistical regularity will tend to collapse once pressure is placed upon it for control purposes". Optimising for a proxy distorts behaviour around the proxy itself: schools teaching to the test, call centres rushing calls to hit handle-time targets, ML models gaming a flawed loss function.'
   tags: [economics, reminder]
 - date: 2026-04-30
   tip: 'An externality is a cost or benefit of an action that falls on someone who did not choose to take part.'
@@ -1548,7 +1548,7 @@
   tags: [teamwork, incident-response]
 - date: 2026-05-06
   tip: 'Conway''s law: any system''s structure mirrors the communication structure of the organisation that built it.'
-  explanation: 'Coined by Mel Conway in 1967, the observation is that a four-team compiler will tend to be a four-pass compiler, because team boundaries become module boundaries by default. Once you see it, you spot it everywhere: micro-services that match team org-charts, monoliths shipped by single-team startups, weird APIs whose seams trace exactly to the meeting where two teams agreed on an interface.'
+  explanation: 'From Mel Conway''s paper "How Do Committees Invent?" (published April 1968 in *Datamation* after Harvard Business Review rejected it the year before), the observation is that a four-team compiler will tend to be a four-pass compiler, because team boundaries become module boundaries by default. Once you see it, you spot it everywhere: micro-services that match team org-charts, monoliths shipped by single-team startups, weird APIs whose seams trace exactly to the meeting where two teams agreed on an interface.'
   tags: [teamwork, software-architecture]
 - date: 2026-05-07
   tip: 'Hold strong opinions, weakly: state your position with conviction, but update fast when evidence contradicts it.'
