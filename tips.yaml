@@ -1670,3 +1670,7 @@
   tip: 'Use `git switch -c new-branch` instead of `git checkout -b new-branch` to create and switch branches.'
   explanation: 'Before Git 2.23, `git checkout` was the only way to switch branches (`git checkout main`, `git checkout -b feature`). The catch was that the same verb also overwrote files (`git checkout -- file`), so a slip like `git checkout .` could silently wipe uncommitted work. Git 2.23 split it into `git switch` (branches) and `git restore` (files).'
   tags: [git, productivity]
+- date: 2026-06-06
+  tip: 'Use the null-coalescing operator `x %||% y` to fall back to `y` when `x` is `NULL`.'
+  explanation: 'Defined as `function(x, y) if (is.null(x)) y else x`, so `NULL %||% "default"` returns `"default"` and `"value" %||% "default"` returns `"value"`. Available in base R since version 4.4.0 (April 2024); before that it lived in {rlang} and was widely used inside tidyverse packages.'
+  tags: [rstats, reminder]
