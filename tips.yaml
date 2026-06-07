@@ -1674,3 +1674,7 @@
   tip: 'Use the null-coalescing operator `x %||% y` to fall back to `y` when `x` is `NULL`.'
   explanation: 'Defined as `function(x, y) if (is.null(x)) y else x`, so `NULL %||% "default"` returns `"default"` and `"value" %||% "default"` returns `"value"`. Available in base R since version 4.4.0 (April 2024); before that it lived in {rlang} and was widely used inside tidyverse packages.'
   tags: [rstats, reminder]
+- date: 2026-06-07
+  tip: 'Press `Ctrl-a ?` in GNU screen to bring up the help screen listing every key binding.'
+  explanation: 'When you have forgotten a command, `Ctrl-a ?` shows the full list of `screen` key bindings and the commands they map to. Press space or return to page through it and any other key to exit.'
+  tags: [screen, productivity]
