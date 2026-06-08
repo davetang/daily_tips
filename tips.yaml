@@ -1678,3 +1678,7 @@
   tip: 'Press `Ctrl-a ?` in GNU screen to bring up the help screen listing every key binding.'
   explanation: 'When you have forgotten a command, `Ctrl-a ?` shows the full list of `screen` key bindings and the commands they map to. Press space or return to page through it and any other key to exit.'
   tags: [screen, productivity]
+- date: 2026-06-08
+  tip: 'Use `echo "command" | at 09:00 tomorrow` to schedule a one-off job (install with `sudo apt install at`).'
+  explanation: 'Unlike `cron`, which repeats, `at` runs a command exactly once at a future time. It accepts natural times like `at 09:00`, `at now + 1 hour`, or `at 14:30 next friday`, and emails or saves the output.'
+  tags: [shell, linux, sysadmin]
