@@ -1682,3 +1682,7 @@
   tip: 'Use `echo "command" | at 09:00 tomorrow` to schedule a one-off job (install with `sudo apt install at`).'
   explanation: 'Unlike `cron`, which repeats, `at` runs a command exactly once at a future time. It accepts natural times like `at 09:00`, `at now + 1 hour`, or `at 14:30 next friday`, and emails or saves the output.'
   tags: [shell, linux, sysadmin]
+- date: 2026-06-09
+  tip: 'Add `-x` to `git clean` to also delete files ignored by `.gitignore`, e.g. `git clean -fdx`.'
+  explanation: 'By default `git clean` skips files matched by `.gitignore` (like `node_modules/` or `*.o`). The lowercase `-x` removes ignored files too for a truly pristine tree, while uppercase `-X` removes *only* the ignored files and keeps other untracked ones.'
+  tags: [git]
