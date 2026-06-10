@@ -1686,3 +1686,7 @@
   tip: 'Add `-x` to `git clean` to also delete files ignored by `.gitignore`, e.g. `git clean -fdx`.'
   explanation: 'By default `git clean` skips files matched by `.gitignore` (like `node_modules/` or `*.o`). The lowercase `-x` removes ignored files too for a truly pristine tree, while uppercase `-X` removes *only* the ignored files and keeps other untracked ones.'
   tags: [git]
+- date: 2026-06-10
+  tip: 'Run `defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false` so holding a key repeats it on macOS.'
+  explanation: 'By default macOS shows an accent-picker popup when you hold a key, which breaks key repeat, which is annoying when holding `j`/`k` to move in Vim. Setting this to false restores repeat; log out and back in (or restart the app) for it to take effect, and use `-bool true` to revert.'
+  tags: [macos, productivity]
