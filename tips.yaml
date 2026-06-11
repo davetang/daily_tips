@@ -1690,3 +1690,7 @@
   tip: 'Run `defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false` so holding a key repeats it on macOS.'
   explanation: 'By default macOS shows an accent-picker popup when you hold a key, which breaks key repeat, which is annoying when holding `j`/`k` to move in Vim. Setting this to false restores repeat; log out and back in (or restart the app) for it to take effect, and use `-bool true` to revert.'
   tags: [macos, productivity]
+- date: 2026-06-11
+  tip: 'Use `janitor::tabyl(df, var)` for a frequency table that beats base `table()`.'
+  explanation: 'Unlike `table()`, `tabyl()` returns a data frame, keeps `NA` visible by default, and chains with `adorn_*()` helpers like `adorn_totals()` and `adorn_pct_formatting()` to add totals and percentages for publication-ready cross-tabs.'
+  tags: [rstats]
