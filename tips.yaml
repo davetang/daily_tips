@@ -1694,3 +1694,7 @@
   tip: 'Use `janitor::tabyl(df, var)` for a frequency table that beats base `table()`.'
   explanation: 'Unlike `table()`, `tabyl()` returns a data frame, keeps `NA` visible by default, and chains with `adorn_*()` helpers like `adorn_totals()` and `adorn_pct_formatting()` to add totals and percentages for publication-ready cross-tabs.'
   tags: [rstats]
+- date: 2026-06-12
+  tip: 'sleep 25m && while true; do say "Timer done"; sleep 2; done'
+  explanation: 'On macOS, `say` can be used to say things; couple it with `sleep` and `while` to implement a simple timer!'
+  tags: [macos, productivity]
