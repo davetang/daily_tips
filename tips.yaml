@@ -1698,3 +1698,7 @@
   tip: 'sleep 25m && while true; do say "Timer done"; sleep 2; done'
   explanation: 'On macOS, `say` can be used to say things; couple it with `sleep` and `while` to implement a simple timer!'
   tags: [macos, productivity]
+- date: 2026-06-13
+  tip: 'The {mcptools} package lets R act as both an MCP server and client.'
+  explanation: 'Built on {ellmer}, [mcptools](https://posit-dev.github.io/mcptools/) implements the Model Context Protocol so tools like Claude Desktop or Claude Code can drive a live R session, or so R can consume external MCP servers.'
+  tags: [rstats, mcptools]
