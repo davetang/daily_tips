@@ -1706,3 +1706,7 @@
   tip: 'Use the {btw} package to describe your R environment to an LLM.'
   explanation: 'Call `btw()` on data frames, objects, or help pages and [btw](https://posit-dev.github.io/btw/) writes a clipboard-ready, context-rich description for pasting into a chat; it also plugs into {ellmer} as tools and can run as an MCP server via `btw_mcp_server()`.'
   tags: [rstats, btw]
+- date: 2026-06-15
+  tip: "alias history='fc -li -1000'"
+  explanation: 'Create a Zsh alias that will show the last 1000 commands across sessions, with `-i` adding ISO date-time stamps to each entry, which makes it easier to see when a command was used!'
+  tags: [zsh, productivity]
