@@ -1710,3 +1710,7 @@
   tip: "alias history='fc -li -1000'"
   explanation: 'Create a Zsh alias that will show the last 1000 commands across sessions, with `-i` adding ISO date-time stamps to each entry, which makes it easier to see when a command was used!'
   tags: [zsh, productivity]
+- date: 2026-06-16
+  tip: 'How many times do I multiply the base by itself to reach this number?'
+  explanation: 'That question is the intuition behind a logarithm: `log_b(x)` is the exponent that turns the base `b` into `x`. For example `log_2(8) = 3` because `2 * 2 * 2 = 8`. This is why logs turn multiplication into addition and compress huge ranges, which is handy for log scales and orders of magnitude.'
+  tags: [maths, reminder]
