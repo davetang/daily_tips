@@ -1714,3 +1714,7 @@
   tip: 'How many times do I multiply the base by itself to reach this number?'
   explanation: 'That question is the intuition behind a logarithm: `log_b(x)` is the exponent that turns the base `b` into `x`. For example `log_2(8) = 3` because `2 * 2 * 2 = 8`. This is why logs turn multiplication into addition and compress huge ranges, which is handy for log scales and orders of magnitude.'
   tags: [maths, reminder]
+- date: 2026-06-17
+  tip: '`docker run --rm -i hadolint/hadolint < Dockerfile`'
+  explanation: '[hadolint](https://github.com/hadolint/hadolint) parses the Dockerfile into an AST and flags issues like unpinned packages, using `latest` tags, or `cd` instead of `WORKDIR`; piping into the official image lints it without installing anything.'
+  tags: [docker, linting]
