@@ -1722,3 +1722,7 @@
   tip: 'Add `--nv` to give a Singularity container access to the host NVIDIA GPU.'
   explanation: '`singularity exec --nv img.sif nvidia-smi` binds in the host GPU driver libraries so CUDA workloads run inside the container; use `--rocm` for AMD GPUs.'
   tags: [singularity, gpu]
+- date: 2026-06-19
+  tip: 'Prefix a host variable with `SINGULARITYENV_` to pass it into the container.'
+  explanation: '`export SINGULARITYENV_FOO=bar` before running makes `$FOO` available inside the container (works with `shell`/`exec`/`run`); it must be exported first. This is the controlled counterpart to `--cleanenv`, which strips host variables out. On Apptainer the native prefix is `APPTAINERENV_`.'
+  tags: [singularity, apptainer]
