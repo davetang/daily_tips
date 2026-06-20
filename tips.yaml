@@ -1726,3 +1726,7 @@
   tip: 'Prefix a host variable with `SINGULARITYENV_` to pass it into the container.'
   explanation: '`export SINGULARITYENV_FOO=bar` before running makes `$FOO` available inside the container (works with `shell`/`exec`/`run`); it must be exported first. This is the controlled counterpart to `--cleanenv`, which strips host variables out. On Apptainer the native prefix is `APPTAINERENV_`.'
   tags: [singularity, apptainer]
+- date: 2026-06-20
+  tip: 'Use `rg pattern` (ripgrep) instead of `grep -r pattern .`'
+  explanation: 'ripgrep searches recursively by default, is much faster than `grep -r`, and automatically skips files in `.gitignore` and hidden/binary files; add `-uuu` to disable all that filtering and search everything.'
+  tags: [shell, productivity]
