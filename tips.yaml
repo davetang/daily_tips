@@ -1730,3 +1730,7 @@
   tip: 'Use `rg pattern` (ripgrep) instead of `grep -r pattern .`'
   explanation: 'ripgrep searches recursively by default, is much faster than `grep -r`, and automatically skips files in `.gitignore` and hidden/binary files; add `-uuu` to disable all that filtering and search everything.'
   tags: [shell, productivity]
+- date: 2026-06-21
+  tip: 'Use `fd pattern` instead of `find . -name "*pattern*"`.'
+  explanation: 'fd does a recursive, regex-by-default search with much less typing, runs fast in parallel, and skips `.gitignore`d and hidden files automatically; add `-H` to include hidden files and `-I` to ignore the ignore rules. On Debian the binary is `fdfind`.'
+  tags: [shell, productivity]
