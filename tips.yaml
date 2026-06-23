@@ -1738,3 +1738,7 @@
   tip: 'Run `git update-server-info` to clone a bare repo over plain HTTP.'
   explanation: 'A static web server has no Git smarts, so the "dumb" HTTP protocol needs the auxiliary files in `info/refs` and `objects/info/packs`; `git update-server-info` regenerates them so `git clone https://host/repo.git` works without git-http-backend.'
   tags: [git]
+- date: 2026-06-23
+  tip: 'Enable the `post-update` hook to keep `update-server-info` current.'
+  explanation: 'Git ships a sample `hooks/post-update.sample` that just runs `git update-server-info`; rename it to `post-update` (and `chmod +x`) in a bare repo so the dumb-HTTP info files refresh automatically on every push.'
+  tags: [git]
