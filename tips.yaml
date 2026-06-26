@@ -1750,3 +1750,7 @@
   tip: 'Before adopting a tool, ask how hard it would be to leave it.'
   explanation: 'Vendor lock-in is the cost (switching cost) that makes leaving a product impractical; weigh the exit cost at adoption time, not after your data and workflows are already trapped inside.'
   tags: [economics, decision-making]
+- date: 2026-06-26
+  tip: 'Odds are not probability: odds compare favourable to unfavourable, probability to the total.'
+  explanation: 'A probability of $p = 1/6$ for rolling a six is 1 outcome out of 6 total, but the odds are 1 to 5 (favourable to unfavourable); convert with `odds = p / (1 - p)` and `p = odds / (1 + odds)`.'
+  tags: [statistics, reminder]
