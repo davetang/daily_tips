@@ -51,12 +51,12 @@
   explanation: "xz typically compresses better than gz but is slower; use for long term backups."
   tags: [shell, compression]
 - date: 2025-04-27
-  tip: "`watch vcgencmd measure_temp`"
-  explanation: "Measure the temperature every second."
+  tip: "`watch -n 1 vcgencmd measure_temp`"
+  explanation: "Measure the temperature every second; `watch` polls every 2 seconds by default, so pass `-n 1` for a 1-second interval."
   tags: [raspberry pi]
 - date: 2025-04-28
   tip: "Use the dot placeholder with {purrr}."
-  explanation: "`purrr::map_int(1:5, ~ . + 1)` vs. `purrr::map_int(1:5, function(x) x + 1)`."
+  explanation: "`purrr::map_int(1:5, ~ . + 1L)` vs. `purrr::map_int(1:5, function(x) x + 1L)`; use `1L` (or `map_dbl()`) since `map_int()` errors on the double `. + 1`."
   tags: [rstats, functional programming]
 - date: 2025-04-29
   tip: "Use `date` and `bc` to measure elapsed time."
@@ -120,7 +120,7 @@
   tags: [shell, reminder]
 - date: 2025-05-14
   tip: "`git config --global help.autocorrect 1`"
-  explanation: 'Auto-correct typos in Git commands.'
+  explanation: 'Auto-correct typos in Git commands; the value is in tenths of a second, so `1` means a 0.1s pause before the corrected command runs. Use a larger value like `20` for a 2-second grace period to cancel.'
   tags: [shell, reminder]
 - date: 2025-05-15
   tip: '`readarray -t FILES < <(find .)`'
@@ -128,7 +128,7 @@
   tags: [bash scripting]
 - date: 2025-05-16
   tip: '`tidyr::separate(df, group, c("key", "value"), sep = "\\s", extra = "merge")`'
-  explanation: 'Use `extra = "merge"` to force splitting to match length of third parameter (`into`).'
+  explanation: 'Use `extra = "merge"` to split at most `length(into)` times, keeping any remainder in the last column; the default `"warn"` drops the extra pieces instead.'
   tags: [tidyverse]
 - date: 2025-05-17
   tip: 'Use `tidyr::separate_wider_delim()` instead of `tidyr::separate()`.'
@@ -148,7 +148,7 @@
   tags: [rstats, workflows]
 - date: 2025-05-21
   tip: '`git blame -w`'
-  explanation: 'Use `git blame -w` to see the commit hash and timestamp of each change, line by line.'
+  explanation: '`git blame` shows the commit, author, and date for each line; adding `-w` makes it ignore whitespace-only changes so blame skips past pure reformatting to the real last edit.'
   tags: [git]
 - date: 2025-05-22
   tip: '`git notes add -m "Add note to commit" 98ab5fd901ee38dcbfd3ae6bbd26c6ffdc801ff7`'
@@ -204,7 +204,7 @@
   tags: [reminder]
 - date: 2025-06-04
   tip: '`getAnywhere("some_function")`'
-  explanation: '`getAnywhere()` searches all environments for any object matching a provided name.'
+  explanation: '`getAnywhere()` searches attached packages, loaded namespaces, and registered S3 methods for an object with the given name (including non-exported ones); it does not search local frames or unloaded namespaces.'
   tags: [rstats, reminder]
 - date: 2025-06-05
   tip: 'Use Matrix Market for storing sparse matrices in human readable format.'
@@ -227,8 +227,8 @@
   explanation: '`withCallingHandlers()` is an advanced error and condition handling function in R that can be used for logging and more.'
   tags: [rstats, defensive programming]
 - date: 2025-06-10
-  tip: '`find data -path *pca/res.txt -print`'
-  explanation: 'Will only find res.txt inside directories matching `*pca`.'
+  tip: '`find data -path ''*pca/res.txt'' -print`'
+  explanation: 'Quote the pattern so the shell does not expand it first; `-path` matches against the whole path (and `*` matches `/`), so this finds `res.txt` only inside directories matching `*pca`.'
   tags: [shell, productivity]
 - date: 2025-06-11
   tip: 'Know about the fallacy of personal validation.'
@@ -263,7 +263,7 @@
   explanation: 'Perform two separate substitution expressions with just one `sed` command.'
   tags: [sed, reminder]
 - date: 2025-06-19
-  tip: '`while IFS= read -r line; do echo "$line" done < filename.txt`'
+  tip: '`while IFS= read -r line; do echo "$line"; done < filename.txt`'
   explanation: 'Read a file line by line, preserving all whitespace in a Bash script.'
   tags: [bash, reminder]
 - date: 2025-06-20
@@ -299,8 +299,8 @@
   explanation: '`pbcopy` and `pbpaste` are only available on macOS but can be mimicked using other tools on Linux.'
   tags: [macOS, productivity]
 - date: 2025-06-28
-  tip: 'echo "export DISPLAY=localhost:10.0" >> ~/.screenrc'
-  explanation: 'Ensure that DISPLAY is set in all `screen` sessions by setting it in `~/.screenrc`.'
+  tip: 'echo "setenv DISPLAY localhost:10.0" >> ~/.screenrc'
+  explanation: 'Ensure that DISPLAY is set in all `screen` sessions by setting it in `~/.screenrc`; use screen''s own `setenv` directive, not shell `export`, because `.screenrc` is parsed by screen rather than the shell.'
   tags: [screen, productivity]
 - date: 2025-06-29
   tip: 'The terminal emulator is a translator.'
@@ -383,8 +383,8 @@
   explanation: 'A random experiment repeated many times will generate results governed by their probabilities.'
   tags: [statistics, reminder]
 - date: 2025-07-19
-  tip: 'Probability measures the _ratio_ of an outcome to the total possible outcomes.'
-  explanation: 'When you want to find how likely something is, you are really asking what fraction of all possibilities does this represent?'
+  tip: 'When outcomes are equally likely, probability is the _ratio_ of favourable outcomes to all possible outcomes.'
+  explanation: 'This is the classical definition of probability: you are asking what fraction of all equally likely possibilities an event represents. It does not apply when outcomes are not equally likely (e.g. a biased coin) or are continuous.'
   tags: [statistics, reminder]
 - date: 2025-07-20
   tip: 'Adding random variables combines different uncertain quantities to get a new uncertain quantity.'
@@ -511,8 +511,8 @@
   explanation: '`{}` denote a block and they allow you to group multiple expressions together and treat them as a single expression.'
   tags: [rstats]
 - date: 2025-08-20
-  tip: '`git config --global completion.branch true`'
-  explanation: 'Enable autocompletion for branch names.'
+  tip: 'Source `git-completion.bash` to enable Git tab-completion (including branch names).'
+  explanation: 'There is no `completion.branch` config option; Git tab-completion comes from the completion script in Git''s `contrib/completion/`. Add something like `source /usr/share/bash-completion/completions/git` to your `~/.bashrc` (the path varies by distro).'
   tags: [git, config]
 - date: 2025-08-21
   tip: 'In GNU Make `=` is recursive/late assignment and `:=` simple/early assignment.'
@@ -587,8 +587,8 @@
   explanation: 'Instead of using the right mouse button to paste, use Shift+Insert to paste when using MobaXTerm!'
   tags: [mobaxterm]
 - date: 2025-09-08
-  tip: "`awk '$1=$1' test.txt`"
-  explanation: 'AWK trick to turn one or more spaces (by default) into just one space.'
+  tip: "`awk '{$1=$1};1' test.txt`"
+  explanation: 'AWK trick to squeeze runs of whitespace into a single space. The trailing `1` forces every line to print; the bare `awk ''$1=$1''` form silently drops blank lines and any line whose first field is `0`.'
   tags: [awk]
 - date: 2025-09-09
   tip: "Use the `combn()` function in base R to generate pairwise combinations"
@@ -1296,7 +1296,7 @@
   tags: [rstats, dplyr]
 - date: 2026-03-04
   tip: '`zgrep "ERROR" app.log.gz`'
-  explanation: 'Searches inside a gzipped file without decompressing it first. The whole `z*` family works the same way: `zcat`, `zless`, `zdiff`, and `zawk` all accept `.gz` files directly.'
+  explanation: 'Searches inside a gzipped file without decompressing it first. The whole `z*` family works the same way: `zcat`, `zless`, `zdiff`, and `zegrep` all accept `.gz` files directly.'
   tags: [shell, linux, productivity]
 - date: 2026-03-05
   tip: '`find dir1 dir2 dir3 -name "*.txt"`'
@@ -1316,7 +1316,7 @@
   tags: [rstats, dplyr]
 - date: 2026-03-09
   tip: '`swapon --show` displays all active swap spaces and their usage.'
-  explanation: 'The output columns are: `NAME` (device or file path), `TYPE` (partition or file), `SIZE` (total swap space), `USED` (currently occupied), and `PRIO` (priority — higher values are used first; ties go to the earlier-activated swap).'
+  explanation: 'The output columns are: `NAME` (device or file path), `TYPE` (partition or file), `SIZE` (total swap space), `USED` (currently occupied), and `PRIO` (priority — higher values are used first; areas of equal priority are used round-robin).'
   tags: [shell, linux, sysadmin]
 - date: 2026-03-10
   tip: 'Use `Ctrl-a M` in GNU screen to monitor a background window for activity.'
@@ -1348,7 +1348,7 @@
   tags: [rstats, readr]
 - date: 2026-03-17
   tip: 'Use `readr::read_csv(f, name_repair = "universal")` to auto-fix messy column names.'
-  explanation: 'The `"universal"` strategy applies `vctrs::vec_as_names()` with `repair = "universal"`, which replaces spaces and special characters with `.`, prepends `...` to names that start with a number, and appends `...N` to disambiguate duplicates — guaranteeing every column name is unique, syntactically valid, and usable without backticks.'
+  explanation: 'The `"universal"` strategy applies `vctrs::vec_as_names()` with `repair = "universal"`, which replaces spaces and special characters with `.`, prepends a `.` to names that start with a number (so `2x` becomes `.2x`), and uses the `...N` form for empty or duplicated names — guaranteeing every column name is unique, syntactically valid, and usable without backticks.'
   tags: [rstats, readr]
 - date: 2026-03-18
   tip: 'Use `ssh-keygen -R hostname` to remove a stale host key from `known_hosts`.'
@@ -1375,8 +1375,8 @@
   explanation: 'The `-f` flag in `cut` accepts range specifiers: `2-` means field 2 through the last field, `1-3` means fields 1 to 3, and `-4` means fields 1 to 4.'
   tags: [shell, reminder]
 - date: 2026-03-24
-  tip: 'Use `my_list[[1]]` as the first argument and `my_list[-1]` as the second to pass a list to a function that expects a single element plus a list.'
-  explanation: 'When a function like `merge()` takes one object as `x` and a list of objects as `y`, use `merge(my_list[[1]], my_list[-1])` to split a list into its first element and the remainder using negative indexing, avoiding loops or repeated calls.'
+  tip: 'Use `Reduce(merge, my_list)` to merge a whole list of data frames into one.'
+  explanation: '`merge()` only joins two data frames at a time, so to combine a list of them, fold the list with `Reduce()`: it merges the first two, then merges that result with the third, and so on — no loops or repeated calls needed.'
   tags: [rstats]
 - date: 2026-03-25
   tip: 'Reduce friction for good habits and increase it for bad ones.'
@@ -1423,8 +1423,8 @@
   explanation: 'Incentives can be financial, social, or moral. A well-designed incentive aligns individual self-interest with the desired outcome; a poorly designed one invites gaming and unintended consequences.'
   tags: [economics]
 - date: 2026-04-05
-  tip: '`autoload zcalc && zcalc`'
-  explanation: '`zcalc` is a Zsh built-in calculator that supports floating point, variables, and math functions like `sin()` and `log()`. It keeps a history of results accessible via `$1`, `$2`, etc. No need to install `bc` or `python` just to do quick maths.'
+  tip: '`autoload -Uz zcalc && zcalc`'
+  explanation: '`zcalc` is an autoloadable function shipped with Zsh (not a built-in) that gives you a calculator supporting floating point, variables, and math functions like `sin()` and `log()`. It keeps a history of results accessible via `$1`, `$2`, etc. No need to install `bc` or `python` just to do quick maths.'
   tags: [shell, zsh, productivity]
 - date: 2026-04-06
   tip: 'DBSCAN clusters by density, so it can find arbitrarily shaped clusters and naturally identifies outliers as noise.'
@@ -1456,7 +1456,7 @@
   tags: [statistics, reminder]
 - date: 2026-04-13
   tip: 'In Markdown pipe tables, the relative length of the hyphens in the separator row controls column width.'
-  explanation: '`| Name | Description |` followed by `|------|--------------------------|` makes the second column roughly four times wider than the first. The ratio of hyphens is what matters, not the absolute count. This works in Pandoc-based renderers like Quarto and R Markdown but is ignored by GitHub-flavoured Markdown.'
+  explanation: '`| Name | Description |` followed by `|------|--------------------------|` makes the second column roughly four times wider than the first. The ratio of hyphens is what matters, not the absolute count. In Pandoc (Quarto, R Markdown) the ratio only takes effect when a line of the table source is wider than `--columns` (default 72) so the table wraps; otherwise columns are sized to their content. GitHub-flavoured Markdown ignores it entirely.'
   tags: [markdown, quarto, reminder]
 - date: 2026-04-14
   tip: '`ubuntu-drivers devices`'
