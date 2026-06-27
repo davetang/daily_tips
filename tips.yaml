@@ -1754,3 +1754,7 @@
   tip: 'Odds are not probability: odds compare favourable to unfavourable, probability to the total.'
   explanation: 'A probability of $p = 1/6$ for rolling a six is 1 outcome out of 6 total, but the odds are 1 to 5 (favourable to unfavourable); convert with `odds = p / (1 - p)` and `p = odds / (1 + odds)`.'
   tags: [statistics, reminder]
+- date: 2026-06-27
+  tip: 'Use `git bundle create repo.bundle --all` to put a whole repo in one file.'
+  explanation: 'A bundle is a single file you can copy over USB or email to an air-gapped machine, then `git clone repo.bundle` or `git pull` from it like any remote: history and branches intact, no server needed.'
+  tags: [git]
