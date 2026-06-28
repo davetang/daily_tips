@@ -1762,3 +1762,7 @@
   tip: 'Use `match.arg()` to validate a function''s string argument against allowed values in R.'
   explanation: 'With `f <- function(type = c("a", "b", "c"))`, a call to `type <- match.arg(type)` defaults to the first option, allows partial matching, and throws a clear error on anything else: no manual `if`/`stop()` checks needed.'
   tags: [rstats, defensive programming, reminder]
+- date: 2026-06-29
+  tip: 'Use `ssh -J me@gateway.example.edu me@compute01` to reach an internal host via a gateway.'
+  explanation: 'The gateway is a public "jump host" fronting machines like `compute01` that you cannot SSH to directly. `-J` does not run a second `ssh` on the gateway; your client opens a TCP tunnel through it and authenticates to `compute01` itself, so your key never sits on the gateway. Make it permanent with a `ProxyJump gateway.example.edu` line under a `Host compute01` block in `~/.ssh/config`.'
+  tags: [linux, ssh]
