@@ -1758,3 +1758,7 @@
   tip: 'Use `git bundle create repo.bundle --all` to put a whole repo in one file.'
   explanation: 'A bundle is a single file you can copy over USB or email to an air-gapped machine, then `git clone repo.bundle` or `git pull` from it like any remote: history and branches intact, no server needed.'
   tags: [git]
+- date: 2026-06-28
+  tip: 'Use `match.arg()` to validate a function''s string argument against allowed values in R.'
+  explanation: 'With `f <- function(type = c("a", "b", "c"))`, a call to `type <- match.arg(type)` defaults to the first option, allows partial matching, and throws a clear error on anything else: no manual `if`/`stop()` checks needed.'
+  tags: [rstats, defensive programming, reminder]
