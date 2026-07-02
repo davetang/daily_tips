@@ -1774,3 +1774,7 @@
   tip: 'If `quarto publish gh-pages` fails with "already checked out", run `git worktree prune`.'
   explanation: '`quarto publish gh-pages` builds the site in a temporary git worktree (under `.quarto/`) and removes it afterwards; an interrupted publish can leave a stale worktree registration that blocks the next run, which `git worktree prune` clears.'
   tags: [quarto, git]
+- date: 2026-07-02
+  tip: 'Use `ss -tulpn` to see which processes are listening on which ports.'
+  explanation: 'The flags are the first letters of what you want, TCP, UDP, listening, process, and numeric, which conveniently spell "tulpn" (like the flower "tulip"). `ss` is the modern `netstat`, and the same `-tulpn` works for both; run with sudo to see every process.'
+  tags: [linux, sysadmin]
