@@ -1778,3 +1778,7 @@
   tip: 'Use `ss -tulpn` to see which processes are listening on which ports.'
   explanation: 'The flags are the first letters of what you want, TCP, UDP, listening, process, and numeric, which conveniently spell "tulpn" (like the flower "tulip"). `ss` is the modern `netstat`, and the same `-tulpn` works for both; run with sudo to see every process.'
   tags: [linux, sysadmin]
+- date: 2026-07-03
+  tip: 'Press `q:` in Vim to open an editable window of your command history.'
+  explanation: 'The command-line window shows past `:` commands as a normal buffer: edit any line with Vim motions and press Enter to run it (use `q/` for search history). If you open it by accident, `:q` closes it.'
+  tags: [vim]
