@@ -1786,3 +1786,7 @@
   tip: 'Get an image''s pinnable digest with `docker inspect --format ''{{index .RepoDigests 0}}'' ubuntu:24.04`.'
   explanation: 'This prints the `name@sha256:...` reference for an image you have already pulled, so you can copy the exact digest into a `FROM` line or `docker pull` without hunting for the hash. (`docker images --digests` lists them too.)'
   tags: [docker, best practice]
+- date: 2026-07-05
+  tip: 'Use Simon Willison''s `llm` CLI to query language models from the terminal.'
+  explanation: 'After `pip install llm` and `llm keys set openai`, run `llm "question"` or pipe input with a system prompt, e.g. `cat script.R | llm -s "explain this code"`; use `-m` to switch models (plugins like `llm-anthropic` or `llm-ollama` add Claude and local models), and every prompt is logged to a SQLite database you can query with `llm logs`.'
+  tags: [shell, llm]
