@@ -1790,3 +1790,7 @@
   tip: 'Use Simon Willison''s `llm` CLI to query language models from the terminal.'
   explanation: 'After `pip install llm` and `llm keys set openai`, run `llm "question"` or pipe input with a system prompt, e.g. `cat script.R | llm -s "explain this code"`; use `-m` to switch models (plugins like `llm-anthropic` or `llm-ollama` add Claude and local models), and every prompt is logged to a SQLite database you can query with `llm logs`.'
   tags: [shell, llm]
+- date: 2026-07-06
+  tip: "`nextflow run main.nf -process.errorStrategy 'ignore'`"
+  explanation: 'The `-process.<directive>` flag overrides a process directive for every process in this run; `errorStrategy ''ignore''` lets the pipeline skip failed tasks and keep going instead of terminating (the default), which is handy for getting partial results across many samples. Note that `workflow.failOnIgnore = true` can still make the run exit non-zero.'
+  tags: [nextflow]
