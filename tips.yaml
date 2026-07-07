@@ -1794,3 +1794,7 @@
   tip: "`nextflow run main.nf -process.errorStrategy 'ignore'`"
   explanation: 'The `-process.<directive>` flag overrides a process directive for every process in this run; `errorStrategy ''ignore''` lets the pipeline skip failed tasks and keep going instead of terminating (the default), which is handy for getting partial results across many samples. Note that `workflow.failOnIgnore = true` can still make the run exit non-zero.'
   tags: [nextflow]
+- date: 2026-07-07
+  tip: '`pysradb metadata --saveto metadata.csv $(cat ids.txt)`'
+  explanation: 'Use `pysradb` (install with `pip install pysradb`) to fetch SRA/ENA metadata straight from accession IDs (`ids.txt`) and `--saveto` writes a tidy table of sample, library and run fields to CSV.'
+  tags: [bioinformatics, shell]
