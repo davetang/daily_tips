@@ -1798,3 +1798,7 @@
   tip: '`pysradb metadata --saveto metadata.csv $(cat ids.txt)`'
   explanation: 'Use `pysradb` (install with `pip install pysradb`) to fetch SRA/ENA metadata straight from accession IDs (`ids.txt`) and `--saveto` writes a tidy table of sample, library and run fields to CSV.'
   tags: [bioinformatics, shell]
+- date: 2026-07-08
+  tip: 'Find just the files a process has open for writing with `sudo lsof -p <PID> | grep -E ''\s[0-9]+[wu]\s''`.'
+  explanation: 'The FD column from `lsof` shows the numeric file descriptor that the process uses to refer to each open file, suffixed with its access mode: `r` read, `w` write, `u` read/write. `[0-9]+` matches only these real numbered descriptors and `[wu]` keeps just those open for writing, pinpointing which log or data file a runaway process is filling up.'
+  tags: [linux, sysadmin]
