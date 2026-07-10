@@ -1806,3 +1806,7 @@
   tip: 'Use `tailscale up --exit-node=<node>` to route all your internet traffic through another machine on your tailnet.'
   explanation: 'An exit node acts like a personal VPN gateway: advertise one with `tailscale up --advertise-exit-node`, approve it in the admin console, then any device can send its full traffic through it.'
   tags: [tailscale, networking, vpn]
+- date: 2026-07-10
+  tip: 'In Quarto, add `#| layout-ncol: 3` to a code chunk to lay three plots out side by side on one row.'
+  explanation: 'Quarto arranges the figures a chunk produces into a grid; `layout-ncol: 3` gives three equal-width columns, so three `plot()` calls (or images) sit on the same row instead of stacking vertically. Pair it with `fig-cap` subcaptions, or use `layout-nrow` / a nested `layout` for finer control over the arrangement.'
+  tags: [quarto]
