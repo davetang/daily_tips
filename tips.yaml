@@ -1810,3 +1810,7 @@
   tip: 'In Quarto, add `#| layout-ncol: 3` to a code chunk to lay three plots out side by side on one row.'
   explanation: 'Quarto arranges the figures a chunk produces into a grid; `layout-ncol: 3` gives three equal-width columns, so three `plot()` calls (or images) sit on the same row instead of stacking vertically. Pair it with `fig-cap` subcaptions, or use `layout-nrow` / a nested `layout` for finer control over the arrangement.'
   tags: [quarto]
+- date: 2026-07-11
+  tip: 'In Vim, put the cursor inside an HTML/XML element and press `cit` to change its contents.'
+  explanation: 'A tag is the `<p>...</p>` style markup that wraps content in HTML or XML: an opening `<p>` and a closing `</p>` with text between them. `cit` ("change inside tag") deletes everything between the surrounding open and close tags and drops you into insert mode, leaving the tags themselves untouched; `dit` deletes it and `yit` yanks it.'
+  tags: [vim]
