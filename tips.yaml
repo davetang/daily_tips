@@ -1814,3 +1814,7 @@
   tip: 'In Vim, put the cursor inside an HTML/XML element and press `cit` to change its contents.'
   explanation: 'A tag is the `<p>...</p>` style markup that wraps content in HTML or XML: an opening `<p>` and a closing `</p>` with text between them. `cit` ("change inside tag") deletes everything between the surrounding open and close tags and drops you into insert mode, leaving the tags themselves untouched; `dit` deletes it and `yit` yanks it.'
   tags: [vim]
+- date: 2026-07-12
+  tip: 'In Vim, `:g/pattern/d` deletes every line matching a pattern; `:g/pat/normal @a` runs a macro on each.'
+  explanation: 'The `:global` command finds every matching line and runs an Ex command on it. `:g/DEBUG/d` strips all debug lines, `:v/keep/d` (inverse) deletes lines *not* matching, and `:g/pat/normal ...` fires any normal-mode sequence at each hit — a mini batch processor.'
+  tags: [vim]
