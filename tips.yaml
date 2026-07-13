@@ -1818,3 +1818,7 @@
   tip: 'In Vim, `:g/pattern/d` deletes every line matching a pattern; `:g/pat/normal @a` runs a macro on each.'
   explanation: 'The `:global` command finds every matching line and runs an Ex command on it. `:g/DEBUG/d` strips all debug lines, `:v/keep/d` (inverse) deletes lines *not* matching, and `:g/pat/normal ...` fires any normal-mode sequence at each hit — a mini batch processor.'
   tags: [vim]
+- date: 2026-07-13
+  tip: 'With edgeR you can still test two conditions when only one has replicates, because the GLM estimates dispersion from residual degrees of freedom.'
+  explanation: 'edgeR needs to estimate the negative-binomial dispersion (biological variability), which normally requires replication. But `estimateDisp` followed by `glmQLFit`/`glmFit` gets its residual df from *any* replicated group: with, say, 3 treated and 1 control sample, the 3 treated replicates supply the dispersion, which is then shared across all samples and genes, so the contrast is still testable.'
+  tags: [bioinformatics, rstats]
