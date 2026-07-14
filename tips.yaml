@@ -1822,3 +1822,7 @@
   tip: 'With edgeR you can still test two conditions when only one has replicates, because the GLM estimates dispersion from residual degrees of freedom.'
   explanation: 'edgeR needs to estimate the negative-binomial dispersion (biological variability), which normally requires replication. But `estimateDisp` followed by `glmQLFit`/`glmFit` gets its residual df from *any* replicated group: with, say, 3 treated and 1 control sample, the 3 treated replicates supply the dispersion, which is then shared across all samples and genes, so the contrast is still testable.'
   tags: [bioinformatics, rstats]
+- date: 2026-07-14
+  tip: 'To pseudobulk scRNA-seq for edgeR, *sum* (do not average) raw counts across the cells of each sample x cell-type, then run the standard bulk pipeline.'
+  explanation: 'Summing integer counts preserves the negative-binomial mean–variance relationship edgeR assumes; averaging or using normalized/log values breaks it. `scuttle::aggregateAcrossCells()` or `Seurat::AggregateExpression()` builds the matrix, which you then feed to `DGEList()`.'
+  tags: [bioinformatics, rstats]
