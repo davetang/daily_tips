@@ -1830,3 +1830,7 @@
   tip: 'Beware the "Google effect": you remember less of what you know you can look up later, storing *where* to find it instead of the fact itself.'
   explanation: 'Sparrow, Liu & Wegner (2011, Science) showed people recall information more poorly when told it will be saved and retrievable, treating the computer as a transactive-memory partner (Wegner''s term for offloading memories to others). Useful to know when deciding what is worth committing to memory versus a note.'
   tags: [self-help, learning]
+- date: 2026-07-16
+  tip: 'Beware "metacognitive laziness": leaning on an LLM can offload not just the work but the thinking about how well you are doing it.'
+  explanation: 'Fan et al. (2025, British Journal of Educational Technology) found students using ChatGPT engaged in fewer metacognitive processes (evaluation, monitoring) and, while their essays improved most, showed no better knowledge gain or transfer than other groups. Do the planning and self-checking yourself even when the LLM does the drafting.'
+  tags: [self-help, learning]
