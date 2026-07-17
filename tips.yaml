@@ -1834,3 +1834,7 @@
   tip: 'Beware "metacognitive laziness": leaning on an LLM can offload not just the work but the thinking about how well you are doing it.'
   explanation: 'Fan et al. (2025, British Journal of Educational Technology) found students using ChatGPT engaged in fewer metacognitive processes (evaluation, monitoring) and, while their essays improved most, showed no better knowledge gain or transfer than other groups. Do the planning and self-checking yourself even when the LLM does the drafting.'
   tags: [self-help, learning]
+- date: 2026-07-17
+  tip: 'Exploit the "generation effect": you remember material far better when you produce it yourself.'
+  explanation: 'Slamecka & Graf (1978, Journal of Experimental Psychology: Human Learning and Memory) showed self-generated answers are recalled better than ones simply read.'
+  tags: [self-help, learning]
