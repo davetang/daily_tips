@@ -1838,3 +1838,7 @@
   tip: 'Exploit the "generation effect": you remember material far better when you produce it yourself.'
   explanation: 'Slamecka & Graf (1978, Journal of Experimental Psychology: Human Learning and Memory) showed self-generated answers are recalled better than ones simply read.'
   tags: [self-help, learning]
+- date: 2026-07-18
+  tip: 'Add `truecolor on` to your `.screenrc` to enable 24-bit colour in GNU Screen 5.0.'
+  explanation: 'The 5.0 series added the `truecolor [on|off]` command, so programs emitting 24-bit colour escapes (modern Neovim themes, `bat`, `delta`) render their full palette inside `screen` instead of being clamped to 256 colours.'
+  tags: [screen, productivity]
