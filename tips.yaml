@@ -1842,3 +1842,7 @@
   tip: 'Add `truecolor on` to your `.screenrc` to enable 24-bit colour in GNU Screen 5.0.'
   explanation: 'The 5.0 series added the `truecolor [on|off]` command, so programs emitting 24-bit colour escapes (modern Neovim themes, `bat`, `delta`) render their full palette inside `screen` instead of being clamped to 256 colours.'
   tags: [screen, productivity]
+- date: 2026-07-19
+  tip: 'In Neovim 0.10+, toggle comments with `gcc` (current line) or `gc` over a motion/selection.'
+  explanation: 'Built-in commenting landed in Neovim 0.10, using each language''s `commentstring`, so `gcip` comments a paragraph and `gc` in Visual mode toggles the selection; no Comment.nvim plugin needed.'
+  tags: [nvim]
