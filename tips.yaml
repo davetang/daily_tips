@@ -1854,3 +1854,7 @@
   tip: 'On Apple Silicon, create a macOS VM in [UTM](https://mac.getutm.app/) via `Create a New Virtual Machine` -> `Virtualize` -> `macOS`, which is useful for testing.'
   explanation: 'UTM wraps Apple''s Virtualization.framework, so on an M-series Mac it spins up a near-native macOS guest from an Apple-signed restore image.'
   tags: [macos]
+- date: 2026-07-22
+  tip: 'Run `btop` for a modern, mouse-driven resource monitor that replaces `top` and `htop`.'
+  explanation: '[btop](https://github.com/aristocratos/btop) shows CPU, memory, disks, network, and processes in one colourful TUI with clickable menus and per-core graphs; install it via `apt`, `brew`, or `snap`.'
+  tags: [linux, sysadmin]
