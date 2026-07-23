@@ -1858,3 +1858,7 @@
   tip: 'Run `btop` for a modern, mouse-driven resource monitor that replaces `top` and `htop`.'
   explanation: '[btop](https://github.com/aristocratos/btop) shows CPU, memory, disks, network, and processes in one colourful TUI with clickable menus and per-core graphs; install it via `apt`, `brew`, or `snap`.'
   tags: [linux, sysadmin]
+- date: 2026-07-23
+  tip: 'Run `dust` for an intuitive `du`: it prints a coloured tree of your biggest directories with percentage bars, no flags needed.'
+  explanation: '[dust](https://github.com/bootandy/dust) (du + Rust) auto-sizes to your terminal and sorts largest-first, so you spot what is eating disk instantly instead of parsing `du -h | sort -h`.'
+  tags: [shell, productivity]
