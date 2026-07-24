@@ -1862,3 +1862,7 @@
   tip: 'Run `dust` for an intuitive `du`: it prints a coloured tree of your biggest directories with percentage bars, no flags needed.'
   explanation: '[dust](https://github.com/bootandy/dust) (du + Rust) auto-sizes to your terminal and sorts largest-first, so you spot what is eating disk instantly instead of parsing `du -h | sort -h`.'
   tags: [shell, productivity]
+- date: 2026-07-24
+  tip: 'Use `yazi` as a terminal file navigator; uses Vim keybindings to move between files and directories, and provides a nice preview of files.'
+  explanation: '[yazi](https://yazi-rs.github.io/) is a blazing fast terminal file manager written in Rust, based on async I/O.'
+  tags: [shell, productivity]
