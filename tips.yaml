@@ -1866,3 +1866,7 @@
   tip: 'Use `yazi` as a terminal file navigator; uses Vim keybindings to move between files and directories, and provides a nice preview of files.'
   explanation: '[yazi](https://yazi-rs.github.io/) is a blazing fast terminal file manager written in Rust, based on async I/O.'
   tags: [shell, productivity]
+- date: 2026-07-25
+  tip: 'Run SQL straight over a CSV or Parquet file with `duckdb -c "SELECT * FROM ''data.csv'' LIMIT 5"`.'
+  explanation: '[DuckDB](https://duckdb.org/)''s replacement scans treat a file path in the `FROM` clause as a table, so you can join a CSV to a Parquet file to a JSON file in one query without ever creating a database.'
+  tags: [duckdb, sql]
