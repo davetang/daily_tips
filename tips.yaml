@@ -1870,3 +1870,7 @@
   tip: 'Run SQL straight over a CSV or Parquet file with `duckdb -c "SELECT * FROM ''data.csv'' LIMIT 5"`.'
   explanation: '[DuckDB](https://duckdb.org/)''s replacement scans treat a file path in the `FROM` clause as a table, so you can join a CSV to a Parquet file to a JSON file in one query without ever creating a database.'
   tags: [duckdb, sql]
+- date: 2026-07-26
+  tip: 'Read JSON into R with `jsonlite::fromJSON("data.json", flatten = TRUE)`.'
+  explanation: 'Jeroen Ooms'' [jsonlite](https://jeroen.r-universe.dev/jsonlite) simplifies an array of objects straight into a data frame, and `flatten = TRUE` unpacks nested data frame columns into plain `user.profile.email` style columns.'
+  tags: [rstats, json]
