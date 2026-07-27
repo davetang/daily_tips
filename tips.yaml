@@ -1874,3 +1874,7 @@
   tip: 'Read JSON into R with `jsonlite::fromJSON("data.json", flatten = TRUE)`.'
   explanation: 'Jeroen Ooms'' [jsonlite](https://jeroen.r-universe.dev/jsonlite) simplifies an array of objects straight into a data frame, and `flatten = TRUE` unpacks nested data frame columns into plain `user.profile.email` style columns.'
   tags: [rstats, json]
+- date: 2026-07-27
+  tip: 'On Windows, run Ubuntu inside Warp via `Settings` -> `Features` -> `Session` -> `Startup shell for new sessions`.'
+  explanation: 'Warp for Windows defaults to PowerShell 7, but selecting your WSL2 distro there gives you bash and the full Linux toolchain with Blocks and Agent Mode still working; the change applies only to sessions opened afterwards.'
+  tags: [terminal, windows]
