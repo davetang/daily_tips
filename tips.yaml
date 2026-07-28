@@ -1878,3 +1878,7 @@
   tip: 'On Windows, run Ubuntu inside Warp via `Settings` -> `Features` -> `Session` -> `Startup shell for new sessions`.'
   explanation: 'Warp for Windows defaults to PowerShell 7, but selecting your WSL2 distro there gives you bash and the full Linux toolchain with Blocks and Agent Mode still working; the change applies only to sessions opened afterwards.'
   tags: [terminal, windows]
+- date: 2026-07-28
+  tip: 'Pipe output to the system clipboard with `xclip -selection clipboard`.'
+  explanation: 'Without `-selection clipboard`, `xclip` writes to the X primary selection, which only pastes with a middle-click; alias it as `alias xc=''xclip -selection clipboard''` so `ls | xc` then `Ctrl-V` just works.'
+  tags: [shell, linux, productivity]
