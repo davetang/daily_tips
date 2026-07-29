@@ -1882,3 +1882,7 @@
   tip: 'Pipe output to the system clipboard with `xclip -selection clipboard`.'
   explanation: 'Without `-selection clipboard`, `xclip` writes to the X primary selection, which only pastes with a middle-click; alias it as `alias xc=''xclip -selection clipboard''` so `ls | xc` then `Ctrl-V` just works.'
   tags: [shell, linux, productivity]
+- date: 2026-07-29
+  tip: 'Declare a Python script''s dependencies inline with a PEP 723 block that opens with `# /// script` and closes with `# ///`, then run it with `uv run script.py`.'
+  explanation: 'Each line between the delimiters is TOML written as a `#` comment, such as `# dependencies = ["pandas"]`; `uv run` builds a throwaway environment with exactly those packages, so the script stays a single shareable file with no `requirements.txt`.'
+  tags: [python]
