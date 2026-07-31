@@ -1890,3 +1890,7 @@
   tip: 'Pass a function itself to `deparse()` to get its source code back as text you can search.'
   explanation: '`deparse(stats::lm)` returns the function definition as a character vector, one element per line, so `grep("qr", deparse(stats::lm), value = TRUE)` pulls out just the lines you care about.'
   tags: [rstats, metaprogramming]
+- date: 2026-07-31
+  tip: 'Run a local LLM on Apple Silicon with `pip install mlx-lm` then `mlx_lm.generate --model mlx-community/Mistral-7B-Instruct-v0.3-4bit --prompt "How tall is Mt Everest?"`.'
+  explanation: 'MLX is Apple''s array framework built on Metal; `mlx_lm` pulls the weights from Hugging Face on first use, and the `mlx-community` org hosts pre-quantized 4-bit conversions that fit comfortably in unified memory.'
+  tags: [macos, llm]
