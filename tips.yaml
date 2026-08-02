@@ -1898,3 +1898,7 @@
   tip: 'Serve a local MLX model behind an OpenAI-compatible API with `mlx_lm.server --model mlx-community/Mistral-7B-Instruct-v0.3-4bit`.'
   explanation: 'It listens on `http://localhost:8080/v1`, so any OpenAI client works by pointing `base_url` there with a dummy `api_key` letting you drop a local Mac model into code already written against the OpenAI SDK.'
   tags: [macos, llm]
+- date: 2026-08-02
+  tip: 'Bind-mount as yourself with `docker run --user $(id -u):$(id -g) -v "$PWD":/work -w /work <image>`.'
+  explanation: 'Anything the container writes into `/work` then belongs to you on the host instead of `root`, which saves needing `sudo` to delete your own output files.'
+  tags: [docker]
