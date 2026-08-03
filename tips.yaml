@@ -1902,3 +1902,7 @@
   tip: 'Bind-mount as yourself with `docker run --user $(id -u):$(id -g) -v "$PWD":/work -w /work <image>`.'
   explanation: 'Anything the container writes into `/work` then belongs to you on the host instead of `root`, which saves needing `sudo` to delete your own output files.'
   tags: [docker]
+- date: 2026-08-03
+  tip: 'The routing table is the kernel''s list of "packets for X go out door Y" rules; see yours with `ip route`.'
+  explanation: 'Every outgoing packet is checked against it and the most specific matching prefix wins: `192.168.1.0/24 dev eth0` takes LAN traffic while `default via 192.168.1.1` catches everything else. Use `ip route get 1.1.1.1` to see which rule a given destination actually matches.'
+  tags: [linux, networking]
