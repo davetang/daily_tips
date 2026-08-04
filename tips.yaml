@@ -1906,3 +1906,7 @@
   tip: 'The routing table is the kernel''s list of "packets for X go out door Y" rules; see yours with `ip route`.'
   explanation: 'Every outgoing packet is checked against it and the most specific matching prefix wins: `192.168.1.0/24 dev eth0` takes LAN traffic while `default via 192.168.1.1` catches everything else. Use `ip route get 1.1.1.1` to see which rule a given destination actually matches.'
   tags: [linux, networking]
+- date: 2026-08-04
+  tip: 'On macOS, drop an executable `/etc/ppp/ip-up` script to run commands automatically the moment a VPN tunnel comes up.'
+  explanation: '`pppd` executes it as root once the L2TP link can pass IP packets, which is the classic place to add split-tunnel routes: `/sbin/route add -net 10.0.0.0/8 -interface "$1"`. Untick "Send all traffic over the VPN connection" in the VPN settings and let this script add only the routes you actually want.'
+  tags: [macos, networking, vpn]
