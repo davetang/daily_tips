@@ -1910,3 +1910,7 @@
   tip: 'On macOS, drop an executable `/etc/ppp/ip-up` script to run commands automatically the moment a VPN tunnel comes up.'
   explanation: '`pppd` executes it as root once the L2TP link can pass IP packets, which is the classic place to add split-tunnel routes: `/sbin/route add -net 10.0.0.0/8 -interface "$1"`. Untick "Send all traffic over the VPN connection" in the VPN settings and let this script add only the routes you actually want.'
   tags: [macos, networking, vpn]
+- date: 2026-08-05
+  tip: 'Set `freeze: auto` under `execute:` in `_quarto.yml` so Quarto only re-runs a document''s code when that document changes.'
+  explanation: 'Results are stored under `_freeze/`; commit that directory and the site rebuilds (including in CI, where R or Python may not even be installed) without re-executing expensive chunks. Use `freeze: true` to never re-execute during a project render.'
+  tags: [quarto]
