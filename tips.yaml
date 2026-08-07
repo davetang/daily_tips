@@ -1918,3 +1918,7 @@
   tip: 'Write a cache file to `paste0(f, ".tmp")` and then `file.rename()` it into place so an interrupted write never leaves a corrupt `f`.'
   explanation: 'Renaming is a single atomic operation, so readers see either the old file or the complete new one and never a half-written one: `saveRDS(list(key = key, result = res), tmp); file.rename(tmp, f)`. An aborted render leaves a stray `.tmp` you can delete rather than a poisoned cache entry that silently returns garbage.'
   tags: [rstats, best practice]
+- date: 2026-08-07
+  tip: 'Pair every `tmp <- tempfile()` inside an R function with `on.exit(unlink(tmp), add = TRUE)` on the very next line.'
+  explanation: 'The expression is stored and only evaluated when the function exits, by any route (normal return, `stop()`, or a `Ctrl-C` interrupt) so a failed run never leaves the temporary file behind and the body needs no `tryCatch()` wrapper. Always pass `add = TRUE`, because the default replaces whatever an earlier `on.exit()` call registered rather than adding to it.'
+  tags: [rstats, defensive programming]
