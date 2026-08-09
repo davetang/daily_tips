@@ -1926,3 +1926,7 @@
   tip: 'The Wasserstein-2 distance ($W_2$) is the minimum cost of reshaping one distribution into another, where cost is mass moved times distance squared.'
   explanation: 'Hence its nickname, the earth mover''s distance: picture each distribution as a pile of dirt and ask for the cheapest transport plan between them. Unlike pointwise measures it cares _how far_ mass has to travel, so two histograms that never overlap still get a finite, meaningful distance.'
   tags: [statistics, reminder]
+- date: 2026-08-09
+  tip: 'In fzf, prefix a term with `''` for an exact match, `^`/`$` to anchor it, and `!` to exclude it.'
+  explanation: 'Space-separated terms are ANDed and `|` ORs them, so `^src .go$ | .rs$ !test` finds Go or Rust files under `src` while dropping anything with "test" in the path. Fuzzy matching is the default, but these operators let you tighten a noisy list without leaving the prompt.'
+  tags: [shell, productivity]
