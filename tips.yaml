@@ -1930,3 +1930,7 @@
   tip: 'In fzf, prefix a term with `''` for an exact match, `^`/`$` to anchor it, and `!` to exclude it.'
   explanation: 'Space-separated terms are ANDed and `|` ORs them, so `^src .go$ | .rs$ !test` finds Go or Rust files under `src` while dropping anything with "test" in the path. Fuzzy matching is the default, but these operators let you tighten a noisy list without leaving the prompt.'
   tags: [shell, productivity]
+- date: 2026-08-10
+  tip: 'When using oh-my-zsh add `fzf` to `plugins=()` in `~/.zshrc` and its keybindings are set up for you.'
+  explanation: 'The plugin finds your fzf install and sources its `key-bindings.zsh` and `completion.zsh`, giving you `Ctrl-T` to paste fuzzy-picked file paths onto the command line, `Ctrl-R` for fuzzy history search, and `Alt-C` to cd into a subdirectory.'
+  tags: [zsh, productivity]
