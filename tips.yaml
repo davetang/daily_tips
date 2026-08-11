@@ -1934,3 +1934,7 @@
   tip: 'When using oh-my-zsh add `fzf` to `plugins=()` in `~/.zshrc` and its keybindings are set up for you.'
   explanation: 'The plugin finds your fzf install and sources its `key-bindings.zsh` and `completion.zsh`, giving you `Ctrl-T` to paste fuzzy-picked file paths onto the command line, `Ctrl-R` for fuzzy history search, and `Alt-C` to cd into a subdirectory.'
   tags: [zsh, productivity]
+- date: 2026-08-11
+  tip: 'Stop work while it is still going well and you know exactly what comes next.'
+  explanation: 'Hemingway''s rule from Esquire in 1935: "always stop when you are going good and when you know what will happen next... you will never be stuck." This gets sold as the Zeigarnik effect, but a 2025 meta-analysis found no recall advantage for unfinished tasks; what held up was the lesser-known Ovsiankina effect, a pull to spontaneously resume an interrupted task in roughly two-thirds of cases.'
+  tags: [self-help, productivity]
