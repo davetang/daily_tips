@@ -1938,3 +1938,7 @@
   tip: 'Stop work while it is still going well and you know exactly what comes next.'
   explanation: 'Hemingway''s rule from Esquire in 1935: "always stop when you are going good and when you know what will happen next... you will never be stuck." This gets sold as the Zeigarnik effect, but a 2025 meta-analysis found no recall advantage for unfinished tasks; what held up was the lesser-known Ovsiankina effect, a pull to spontaneously resume an interrupted task in roughly two-thirds of cases.'
   tags: [self-help, productivity]
+- date: 2026-08-12
+  tip: 'An NVMe "bad sector" is a logical error, not physical damage; overwrite the LBA and it is fixed.'
+  explanation: 'A bad sector on a hard disk is physically damaged platter: gone for good. An LBA (Logical Block Address) is just the numbered slot the OS asks for, and NVMe keeps that slot wherever it likes in flash, so a read failure is merely logical: error correction gave up and the LBA is flagged as holding nothing valid. Rewriting it binds the slot to a good page and clears the flag: `sudo nvme write-zeroes /dev/nvme0n1 -s <lba> -c 0`.'
+  tags: [linux, sysadmin]
