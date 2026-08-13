@@ -1942,3 +1942,7 @@
   tip: 'An NVMe "bad sector" is a logical error, not physical damage; overwrite the LBA and it is fixed.'
   explanation: 'A bad sector on a hard disk is physically damaged platter: gone for good. An LBA (Logical Block Address) is just the numbered slot the OS asks for, and NVMe keeps that slot wherever it likes in flash, so a read failure is merely logical: error correction gave up and the LBA is flagged as holding nothing valid. Rewriting it binds the slot to a good page and clears the flag: `sudo nvme write-zeroes /dev/nvme0n1 -s <lba> -c 0`.'
   tags: [linux, sysadmin]
+- date: 2026-08-13
+  tip: 'Run `duf` instead of `df -h`: it groups mounts into local, network, and special devices with colour-coded usage bars.'
+  explanation: '[duf](https://github.com/muesli/duf) (Disk Usage/Free) hides the pseudo-filesystem noise `df` dumps on you by default and colours each bar green/yellow/red by how full it is.'
+  tags: [shell, productivity]
