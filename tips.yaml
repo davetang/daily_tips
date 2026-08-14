@@ -1946,3 +1946,7 @@
   tip: 'Run `duf` instead of `df -h`: it groups mounts into local, network, and special devices with colour-coded usage bars.'
   explanation: '[duf](https://github.com/muesli/duf) (Disk Usage/Free) hides the pseudo-filesystem noise `df` dumps on you by default and colours each bar green/yellow/red by how full it is.'
   tags: [shell, productivity]
+- date: 2026-08-14
+  tip: 'Find a specific email in aerc with `:search -f alice -b invoice`, then jump between the hits with `:next-result`.'
+  explanation: 'Search flags stack: `-f` sender, `-t` recipient, `-c` cc, `-b` body, `-a` the entire message, `-H Subject:report` a named header, `-u`/`-r` unread/read, and `-d 1w` or `-d 2026-01-01..2026-02-01` a date range. Run the same query with `:filter` instead and aerc hides every message that does not match rather than merely highlighting the ones that do.'
+  tags: [aerc, email]
