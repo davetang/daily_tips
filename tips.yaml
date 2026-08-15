@@ -1950,3 +1950,7 @@
   tip: 'Find a specific email in aerc with `:search -f alice -b invoice`, then jump between the hits with `:next-result`.'
   explanation: 'Search flags stack: `-f` sender, `-t` recipient, `-c` cc, `-b` body, `-a` the entire message, `-H Subject:report` a named header, `-u`/`-r` unread/read, and `-d 1w` or `-d 2026-01-01..2026-02-01` a date range. Run the same query with `:filter` instead and aerc hides every message that does not match rather than merely highlighting the ones that do.'
   tags: [aerc, email]
+- date: 2026-08-15
+  tip: 'Before calling a system automated, ask who labelled the data.'
+  explanation: 'For Empire of AI, Karen Hao interviewed the Kenyan workers OpenAI contracted through Sama from November 2021 to build the toxicity detector that shipped in ChatGPT, classifying not just the worst text on the internet but worse that OpenAI prompted its own models to invent. TIME put their take-home pay at $1.32 to $2 an hour against the $12.50 OpenAI paid Sama, and the contract ended eight months early with workers describing lasting trauma.'
+  tags: [llm, economics]
