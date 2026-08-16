@@ -1954,3 +1954,7 @@
   tip: 'Before calling a system automated, ask who labelled the data.'
   explanation: 'For Empire of AI, Karen Hao interviewed the Kenyan workers OpenAI contracted through Sama from November 2021 to build the toxicity detector that shipped in ChatGPT, classifying not just the worst text on the internet but worse that OpenAI prompted its own models to invent. TIME put their take-home pay at $1.32 to $2 an hour against the $12.50 OpenAI paid Sama, and the contract ended eight months early with workers describing lasting trauma.'
   tags: [llm, economics]
+- date: 2026-08-16
+  tip: 'Treat a model''s headline benchmark scores as vendor-reported until something independent confirms them.'
+  explanation: 'Stanford''s AI Index 2026 found industry produced over 90% of notable AI models in 2025, and that almost all frontier developers publish capability numbers like MMLU and SWE-bench while reporting against responsible AI benchmarks stays sparse. Karen Hao calls this the empire''s knowledge monopoly in Empire of AI: the firms building the systems supply most of the evidence about them. Reach for a third-party evaluation such as HELM or a live Arena leaderboard before repeating a number.'
+  tags: [llm, best practice]
