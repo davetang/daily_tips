@@ -1962,3 +1962,7 @@
   tip: 'Favour work whose output is non-rival: my copy does not consume yours.'
   explanation: 'Non-rivalry of ideas is the core assumption of Paul Romer''s endogenous growth theory, the work behind his 2018 economics Nobel: your use of an idea does not subtract from mine, so one idea can serve any number of people at once and gives increasing returns to scale in a way that land and labour cannot. That is the test for your own output: one tutorial serves the thousandth reader as fully as the first, while your hour of troubleshooting goes to one person and nobody else can have it.'
   tags: [economics, altruism]
+- date: 2026-08-18
+  tip: 'When you cannot coordinate explicitly, pick the option the other side would guess.'
+  explanation: 'Thomas Schelling called these focal points: asked where they would meet a stranger in New York with no time or place agreed, most of his subjects chose the information booth at Grand Central, and almost all said noon. It is why a team with no naming convention still converges on `main.py`, and why an obvious default beats a better option nobody would predict.'
+  tags: [economics, productivity]
