@@ -1966,3 +1966,7 @@
   tip: 'When you cannot coordinate explicitly, pick the option the other side would guess.'
   explanation: 'Thomas Schelling called these focal points: asked where they would meet a stranger in New York with no time or place agreed, most of his subjects chose the information booth at Grand Central, and almost all said noon. It is why a team with no naming convention still converges on `main.py`, and why an obvious default beats a better option nobody would predict.'
   tags: [economics, productivity]
+- date: 2026-08-19
+  tip: 'Run `nvtop` for an htop-style view of GPU utilisation, memory and the processes using them.'
+  explanation: 'Handles NVIDIA, AMD and Intel GPUs out of the box, plotting per-GPU utilisation and memory over time above a process list showing which PIDs hold GPU memory. Packaged as `nvtop` on Debian buster and Ubuntu 21.10 or newer.'
+  tags: [gpu, linux]
