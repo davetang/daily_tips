@@ -1974,3 +1974,7 @@
   tip: 'Set container environment variables in `%environment`, not `%post`.'
   explanation: '`%post` runs once at build time, so an `export` there has vanished by the time anyone runs the container; put it in `%environment`, which is evaluated at runtime, or append the line to `$SINGULARITY_ENVIRONMENT` from inside `%post`.'
   tags: [singularity, reminder]
+- date: 2026-08-21
+  tip: 'Sign a container with `singularity key newpair` then `singularity sign my_image.sif`.'
+  explanation: '`key newpair` creates a PGP keypair under `~/.singularity/sypgp` and `sign` writes the signature into the SIF itself, so there is no detached `.sig` file to lose. Export the public half with `singularity key export -a ./public.asc`, carry it across with the image, and the far side runs `singularity key import ./public.asc` before `singularity verify my_image.sif`.'
+  tags: [singularity, security]
