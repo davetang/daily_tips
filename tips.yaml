@@ -1978,3 +1978,7 @@
   tip: 'Sign a container with `singularity key newpair` then `singularity sign my_image.sif`.'
   explanation: '`key newpair` creates a PGP keypair under `~/.singularity/sypgp` and `sign` writes the signature into the SIF itself, so there is no detached `.sig` file to lose. Export the public half with `singularity key export -a ./public.asc`, carry it across with the image, and the far side runs `singularity key import ./public.asc` before `singularity verify my_image.sif`.'
   tags: [singularity, security]
+- date: 2026-08-22
+  tip: 'Re-wrap a long line to a fixed width with `fold -w 60 file.txt`.'
+  explanation: 'It splits at 80 columns by default and never joins lines, so it is the quick way to re-wrap FASTA sequence or make a one-line file diffable; `-s` prefers breaking at spaces, though a word longer than the width still gets chopped. Use `fmt` for prose, since it reflows whole paragraphs instead of just counting columns.'
+  tags: [shell, productivity]
