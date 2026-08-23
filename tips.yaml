@@ -1982,3 +1982,7 @@
   tip: 'Re-wrap a long line to a fixed width with `fold -w 60 file.txt`.'
   explanation: 'It splits at 80 columns by default and never joins lines, so it is the quick way to re-wrap FASTA sequence or make a one-line file diffable; `-s` prefers breaking at spaces, though a word longer than the width still gets chopped. Use `fmt` for prose, since it reflows whole paragraphs instead of just counting columns.'
   tags: [shell, productivity]
+- date: 2026-08-23
+  tip: 'Point `SINGULARITY_CACHEDIR` at scratch space before pulling large images.'
+  explanation: 'Pulls cache their layers under `~/.singularity/cache` by default, which quietly eats an HPC home quota after a few Docker conversions. Check what is there with `singularity cache list -v` and reclaim it with `singularity cache clean`.'
+  tags: [singularity, hpc]
