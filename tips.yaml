@@ -1986,3 +1986,7 @@
   tip: 'Point `SINGULARITY_CACHEDIR` at scratch space before pulling large images.'
   explanation: 'Pulls cache their layers under `~/.singularity/cache` by default, which quietly eats an HPC home quota after a few Docker conversions. Check what is there with `singularity cache list -v` and reclaim it with `singularity cache clean`.'
   tags: [singularity, hpc]
+- date: 2026-08-24
+  tip: 'Make a script a service by dropping a unit at `/etc/systemd/system/diskcheck.service` with `Type=oneshot`, then run `sudo systemctl daemon-reload`.'
+  explanation: 'A minimal unit needs only `[Unit] Description=`, `[Service] Type=oneshot` and `ExecStart=/usr/local/bin/diskcheck.sh`; `Type=oneshot` tells systemd the process is meant to exit rather than stay resident, so it is not flagged as a failed daemon. `ExecStart` needs an absolute path and does not run through a shell, so pipes and globs must be wrapped in `/bin/bash -c`.'
+  tags: [linux, systemd]
