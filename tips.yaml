@@ -1998,3 +1998,7 @@
   tip: 'Prospect theory: people judge outcomes as gains and losses from a reference point, not as final states of wealth.'
   explanation: 'In Kahneman and Tversky''s 1979 *Econometrica* paper, the work behind Kahneman''s 2002 economics Nobel, 80% of subjects chose a sure 3,000 over an 80% chance of 4,000; when the same numbers were mirrored into losses, a sure loss of 3,000 against an 80% chance of losing 4,000, 92% took the gamble. Identical arithmetic, opposite risk appetite: all that changed was which side of the reference point the outcomes sat on.'
   tags: [economics, decision-making]
+- date: 2026-08-27
+  tip: 'Wrap scratch work in `local({ ... })` so only the result escapes and the temporary names never reach your global environment.'
+  explanation: '`local()` evaluates the block in a fresh environment and returns its last expression, so `dat <- local({ tmp <- readr::read_csv("raw.csv"); dplyr::filter(tmp, ok) })` leaves `dat` behind and discards `tmp`. Name lookup still falls through to the caller, so everything you already have loaded stays visible inside the block.'
+  tags: [rstats, reminder]
