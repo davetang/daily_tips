@@ -2002,3 +2002,7 @@
   tip: 'Wrap scratch work in `local({ ... })` so only the result escapes and the temporary names never reach your global environment.'
   explanation: '`local()` evaluates the block in a fresh environment and returns its last expression, so `dat <- local({ tmp <- readr::read_csv("raw.csv"); dplyr::filter(tmp, ok) })` leaves `dat` behind and discards `tmp`. Name lookup still falls through to the caller, so everything you already have loaded stays visible inside the block.'
   tags: [rstats, reminder]
+- date: 2026-08-28
+  tip: 'Use `tea`, the Gitea CLI, as the `gh` equivalent for self-hosted Gitea and Forgejo servers.'
+  explanation: '`gh` only speaks the GitHub API, but Forgejo implements the Gitea API, so one tool covers both: `tea login add --name work --url https://git.example.com --token <PAT>` registers an instance, after which `tea repos ls`, `tea issues ls` and `tea pr create` work against it.'
+  tags: [git, productivity]
