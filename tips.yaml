@@ -2006,3 +2006,7 @@
   tip: 'Use `tea`, the Gitea CLI, as the `gh` equivalent for self-hosted Gitea and Forgejo servers.'
   explanation: '`gh` only speaks the GitHub API, but Forgejo implements the Gitea API, so one tool covers both: `tea login add --name work --url https://git.example.com --token <PAT>` registers an instance, after which `tea repos ls`, `tea issues ls` and `tea pr create` work against it.'
   tags: [git, productivity]
+- date: 2026-08-29
+  tip: 'Keep a token in a file and pass it with command substitution: `tea login add --token "$(cat ~/.gitea_pat)"`.'
+  explanation: 'The shell expands `$(cat ...)` before running the command, so your history records the literal text `$(cat ~/.gitea_pat)` and never the token itself; `chmod 600 ~/.gitea_pat` keeps the file readable only by you. Always quote the substitution so a stray newline or space cannot split it into two arguments.'
+  tags: [shell, security]
