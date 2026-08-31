@@ -2014,3 +2014,7 @@
   tip: 'Tag repositories with GitHub topics, then find them again with `gh repo list --topic`.'
   explanation: 'Topics are repository-level labels, added from the "About" panel on the repository''s GitHub page or with `gh repo edit --add-topic rnaseq`, and `gh repo list davetang --topic rnaseq --limit 100` filters on them, which beats trying to encode categories in repository names. Repeat `--topic` to require several at once.'
   tags: [git, productivity]
+- date: 2026-08-31
+  tip: 'Pipe `gh repo list --json` through `--jq` to bulk clone: `gh repo list davetang --topic rnaseq --json nameWithOwner --jq ".[].nameWithOwner" | xargs -n1 gh repo clone`.'
+  explanation: 'Any `gh` command that accepts `--json` also accepts `--jq`, so the filtering happens inside `gh` with no separate `jq` install; `xargs -n1` then hands each `owner/repo` to `gh repo clone` one at a time. Add `--limit 100` because the default caps the list at 30.'
+  tags: [git, github]
