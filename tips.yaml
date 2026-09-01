@@ -2018,3 +2018,7 @@
   tip: 'Pipe `gh repo list --json` through `--jq` to bulk clone: `gh repo list davetang --topic rnaseq --json nameWithOwner --jq ".[].nameWithOwner" | xargs -n1 gh repo clone`.'
   explanation: 'Any `gh` command that accepts `--json` also accepts `--jq`, so the filtering happens inside `gh` with no separate `jq` install; `xargs -n1` then hands each `owner/repo` to `gh repo clone` one at a time. Add `--limit 100` because the default caps the list at 30.'
   tags: [git, github]
+- date: 2026-09-01
+  tip: 'Start a project skeleton on Gitea or Forgejo with `tea repos create --name rnaseq-skeleton --init --template`.'
+  explanation: 'The `--init` flag asks the server for an initial commit so the repo is not empty, and `--template` sets the template bit that makes it selectable by `tea repos create-from-template`; you then clone it and push the skeleton files themselves. Add `--license mit --gitignores R` to have those seeded in the first commit too.'
+  tags: [git, productivity]
