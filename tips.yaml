@@ -2022,3 +2022,7 @@
   tip: 'Start a project skeleton on Gitea or Forgejo with `tea repos create --name rnaseq-skeleton --init --template`.'
   explanation: 'The `--init` flag asks the server for an initial commit so the repo is not empty, and `--template` sets the template bit that makes it selectable by `tea repos create-from-template`; you then clone it and push the skeleton files themselves. Add `--license mit --gitignores R` to have those seeded in the first commit too.'
   tags: [git, productivity]
+- date: 2026-09-02
+  tip: 'Run `curl -sI https://example.com/` to see just the response headers, including `Server:`.'
+  explanation: '`-I` sends a `HEAD` request so you get headers without the body, and `-s` silences the progress meter. The `Server:` line usually names the software outright, such as `nginx/1.24.0` or `Apache/2.4.58 (Ubuntu)`, which settles "is this nginx or Apache?" in one command.'
+  tags: [linux, networking]
