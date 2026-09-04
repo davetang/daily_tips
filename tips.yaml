@@ -2030,3 +2030,7 @@
   tip: 'Use docsify to publish a folder of Markdown files as a documentation site with no build step.'
   explanation: 'A docsify site is a single `index.html` that loads the library from a CDN and fetches your `.md` files in the browser at runtime, so there is no generated HTML to commit.'
   tags: [docsify, markdown]
+- date: 2026-09-04
+  tip: 'In Inkscape, press `Shift+Ctrl+R` to resize the page to fit your drawing, or to fit only the objects you have selected.'
+  explanation: 'Press `Escape` first to deselect everything if you want the page to hug the whole canvas, or select specific objects to crop to just those. The same action lives in Document Properties (`Shift+Ctrl+D`) under the Page tab, in the "Resize page to content" section. On macOS use `Cmd` in place of `Ctrl`.'
+  tags: [inkscape, productivity]
