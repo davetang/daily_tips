@@ -2034,3 +2034,7 @@
   tip: 'In Inkscape, press `Shift+Ctrl+R` to resize the page to fit your drawing, or to fit only the objects you have selected.'
   explanation: 'Press `Escape` first to deselect everything if you want the page to hug the whole canvas, or select specific objects to crop to just those. The same action lives in Document Properties (`Shift+Ctrl+D`) under the Page tab, in the "Resize page to content" section. On macOS use `Cmd` in place of `Ctrl`.'
   tags: [inkscape, productivity]
+- date: 2026-09-05
+  tip: 'Wrap a command that is allowed to fail in `set +e` and `set -e` to keep the rest of the script under `errexit`.'
+  explanation: 'Capture the status immediately after the command, before anything else overwrites `$?`: `set +e; grep -q pattern file; rc=$?; set -e`. Without the toggle, `set -e` kills the script the moment `grep` finds nothing.'
+  tags: [bash, scripting]
