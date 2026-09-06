@@ -2038,3 +2038,7 @@
   tip: 'Wrap a command that is allowed to fail in `set +e` and `set -e` to keep the rest of the script under `errexit`.'
   explanation: 'Capture the status immediately after the command, before anything else overwrites `$?`: `set +e; grep -q pattern file; rc=$?; set -e`. Without the toggle, `set -e` kills the script the moment `grep` finds nothing.'
   tags: [bash, scripting]
+- date: 2026-09-06
+  tip: 'Add your own tldr pages by dropping a `<command>.page.md` file into the tealdeer custom pages directory.'
+  explanation: 'Run `tldr --show-paths` to find the directory, then write your own page for an in-house script. A `<command>.patch.md` file instead appends your extra examples to the official page rather than replacing it.'
+  tags: [shell, documentation]
