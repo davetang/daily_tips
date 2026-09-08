@@ -2046,3 +2046,7 @@
   tip: 'Pipe `tldr --list` into `fzf` to browse every cached tldr page: `tldr --list | fzf | xargs tldr`.'
   explanation: '`--list` prints every page available for your platform, so fuzzy-finding it turns tealdeer into a searchable catalogue of commands you did not know existed.'
   tags: [shell, productivity]
+- date: 2026-09-08
+  tip: 'File descriptor 3 is just the first number the shell has not already reserved: `exec 3>notes.txt` turns `>&3` into your own output stream.'
+  explanation: 'Every process starts with 0, 1 and 2 wired to stdin, stdout and stderr, which is why `2>&1` reads as "point 2 at whatever 1 is". Nothing is special about those numbers, so once you open 3 yourself, `echo done >&3` writes to `notes.txt` while stdout and stderr carry on untouched.'
+  tags: [shell, bash]
