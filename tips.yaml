@@ -2050,3 +2050,7 @@
   tip: 'File descriptor 3 is just the first number the shell has not already reserved: `exec 3>notes.txt` turns `>&3` into your own output stream.'
   explanation: 'Every process starts with 0, 1 and 2 wired to stdin, stdout and stderr, which is why `2>&1` reads as "point 2 at whatever 1 is". Nothing is special about those numbers, so once you open 3 yourself, `echo done >&3` writes to `notes.txt` while stdout and stderr carry on untouched.'
   tags: [shell, bash]
+- date: 2026-09-09
+  tip: 'Use `parallelly::availableCores()` rather than `parallel::detectCores()` to decide how many workers to start.'
+  explanation: '`detectCores()` reports the physical machine, so inside a container or a Slurm/SGE allocation it happily returns 96 on a node where you were granted 4, and you oversubscribe the CPU or get killed. `availableCores()` honours cgroup quotas and scheduler variables such as `NSLOTS` and `SLURM_CPUS_PER_TASK`, which is why {future} uses it internally.'
+  tags: [rstats, parallel, hpc]
