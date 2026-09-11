@@ -2058,3 +2058,7 @@
   tip: 'Run `ssh -L 8787:localhost:8787 user@server` and open `http://localhost:8787` to use a remote RStudio as if it were local.'
   explanation: 'The `localhost` in the middle is resolved by the *server*, not by you: your client listens on local port 8787 and the far end connects to its own 8787. Make it permanent with a `LocalForward 8787 localhost:8787` line under the matching `Host` block in `~/.ssh/config`.'
   tags: [linux, ssh]
+- date: 2026-09-11
+  tip: 'Build an MCP server in Python with `from mcp.server import MCPServer`, then decorate a type-hinted function with `@mcp.tool()`.'
+  explanation: 'The signature is the schema: `def add(a: int, b: int) -> int` plus a docstring gives the tool its JSON Schema, its description and its structured output, so you write no schema, no request parsing and no validation. Install with `pip install "mcp[cli]"`.'
+  tags: [python, mcp]
