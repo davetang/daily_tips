@@ -2062,3 +2062,7 @@
   tip: 'Build an MCP server in Python with `from mcp.server import MCPServer`, then decorate a type-hinted function with `@mcp.tool()`.'
   explanation: 'The signature is the schema: `def add(a: int, b: int) -> int` plus a docstring gives the tool its JSON Schema, its description and its structured output, so you write no schema, no request parsing and no validation. Install with `pip install "mcp[cli]"`.'
   tags: [python, mcp]
+- date: 2026-09-12
+  tip: 'Call `reticulate::py_require("polars")` near the top of a Quarto doc instead of pre-building a virtualenv.'
+  explanation: 'Since reticulate 1.41 the declared packages are resolved with `uv` into an ephemeral environment on first use, so the `.qmd` carries its own Python dependencies and a colleague renders it without any setup step. `py_require(python_version = "3.12")` pins the interpreter the same way.'
+  tags: [quarto, python, reticulate]
