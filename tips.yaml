@@ -2066,3 +2066,7 @@
   tip: 'Call `reticulate::py_require("polars")` near the top of a Quarto doc instead of pre-building a virtualenv.'
   explanation: 'Since reticulate 1.41 the declared packages are resolved with `uv` into an ephemeral environment on first use, so the `.qmd` carries its own Python dependencies and a colleague renders it without any setup step. `py_require(python_version = "3.12")` pins the interpreter the same way.'
   tags: [quarto, python, reticulate]
+- date: 2026-09-13
+  tip: 'Put a `.dockerignore` in the root of your build context so `docker build .` stops shipping `.git`, `.env` and data files to the builder.'
+  explanation: 'Everything in the context is sent before the first instruction runs, and anything `COPY . .` picks up can bust the cache or leak into the image. Unlike `.gitignore`, patterns are anchored to the context root, so `*.bam` only matches top-level files; write `**/*.bam` to match everywhere.'
+  tags: [docker, best practice]
