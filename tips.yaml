@@ -2070,3 +2070,7 @@
   tip: 'Put a `.dockerignore` in the root of your build context so `docker build .` stops shipping `.git`, `.env` and data files to the builder.'
   explanation: 'Everything in the context is sent before the first instruction runs, and anything `COPY . .` picks up can bust the cache or leak into the image. Unlike `.gitignore`, patterns are anchored to the context root, so `*.bam` only matches top-level files; write `**/*.bam` to match everywhere.'
   tags: [docker, best practice]
+- date: 2026-09-14
+  tip: 'Loop over files with `for file in *.pdf; do ...; done` instead of `for file in $(ls *.pdf)`.'
+  explanation: 'The shell splits the output of `$(ls ...)` on spaces, tabs and newlines, so `My Report.pdf` arrives as `My` and `Report.pdf`; a glob expands straight into one word per filename. Keep `"$file"` quoted inside the loop or the name gets split again.'
+  tags: [shell, bash, best practice]
