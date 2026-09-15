@@ -2074,3 +2074,7 @@
   tip: 'Loop over files with `for file in *.pdf; do ...; done` instead of `for file in $(ls *.pdf)`.'
   explanation: 'The shell splits the output of `$(ls ...)` on spaces, tabs and newlines, so `My Report.pdf` arrives as `My` and `Report.pdf`; a glob expands straight into one word per filename. Keep `"$file"` quoted inside the loop or the name gets split again.'
   tags: [shell, bash, best practice]
+- date: 2026-09-15
+  tip: 'Write `rm -rf "${dir:?}/"*` instead of `rm -rf "$dir/"*`, so the script stops if `dir` is empty rather than deleting everything under `/`.'
+  explanation: 'This is the same parameter expansion family as `${dir:-default}`: where `:-` swaps in a default value when `dir` is unset or empty, `:?` swaps in an error, printing `dir: parameter null or not set` and exiting the script before `rm` ever runs.'
+  tags: [shell, bash, best practice]
