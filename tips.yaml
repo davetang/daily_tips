@@ -2078,3 +2078,7 @@
   tip: 'Write `rm -rf "${dir:?}/"*` instead of `rm -rf "$dir/"*`, so the script stops if `dir` is empty rather than deleting everything under `/`.'
   explanation: 'This is the same parameter expansion family as `${dir:-default}`: where `:-` swaps in a default value when `dir` is unset or empty, `:?` swaps in an error, printing `dir: parameter null or not set` and exiting the script before `rm` ever runs.'
   tags: [shell, bash, best practice]
+- date: 2026-09-16
+  tip: 'Migrate a repo with `git clone --mirror`, then `git push --all` and `git push --tags` to the new host.'
+  explanation: 'A plain `git clone` makes a local branch only for the default branch, and `git push --all` pushes local branches, so you would move `main` and nothing else; in a mirror clone every branch is local, so `--all` really does move them all.'
+  tags: [git]
