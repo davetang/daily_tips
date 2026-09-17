@@ -2086,3 +2086,7 @@
   tip: 'Record provenance in a Singularity image with a `%labels` section, then read it back with `singularity inspect --labels my_image.sif`.'
   explanation: 'Each line splits at the first space into a name and a value, so `Author me@example.com` and `Version v1.0.0` become two labels. They are written to `/.singularity.d/labels.json` inside the SIF, so the metadata travels with the image instead of living in a README that goes missing.'
   tags: [singularity]
+- date: 2026-09-18
+  tip: 'Put `source ~/miniforge3/etc/profile.d/conda.sh` at the top of a script before any `conda activate`.'
+  explanation: '`conda activate` is a shell function, not the `conda` executable on `PATH`, so a non-interactive script fails with `CommandNotFoundError: Your shell has not been properly configured`. Bash only reads `~/.bashrc` for interactive shells, so the `conda init` block there never runs under cron, `sbatch`, or `bash script.sh`.'
+  tags: [shell, conda]
