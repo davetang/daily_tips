@@ -2090,3 +2090,7 @@
   tip: 'Put `source ~/miniforge3/etc/profile.d/conda.sh` at the top of a script before any `conda activate`.'
   explanation: '`conda activate` is a shell function, not the `conda` executable on `PATH`, so a non-interactive script fails with `CommandNotFoundError: Your shell has not been properly configured`. Bash only reads `~/.bashrc` for interactive shells, so the `conda init` block there never runs under cron, `sbatch`, or `bash script.sh`.'
   tags: [shell, conda]
+- date: 2026-09-19
+  tip: 'Guess PowerShell commands from the `Verb-Noun` pattern: `Get-Process`, `Stop-Process`, `Start-ScheduledTask`.'
+  explanation: 'Cmdlets are not programs on a `PATH` but a small vocabulary of approved verbs glued to a noun, so knowing `Get-Content` means you can usually guess `Set-Content`. Names and parameters are case-insensitive, and tab completion finishes both.'
+  tags: [powershell, windows]
