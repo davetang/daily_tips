@@ -2094,3 +2094,7 @@
   tip: 'Guess PowerShell commands from the `Verb-Noun` pattern: `Get-Process`, `Stop-Process`, `Start-ScheduledTask`.'
   explanation: 'Cmdlets are not programs on a `PATH` but a small vocabulary of approved verbs glued to a noun, so knowing `Get-Content` means you can usually guess `Set-Content`. Names and parameters are case-insensitive, and tab completion finishes both.'
   tags: [powershell, windows]
+- date: 2026-09-20
+  tip: 'In PowerShell, pick fields with `Select-Object Name,Id` instead of reaching for `awk` or `cut`.'
+  explanation: 'A PowerShell pipeline carries objects rather than lines of text, so `Get-Process | Select-Object Name,Id` replaces `ps | awk ''{print $1,$2}''` and you name properties instead of counting columns. For the same reason `Where-Object` takes over from `grep` on command output.'
+  tags: [powershell, windows]
