@@ -2098,3 +2098,7 @@
   tip: 'In PowerShell, pick fields with `Select-Object Name,Id` instead of reaching for `awk` or `cut`.'
   explanation: 'A PowerShell pipeline carries objects rather than lines of text, so `Get-Process | Select-Object Name,Id` replaces `ps | awk ''{print $1,$2}''` and you name properties instead of counting columns. For the same reason `Where-Object` takes over from `grep` on command output.'
   tags: [powershell, windows]
+- date: 2026-09-21
+  tip: 'Run a quoted program path in PowerShell with the call operator: `& "C:\Program Files\App\tool.exe" --uninstall`.'
+  explanation: 'A quoted string on its own is just a string, so PowerShell either prints it or fails on the arguments with `Unexpected token`; `&` says "run this".'
+  tags: [powershell, windows]
