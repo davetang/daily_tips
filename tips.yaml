@@ -2102,3 +2102,7 @@
   tip: 'Run a quoted program path in PowerShell with the call operator: `& "C:\Program Files\App\tool.exe" --uninstall`.'
   explanation: 'A quoted string on its own is just a string, so PowerShell either prints it or fails on the arguments with `Unexpected token`; `&` says "run this".'
   tags: [powershell, windows]
+- date: 2026-09-22
+  tip: 'Run `sudo inxi -Fxxxz` for a one-screen hardware and system report that is safe to paste in public.'
+  explanation: '`-F` gives the full set of sections (CPU, board, graphics, drives, network, sensors), `-xxx` adds three tiers of extra detail such as chip vendor IDs and RAM speed, and `-z` filters out serial numbers, MAC addresses and IP addresses, which is why distro forums and bug trackers ask for exactly this command.'
+  tags: [linux, sysadmin]
