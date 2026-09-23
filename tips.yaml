@@ -2106,3 +2106,7 @@
   tip: 'Run `sudo inxi -Fxxxz` for a one-screen hardware and system report that is safe to paste in public.'
   explanation: '`-F` gives the full set of sections (CPU, board, graphics, drives, network, sensors), `-xxx` adds three tiers of extra detail such as chip vendor IDs and RAM speed, and `-z` filters out serial numbers, MAC addresses and IP addresses, which is why distro forums and bug trackers ask for exactly this command.'
   tags: [linux, sysadmin]
+- date: 2026-09-23
+  tip: 'Upgrade Debian 12 to 13 in two passes: `sudo apt upgrade --without-new-pkgs` first, then `sudo apt full-upgrade`.'
+  explanation: 'The first pass only upgrades packages that need no new dependencies and removes nothing, so fewer things change at once when the second pass does the heavy work. This is the order the Debian 13 release notes recommend, and it cuts down the chance of `apt` removing half your desktop to settle a conflict.'
+  tags: [debian, sysadmin]
