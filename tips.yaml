@@ -2114,3 +2114,7 @@
   tip: 'Read HTML emails in aerc by adding `text/html=w3m -dump -T text/html -I utf-8 -O utf-8` under `[filters]` in `~/.config/aerc/aerc.conf`.'
   explanation: 'aerc sends each message part to the filter for its MIME type and shows the output. `-dump` makes w3m print rendered text instead of opening its browser, `-T text/html` tells it the input is HTML rather than plain text, and `-I`/`-O` set the input and output character sets to UTF-8.'
   tags: [aerc, email]
+- date: 2026-09-25
+  tip: 'Make a closed-source binary carry its own glibc with `patchelf --set-interpreter /opt/glibc-2.39/lib/ld-linux-x86-64.so.2 --set-rpath /opt/glibc-2.39/lib ./tool`.'
+  explanation: 'The loader has to come along with `libc.so.6` because the two share `GLIBC_PRIVATE` internals and must come from the same build. If you point only the rpath at a newer libc, the old system `ld-linux` stays in charge and fails with a `GLIBC_PRIVATE` relocation error.'
+  tags: [patchelf, linux]
