@@ -1,0 +1,50 @@
+name: Daily Random Tip
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 09:00 JST
+  workflow_dispatch:     # Allows manual triggering
+
+jobs:
+  send-tip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Pick a random tip
+        id: tip
+        run: |
+          python - <<'EOF'
+          import os
+          import random
+          from random_tip import load_tips
+
+          entry = random.choice(load_tips("tips.yaml"))
+          tags = ", ".join(entry.get("tags") or [])
+          with open("tip.txt", "w") as f:
+              f.write(f"{entry['tip']}\n\n{entry.get('explanation', '')}\n\nTags: {tags}\nAdded: {entry.get('date', '')}\n")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"subject=Daily tip: {entry['tip']}\n")
+          EOF
+          cat tip.txt
+
+      - name: Send mail
+        uses: dawidd6/action-send-mail@v4
+        with:
+          server_address: mail.davetang.org
+          server_port: 465
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: ${{ steps.tip.outputs.subject }}
+          to: me@davetang.org
+          from: "Daily Tip"
+          body: file://tip.txt
