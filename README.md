@@ -17,6 +17,17 @@ So literally, kaizen means "change for the better."
 
 [Commits RSS](https://github.com/davetang/daily_tips/commits/main.atom)
 
+# Usage
+
+Show a random tip from `tips.yaml` (requires [PyYAML](https://pypi.org/project/PyYAML/)):
+
+```console
+pip install pyyaml
+./random_tip.py
+```
+
+After each tip, choose `m` to show the explanation and tags, `n` for another tip, or `q` to quit. Every tip is shown once before any repeats. Pass a path to use a different file, e.g. `./random_tip.py other_tips.yaml`.
+
 # Tips
 
 | Date | Tip | Explanation | Tags |
