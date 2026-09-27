@@ -33,7 +33,7 @@ jobs:
           password: ${{ secrets.EMAIL_PASSWORD }}
           subject: "No Tip Submitted Today"
           to: me@davetang.org
-          from: "Daily Tip Reminder"
+          from: "Daily Tip Reminder <me@davetang.org>"
           body: "No commits were made to the daily tips repo today. Time to add your tip!"
 
   test-email:
@@ -49,5 +49,5 @@ jobs:
           password: ${{ secrets.EMAIL_PASSWORD }}
           subject: "Email sent from daily_tips"
           to: me@davetang.org
-          from: "Daily Tip Reminder"
+          from: "Daily Tip Reminder <me@davetang.org>"
           body: "Test email from GitHub Action."
