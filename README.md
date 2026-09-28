@@ -28,6 +28,8 @@ pip install pyyaml
 
 After each tip, choose `m` to show the explanation and tags, `n` for another tip, or `q` to quit. Every tip is shown once before any repeats. Pass a path to use a different file, e.g. `./random_tip.py other_tips.yaml`.
 
+Run `./random_tip.py --quiz` to test yourself: recall the explanation, press Enter to check it, then answer `y` if you knew it or `n` if you did not. Missed tips come up more often in later quizzes and ones you know come up less. Progress is saved to `~/.local/state/daily_tips/quiz.json`.
+
 # Tips
 
 | Date | Tip | Explanation | Tags |
