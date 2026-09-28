@@ -2126,3 +2126,7 @@
   tip: 'Put `status top right` in your `.screenrc` so GNU screen messages stop covering your prompt.'
   explanation: 'Messages such as `Copy mode - Column 0 Line 0` or `Activity in window 2` normally overwrite the bottom-left corner, which is where your prompt usually sits. The `status` command, new in 5.0, moves them to any corner you choose with `top`/`bottom` plus `left`/`right`.'
   tags: [screen, productivity]
+- date: 2026-09-28
+  tip: 'Run `Ctrl-a :source ~/.screenrc` to apply `.screenrc` edits to a GNU screen session that is already running.'
+  explanation: 'screen reads `.screenrc` only when a session starts, and reattaching with `screen -r` does not reload it, so a new line such as `status top right` does nothing in older sessions until you source the file. Every command in the file runs again, so any `screen -t name 0 cmd` lines will open extra windows.'
+  tags: [screen, productivity]
