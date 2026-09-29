@@ -2130,3 +2130,7 @@
   tip: 'Run `Ctrl-a :source ~/.screenrc` to apply `.screenrc` edits to a GNU screen session that is already running.'
   explanation: 'screen reads `.screenrc` only when a session starts, and reattaching with `screen -r` does not reload it, so a new line such as `status top right` does nothing in older sessions until you source the file. Every command in the file runs again, so any `screen -t name 0 cmd` lines will open extra windows.'
   tags: [screen, productivity]
+- date: 2026-09-29
+  tip: 'Run `docker run --rm -e TZ=Asia/Tokyo <image> date` to set a container''s timezone without rebuilding the image.'
+  explanation: 'Containers default to UTC, and the C library reads the `TZ` variable at run time to look up the zone in `/usr/share/zoneinfo`, so the same image can show Tokyo time on one run and UTC on the next.'
+  tags: [docker]
