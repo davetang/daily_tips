@@ -2134,3 +2134,7 @@
   tip: 'Run `docker run --rm -e TZ=Asia/Tokyo <image> date` to set a container''s timezone without rebuilding the image.'
   explanation: 'Containers default to UTC, and the C library reads the `TZ` variable at run time to look up the zone in `/usr/share/zoneinfo`, so the same image can show Tokyo time on one run and UTC on the next.'
   tags: [docker]
+- date: 2026-09-30
+  tip: 'Commit an empty directory by adding an empty `.gitkeep` file to it: `mkdir -p logs && touch logs/.gitkeep`.'
+  explanation: 'Git tracks files, not directories, so an empty folder never appears in `git status` and is missing from every clone. `.gitkeep` is only a naming convention (Git gives it no special meaning), but the name tells readers why the file exists. To keep the folder while ignoring whatever lands in it, add `logs/*` and `!logs/.gitkeep` to `.gitignore`.'
+  tags: [git]
