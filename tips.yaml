@@ -2138,3 +2138,7 @@
   tip: 'Commit an empty directory by adding an empty `.gitkeep` file to it: `mkdir -p logs && touch logs/.gitkeep`.'
   explanation: 'Git tracks files, not directories, so an empty folder never appears in `git status` and is missing from every clone. `.gitkeep` is only a naming convention (Git gives it no special meaning), but the name tells readers why the file exists. To keep the folder while ignoring whatever lands in it, add `logs/*` and `!logs/.gitkeep` to `.gitignore`.'
   tags: [git]
+- date: 2026-10-01
+  tip: 'Use `git show HEAD` to show the changes in the latest commit; use `git show HEAD~1` for the second latest commit.'
+  explanation: 'As written in `tldr`, `git show` shows information about a specific commit, tag, or branch (such as `HEAD` for the latest commit).'
+  tags: [git, reminder]
