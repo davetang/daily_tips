@@ -2142,3 +2142,7 @@
   tip: 'Use `git show HEAD` to show the changes in the latest commit; use `git show HEAD~1` for the second latest commit.'
   explanation: 'As written in `tldr`, `git show` shows information about a specific commit, tag, or branch (such as `HEAD` for the latest commit).'
   tags: [git, reminder]
+- date: 2026-10-02
+  tip: 'Add `-prune` after `-name` to list only the top-level matches: `find . -name "*proj*" -prune` prints `proj/` but nothing inside it.'
+  explanation: '`-prune` tells `find` not to go into a directory that has just matched, so `proj/proj_old` and `proj/proj.txt` are skipped. It is also faster on large trees, because `find` never reads the contents of matched directories.'
+  tags: [shell, find]
