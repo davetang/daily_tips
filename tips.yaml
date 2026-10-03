@@ -2146,3 +2146,7 @@
   tip: 'Add `-prune` after `-name` to list only the top-level matches: `find . -name "*proj*" -prune` prints `proj/` but nothing inside it.'
   explanation: '`-prune` tells `find` not to go into a directory that has just matched, so `proj/proj_old` and `proj/proj.txt` are skipped. It is also faster on large trees, because `find` never reads the contents of matched directories.'
   tags: [shell, find]
+- date: 2026-10-03
+  tip: 'Use `find / -name "*.conf" 2>&1 | grep -v ''Permission denied''` to hide permission errors but keep every other error.'
+  explanation: '`2>/dev/null` throws away all of stderr, including useful messages like `No such file or directory` when a starting path has a typo. Merging stderr into stdout and removing only the `Permission denied` lines cuts the noise without hiding real problems.'
+  tags: [shell, find]
