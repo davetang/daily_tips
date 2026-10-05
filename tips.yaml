@@ -2154,3 +2154,7 @@
   tip: 'Give a tunnel its own `Host` entry in `~/.ssh/config` and open it with `ssh -fN myserver-web`, so it runs in the background without a shell.'
   explanation: 'The entry is `Host myserver-web` followed by two indented lines, `HostName server.example.org` and `LocalForward 8765 127.0.0.1:8765` (add `User` if your login name is different). `-N` runs no remote command and `-f` sends `ssh` to the background after it logs in, so only the forward is left running; close it with `pkill -f ''ssh -fN myserver-web''`.'
   tags: [linux, ssh]
+- date: 2026-10-05
+  tip: '`GITHUB_TOKEN=$(gh auth token)`'
+  explanation: '`gh auth token` can automatically generate a GitHub token for you and you can use it with tools that read GITHUB_TOKEN.'
+  tags: [git]
