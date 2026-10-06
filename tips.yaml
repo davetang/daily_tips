@@ -2158,3 +2158,7 @@
   tip: '`GITHUB_TOKEN=$(gh auth token)`'
   explanation: '`gh auth token` can automatically generate a GitHub token for you and you can use it with tools that read GITHUB_TOKEN.'
   tags: [git]
+- date: 2026-10-06
+  tip: 'When using splits in `nvim`, `:resize 20` will set height to 20 lines and `:vertical resize 80` will set width to 80 columns.'
+  explanation: 'In Neovim, some plugins create splits that are either too big or small; use `:resize` and `:vertical resize` to adjust the horizontal and vertical splits, respectively.'
+  tags: [nvim]
