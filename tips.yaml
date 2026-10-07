@@ -2162,3 +2162,7 @@
   tip: 'When using splits in `nvim`, `:resize 20` will set height to 20 lines and `:vertical resize 80` will set width to 80 columns.'
   explanation: 'In Neovim, some plugins create splits that are either too big or small; use `:resize` and `:vertical resize` to adjust the horizontal and vertical splits, respectively.'
   tags: [nvim]
+- date: 2026-10-07
+  tip: 'Delete several emails at once in aerc: press `Space` on each one to mark it, then `D` to delete them all.'
+  explanation: '`Space` runs `:mark -t` then `:next`, so you can work down the list marking as you go, while `v` toggles the mark without moving. Commands like `:delete` act on every marked message instead of only the highlighted one, and `:unmark -a` clears the marks if you change your mind.'
+  tags: [aerc, email]
