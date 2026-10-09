@@ -2166,3 +2166,7 @@
   tip: 'Delete several emails at once in aerc: press `Space` on each one to mark it, then `D` to delete them all.'
   explanation: '`Space` runs `:mark -t` then `:next`, so you can work down the list marking as you go, while `v` toggles the mark without moving. Commands like `:delete` act on every marked message instead of only the highlighted one, and `:unmark -a` clears the marks if you change your mind.'
   tags: [aerc, email]
+- date: 2026-10-08
+  tip: 'Add `-e TERM=xterm-256color` to `docker run -it` so programs in the container use 256 colours.'
+  explanation: 'With `-t`, Docker sets `TERM=xterm`, which the terminfo database lists as 8 colours, so vim, htop and prompt themes look washed out. `tput colors` prints the colour count for the current `TERM`, so `docker run --rm -t debian tput colors` prints `8`, while adding `-e TERM=xterm-256color` makes it print `256`.'
+  tags: [docker, terminal]
