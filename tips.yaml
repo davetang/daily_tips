@@ -2170,3 +2170,7 @@
   tip: 'Add `-e TERM=xterm-256color` to `docker run -it` so programs in the container use 256 colours.'
   explanation: 'With `-t`, Docker sets `TERM=xterm`, which the terminfo database lists as 8 colours, so vim, htop and prompt themes look washed out. `tput colors` prints the colour count for the current `TERM`, so `docker run --rm -t debian tput colors` prints `8`, while adding `-e TERM=xterm-256color` makes it print `256`.'
   tags: [docker, terminal]
+- date: 2026-10-09
+  tip: 'Serve a folder of HTML with `python3 -m http.server 8765 --bind 127.0.0.1 --directory ~/project/docs`.'
+  explanation: 'Without `--bind`, Python listens on every interface (`Serving HTTP on 0.0.0.0`), so anyone who can reach the machine can read the files. Everything under `--directory` is served, so never point it at your home directory.'
+  tags: [python, networking]
