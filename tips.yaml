@@ -2174,3 +2174,7 @@
   tip: 'Serve a folder of HTML with `python3 -m http.server 8765 --bind 127.0.0.1 --directory ~/project/docs`.'
   explanation: 'Without `--bind`, Python listens on every interface (`Serving HTTP on 0.0.0.0`), so anyone who can reach the machine can read the files. Everything under `--directory` is served, so never point it at your home directory.'
   tags: [python, networking]
+- date: 2026-10-10
+  tip: 'Run `quarto preview report.qmd --port 8765 --no-browser` on a remote machine and view it through an SSH tunnel.'
+  explanation: 'Add `LocalForward 8765 127.0.0.1:8765` under the server''s `Host` entry in `~/.ssh/config`, and every `ssh myserver` forwards port 8765 on your machine to port 8765 on the server, so `http://localhost:8765` in your browser shows the preview. Without `--port`, Quarto picks a new random port every run (`4191`, then `6157`), which the tunnel never reaches. `--no-browser` stops it trying to open a browser on the server.'
+  tags: [quarto, ssh]
