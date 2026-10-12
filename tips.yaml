@@ -2182,3 +2182,7 @@
   tip: 'OSC (Operating System Command) is the `ESC ]` escape sequence that sends commands to the terminal itself.'
   explanation: 'An OSC sequence is `ESC ]`, a number that picks the command, a `;`, a text argument, then a terminator: BEL (`\a`) or `ESC \`. For example, `printf ''\e]2;build server\a''` sets the window title, OSC 8 makes clickable links and OSC 52 sets the clipboard. The name is historical: the ECMA-48 standard set it aside for "operating system use", and terminals now use it for features beyond drawing text.'
   tags: [terminal]
+- date: 2026-10-12
+  tip: 'Run `infocmp` to see the terminfo entry that full-screen programs load for your `$TERM`.'
+  explanation: 'An escape code is a byte sequence starting with the Escape character (`\E`) that the terminal acts on instead of printing. Terminals differ in which codes they understand, so programs such as `less` and `vim` use the ncurses library to look up `$TERM` in the terminfo database rather than hard-coding them. `infocmp` prints that entry, where `clear=\E[H\E[2J` is the code that clears the screen.'
+  tags: [terminal, ncurses]
