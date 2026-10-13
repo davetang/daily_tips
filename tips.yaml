@@ -2186,3 +2186,7 @@
   tip: 'Run `infocmp` to see the terminfo entry that full-screen programs load for your `$TERM`.'
   explanation: 'An escape code is a byte sequence starting with the Escape character (`\E`) that the terminal acts on instead of printing. Terminals differ in which codes they understand, so programs such as `less` and `vim` use the ncurses library to look up `$TERM` in the terminfo database rather than hard-coding them. `infocmp` prints that entry, where `clear=\E[H\E[2J` is the code that clears the screen.'
   tags: [terminal, ncurses]
+- date: 2026-10-13
+  tip: 'Set `networkingMode=mirrored` in `.wslconfig` so WSL2 and Windows reach each other on `127.0.0.1`.'
+  explanation: 'By default WSL2 sits behind NAT, so from Linux a Windows server is not at `127.0.0.1` but at a host address like `172.30.96.1` that can change after a reboot. Mirrored mode copies the Windows network interfaces into Linux, so `curl http://127.0.0.1:8080` in WSL reaches a Windows service on port 8080. Add `networkingMode=mirrored` under `[wsl2]` in `%UserProfile%\.wslconfig`, then run `wsl --shutdown` (Windows 11 22H2 or later).'
+  tags: [windows, networking]
