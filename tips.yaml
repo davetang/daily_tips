@@ -2190,3 +2190,7 @@
   tip: 'Set `networkingMode=mirrored` in `.wslconfig` so WSL2 and Windows reach each other on `127.0.0.1`.'
   explanation: 'By default WSL2 sits behind NAT, so from Linux a Windows server is not at `127.0.0.1` but at a host address like `172.30.96.1` that can change after a reboot. Mirrored mode copies the Windows network interfaces into Linux, so `curl http://127.0.0.1:8080` in WSL reaches a Windows service on port 8080. Add `networkingMode=mirrored` under `[wsl2]` in `%UserProfile%\.wslconfig`, then run `wsl --shutdown` (Windows 11 22H2 or later).'
   tags: [windows, networking]
+- date: 2026-10-14
+  tip: 'setuid and setgid are permission bits that make a program run as the file''s owner or group, not as you.'
+  explanation: 'The names are short for "set user ID" and "set group ID" on execution. `ls -l /usr/bin/passwd` shows `-rwsr-xr-x root root`: the `s` in the owner''s execute slot is setuid, so `passwd` runs as root and can update `/etc/shadow`, the password file ordinary users cannot even read. An `s` in the group''s execute slot (`-rwxr-sr-x`) is setgid, which runs the program with the file''s group instead.'
+  tags: [linux, security]
