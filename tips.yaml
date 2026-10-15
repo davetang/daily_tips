@@ -2194,3 +2194,7 @@
   tip: 'setuid and setgid are permission bits that make a program run as the file''s owner or group, not as you.'
   explanation: 'The names are short for "set user ID" and "set group ID" on execution. `ls -l /usr/bin/passwd` shows `-rwsr-xr-x root root`: the `s` in the owner''s execute slot is setuid, so `passwd` runs as root and can update `/etc/shadow`, the password file ordinary users cannot even read. An `s` in the group''s execute slot (`-rwxr-sr-x`) is setgid, which runs the program with the file''s group instead.'
   tags: [linux, security]
+- date: 2026-10-15
+  tip: 'In WSL2, move projects off the Windows drive into your Linux home: `mv /mnt/c/Users/dave/project ~/`.'
+  explanation: 'Your home directory sits on WSL2''s own ext4 disk, while `/mnt/c` reaches Windows through a file-sharing protocol, so commands that touch many small files, like `git status` or `npm install`, run several times slower there. Windows apps can still open the moved files at `\\wsl.localhost\Ubuntu\home\dave\project`.'
+  tags: [windows, linux, best practice]
