@@ -2198,3 +2198,7 @@
   tip: 'In WSL2, move projects off the Windows drive into your Linux home: `mv /mnt/c/Users/dave/project ~/`.'
   explanation: 'Your home directory sits on WSL2''s own ext4 disk, while `/mnt/c` reaches Windows through a file-sharing protocol, so commands that touch many small files, like `git status` or `npm install`, run several times slower there. Windows apps can still open the moved files at `\\wsl.localhost\Ubuntu\home\dave\project`.'
   tags: [windows, linux, best practice]
+- date: 2026-10-16
+  tip: 'In RAG, reranking is a second pass that re-scores the retrieved chunks with a slower, more accurate model.'
+  explanation: 'Retrieval-augmented generation (RAG) answers a question by first pulling a shortlist of text chunks from a vector index, ranked by how close each chunk''s embedding is to the question''s embedding. That search is fast but rough, so a reranker reads the question and each candidate chunk together, gives every pair a relevance score, and reorders the list. Only the top few after reranking are pasted into the LLM''s prompt, so the model sees fewer, better passages.'
+  tags: [llm, rag]
