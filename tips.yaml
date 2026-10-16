@@ -1,27 +1,27 @@
 - date: 2025-04-14
   tip: "`mv oldname.txt newname.txt && cat $_`"
   explanation: "$_ can be used to get the last argument of the previous command."
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-04-15
   tip: "Just type the name of the directory to autocd into it."
   explanation: "Off by default in both Bash and Zsh; enable it with `shopt -s autocd` (Bash) or `setopt autocd` (Zsh) and check the current state with `shopt autocd` or `setopt | grep autocd`."
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-04-16
   tip: "Use `purrr::walk()` for side effects."
   explanation: "When you do not care about the return value, use `purrr::walk()` instead of `purrr::map()`."
-  tags: [rstats, functional programming]
+  tags: [rstats, functional-programming]
 - date: 2025-04-17
   tip: "Use `fc` to Fix Command."
   explanation: "Opens your last command with `$EDITOR` and after you edit and save, the command runs immediately."
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-04-18
   tip: "`diff -y --color=always file1.txt file2.txt`"
   explanation: "`diff -y` provides a side-by-side comparison to easily spot differences with colour!"
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-04-19
   tip: "`script mysession.log`"
   explanation: "`script` save entire shell session (incl. input/output) for logging; use `exit` to stop session."
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-04-20
   tip: "Use `--containall` with Singularity for better isolation."
   explanation: "Prevents container from reading or writing from the host; useful for testing in a minimal, clean environment."
@@ -29,19 +29,19 @@
 - date: 2025-04-21
   tip: "`pstree -p PID`"
   explanation: "Show processes in a tree with PID."
-  tags: [shell, system]
+  tags: [shell, linux]
 - date: 2025-04-22
   tip: "Good enough now beats perfect later."
   explanation: "A working solution now is more useful than a perfect one that never arrives."
-  tags: [project management]
+  tags: [teamwork]
 - date: 2025-04-23
   tip: "Consider using `tryCatch()` over `stopifnot()`."
   explanation: "`tryCatch()` can handle and recover from errors, while `stopifnot()` halts execution."
-  tags: [rstats, defensive programming]
+  tags: [rstats, defensive-programming]
 - date: 2025-04-24
   tip: "`apropos unzip`"
   explanation: "If you know what a command does, but not the name use `apropos` to search the man pages!"
-  tags: [shell, documentation]
+  tags: [shell]
 - date: 2025-04-25
   tip: "Use `--cleanenv` with Singularity."
   explanation: "Using `--cleanenv` prevents the container from inheriting most of the environment variables from the host."
@@ -49,19 +49,19 @@
 - date: 2025-04-26
   tip: "`tar -cJf archive-name.tar.xz folder/`"
   explanation: "xz typically compresses better than gz but is slower; use for long term backups."
-  tags: [shell, compression]
+  tags: [shell]
 - date: 2025-04-27
   tip: "`watch -n 1 vcgencmd measure_temp`"
   explanation: "Measure the temperature every second; `watch` polls every 2 seconds by default, so pass `-n 1` for a 1-second interval."
-  tags: [raspberry pi]
+  tags: [linux]
 - date: 2025-04-28
   tip: "Use the dot placeholder with {purrr}."
   explanation: "`purrr::map_int(1:5, ~ . + 1L)` vs. `purrr::map_int(1:5, function(x) x + 1L)`; use `1L` (or `map_dbl()`) since `map_int()` errors on the double `. + 1`."
-  tags: [rstats, functional programming]
+  tags: [rstats, functional-programming]
 - date: 2025-04-29
   tip: "Use `date` and `bc` to measure elapsed time."
   explanation: 'Use `$(date +%s.%N)` to get times then use `echo "${END} - ${START}" | bc` to get elapsed time.'
-  tags: [shell, benchmarking]
+  tags: [shell]
 - date: 2025-04-30
   tip: "Apply the aggregation of marginal gains."
   explanation: 'Follow the philosophy of searching for a tiny margin of improvement in everything you do.'
@@ -69,23 +69,23 @@
 - date: 2025-05-01
   tip: "`find ~ -type f -size +100M`"
   explanation: 'Find files in your home directory that are larger than 100M using `find`.'
-  tags: [shell, reminder]
+  tags: [shell]
 - date: 2025-05-02
   tip: '`purrr::discard(~ stringr::str_detect(., "old"))`'
   explanation: 'Use `purrr::discard` to discard elements based on their values.'
-  tags: [rstats, functional programming]
+  tags: [rstats, functional-programming]
 - date: 2025-05-03
   tip: '`purrr::list_rbind(my_list, names_to = "id")`'
   explanation: 'Use `purrr::list_rbind()` to combine list elements into a single data structure.'
-  tags: [rstats, functional programming]
+  tags: [rstats, functional-programming]
 - date: 2025-05-04
   tip: '`f <- purrr::compose(sqrt, abs)`'
   explanation: 'Use `purrr::compose()` to combine multiple functions into one, chaining them from right to left.'
-  tags: [rstats, functional programming]
+  tags: [rstats, functional-programming]
 - date: 2025-05-05
   tip: 'Use `shellcheck` to lint and find potential issues in your script.'
   explanation: 'ShellCheck is a static analysis and linting tool for sh/bash scripts.'
-  tags: [shell, linting]
+  tags: [shell, best-practice]
 - date: 2025-05-06
   tip: 'Use the {gt} package to make nice looking tables in R.'
   explanation: 'The gt philosophy: we can construct a wide variety of useful tables with a cohesive set of table parts.'
@@ -93,11 +93,11 @@
 - date: 2025-05-07
   tip: '`seq 10 | datamash sum 1 mean 1`'
   explanation: 'GNU datamash can perform basic numeric, textual and statistical operations on input textual data files.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-05-08
   tip: 'Use `rsync` over `scp`.'
   explanation: '`rsync` only transfers differences, has better support for resuming transfers, and has more features.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-05-09
   tip: '`tmpfile=$(mktemp)`'
   explanation: 'Use `mktemp` for secure, race-free temp file creation.'
@@ -105,7 +105,7 @@
 - date: 2025-05-10
   tip: '`find . -maxdepth 1 -type f ! -name "*.sh" ! -name "*.md" -exec ls {} +`'
   explanation: 'Use `!` with `find` to exclude files.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-05-11
   tip: "`trap 'echo Caught a signal (EXIT, INT, or TERM).; exit' EXIT INT TERM`"
   explanation: '`trap` is useful for cleaning up temporary files, restoring settings, or just handling interruptions gracefully.'
@@ -117,23 +117,23 @@
 - date: 2025-05-13
   tip: "`du -h --max-depth=1 | sort -h`"
   explanation: 'Get size of files and top directories, then sort by human-readable sizes.'
-  tags: [shell, reminder]
+  tags: [shell]
 - date: 2025-05-14
   tip: "`git config --global help.autocorrect 1`"
   explanation: 'Auto-correct typos in Git commands; the value is in tenths of a second, so `1` means a 0.1s pause before the corrected command runs. Use a larger value like `20` for a 2-second grace period to cancel.'
-  tags: [shell, reminder]
+  tags: [shell]
 - date: 2025-05-15
   tip: '`readarray -t FILES < <(find .)`'
   explanation: 'Use `readarray` to read stuff into an array.'
-  tags: [bash scripting]
+  tags: [bash, scripting]
 - date: 2025-05-16
   tip: '`tidyr::separate(df, group, c("key", "value"), sep = "\\s", extra = "merge")`'
   explanation: 'Use `extra = "merge"` to split at most `length(into)` times, keeping any remainder in the last column; the default `"warn"` drops the extra pieces instead.'
-  tags: [tidyverse]
+  tags: [rstats, tidyverse]
 - date: 2025-05-17
   tip: 'Use `tidyr::separate_wider_delim()` instead of `tidyr::separate()`.'
   explanation: '`separate()` has been superseded in favour of `separate_wider_position()` and `separate_wider_delim()`.'
-  tags: [tidyverse]
+  tags: [rstats, tidyverse]
 - date: 2025-05-18
   tip: 'Set boundaries with intention, not guilt.'
   explanation: 'Treat your personal time with the same respect you would give to a work meeting.'
@@ -141,11 +141,11 @@
 - date: 2025-05-19
   tip: 'Use `/etc/hosts` to set DNS mappings.'
   explanation: 'Save yourself typing IP addresses by adding an entry in `/etc/hosts`.'
-  tags: [reminder, networking]
+  tags: [networking]
 - date: 2025-05-20
   tip: 'Use the {targets} package to build workflows in R.'
   explanation: 'The {targets} package allows you build reproducible workflows entirely within R.'
-  tags: [rstats, workflows]
+  tags: [rstats]
 - date: 2025-05-21
   tip: '`git blame -w`'
   explanation: '`git blame` shows the commit, author, and date for each line; adding `-w` makes it ignore whitespace-only changes so blame skips past pure reformatting to the real last edit.'
@@ -157,27 +157,27 @@
 - date: 2025-05-23
   tip: '`cp -u some_file .`'
   explanation: 'Copy only when the SOURCE file is newer than the destination file or when the destination file is missing.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-05-24
   tip: "`find . -type f -mtime -2`"
   explanation: 'Find files that were modified less than 2 days ago.'
-  tags: [shell, reminder]
+  tags: [shell]
 - date: 2025-05-25
   tip: '`grep -r --include="*.conf" "Listen" /etc`'
   explanation: 'Search recursively `*.conf` files for "Listen" in `/etc`, including subdirectories.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-05-26
   tip: '`ps aux --sort=-%mem | head -n 3`'
   explanation: 'Show top memory-consuming processes.'
-  tags: [shell, processes]
+  tags: [shell, linux]
 - date: 2025-05-27
   tip: '`bash -x test.sh`'
   explanation: 'Use `-x` for debugging Bash scripts.'
-  tags: [bash scripting]
+  tags: [bash, scripting]
 - date: 2025-05-28
   tip: '[expression for item in iterable if condition]'
   explanation: 'List comprehension in Python (that I always forget).'
-  tags: [python, reminder]
+  tags: [python]
 - date: 2025-05-29
   tip: '`name<-"Rei"; glue::glue("Hello, {name}!")`'
   explanation: 'Use the {glue} package for string interpolation in R!'
@@ -189,7 +189,7 @@
 - date: 2025-05-31
   tip: '`git log --pretty=format:"%h %ad | %s%d [%an]" --date=short`'
   explanation: 'Customize `git log` output using `--pretty=format:`.'
-  tags: [git, productivity]
+  tags: [git]
 - date: 2025-06-01
   tip: '`python3 -c "import sys; print(sys.version)"`'
   explanation: 'Use `-c` with Python (and Bash) to run a command from the command line.'
@@ -197,75 +197,75 @@
 - date: 2025-06-02
   tip: 'If you are not paying for the product, you are the product.'
   explanation: 'When services are offered for free, your data, attention, or behaviour are monetised.'
-  tags: [reminder]
+  tags: [economics]
 - date: 2025-06-03
   tip: 'Set the seed for reproducibility.'
   explanation: 'When dealing with randomness, set the seed to ensure that you get the same results.'
-  tags: [reminder]
+  tags: [statistics]
 - date: 2025-06-04
   tip: '`getAnywhere("some_function")`'
   explanation: '`getAnywhere()` searches attached packages, loaded namespaces, and registered S3 methods for an object with the given name (including non-exported ones); it does not search local frames or unloaded namespaces.'
-  tags: [rstats, reminder]
+  tags: [rstats]
 - date: 2025-06-05
   tip: 'Use Matrix Market for storing sparse matrices in human readable format.'
   explanation: 'Sparse matrices are not efficiently stored in CSV or TSV format.'
-  tags: [rstats, file format]
+  tags: [rstats, file-formats]
 - date: 2025-06-06
   tip: 'When committing changes, one change should equal one purpose.'
   explanation: 'Each commit should do one thing: fix a bug, update docs, rename a variable, add a feature, etc.'
-  tags: [git, best practice]
+  tags: [git, best-practice]
 - date: 2025-06-07
   tip: 'LABEL maintainer="Dave Tang <email_address>"'
   explanation: 'Using MAINTAINER in Dockerfiles has been deprecated; use LABEL instead.'
-  tags: [docker, best practice]
+  tags: [docker, best-practice]
 - date: 2025-06-08
   tip: 'Always put double quotes around variables in Bash scripts.'
   explanation: 'Filenames, arguments, or inputs might contain spaces, tabs, or special characters.'
-  tags: [bash scripting, best practice]
+  tags: [bash, scripting, best-practice]
 - date: 2025-06-09
   tip: 'Use `withCallingHandlers()` to log messages and warnings in R.'
   explanation: '`withCallingHandlers()` is an advanced error and condition handling function in R that can be used for logging and more.'
-  tags: [rstats, defensive programming]
+  tags: [rstats, defensive-programming]
 - date: 2025-06-10
   tip: '`find data -path ''*pca/res.txt'' -print`'
   explanation: 'Quote the pattern so the shell does not expand it first; `-path` matches against the whole path (and `*` matches `/`), so this finds `res.txt` only inside directories matching `*pca`.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-06-11
   tip: 'Know about the fallacy of personal validation.'
   explanation: 'The Barnum effect is when people give high accuracy ratings to descriptions of their personality but the descriptions are in fact vague and general.'
-  tags: [psychology]
+  tags: [science]
 - date: 2025-06-12
   tip: 'Make a habit of using `alias` in the shell.'
   explanation: 'Use `alias` to create aliases so you have to type (and remember) less.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-06-13
   tip: "Remember the habit loop: Cue, Routine, Reward."
   explanation: 'Popularised by Charles Duhigg in *The Power of Habit* (2012): a Cue triggers the Routine (the actual behaviour), and the Reward reinforces it. A common variant restates this as the "3 R''s" with "Reminder" in place of "Cue".'
-  tags: [good habits]
+  tags: [habits]
 - date: 2025-06-14
   tip: 'Use https://explainshell.com/ to explain shell commands.'
   explanation: "The site contains parsed manpages from sections 1 and 8 found in Ubuntu's manpage repository."
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-06-15
   tip: 'Use `CDPATH` to search in other specified paths besides the current directory.'
   explanation: 'Instead of looking only in the current directory, the shell now checks directories set by `CDPATH`.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-06-16
   tip: '`find dir1 dir2 dir3 -type f -name "*.txt"`'
   explanation: 'Find works on multiple locations!'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-06-17
   tip: '`compdef _gnu_generic find`'
   explanation: 'Tab completion for find when using Zsh!'
-  tags: [zsh, productivity]
+  tags: [zsh]
 - date: 2025-06-18
   tip: "`sed -e 's/foo/bar/' -e 's/baz/qux/' file.txt`"
   explanation: 'Perform two separate substitution expressions with just one `sed` command.'
-  tags: [sed, reminder]
+  tags: [shell]
 - date: 2025-06-19
   tip: '`while IFS= read -r line; do echo "$line"; done < filename.txt`'
   explanation: 'Read a file line by line, preserving all whitespace in a Bash script.'
-  tags: [bash, reminder]
+  tags: [bash]
 - date: 2025-06-20
   tip: 'Read the Bash Reference Manual'
   explanation: 'You will probably need to read and/or write a Bash script, so read https://www.gnu.org/software/bash/manual/bash.html.'
@@ -277,31 +277,31 @@
 - date: 2025-06-22
   tip: "Be aware of Cognitive Debt and don't build it up!"
   explanation: 'See study: Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task'
-  tags: [good habits]
+  tags: [habits]
 - date: 2025-06-23
   tip: "Check out `fzf`, a command-line fuzzy finder"
   explanation: '`fzf` is an interactive filter program for any kind of list; files, command history, processes, hostnames, bookmarks, git commits, etc.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-06-24
   tip: "`find . -type f -print0 | xargs -0 rm`"
   explanation: 'Use `-print0` with `find` to explicitly mark the end of each filename with a null byte, which works nicely with `xargs`.'
-  tags: [shell, best practice]
+  tags: [shell, best-practice]
 - date: 2025-06-25
   tip: "Buy The Secret Rules of the Terminal at https://wizardzines.com/zines/terminal/"
   explanation: 'Understanding just a little more about the terminal can make your experience WAY better.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-06-26
   tip: "`which -a python3`"
   explanation: 'Use `which -a` to show ALL matches in your PATH for a program, in order!'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-06-27
   tip: "Use `pbcopy` and `pbpaste` to copy to the clipboard and paste from the clipboard"
   explanation: '`pbcopy` and `pbpaste` are only available on macOS but can be mimicked using other tools on Linux.'
-  tags: [macOS, productivity]
+  tags: [macos]
 - date: 2025-06-28
   tip: 'echo "setenv DISPLAY localhost:10.0" >> ~/.screenrc'
   explanation: 'Ensure that DISPLAY is set in all `screen` sessions by setting it in `~/.screenrc`; use screen''s own `setenv` directive, not shell `export`, because `.screenrc` is parsed by screen rather than the shell.'
-  tags: [screen, productivity]
+  tags: [screen]
 - date: 2025-06-29
   tip: 'The terminal emulator is a translator.'
   explanation: 'The terminal emulator translates all typing/clicks into bytes and and it takes all the bytes from a program and displays them on the screen.'
@@ -317,23 +317,23 @@
 - date: 2025-07-02
   tip: '`csvlook file.csv` (after installing csvkit).'
   explanation: 'Renders a CSV to the command line in a Markdown-compatible, fixed-width format.'
-  tags: [terminal, productivity]
+  tags: [terminal]
 - date: 2025-07-03
   tip: 'The {ggeasy} package provides {ggplot2} shortcuts.'
   explanation: '{ggeasy} is a helper package that makes it easier to make {ggplot2} plots!'
-  tags: [rstats, helper]
+  tags: [rstats, visualisation]
 - date: 2025-07-04
   tip: '`install.packages("torch")`'
   explanation: 'R Interface to Torch!'
-  tags: [rstats, machine learning]
+  tags: [rstats, machine-learning]
 - date: 2025-07-05
   tip: 'Check out Miller!'
   explanation: 'Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON!'
-  tags: [terminal, productivity]
+  tags: [terminal]
 - date: 2025-07-06
   tip: 'Try changing up your environment or daily routine.'
   explanation: 'Even small shifts can spark new motivation and boost your focus!'
-  tags: [productivity]
+  tags: [self-help]
 - date: 2025-07-07
   tip: 'Trust, but verify.'
   explanation: 'You can always trust that a tool performs as advertised but you should verify too.'
@@ -341,7 +341,7 @@
 - date: 2025-07-08
   tip: '`mlr --icsv --opprint cat example.csv`'
   explanation: 'Use Miller to output a CSV file in a pretty format!'
-  tags: [terminal, productivity]
+  tags: [terminal]
 - date: 2025-07-09
   tip: '`sudo apt install lftp`'
   explanation: 'Legacy `ftp` is deprecated; use `lftp`, a more modern FTP client.'
@@ -349,27 +349,27 @@
 - date: 2025-07-10
   tip: 'Check out `tmux`'
   explanation: 'I have been using GNU Screen for as long as I can remember; time to check out `tmux`?'
-  tags: [Linux, productivity]
+  tags: [terminal]
 - date: 2025-07-11
   tip: 'Use `"+y` to yank to the clipboard in Nvim!'
   explanation: 'Instead of using the mouse to copy to the clipboard, use `"+y` to yank to the clipboard!'
-  tags: [nvim]
+  tags: [vim]
 - date: 2025-07-12
   tip: 'Use marks to set a specific position to jump back to in Nvim.'
   explanation: "Use `ma` to mark current cursor position. Use `backtick+a` to jump to exact position and `'a` to jump to start of line."
-  tags: [nvim]
+  tags: [vim]
 - date: 2025-07-13
   tip: '`Ctrl+o` and `Ctrl+i`: go backward and forward in jump history.'
   explanation: "Great for moving back after using search or jumping to the start/end of a file."
-  tags: [nvim]
+  tags: [vim]
 - date: 2025-07-14
   tip: 'You can open two or more files in Nvim and work with them simultaneously!'
   explanation: "Use `:ls` to list open buffers, i.e., files that are open, and `:b number` to switch between them."
-  tags: [nvim]
+  tags: [vim]
 - date: 2025-07-15
   tip: 'Use `:help` to bring up the help screen in Nvim.'
   explanation: "The Nvim help pages are quite detailed; use `CTRL-]` to jump to a subject."
-  tags: [nvim, reminder]
+  tags: [vim]
 - date: 2025-07-16
   tip: '`hexdump -C text.txt`'
   explanation: "Display the input offset in hexadecimal and its ASCII representation in two columns."
@@ -377,27 +377,27 @@
 - date: 2025-07-17
   tip: 'Check out `pixi`, a very fast package manager.'
   explanation: "[7 Reasons to Switch from Conda to Pixi](https://prefix.dev/blog/pixi_a_fast_conda_alternative)."
-  tags: [productivity]
+  tags: [conda]
 - date: 2025-07-18
   tip: 'A random variable is defined as the numerical outcome of a random experiment.'
   explanation: 'A random experiment repeated many times will generate results governed by their probabilities.'
-  tags: [statistics, reminder]
+  tags: [statistics]
 - date: 2025-07-19
   tip: 'When outcomes are equally likely, probability is the _ratio_ of favourable outcomes to all possible outcomes.'
   explanation: 'This is the classical definition of probability: you are asking what fraction of all equally likely possibilities an event represents. It does not apply when outcomes are not equally likely (e.g. a biased coin) or are continuous.'
-  tags: [statistics, reminder]
+  tags: [statistics]
 - date: 2025-07-20
   tip: 'Adding random variables combines different uncertain quantities to get a new uncertain quantity.'
   explanation: 'Adding random variables represents combining their outcomes in a single experiment.'
-  tags: [statistics, reminder]
+  tags: [statistics]
 - date: 2025-07-21
   tip: 'A binomial distribution counts successes in $n$ independent trials, each with probability $p$.'
   explanation: 'As $n$ gets large in a binomial distribution, it approaches a normal distribution.'
-  tags: [statistics, reminder]
+  tags: [statistics]
 - date: 2025-07-22
   tip: '`sudo do-release-upgrade`'
   explanation: 'Upgrade Ubuntu from the terminal; but remember to fully update the system first: `sudo apt update && sudo apt upgrade -y; sudo apt dist-upgrade -y`.'
-  tags: [ubuntu]
+  tags: [debian]
 - date: 2025-07-23
   tip: 'Always keep a "live install" image lying around for when your server runs into issues!'
   explanation: "Get a live install Debian image from https://www.debian.org/CD/live/; in case you were wondering, this is unrelated to yesterday's tip!"
@@ -413,23 +413,23 @@
 - date: 2025-07-26
   tip: '`imap(my_list, ~ paste0("Key ", .y, " has value ", .x))`'
   explanation: "Use `imap()` if you want both the element and its name/index."
-  tags: [rstats, functional programming]
+  tags: [rstats, functional-programming]
 - date: 2025-07-27
   tip: '`safe_fn <- safely(some_function)`'
   explanation: "`safely()` wraps a function and makes it return a result even if an error occurs. Instead of stopping execution, it returns a list with the actual result or error object."
-  tags: [rstats, functional programming]
+  tags: [rstats, functional-programming]
 - date: 2025-07-28
   tip: '`purrr::pmap(list(list(1900), list(80), list(4)), \(x,y,z) x+y+z)`'
   explanation: "Use `purrr::pmap()` to map over multiple input simultaneously."
-  tags: [rstats, functional programming]
+  tags: [rstats, functional-programming]
 - date: 2025-07-29
   tip: 'Learn [Lua](https://www.lua.org/start.html)!'
   explanation: "Lua is a powerful and fast programming language that is easy to learn and use and to embed into your application."
-  tags: [lua]
+  tags: [vim]
 - date: 2025-07-30
   tip: 'Use the [systemadmin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/systemadmin) plugin in ohmyzsh.'
   explanation: "This plugin adds a series of aliases and functions which make a System Administrator's life easier."
-  tags: [ohmyzsh]
+  tags: [zsh]
 - date: 2025-07-31
   tip: 'Check out marimo!'
   explanation: "marimo is an open-source reactive notebook for Python - reproducible, Git-friendly, AI-native, SQL built-in, executable as a script, shareable as an app."
@@ -441,7 +441,7 @@
 - date: 2025-08-02
   tip: '[Sign your Git commits](https://github.com/davetang/getting_started_with_git?tab=readme-ov-file#signing-commits) to confirm that you made the commit.'
   explanation: "A signed commit is cryptographic proof that the commit came from you, using your GPG or SSH key."
-  tags: [git, github]
+  tags: [git]
 - date: 2025-08-03
   tip: 'Use GPG to encrypt and decrypt files.'
   explanation: "Some notes on using GPG on my [bioinformatics tips page](https://davetang.github.io/bioinformatics_tips/security.html)."
@@ -461,7 +461,7 @@
 - date: 2025-08-07
   tip: '`git clone https://github.com/jeffreytse/zsh-vi-mode $ZSH_CUSTOM/plugins/zsh-vi-mode`'
   explanation: '[zsh-vi-mode](https://github.com/jeffreytse/zsh-vi-mode) is a better and friendly vi(vim) mode plugin for Zsh.'
-  tags: [zsh, ohmyzsh]
+  tags: [zsh]
 - date: 2025-08-08
   tip: '`:Gdiffsplit`'
   explanation: 'When using the vim-fugitive plugin `:Gdiffsplit` will show you the previous version in a split window!'
@@ -501,7 +501,7 @@
 - date: 2025-08-17
   tip: 'According to Shannon, information is present whenever a signal is transmitted from one place (sender) to another (receiver).'
   explanation: 'It does not matter what kind of signal, it could be words, a picture, or even electric impulses.'
-  tags: [information theory]
+  tags: [maths]
 - date: 2025-08-18
   tip: 'In Linux, `<`, `<<`, and `<<<` are redirection operators used for input handling.'
   explanation: '`<` reads from an existing file; `<<` creates temporary multi-line input; `<<<` provides immediate string input.'
@@ -513,27 +513,27 @@
 - date: 2025-08-20
   tip: 'Source `git-completion.bash` to enable Git tab-completion (including branch names).'
   explanation: 'There is no `completion.branch` config option; Git tab-completion comes from the completion script in Git''s `contrib/completion/`. Add something like `source /usr/share/bash-completion/completions/git` to your `~/.bashrc` (the path varies by distro).'
-  tags: [git, config]
+  tags: [git]
 - date: 2025-08-21
   tip: 'In GNU Make `=` is recursive/late assignment and `:=` simple/early assignment.'
   explanation: '`=` is similar to lazy evaluation whereas `:=` is similar to eager evaluation.'
-  tags: [make, reminder]
+  tags: [make]
 - date: 2025-08-22
   tip: '`pandoc README.md -s -o index.html -f gfm --highlight-style=pygments`'
   explanation: 'Convert a GitHub flavoured Markdown file to standalone HTML with syntax highlighting!'
-  tags: [pandoc]
+  tags: [markdown]
 - date: 2025-08-23
   tip: 'Use the [z](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/z) ohmyzsh plugin to access commonly visited directories.'
   explanation: 'This plugin defines the z command that tracks your most visited directories and allows you to access them with very few keystrokes.'
-  tags: [ohmyzsh]
+  tags: [zsh]
 - date: 2025-08-24
   tip: 'Use the [copybuffer](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copybuffer) ohmyzsh plugin to copy the current text in the command line to the system clipboard!'
   explanation: 'Instead of using the mouse to highlight and copy text in the command line, just press `ctrl-o` with the copybuffer plugin!'
-  tags: [ohmyzsh]
+  tags: [zsh]
 - date: 2025-08-25
   tip: 'Use [lazy.nvim](https://github.com/folke/lazy.nvim) to manage plugins for Nvim.'
   explanation: 'Plugins add a lot more functionality into Nvim!'
-  tags: [nvim]
+  tags: [vim]
 - date: 2025-08-26
   tip: "`singularity exec my_image /bin/bash -c 'echo $SINGULARITY_NAME'`"
   explanation: "Use `$SINGULARITY_NAME` to get the name of the Singularity image when inside a container!"
@@ -549,7 +549,7 @@
 - date: 2025-08-29
   tip: "`tail -f !$`"
   explanation: "`!$` expands to the last argument of the previous command; you can even type `!$` and press tab to get the last argument!"
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-08-30
   tip: "Don't ignore your personal life because it affects your professional life!"
   explanation: 'I wrote a short blog post [on professionalism](https://davetang.org/muse/2025/08/30/on-professionalism/).'
@@ -557,7 +557,7 @@
 - date: 2025-08-31
   tip: 'Discrete Mutual Information (DMI) measures how much information one categorical variable contains about another.'
   explanation: 'If two variables are independent, DMI = 0 (knowing one does not help you guess the other).'
-  tags: [information theory]
+  tags: [maths]
 - date: 2025-09-01
   tip: 'Use [quarto-ext/lightbox](https://github.com/quarto-ext/lightbox) to create lightbox treatments for images in your HTML documents!'
   explanation: 'See the [Example Lightbox Document](https://quarto-ext.github.io/lightbox/) for a demo!'
@@ -565,15 +565,15 @@
 - date: 2025-09-02
   tip: '`convert input.png -trim +repage output.png`'
   explanation: 'Use ImageMagick to trim the whitespace from an image; the `+repage` parameter will reset the page size.'
-  tags: [imagemagick]
+  tags: [graphics]
 - date: 2025-09-03
   tip: '[Queueing theory](https://en.wikipedia.org/wiki/Queueing_theory) is the mathematical study of waiting lines, or queues.'
   explanation: 'A queueing model is constructed so that queue lengths and waiting time can be predicted.'
-  tags: [queueing]
+  tags: [maths]
 - date: 2025-09-04
   tip: '`nvim -d file1 file2`'
   explanation: 'Start Nvim in diff mode which can highlight differences between files side by side and apply changes between files!'
-  tags: [nvim]
+  tags: [vim]
 - date: 2025-09-05
   tip: '`git log -p -- file.txt`'
   explanation: 'By default, `git log` does not generate any diff output; use `-p` or `--patch` to show all changes of `file.txt`!'
@@ -585,11 +585,11 @@
 - date: 2025-09-07
   tip: 'Press Shift+Insert to paste in MobaXTerm.'
   explanation: 'Instead of using the right mouse button to paste, use Shift+Insert to paste when using MobaXTerm!'
-  tags: [mobaxterm]
+  tags: [terminal, windows]
 - date: 2025-09-08
   tip: "`awk '{$1=$1};1' test.txt`"
   explanation: 'AWK trick to squeeze runs of whitespace into a single space. The trailing `1` forces every line to print; the bare `awk ''$1=$1''` form silently drops blank lines and any line whose first field is `0`.'
-  tags: [awk]
+  tags: [shell]
 - date: 2025-09-09
   tip: "Use the `combn()` function in base R to generate pairwise combinations"
   explanation: '`combn()` [can also be used with a function](https://github.com/davetang/learning_r?tab=readme-ov-file#useful-tips) to apply the function across pairwise combinations!'
@@ -609,11 +609,11 @@
 - date: 2025-09-13
   tip: '`vim.keymap.set({mode}, {lhs}, {rhs}, {opts})`'
   explanation: 'Use `vim.keymap.set()` to set key maps in Nvim.'
-  tags: [nvim]
+  tags: [vim]
 - date: 2025-09-14
   tip: 'Use `:terminal` to run an interactive shell inside a Neovim buffer!'
   explanation: 'When in the terminal, hold `Ctrl`, press `\`, then `n` to go to Normal mode where you can yank stuff etc.'
-  tags: [nvim]
+  tags: [vim]
 - date: 2025-09-15
   tip: 'Use [shfmt](https://github.com/mvdan/sh#shfmt) to format shell scripts consistently!'
   explanation: '`shfmt` is a shell parser, formatter, and interpreter'
@@ -629,11 +629,11 @@
 - date: 2025-09-18
   tip: "`ls tips.yaml README.md; head !*`"
   explanation: "`$_` gets the last argument of the previous command; `!*` gets all arguments but relies on history expansion."
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-09-19
   tip: "`alias diff='diff --color=always'`"
   explanation: 'Run `diff` with `--color=always` so you can see colour when piping to `less`.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-09-20
   tip: 'Open files with Vim, e.g. `nvim *.yml`, and use `:n` and `:N` to navigate to the next and previous file.'
   explanation: 'The argument list is the list of files opened; use `:args` to see the files and `:n` and `:N` to navigate between them.'
@@ -645,39 +645,39 @@
 - date: 2025-09-22
   tip: '`ls **/*.py`'
   explanation: 'Finds all files ending in `.py` in the current directory and all subdirectories (recursively)!'
-  tags: [zsh, productivity]
+  tags: [zsh]
 - date: 2025-09-23
   tip: 'Use the [WhichKey](https://github.com/folke/which-key.nvim) plugin to help you remember your Nvim keymaps!'
   explanation: 'WhichKey helps you remember your Neovim keymaps, by showing available keybindings in a popup as you type!'
-  tags: [nvim, gamechanger]
+  tags: [vim]
 - date: 2025-09-24
   tip: '`comm a b`'
   explanation: 'Use `comm` to compare two sorted files, showing entries that are unique and common between them.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-09-25
   tip: '`xdg-open file.pdf`'
   explanation: 'Use `xdg-open` to mimic the macOS `open` command on Debian.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-09-26
   tip: 'Remember to take a holiday!'
   explanation: 'Every one needs a break! Remember to take a holiday to refresh yourself, physically and mentally.'
-  tags: [self-help, productivity]
+  tags: [self-help]
 - date: 2025-09-27
   tip: 'Using [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter), press `gnn` to perform incremental selection, and `grn`/`grm` to increase/decrease!'
   explanation: 'nvim-treesitter makes it easy to select different levels of nested code blocks!'
-  tags: [nvim, gamechanger]
+  tags: [vim]
 - date: 2025-09-28
   tip: 'Using [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim), press `<leader>ff` to find and preview files then `<C-n>`/`<C-p>` to go to the next/previous file.'
   explanation: 'Instead of leaving Nvim to look for files, use telescope.nvim to find, preview, and open files (in a buffer)!'
-  tags: [nvim]
+  tags: [vim]
 - date: 2025-09-29
   tip: '`dplyr::rename_with(my_df, ~ gsub("\\.", "-", .x))`'
   explanation: 'Use `dplyr::rename_with()` to rename columns using a function!'
-  tags: [dplyr, functional programming, reminder]
+  tags: [rstats, dplyr, functional-programming]
 - date: 2025-09-30
   tip: '`dplyr::summarise(mtcars, dplyr::across(c(mpg, cyl), list(mean = mean, sd = sd)))`'
   explanation: 'Use `dplyr::across()` to specify columns to perform an operation on!'
-  tags: [dplyr, reminder]
+  tags: [rstats, dplyr]
 - date: 2025-10-01
   tip: 'Use `embed-resources: true` in your Quarto files to create self contained HTML output!'
   explanation: 'Using `embed-resources: true` will produce a [standalone](https://quarto.org/docs/output-formats/html-basics.html#self-contained) HTML file with no external dependencies!'
@@ -689,7 +689,7 @@
 - date: 2025-10-03
   tip: 'Use [gitlab-ci-local](https://github.com/firecow/gitlab-ci-local) for testing CI/CD locally!'
   explanation: 'Tired of pushing to test your .gitlab-ci.yml? Use gitlab-ci-local!'
-  tags: [gitlab]
+  tags: [git]
 - date: 2025-10-04
   tip: '`sudo mount -t exfat /dev/sdb2 /mnt/media/data -o uid=1000,gid=1000`'
   explanation: 'When using `mount` the mountpoint and its contents are owned by root by default. Use `-o` to specify a user and group.'
@@ -697,19 +697,19 @@
 - date: 2025-10-05
   tip: 'Find more positive-sum activities and engage in them, instead of zero-sum games!'
   explanation: '[Zero-sum games](https://nonzerosum.games/whatarenonzerosumgames.html) are where two parties compete and in order for one party to win the other must lose. Positive-sum games result in win-win scenarios!'
-  tags: [altruism]
+  tags: [economics]
 - date: 2025-10-06
   tip: "Use Cohen's Kappa to measure agreement between two raters; use Fleiss' Kappa when there are more than two raters."
   explanation: '[Measures](https://davetang.github.io/muse/rater.html) of inter-rater reliability provide an index indicating how much agreement there is between raters, correcting for chance.'
-  tags: [index]
+  tags: [statistics]
 - date: 2025-10-07
   tip: 'Little by little.'
   explanation: "When things become overwhelming, just do a little. When you don't want to practice something, just do a little. And soon, little by little, a little becomes a lot!"
-  tags: [mantra, reminder]
+  tags: [adage]
 - date: 2025-10-08
   tip: "To measure agreement between two or more raters when the ratings are continuous, use the Intraclass Correlation Coefficient (ICC)."
   explanation: 'The [ICC](https://davetang.github.io/muse/icc.html) is a descriptive statistic that measures both consistency and agreement between two or more raters that rate the same set of subjects on a continuous scale.'
-  tags: [index]
+  tags: [statistics]
 - date: 2025-10-09
   tip: "The {renv} package helps you create reproducible environments for your R projects."
   explanation: '[Introduction to renv](https://rstudio.github.io/renv/articles/renv.html) provides a quick summary of the package.'
@@ -732,7 +732,7 @@
   tags: [economics]
 - date: 2025-10-14
   tip: "`python3 -m venv /opt/venv && . /opt/venv/bin/activate`"
-  explanation: 'To adhere to PEP 668 – Marking Python base environments as "externally managed", install packages in virtual environments even in containers.'
+  explanation: 'To adhere to PEP 668 (Marking Python base environments as "externally managed"), install packages in virtual environments even in containers.'
   tags: [python]
 - date: 2025-10-15
   tip: "The {renv} package can keep a cache of R packages so you don't need to download and compile again!"
@@ -741,11 +741,11 @@
 - date: 2025-10-16
   tip: "Use the Node Version Manager to manage multiple active node.js versions."
   explanation: '[nvm](https://github.com/nvm-sh/nvm) allows you to quickly install and use different versions of node via the command line.'
-  tags: [node]
+  tags: [javascript]
 - date: 2025-10-17
   tip: "Use Traggo to keep track of how you spend your time!"
   explanation: '[Traggo](https://traggo.net/) is a tag-based time tracking tool that you self host giving you complete control!'
-  tags: [productivity]
+  tags: [self-help]
 - date: 2025-10-18
   tip: 'Successful Common-Pool Resource Management describes how communities can sustainably govern shared resources through locally developed rules, monitoring, and mutual trust.'
   explanation: "Elinor Ostrom's work shows that with cooperation and accountability, the tragedy of the commons is not inevitable."
@@ -765,7 +765,7 @@
 - date: 2025-10-22
   tip: 'Press `Cmd + Shift + R` to perform a hard reload of a webpage on Google Chrome.'
   explanation: 'Pressing just `Cmd + R` sometimes just reloads the cache; use `Cmd + Shift + R` to refresh without the cache.'
-  tags: [chrome]
+  tags: [browser]
 - date: 2025-10-23
   tip: 'Statistical power is the probability that we will correctly reject the Null Hypothesis.'
   explanation: 'Power is the probability that a statistical test correctly rejects the null hypothesis when the alternative hypothesis is actually true.'
@@ -777,15 +777,15 @@
 - date: 2025-10-25
   tip: '`aspell -c file`'
   explanation: 'Interactively check, and optionally correct, the spelling of all words in file.'
-  tags: [productivity]
+  tags: [shell]
 - date: 2025-10-26
   tip: '`spell file`'
   explanation: 'The `spell` command prints all words in `file` that are misspelled, according to its dictionary.'
-  tags: [productivity]
+  tags: [shell]
 - date: 2025-10-27
   tip: 'Target triples, e.g., x86_64-unknown-linux-gnu, describe what kind of system a binary is built for.'
   explanation: 'A target triple is usually <architecture>-<vendor>-<system>-<abi>; the Application Binary Interface (ABI), usually implies the C standard library used.'
-  tags: [productivity]
+  tags: [linux]
 - date: 2025-10-28
   tip: 'Use `: {tbl-colwidths="[45,55]"}` to control column widths in Quarto.'
   explanation: 'You can [explicitly specify columns widths](https://quarto.org/docs/authoring/tables.html#column-widths) using the `tbl-colwidths` attribute.'
@@ -793,11 +793,11 @@
 - date: 2025-10-29
   tip: 'A stateless container is one that does not depend on any internal, persistent data stored inside itself.'
   explanation: 'A stateless container can be destroyed and recreated at any time, and the application will continue to work correctly.'
-  tags: [containerisation]
+  tags: [docker]
 - date: 2025-10-30
   tip: 'In Vim use `/search_term` to search forwards and `?search_term` to search backwards.'
   explanation: 'I got into the bad habit of just using `/` and then pressing `N` to search backwards.'
-  tags: [vim, reminder]
+  tags: [vim]
 - date: 2025-10-31
   tip: 'Use the [countdown](https://github.com/gadenbuie/countdown) plugin to add a timer to Quarto presentations!'
   explanation: 'Check out the [example](https://github.com/gadenbuie/countdown/blob/main/quarto/example.qmd) to see how to use the plugin.'
@@ -805,7 +805,7 @@
 - date: 2025-11-01
   tip: '`start <- Sys.time(); Sys.sleep(3); end <- Sys.time(); elapsed_secs <- as.numeric(difftime(end, start, units = "secs"))`'
   explanation: 'Use `difftime()` in R to calculate differences in times.'
-  tags: [rstats, reminder]
+  tags: [rstats]
 - date: 2025-11-02
   tip: 'Check out the [Quarto Extensions](https://quarto.org/docs/extensions/) page for useful extentions!'
   explanation: 'Extensions are a powerful way to modify and extend the behavior of Quarto.'
@@ -813,19 +813,19 @@
 - date: 2025-11-03
   tip: 'Use `vim.api.nvim_create_user_command()` to create custom Nvim commands, like one that opens a file with a list of things to practice!'
   explanation: 'I have a Markdown file of things to practice in Nvim and using `vim.api.nvim_create_user_command()` I can quickly open it!'
-  tags: [nvim]
+  tags: [vim]
 - date: 2025-11-04
   tip: '`build/output.txt: input.txt | build`'
   explanation: 'Use an order-only prerequisite (`|`) just to make sure something exists; no need to rebuild.'
-  tags: [make, reminder]
+  tags: [make]
 - date: 2025-11-05
   tip: 'In a Makefile it is possible to have multiple targets: `first.txt second.txt:`. The associated command/s will run once per target.'
   explanation: 'It is also possible to build multiple targets in one step using [grouped targets](https://github.com/davetang/learning_linux/blob/main/gnu_make/multi_target/Makefile).'
-  tags: [make, reminder]
+  tags: [make]
 - date: 2025-11-06
   tip: '`possibly_read <- purrr::possibly(readr::read_csv, otherwise = NA)`'
   explanation: 'Use `purrr::possibly()` to return some default value, like NA, instead of an error!'
-  tags: [rstats, functional programming]
+  tags: [rstats, functional-programming]
 - date: 2025-11-07
   tip: '`base::split(mtcars, ~cyl)`'
   explanation: '`base::split()` can be used to split a data frame into a list based on a grouping!'
@@ -833,11 +833,11 @@
 - date: 2025-11-08
   tip: '`stringr::str_extract_all(text, "(?<==)[^=]+(?==)")`'
   explanation: 'Extract content between `=` pairs using a positive lookbehind and positive lookahead!'
-  tags: [regex]
+  tags: [rstats]
 - date: 2025-11-09
   tip: '`dplyr::mutate(data, prev = dplyr::lag(value), next_val = dplyr::lead(value), is_peak = value > prev & value > next_val)`'
   explanation: 'Use `lag()` and `lead()` from the {dplyr} package to easily find peaks!'
-  tags: [dplyr]
+  tags: [rstats, dplyr]
 - date: 2025-11-10
   tip: "`csplit tips.yaml '/- date/' '{*}'`"
   explanation: '`csplit` can split a file based on patterns or line numbers! The example splits `tips.yaml` based on a pattern and into as many files as possible!'
@@ -857,7 +857,7 @@
 - date: 2025-11-14
   tip: 'The Likelihood Ratio Test compares how well two competing models explain the observed data.'
   explanation: 'The Likelihood Ratio Test measures how much better a more complex model fits the data compared to a simpler (null) model.'
-  tags: [statistics, reminder]
+  tags: [statistics]
 - date: 2025-11-15
   tip: 'Use a gedankenexperiment to explore the implications of something before actually doing it.'
   explanation: 'Gedankenexperiment is German for thought experiment, which is a mental exercise where you imagine a scenario to explore its implications without actually conducting a physical experiment.'
@@ -865,7 +865,7 @@
 - date: 2025-11-16
   tip: "History doesn't repeat itself, but it often rhymes."
   explanation: "Commonly attributed to Mark Twain, but he never wrote or said it; the earliest known close match is psychoanalyst Theodor Reik in 1965, and the Twain attribution dates only to 1970. The point still stands: history doesn't repeat past events _exactly_, but you see similar patterns."
-  tags: [quotes]
+  tags: [adage]
 - date: 2025-11-17
   tip: '`apt-cache depends chromium`'
   explanation: '`apt-cache depends` lists the direct dependencies of a package showing what other packages need to be installed.'
@@ -873,15 +873,15 @@
 - date: 2025-11-18
   tip: '`ldd $(which samtools)`'
   explanation: '`ldd $(which samtools)` shows all the shared libraries (dynamic dependencies) that `samtools` needs in order to run.'
-  tags: [debian, reminder]
+  tags: [debian]
 - date: 2025-11-19
   tip: '`file ~/bin/go-1.25.1/go/bin/go`'
   explanation: 'You can use `file` to check whether a binary is statically linked or not!'
-  tags: [linux, reminder]
+  tags: [linux]
 - date: 2025-11-20
   tip: '`dpkg -S /usr/bin/env`'
   explanation: 'Use `dpkg -S` to find which package a file belongs to!'
-  tags: [linux, reminder]
+  tags: [linux]
 - date: 2025-11-21
   tip: '`setopt extended_glob`'
   explanation: "Use Zsh's extended globbing to allow for more additional globbing patterns."
@@ -913,7 +913,7 @@
 - date: 2025-11-28
   tip: 'Use `$|` to get all order-only prerequisites.'
   explanation: "Order-only prerequisites are prerequisites that must exist before building a target but timestamp changes don't trigger rebuilds."
-  tags: [make, reminder]
+  tags: [make]
 - date: 2025-11-29
   tip: '`git checkout feature && git rebase main`'
   explanation: '`git rebase` replays your commits on top of another branch to keep your history linear and up-to-date.'
@@ -921,15 +921,15 @@
 - date: 2025-11-30
   tip: '`git revert commit_hash`'
   explanation: '`git revert` creates a new commit that undoes the changes from a specific previous commit.'
-  tags: [git, reminder]
+  tags: [git]
 - date: 2025-12-01
   tip: '`git diff main feature_branch`'
   explanation: '`git diff main feature_branch` allows you to compare branches.'
-  tags: [git, reminder]
+  tags: [git]
 - date: 2025-12-02
   tip: 'An exact test computes precise probabilities by enumerating all possible outcomes rather than using approximations.'
   explanation: "An approximation uses simpler math (like approximating with the normal distribution) that's close enough but not exact."
-  tags: [statistics, reminder]
+  tags: [statistics]
 - date: 2025-12-03
   tip: 'Adverse selection occurs when information asymmetry causes markets to attract low-quality participants and repel high-quality ones.'
   explanation: 'Information asymmetry means one party knows more about the product or transaction than the other.'
@@ -949,7 +949,7 @@
 - date: 2025-12-07
   tip: '`hash -r`'
   explanation: 'Use `hash -r` to reset the cached command lookup table, forcing the shell to re-search your PATH next time you run a command.'
-  tags: [linux, reminder]
+  tags: [linux]
 - date: 2025-12-08
   tip: '`sudo systemctl --type=service --state=running`'
   explanation: 'List all running services only.'
@@ -965,15 +965,15 @@
 - date: 2025-12-11
   tip: '`sudo mount /dev/cdrom /media/cdrom0`'
   explanation: 'Use `sudo mount /dev/cdrom /media/cdrom0` to mount a CD-ROM.'
-  tags: [linux, reminder]
+  tags: [linux]
 - date: 2025-12-12
   tip: '`make --debug=b --dry-run`'
   explanation: 'There are various debug levels with `make`; use `--debug=b` for basic and `--debug=a` for all (most verbose).'
-  tags: [make, reminder]
+  tags: [make]
 - date: 2025-12-13
   tip: '`mv --exchange a b`'
   explanation: 'Since `mv` (GNU coreutils) 9.5 (March 2024) there is an `--exchange` parameter that can be used to swap files atomically when source and destination are on the same filesystem.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-12-14
   tip: 'P = (s + 1)/(n + 2)'
   explanation: 'If an event has occurred s times out of n trials, the probability it occurs on the next trial is P = (s + 1)/(n + 2).'
@@ -981,11 +981,11 @@
 - date: 2025-12-15
   tip: 'Check out AkaRank, an improved Alexa Rank substitute.'
   explanation: '[AkaRank](https://www.akamai.com/security-research/akarank) provides these critical global rank metrics to the infosec and security research community as a public service'
-  tags: [internet]
+  tags: [browser]
 - date: 2025-12-16
   tip: 'Follow the two-minute rule.'
   explanation: 'The two-minute rule: if something takes less than 2 minutes, do it now rather than defer it.'
-  tags: [productivity]
+  tags: [self-help]
 - date: 2025-12-17
   tip: 'Use `.DELETE_ON_ERROR:` in a Makefile to automatically delete target files if recipe fails.'
   explanation: "Make has several special targets that modify Make's behaviour such as DELETE_ON_ERROR."
@@ -997,11 +997,11 @@
 - date: 2025-12-19
   tip: '`command > all.out 2>&1`'
   explanation: 'Use `command > all.out 2>&1` as the POSIX-compliant way to redirect both STDOUT and STDERR to `all.out`.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2025-12-20
   tip: '`pv SRAmetadb.sqlite.gz | md5sum`'
   explanation: 'Use `pv` to show the progress for data flowing through a pipe!'
-  tags: [linux, gamechanger]
+  tags: [linux]
 - date: 2025-12-21
   tip: 'Use `:changes` to show the change history and `g;` to jump to the previous change location and `g,` to the next.'
   explanation: 'The output of `:changes` is `change`, `line`, `col`, `text`; it is useful if you make changes throughout the file.'
@@ -1017,11 +1017,11 @@
 - date: 2025-12-24
   tip: 'Data serialisation is like "packaging" data for travel.'
   explanation: 'Data serialisation is the process of converting data structures or objects from their in-memory representation into a format that can be stored or transmitted over a network and later reconstructed.'
-  tags: [data]
+  tags: [file-formats]
 - date: 2025-12-25
   tip: 'A payload refers to the actual data or information that is being transmitted over a network or within a message.'
   explanation: 'The payload is the actual data that is separate from any metadata or headers used for managing the communication process.'
-  tags: [data]
+  tags: [networking]
 - date: 2025-12-26
   tip: 'Deadweight loss is a term that economists use to mean, basically, something that destroys value in the economy, making society worse off.'
   explanation: 'Deadweight loss is an economic concept that refers to the loss of total welfare or efficiency in a market, which occurs when resources are not allocated optimally.'
@@ -1029,31 +1029,31 @@
 - date: 2025-12-27
   tip: 'Preemptive scheduling allows interrupting running tasks; non-preemptive runs each task to completion.'
   explanation: 'The tradeoff between preemptive and non-preemptive scheduling is responsiveness versus simplicity.'
-  tags: [scheduling]
+  tags: [maths]
 - date: 2025-12-28
   tip: 'Variability is the enemy.'
   explanation: 'High variance in arrival or service times increases wait times dramatically, even at the same average utilisation.'
-  tags: [scheduling]
+  tags: [maths]
 - date: 2025-12-29
   tip: '`g0`'
   explanation: 'Use `g0` to go to the first tab and `g$` to go the last tab.'
-  tags: [vimium]
+  tags: [browser]
 - date: 2025-12-30
   tip: '`X`'
   explanation: 'Use `x` to close the current tab and `X` to restore the closed tab.'
-  tags: [vimium]
+  tags: [browser]
 - date: 2025-12-31
   tip: 'Make your resolutions specific and actionable rather than vague.'
   explanation: 'Specific goals are easier to track, you will know clearly whether you are succeeding, and they are more motivating because progress is visible.'
-  tags: [self-help, reminder]
+  tags: [self-help]
 - date: 2026-01-01
   tip: "Don't Break the Chain."
   explanation: 'For each day you complete your target task, mark a big X on that day and keep it going.'
-  tags: [self-help, reminder]
+  tags: [self-help]
 - date: 2026-01-02
   tip: "Never Miss Twice."
   explanation: 'The first mistake is never the one that ruins you. It is the spiral of repeated mistakes that follows. Missing once is an accident. Missing twice is the start of a new habit.'
-  tags: [self-help, reminder]
+  tags: [self-help]
 - date: 2026-01-03
   tip: "The [illusion of control](https://en.wikipedia.org/wiki/Illusion_of_control) is the tendency for people to overestimate their ability to control events."
   explanation: 'The illusion of control is the tendency for people to overestimate their ability to control events, for example, when someone feels a sense of control over outcomes that they demonstrably do not influence.'
@@ -1061,43 +1061,43 @@
 - date: 2026-01-04
   tip: 'A Python iterator is an object that implements `__next__()` and `__iter__()` (which returns `self`).'
   explanation: 'Note that iterators are typically exhausted after one pass-through; once you have iterated through an iterator, it is empty.'
-  tags: [python, reminder]
+  tags: [python]
 - date: 2026-01-05
   tip: '`lambda arguments: expression`'
   explanation: 'Creates anonymous functions in Python using `lambda arguments: expression`; for example: `lambda x, y: x + y`.'
-  tags: [python, reminder]
+  tags: [python]
 - date: 2026-01-06
   tip: 'Incentives are the cornerstone of modern life.'
   explanation: 'Understanding incentives or ferreting them out is the key to solving just about any riddle.'
-  tags: [freakonomics]
+  tags: [economics]
 - date: 2026-01-07
   tip: 'There are three basic flavours of incentive: economic, social, and moral.'
   explanation: 'Each type of incentive has different effects depending on the situation; sometimes social incentives are very strong and sometimes economic incentives are very weak.'
-  tags: [freakonomics]
+  tags: [economics]
 - date: 2026-01-08
   tip: 'A consumable resource is a resource that Grid Engine tracks and subtracts as jobs are scheduled.'
   explanation: 'If a resource is not a consumable resource it will not be taken into account when Grid Engine schedules jobs.'
-  tags: [sge]
+  tags: [hpc]
 - date: 2026-01-09
   tip: 'In bioinformatics, we are often not interested in absolute gene/transcript expression levels but in relative changes.'
   explanation: 'One set of results only makes sense with respect or in contrast to another set of results!'
-  tags: [bioinformatics, reminder]
+  tags: [bioinformatics]
 - date: 2026-01-10
   tip: "`pigz --decompress --stdout --processes 4 file.gz`"
   explanation: 'Use `pigz` instead of gzip for faster compression/decompression.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2026-01-11
   tip: '`seqkit stats reads.fastq.gz`'
   explanation: 'SeqKit is a cross-platform and ultrafast toolkit written in Go for FASTA/Q file manipulation.'
-  tags: [bioinformatics, reminder]
+  tags: [bioinformatics]
 - date: 2026-01-12
   tip: '`ps -fp <PID>`'
   explanation: 'Get more information about a process using `ps -fp <PID>`.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2026-01-13
   tip: '`ge`'
   explanation: 'Use `ge` to edit the current URL and `gE` to edit and open in a new tab.'
-  tags: [vimium]
+  tags: [browser]
 - date: 2026-01-14
   tip: 'Use the Feynman Technique for learning.'
   explanation: 'Choose a concept to learn; teach it to someone else; learn more if you get stuck; simplify explanations and create analogies.'
@@ -1105,23 +1105,23 @@
 - date: 2026-01-15
   tip: 'Always look at your data before analysing it; plots reveal what summary statistics hide.'
   explanation: 'Visualise your data early and often; patterns not seen in tables are quite obvious in plots.'
-  tags: [analysis]
+  tags: [statistics]
 - date: 2026-01-16
   tip: 'A dissimilarity matrix measures how different two objects are.'
   explanation: 'The lower bound of a dissimilarity matrix is always 0 and the upper bound can be unbounded or bounded (normalised).'
-  tags: [statistics, reminder]
+  tags: [statistics]
 - date: 2026-01-17
   tip: 'The anticipation of most types of rewards increases the level of [dopamine](https://en.wikipedia.org/wiki/Dopamine) in the brain.'
   explanation: 'In the brain, dopamine functions as a neurotransmitter, a chemical released by neurons (nerve cells) to send signals to other nerve cells.'
-  tags: [neuroscience]
+  tags: [science]
 - date: 2026-01-18
   tip: "[While](https://pmc.ncbi.nlm.nih.gov/articles/PMC6842680/) dopamine was first synthesised in 1910, it wasn't until 1957 that dopamine was found in the human brain."
   explanation: "Prior to the discovery that dopamine was found in the human brain, dopamine had only been found in peripheral tissues and body fluids of mammalian animals and was assumed to be just a precursor to other catecholamines."
-  tags: [neuroscience]
+  tags: [science]
 - date: 2026-01-19
   tip: '`realpath --relative-to=$HOME ./README.md`'
   explanation: 'You can use `realpath` to get the full and the relative path of a file!'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2026-01-20
   tip: 'Use `fpc::cluster.stats()` to calculate an assortment of statistics that can be used to assess clustering results.'
   explanation: 'The Flexible Procedures for Clustering {fpc} R package contains various methods for clustering and cluster validation.'
@@ -1129,19 +1129,19 @@
 - date: 2026-01-21
   tip: 'Effect size quantifies the magnitude of a difference or relationship between variables, independent of sample size.'
   explanation: 'P-values tell you whether an effect exists and the effect size tells you how large or practically meaningful that effect is.'
-  tags: [statistics, reminder]
+  tags: [statistics]
 - date: 2026-01-22
   tip: 'Alpha diversity is the diversity within a single site and beta diversity is the diversity between different sites, samples, or habitats.'
   explanation: "Examples of alpha diversity include Simpson's Index and examples of beta diversity include Bray-Curtis dissimilarity."
-  tags: [ecology]
+  tags: [science]
 - date: 2026-01-23
   tip: 'The Horn-Morisita is a quantitative measure of similarity between two samples that accounts for species abundances.'
   explanation: "The Horn-Morisita emphasises abundant species, is less affected by sample size and species richness, and good for abundance data."
-  tags: [ecology]
+  tags: [science]
 - date: 2026-01-24
   tip: '`ncdu`'
   explanation: 'Ncdu is a disk usage analyzer with an interactive text-mode user interface.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2026-01-25
   tip: 'Moral hazard occurs when one party takes on more risk because another party bears the consequences of that risk.'
   explanation: 'A person with comprehensive car insurance might drive more recklessly because the insurance company, not them, will pay for any damage.'
@@ -1180,12 +1180,12 @@
   tags: [singularity]
 - date: 2026-02-03
   tip: 'Markets coordinate the dispersed, context-specific "knowledge of the particular circumstances of time and place" held by individuals that cannot be fully centralised (Hayek, 1945).'
-  explanation: 'In *The Use of Knowledge in Society*, Hayek argued that prices act as a decentralised signal that aggregates this local, experience-based knowledge that no central planner could collect. The closely related term "tacit knowledge" — knowing more than you can tell — was coined later by Michael Polanyi (*Personal Knowledge*, 1958; *The Tacit Dimension*, 1966) and is often conflated with Hayek''s concept.'
+  explanation: 'In *The Use of Knowledge in Society*, Hayek argued that prices act as a decentralised signal that aggregates this local, experience-based knowledge that no central planner could collect. The closely related term "tacit knowledge" (knowing more than you can tell) was coined later by Michael Polanyi (*Personal Knowledge*, 1958; *The Tacit Dimension*, 1966) and is often conflated with Hayek''s concept.'
   tags: [economics]
 - date: 2026-02-04
   tip: '`ssh -o "ConnectTimeout 10"`'
   explanation: 'Use `ssh -o "ConnectTimeout 10"` to stop SSH trying to connect after 10 seconds.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2026-02-05
   tip: '`make.names(c("123", "1)3"))`'
   explanation: '`make.names()` is a function in base R that can make syntactically valid names out of character vectors.'
@@ -1209,7 +1209,7 @@
 - date: 2026-02-10
   tip: '`ssh-copy-id -i key.pub user@ipaddr`'
   explanation: 'Use `ssh-copy-id -i key.pub user@ipaddr` to easily set up SSHing with a key (instead of manually preparing `~/.ssh/authorized_keys`).'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2026-02-11
   tip: 'Use the [Quarto clean theme](https://github.com/grantmcdermott/quarto-revealjs-clean) for a minimalist and elegant presentation theme.'
   explanation: 'The clean theme provides an elegant and academic-friendly design, which looks very nice.'
@@ -1229,11 +1229,11 @@
 - date: 2026-02-15
   tip: 'Use multi-stage builds to keep Docker images small.'
   explanation: 'Compile or build in one stage, then `COPY --from=builder` only the final artifacts into a minimal runtime image; this avoids shipping compilers, build tools, and intermediate files.'
-  tags: [docker, best practice]
+  tags: [docker, best-practice]
 - date: 2026-02-16
   tip: 'Use `define`/`endef` in GNU Make to create canned recipes for reusable command sequences.'
   explanation: 'Canned recipes let you define a sequence of commands once with `define run-tests ... endef` and reuse it across multiple rules with `$(run-tests)`, keeping your Makefile DRY.'
-  tags: [make, productivity]
+  tags: [make]
 - date: 2026-02-17
   tip: '`docker system df`'
   explanation: 'Use `docker system df` to show Docker disk usage broken down by images, containers, volumes, and build cache; use `-v` for detailed output.'
@@ -1249,7 +1249,7 @@
 - date: 2026-02-20
   tip: '`pdftotext file.pdf file.txt`'
   explanation: 'Extracts text from a PDF and saves it to a plain text file. Install via `sudo apt install poppler-utils` on Debian/Ubuntu).'
-  tags: [linux, productivity]
+  tags: [linux]
 - date: 2026-02-21
   tip: '`flock -n /tmp/myjob.lock ./myjob.sh`'
   explanation: 'Runs `myjob.sh` only if no other instance is running; `-n` exits immediately if the lock is already held rather than waiting. The lock is kernel-level, not file-existence-based, so it is released automatically when the process ends - no cleanup needed.'
@@ -1257,11 +1257,11 @@
 - date: 2026-02-22
   tip: '`sudo unshare --net ./my_tool`'
   explanation: 'Runs `my_tool` in an isolated network namespace with no interfaces, routes, or connectivity - useful for testing whether a tool works without network access. The namespace is kernel-level and disappears automatically when the process exits.'
-  tags: [linux, networking, testing]
+  tags: [linux, networking]
 - date: 2026-02-23
   tip: '`pgrep -la pattern`'
   explanation: 'List all running processes matching a name pattern, with their PIDs and full command lines. `pkill pattern` kills them all. Much friendlier than `ps aux | grep ...`.'
-  tags: [linux, shell, productivity]
+  tags: [linux, shell]
 - date: 2026-02-24
   tip: '`log(x=4, base=2)`'
   explanation: 'In R, instead of using `log2` or `log10` use `log(base=2)` or `log(base=10)` because that way you can generalise to any base!'
@@ -1277,7 +1277,7 @@
 - date: 2026-02-27
   tip: '`find . -name "*.log" -o -name "*.tmp"`'
   explanation: 'The `-o` flag is the OR operator in `find`; use it to match multiple patterns in a single command.'
-  tags: [shell, find]
+  tags: [shell]
 - date: 2026-02-28
   tip: 'Use `dplyr::add_count(df, dplyr::across(everything())) |> dplyr::filter(n > 1)` to find duplicate rows.'
   explanation: '`dplyr::add_count()` appends an `n` column counting identical rows without collapsing the data; `dplyr::across(everything())` groups by all columns so only true duplicates get `n > 1`.'
@@ -1297,31 +1297,31 @@
 - date: 2026-03-04
   tip: '`zgrep "ERROR" app.log.gz`'
   explanation: 'Searches inside a gzipped file without decompressing it first. The whole `z*` family works the same way: `zcat`, `zless`, `zdiff`, and `zegrep` all accept `.gz` files directly.'
-  tags: [shell, linux, productivity]
+  tags: [shell, linux]
 - date: 2026-03-05
   tip: '`find dir1 dir2 dir3 -name "*.txt"`'
   explanation: '`find` accepts multiple starting paths; fewer people know this than other `find` tricks, and it avoids running the command multiple times or using a loop.'
-  tags: [shell, find]
+  tags: [shell]
 - date: 2026-03-06
   tip: 'Use `systemctl --user enable --now myservice.service` to run your own services without root.'
-  explanation: 'Place a unit file in `~/.config/systemd/user/` and `systemctl --user` manages it entirely in your own session — no sudo needed. Use `systemctl --user status` to inspect all your personal services.'
+  explanation: 'Place a unit file in `~/.config/systemd/user/` and `systemctl --user` manages it entirely in your own session, with no sudo needed. Use `systemctl --user status` to inspect all your personal services.'
   tags: [shell, linux, systemd]
 - date: 2026-03-07
   tip: 'Use `disown %1` to detach a background job so it survives logout.'
   explanation: 'After running `cmd &`, use `jobs` to see job numbers, then `disown %1` removes job 1 from the shell''s job table. Unlike `nohup`, it works on already-running jobs you forgot to protect.'
-  tags: [shell, linux, productivity]
+  tags: [shell, linux]
 - date: 2026-03-08
   tip: 'Use `dplyr::na_if(x, "")` to convert a sentinel value to `NA`.'
   explanation: '`dplyr::na_if(x, -999)` or `dplyr::na_if(x, "")` replaces a known placeholder with a proper `NA` in one step, avoiding a verbose `mutate(x = ifelse(x == "", NA, x))`.'
   tags: [rstats, dplyr]
 - date: 2026-03-09
   tip: '`swapon --show` displays all active swap spaces and their usage.'
-  explanation: 'The output columns are: `NAME` (device or file path), `TYPE` (partition or file), `SIZE` (total swap space), `USED` (currently occupied), and `PRIO` (priority — higher values are used first; areas of equal priority are used round-robin).'
+  explanation: 'The output columns are: `NAME` (device or file path), `TYPE` (partition or file), `SIZE` (total swap space), `USED` (currently occupied), and `PRIO` (priority: higher values are used first; areas of equal priority are used round-robin).'
   tags: [shell, linux, sysadmin]
 - date: 2026-03-10
   tip: 'Use `Ctrl-a M` in GNU screen to monitor a background window for activity.'
   explanation: 'Screen highlights the window and alerts you when new output appears, so you can work elsewhere without constantly switching to check on a running job. Press `Ctrl-a M` again in the same window to toggle monitoring off.'
-  tags: [screen, productivity]
+  tags: [screen]
 - date: 2026-03-11
   tip: '`all(x %% 1 == 0)`'
   explanation: 'In R, `is.integer()` will return `FALSE` even if you have all integers but stored in class numeric; use `all(x %% 1 == 0)`.'
@@ -1345,11 +1345,11 @@
 - date: 2026-03-16
   tip: 'Use `readr::cols_only()` to read a subset of columns from a CSV.'
   explanation: '`readr::read_csv(f, col_types = cols_only(id = col_character(), value = col_double()))` reads only the columns named in `cols_only()`; they must exist in the CSV header or you get an error. Everything else is silently dropped.'
-  tags: [rstats, readr]
+  tags: [rstats, tidyverse]
 - date: 2026-03-17
   tip: 'Use `readr::read_csv(f, name_repair = "universal")` to auto-fix messy column names.'
-  explanation: 'The `"universal"` strategy applies `vctrs::vec_as_names()` with `repair = "universal"`, which replaces spaces and special characters with `.`, prepends a `.` to names that start with a number (so `2x` becomes `.2x`), and uses the `...N` form for empty or duplicated names — guaranteeing every column name is unique, syntactically valid, and usable without backticks.'
-  tags: [rstats, readr]
+  explanation: 'The `"universal"` strategy applies `vctrs::vec_as_names()` with `repair = "universal"`, which replaces spaces and special characters with `.`, prepends a `.` to names that start with a number (so `2x` becomes `.2x`), and uses the `...N` form for empty or duplicated names. This guarantees every column name is unique, syntactically valid, and usable without backticks.'
+  tags: [rstats, tidyverse]
 - date: 2026-03-18
   tip: 'Use `ssh-keygen -R hostname` to remove a stale host key from `known_hosts`.'
   explanation: 'When a SSH key changes, SSH refuses to connect with a scary "host key verification failed" warning. `ssh-keygen -R hostname` deletes only that host''s entry from `~/.ssh/known_hosts`.'
@@ -1365,7 +1365,7 @@
 - date: 2026-03-21
   tip: 'Use a Git worktree when you need to context-switch without disrupting your current in-progress work.'
   explanation: 'By default, a Git repo has one worktree (your main checkout). With `git worktree add ../hotfix hotfix-branch`, you create an additional directory on disk that checks out a different branch. Each worktree has its own files and index but shares the same Git history, so there is no need to stash or commit before switching tasks.'
-  tags: [git, productivity]
+  tags: [git]
 - date: 2026-03-22
   tip: 'Think on the margin: base decisions on the additional cost and benefit of one more unit, not on totals or averages.'
   explanation: 'Marginal thinking asks "should I do one more?" rather than "should I do this at all?" For example, whether to work an extra hour depends on what that specific hour yields versus what it costs you, not on how many hours you have already put in. Sunk costs are irrelevant; only the next unit matters.'
@@ -1373,10 +1373,10 @@
 - date: 2026-03-23
   tip: 'Use `cut -f2-` to extract from the second field onwards.'
   explanation: 'The `-f` flag in `cut` accepts range specifiers: `2-` means field 2 through the last field, `1-3` means fields 1 to 3, and `-4` means fields 1 to 4.'
-  tags: [shell, reminder]
+  tags: [shell]
 - date: 2026-03-24
   tip: 'Use `Reduce(merge, my_list)` to merge a whole list of data frames into one.'
-  explanation: '`merge()` only joins two data frames at a time, so to combine a list of them, fold the list with `Reduce()`: it merges the first two, then merges that result with the third, and so on — no loops or repeated calls needed.'
+  explanation: '`merge()` only joins two data frames at a time, so to combine a list of them, fold the list with `Reduce()`: it merges the first two, then merges that result with the third, and so on, with no loops or repeated calls needed.'
   tags: [rstats]
 - date: 2026-03-25
   tip: 'Reduce friction for good habits and increase it for bad ones.'
@@ -1385,31 +1385,31 @@
 - date: 2026-03-26
   tip: "Use Bash parameter expansion `${var//pattern/replacement}` for global substitution without calling `sed`."
   explanation: "A single slash `${var/pattern/replacement}` replaces the first match; a double slash replaces all. The pattern and replacement can use `$'...'` quoting for special characters, e.g. `${FOOBAR//$'\\n'/_}` replaces every newline with an underscore."
-  tags: [shell, bash, reminder]
+  tags: [shell, bash]
 - date: 2026-03-27
   tip: "Use `${BASH_SOURCE[0]}` instead of `$0` to get the script's own path."
   explanation: "`$0` changes when a script is sourced (it becomes the caller's name), but `${BASH_SOURCE[0]}` always refers to the file where the code is written."
-  tags: [shell, bash, reminder]
+  tags: [shell, bash]
 - date: 2026-03-28
   tip: 'Use a here-string `<<< "$var"` instead of `echo "$var" | cmd`.'
   explanation: 'A here-string feeds a string directly to a command''s stdin without spawning a subshell for `echo` and a pipe, e.g. `wc -w <<< "$sentence"`.'
-  tags: [shell, bash, reminder]
+  tags: [shell, bash]
 - date: 2026-03-29
   tip: 'If you always do more than is expected of you, you will always be expected to do more.'
   explanation: 'Exceeding expectations is a double-edged sword: it demonstrates your capability but quietly resets the baseline so that exceptional effort becomes the new normal. Be deliberate about when you go above and beyond.'
-  tags: [reminder, self-help]
+  tags: [self-help]
 - date: 2026-03-30
   tip: 'Compare yourself to who you were yesterday, not to who someone else is today.'
   explanation: 'Measuring progress against others invites envy and discouragement because you are comparing yourself with their highlight reel. The only meaningful benchmark is your own trajectory.'
-  tags: [self-help, reminder]
+  tags: [self-help]
 - date: 2026-03-31
   tip: 'Use `readRDS(url("https://example.com/file.rds", "rb"))` to load an RDS file directly from a URL.'
   explanation: 'Wrapping a URL in `url(..., "rb")` opens a binary connection that `readRDS()` can read from directly, so you can skip downloading the file to disk first.'
-  tags: [rstats, reminder]
+  tags: [rstats]
 - date: 2026-04-01
   tip: 'Exclude `.map` files from your NPM package by adding them to `.npmignore` or using the `files` field in `package.json`.'
   explanation: 'Source maps (`.js.map`) are debug files that map minified JavaScript back to original TypeScript. They are useful during development but should never ship to production or be published to NPM, as they expose your original source code and bloat the package.'
-  tags: [javascript, typescript, reminder]
+  tags: [javascript]
 - date: 2026-04-02
   tip: 'Use spaced repetition to retain what you learn.'
   explanation: 'Review material at increasing intervals, e.g. after 1 day, 3 days, 1 week, then 2 weeks, to exploit the spacing effect. Anki is a free, open-source flashcard app that automates this schedule for you, but even a simple calendar reminder works.'
@@ -1417,7 +1417,7 @@
 - date: 2026-04-03
   tip: 'A 2 by 2 contingency table can help illustrate marginal and conditional probability.'
   explanation: 'Marginal probabilities are the row and column proportions, and conditional probabilities are the respective ratios on rows and columns.'
-  tags: [learning]
+  tags: [statistics]
 - date: 2026-04-04
   tip: 'People respond to incentives, so if you want to change behaviour, change the incentives.'
   explanation: 'Incentives can be financial, social, or moral. A well-designed incentive aligns individual self-interest with the desired outcome; a poorly designed one invites gaming and unintended consequences.'
@@ -1425,59 +1425,59 @@
 - date: 2026-04-05
   tip: '`autoload -Uz zcalc && zcalc`'
   explanation: '`zcalc` is an autoloadable function shipped with Zsh (not a built-in) that gives you a calculator supporting floating point, variables, and math functions like `sin()` and `log()`. It keeps a history of results accessible via `$1`, `$2`, etc. No need to install `bc` or `python` just to do quick maths.'
-  tags: [shell, zsh, productivity]
+  tags: [shell, zsh]
 - date: 2026-04-06
   tip: 'DBSCAN clusters by density, so it can find arbitrarily shaped clusters and naturally identifies outliers as noise.'
   explanation: 'Unlike k-means, DBSCAN does not require you to specify the number of clusters in advance and is not biased toward spherical shapes. Points in sparse regions are labelled as noise (`-1` in sklearn), making it a great first choice when your data has irregular structure or outliers.'
-  tags: [statistics, clustering]
+  tags: [statistics, machine-learning]
 - date: 2026-04-07
   tip: 'Spectral clustering uses the eigenvectors of a similarity graph to find clusters that k-means alone would miss.'
   explanation: 'A similarity graph is built by connecting each point to its nearest neighbours (or all points within a radius) with edges weighted by a kernel such as the Gaussian. Then the spectrum (eigenvalues) of the graph Laplacian embeds points into a lower-dimensional space where standard k-means works well.'
-  tags: [statistics, clustering]
+  tags: [statistics, machine-learning]
 - date: 2026-04-08
   tip: '`ggplot(df, aes(x = forcats::fct_reorder(category, value), y = value))`'
   explanation: '`fct_reorder()` reorders factor levels by a summary of another variable (median by default). This is the easiest way to turn an alphabetically sorted bar or box plot into one sorted by magnitude, which is almost always more informative.'
-  tags: [rstats, ggplot2, visualisation]
+  tags: [rstats, visualisation]
 - date: 2026-04-09
   tip: 'Use `data.table::fread()` instead of `read.csv()` or `readr::read_csv()` for large files.'
   explanation: '`fread()` is typically 5-10x faster than `readr::read_csv()` and orders of magnitude faster than base `read.csv()`. It auto-detects delimiters, column types, and handles compressed files, and you can use the `select` argument to read only the columns you need.'
-  tags: [rstats, reminder]
+  tags: [rstats]
 - date: 2026-04-10
   tip: '`stringr::str_glue("Hello {name}, you have {n} items")`'
   explanation: 'String interpolation for R just like Python f-strings; any R expression inside `{}` is evaluated, so `{Sys.Date()}`, `{nrow(df)}`, and `{paste0(x, collapse = ", ")}` all work. Much cleaner than nested `paste0()` calls and works inside `mutate()` too.'
-  tags: [rstats, stringr, tidyverse]
+  tags: [rstats, tidyverse]
 - date: 2026-04-11
   tip: "Tobler's First Law of Geography: 'Everything is related to everything else, but near things are more related than distant things.'"
   explanation: "This principle underpins spatial statistics and methods like kriging, inverse-distance weighting, and spatial autocorrelation (Moran's I). If your data has a location component, ignoring spatial proximity often means ignoring the strongest signal in the data."
-  tags: [statistics, geography]
+  tags: [statistics]
 - date: 2026-04-12
   tip: 'Simpson''s Paradox: a trend in subgroups can reverse when the groups are combined.'
   explanation: 'Imagine comparing two drugs. Drug A has a higher survival rate than Drug B among mild cases and also among severe cases. But if most patients given Drug B had mild cases (who survive more easily regardless of treatment), Drug B can appear better overall. The uneven mix of mild and severe patients between the two groups distorts the combined result.'
-  tags: [statistics, reminder]
+  tags: [statistics]
 - date: 2026-04-13
   tip: 'In Markdown pipe tables, the relative length of the hyphens in the separator row controls column width.'
   explanation: '`| Name | Description |` followed by `|------|--------------------------|` makes the second column roughly four times wider than the first. The ratio of hyphens is what matters, not the absolute count. In Pandoc (Quarto, R Markdown) the ratio only takes effect when a line of the table source is wider than `--columns` (default 72) so the table wraps; otherwise columns are sized to their content. GitHub-flavoured Markdown ignores it entirely.'
-  tags: [markdown, quarto, reminder]
+  tags: [markdown, quarto]
 - date: 2026-04-14
   tip: '`ubuntu-drivers devices`'
   explanation: 'Lists your hardware and the recommended drivers for each device, most commonly for NVIDIA GPUs. Follow up with `sudo ubuntu-drivers autoinstall` to install the recommended driver, or `sudo apt install nvidia-driver-XXX` to pick a specific version. Saves you from manually matching your GPU model to the right driver package.'
-  tags: [linux, sysadmin, ubuntu]
+  tags: [linux, sysadmin, debian]
 - date: 2026-04-15
   tip: 'The [Central Limit Theorem](https://davetang.github.io/muse/clt.html) is why many statistical tests work even when your data are not normally distributed.'
   explanation: 'The CLT says that the distribution of sample means approaches a normal distribution as the sample size grows, regardless of the shape of the underlying population.'
-  tags: [statistics, reminder]
+  tags: [statistics]
 - date: 2026-04-16
   tip: '`qstat -f -u ''*''`'
   explanation: 'Shows a full-format queue listing for all users, including per-queue load and slot usage. Useful for understanding cluster state before submitting; you see which queues are full and where your job is likely to land.'
-  tags: [sge, hpc]
+  tags: [hpc]
 - date: 2026-04-17
   tip: '`apt-file search <filename>`'
   explanation: '`apt-file` finds which package contains a given file, even if the package is not installed. Install with `sudo apt install apt-file && sudo apt-file update`, then run `apt-file search /usr/include/zlib.h` to discover you need `zlib1g-dev`.'
-  tags: [debian, ubuntu, sysadmin]
+  tags: [debian, sysadmin]
 - date: 2026-04-18
   tip: '`alias -g G=''| grep''` defines a Zsh global alias that expands anywhere on the command line.'
   explanation: 'Regular aliases only expand as the first word of a command, but Zsh global aliases (`alias -g`) expand wherever the token appears. With `alias -g G=''| grep''` and `alias -g L=''| less''`, you can write `ps aux G ssh L` instead of `ps aux | grep ssh | less`.'
-  tags: [shell, zsh, productivity]
+  tags: [shell, zsh]
 - date: 2026-04-19
   tip: 'Jevons paradox: improvements in resource efficiency often *increase* total consumption rather than reduce it.'
   explanation: 'When steam engines became more coal-efficient in the 19th century, total coal use went up, not down, because efficiency made coal-powered activity cheaper and more pervasive. The paradox is a useful caution whenever someone claims a more efficient technology will automatically reduce resource use; the rebound effect can wipe out or exceed the savings.'
@@ -1493,15 +1493,15 @@
 - date: 2026-04-22
   tip: 'When reading an annual report, start with the shareholder letter, then jump straight to MD&A.'
   explanation: 'The Chairman or CEO''s letter is written in plain English and signals what management thinks matters; the Management''s Discussion and Analysis (MD&A) section then explains why the numbers changed year-over-year.'
-  tags: [finance]
+  tags: [economics]
 - date: 2026-04-23
   tip: 'Load a 10x Xenium output bundle into Seurat with `Seurat::LoadXenium("path/to/outs")`.'
   explanation: 'Reads the `cell_feature_matrix.h5` counts, `cells.parquet` metadata, segmentation boundaries, and `transcripts.parquet` molecule coordinates into a single Seurat v5 object with a `Xenium` assay and an FOV ready for `ImageDimPlot()` / `ImageFeaturePlot()`. Follow it with `subset(xen, nCount_Xenium > 0)` to drop empty cells, and note that control/blank codeword probes land in their own assays for QC.'
-  tags: [rstats, seurat, spatial-transcriptomics]
+  tags: [rstats, bioinformatics]
 - date: 2026-04-24
   tip: 'Wrap a chunk with `tictoc::tic(); ...; tictoc::toc()` to print elapsed wall-clock time.'
   explanation: '`toc()` prints something like `2.314 sec elapsed` and invisibly returns a list with `tic`, `toc`, `msg`, and `callback_msg` so you can capture the timing in a variable.'
-  tags: [rstats, productivity]
+  tags: [rstats]
 - date: 2026-04-25
   tip: 'Use `waldo::compare(x, y)` instead of `all.equal()` for human-readable diffs of two R objects.'
   explanation: '`all.equal()` returns terse strings like `"Mean relative difference: 0.04"` that tell you something differs but not where; `waldo::compare()` prints a coloured, side-by-side diff pinpointing each mismatched element, attribute, or list slot.'
@@ -1512,16 +1512,16 @@
   tags: [rstats]
 - date: 2026-04-27
   tip: 'Save large data frames as Parquet with `arrow::write_parquet(df, "data.parquet")` instead of CSV.'
-  explanation: 'Parquet stores types, is column-compressed, and reads roughly 10–100x faster than the equivalent CSV with `arrow::read_parquet()`. Pair with `arrow::open_dataset("dir/")` to query a folder of partitioned Parquet files lazily via `dplyr` verbs without loading everything into memory.'
-  tags: [rstats, arrow]
+  explanation: 'Parquet stores types, is column-compressed, and reads roughly 10 to 100x faster than the equivalent CSV with `arrow::read_parquet()`. Pair with `arrow::open_dataset("dir/")` to query a folder of partitioned Parquet files lazily via `dplyr` verbs without loading everything into memory.'
+  tags: [rstats, file-formats]
 - date: 2026-04-28
   tip: 'Bootstrap project boilerplate with `usethis::use_*()` calls, e.g., `use_git()`, `use_readme_md()`, `use_mit_license()`, `use_github_action("check-standard")`.'
   explanation: 'Each helper makes the smallest correct change: `use_git()` initialises the repo and stages the right files, `use_github_action()` drops the YAML in `.github/workflows/`, and `use_release_issue()` generates a release checklist.'
-  tags: [rstats, productivity]
+  tags: [rstats]
 - date: 2026-04-29
   tip: 'When a measure becomes a target, it ceases to be a good measure.'
   explanation: 'This famous one-liner is anthropologist Marilyn Strathern''s 1997 reformulation of Goodhart''s law; Charles Goodhart''s 1975 original was the drier "any observed statistical regularity will tend to collapse once pressure is placed upon it for control purposes". Optimising for a proxy distorts behaviour around the proxy itself: schools teaching to the test, call centres rushing calls to hit handle-time targets, ML models gaming a flawed loss function.'
-  tags: [economics, reminder]
+  tags: [economics]
 - date: 2026-04-30
   tip: 'An externality is a cost or benefit of an action that falls on someone who did not choose to take part.'
   explanation: 'Pollution is the textbook negative externality (the factory profits, neighbours bear the cost); vaccination is a positive one (your immunity protects others). Markets systematically over-supply activities with negative externalities and under-supply ones with positive externalities, which is the standard rationale for taxes, subsidies, and regulation.'
@@ -1529,27 +1529,27 @@
 - date: 2026-05-01
   tip: 'Ship small, frequent pull requests instead of one big-bang merge.'
   explanation: 'Small PRs get reviewed within hours rather than days, surface design problems before you have built on top of them, are dramatically easier to revert, and keep the team unblocked because nobody is waiting on a 2,000-line review'
-  tags: [teamwork, code-review]
+  tags: [teamwork]
 - date: 2026-05-02
   tip: 'Write a team working agreement: an explicit, one-page contract for *how* you work together.'
   explanation: 'A working agreement codifies the norms that usually live in people''s heads; core hours, code-review SLA, decision-making process, definition of done, meeting etiquette. Making them explicit means new joiners onboard in minutes instead of months, and disagreements become "let''s revisit the agreement" rather than interpersonal conflict.'
-  tags: [teamwork, working-agreement]
+  tags: [teamwork]
 - date: 2026-05-03
   tip: 'Agree on a "Definition of Done" so the team shares one quality bar.'
   explanation: 'A short checklist including tests pass, docs updated, monitored in production, reviewed by one other engineer, turns "is this finished?" from an opinion into a fact'
-  tags: [teamwork, quality]
+  tags: [teamwork]
 - date: 2026-05-04
   tip: 'Default to written, async communication; reserve meetings for decisions and disagreement.'
   explanation: 'A written update in a shared channel costs the author 5 minutes and the readers 30 seconds each at a time of their choosing; the same content as a 30-minute status meeting costs N times 30 minutes synchronously and leaves no searchable trail. Reserve real-time time for things that genuinely need back-and-forth: aligning on a contentious decision, unblocking a stalled debate, or onboarding.'
-  tags: [teamwork, communication]
+  tags: [teamwork]
 - date: 2026-05-05
   tip: 'Use "Five Whys" in incident analysis: keep asking *why?* until you reach a root cause, not just a trigger.'
   explanation: 'Pioneered at Toyota, Five Whys forces the conversation past the surface ("the deploy script crashed") to the systemic cause ("we have no integration test that exercises the deploy path"). The number five is a heuristic, sometimes three is enough, sometimes you need seven, but the discipline of repeatedly asking *why* is what turns a bug fix into a class of bugs prevented.'
-  tags: [teamwork, incident-response]
+  tags: [teamwork]
 - date: 2026-05-06
   tip: 'Conway''s law: any system''s structure mirrors the communication structure of the organisation that built it.'
   explanation: 'From Mel Conway''s paper "How Do Committees Invent?" (published April 1968 in *Datamation* after Harvard Business Review rejected it the year before), the observation is that a four-team compiler will tend to be a four-pass compiler, because team boundaries become module boundaries by default. Once you see it, you spot it everywhere: micro-services that match team org-charts, monoliths shipped by single-team startups, weird APIs whose seams trace exactly to the meeting where two teams agreed on an interface.'
-  tags: [teamwork, software-architecture]
+  tags: [teamwork]
 - date: 2026-05-07
   tip: 'Hold strong opinions, weakly: state your position with conviction, but update fast when evidence contradicts it.'
   explanation: 'Attributed to futurist Paul Saffo, the heuristic dodges two failure modes: the wishy-washy contributor who never commits to a view, and the stubborn one who treats their first take as identity.'
@@ -1557,7 +1557,7 @@
 - date: 2026-05-08
   tip: 'Before opening a book or paper, write down the one question you want it to answer.'
   explanation: 'Reading without a target turns into passive scrolling; an explicit question gives every page a pass/fail test ("does this help me answer X?") and makes it obvious when to skim, slow down, or stop. Even a vague question like "why does this method beat baseline?" beats no question at all.'
-  tags: [self-help, reading, productivity]
+  tags: [self-help, learning]
 - date: 2026-05-09
   tip: 'Convert vague intentions into "I will [behaviour] at [time] in [location]".'
   explanation: 'Peter Gollwitzer''s research shows that this if-then specificity roughly doubles follow-through versus "I will exercise more". "I will meditate at 7am in the living room" gives your future self an unambiguous cue and removes the in-the-moment negotiation that usually loses.'
@@ -1569,7 +1569,7 @@
 - date: 2026-05-11
   tip: 'Pin Docker base images by digest: `FROM ubuntu@sha256:abc123...` instead of `FROM ubuntu:24.04`.'
   explanation: 'Tags like `:24.04` or `:latest` are mutable; the maintainers can repush them tomorrow and your build silently changes. Get the immutable digest with `docker buildx imagetools inspect ubuntu:24.04` and paste it into the `FROM` line so the same Dockerfile pulls the exact same bytes a year from now.'
-  tags: [docker, best practice]
+  tags: [docker, best-practice]
 - date: 2026-05-12
   tip: 'Use `uv` (from Astral) as a single, fast replacement for `pip`, `venv`, `pip-tools`, and `pyenv`.'
   explanation: 'Written in Rust, `uv` resolves and installs packages 10-100x faster than `pip` and rolls virtual environments, lockfiles, and Python version management into one tool. Install with `curl -LsSf https://astral.sh/uv/install.sh | sh`, then `uv --help` to see the full command surface.'
@@ -1589,7 +1589,7 @@
 - date: 2026-05-16
   tip: 'Run `git worktree list` to audit every checkout attached to the repo and spot stale or detached ones.'
   explanation: 'The output shows the path, current commit, and branch (or `(detached HEAD)`) for every worktree, plus `[locked]` and `[prunable]` markers. It is the fastest way to find a worktree you forgot about, one that is on a detached HEAD, or two checkouts accidentally pointing at the same branch.'
-  tags: [git, productivity]
+  tags: [git]
 - date: 2026-05-17
   tip: 'Before risky network changes on a headless box, run `sudo shutdown -r +10` as a dead-man''s switch.'
   explanation: 'If you lock yourself out, the box reboots in 10 minutes with the old config still on disk and you regain SSH. Once you have confirmed the new setup works from a separate connection, cancel the pending reboot with `sudo shutdown -c`. Cheap, reversible, and avoids a console trip or a remote-hands ticket.'
@@ -1625,11 +1625,11 @@
 - date: 2026-05-25
   tip: 'Marcus Aurelius noticed that none of us could survive a day if forced to speak every thought aloud: proof of how much we hide to manage other people''s opinions of us.'
   explanation: 'In *Meditations* 12.4, he points out the absurdity that we love ourselves more than other people yet care more about *their* opinion of us than our own and the gap between mind and mouth is the evidence. Useful as a sincerity check: notice when you are editing a thought purely for the audience, and ask whether that is the kind of editing you can live with.'
-  tags: [self-help, reminder]
+  tags: [self-help]
 - date: 2026-05-26
   tip: 'In the browser DevTools console, run `document.querySelector("video").playbackRate = 2.5` to speed up any HTML5 video, even on sites whose UI caps at 2x.'
   explanation: 'The `playbackRate` property accepts arbitrary positive numbers (1.5, 2.5, 4), bypassing whatever speed buttons the site exposes. Useful for training videos, webinars, and lecture replays that ship with no built-in speed control.'
-  tags: [javascript, productivity]
+  tags: [javascript]
 - date: 2026-05-27
   tip: 'Run `zsh -xl 2>&1 | head -80` to trace every command Zsh executes during login startup.'
   explanation: '`-x` prints each command before it runs (like Bash''s `set -x`), `-l` simulates a login shell so all startup files (`/etc/zprofile`, `~/.zprofile`, `~/.zshrc`, `~/.zlogin`) are sourced. Redirect stderr with `2>&1` because trace output goes to stderr.'
@@ -1656,28 +1656,28 @@
   tags: [linux, sysadmin]
 - date: 2026-06-02
   tip: 'For tired-and-wired, take a short walk outside, ideally on something green.'
-  explanation: 'Gregory Bratman''s 2015 Stanford study (PNAS 112:8567) showed that a 90-minute walk in nature reduced rumination and subgenual prefrontal cortex activity versus an urban walk, suggesting that green space (not just movement) does the work. A short outdoor break is no substitute for the full 90 minutes but still gets sunlight on the retina to reset the circadian system — useful when the underlying problem is fatigue, not motivation.'
-  tags: [self-help, reminder]
+  explanation: 'Gregory Bratman''s 2015 Stanford study (PNAS 112:8567) showed that a 90-minute walk in nature reduced rumination and subgenual prefrontal cortex activity versus an urban walk, suggesting that green space (not just movement) does the work. A short outdoor break is no substitute for the full 90 minutes but still gets sunlight on the retina to reset the circadian system, which helps when the underlying problem is fatigue, not motivation.'
+  tags: [self-help]
 - date: 2026-06-03
   tip: 'When you need to `git pull` but have uncommitted changes, run `git stash push`, then `git pull`, then `git stash pop` to reapply your work on top.'
   explanation: '`git stash push` shelves your uncommitted changes onto a stack and gives you a clean working tree, so `git pull` can fast-forward without conflicts. `git stash pop` then reapplies the stashed changes and removes them from the stack; if the merge introduces conflicts, resolve them and the stash entry is dropped only after a successful pop, so nothing is lost.'
-  tags: [git, productivity]
+  tags: [git]
 - date: 2026-06-04
   tip: 'Use `git restore --staged file` to unstage and `git restore file` to discard working-tree changes.'
   explanation: 'These modern commands (introduced in Git 2.23) split the confusing dual role of `git reset` and `git checkout` into two clearly named verbs. `git restore --staged` is the new way to undo `git add`; plain `git restore file` is the new way to throw away unsaved edits.'
-  tags: [git, productivity]
+  tags: [git]
 - date: 2026-06-05
   tip: 'Use `git switch -c new-branch` instead of `git checkout -b new-branch` to create and switch branches.'
   explanation: 'Before Git 2.23, `git checkout` was the only way to switch branches (`git checkout main`, `git checkout -b feature`). The catch was that the same verb also overwrote files (`git checkout -- file`), so a slip like `git checkout .` could silently wipe uncommitted work. Git 2.23 split it into `git switch` (branches) and `git restore` (files).'
-  tags: [git, productivity]
+  tags: [git]
 - date: 2026-06-06
   tip: 'Use the null-coalescing operator `x %||% y` to fall back to `y` when `x` is `NULL`.'
   explanation: 'Defined as `function(x, y) if (is.null(x)) y else x`, so `NULL %||% "default"` returns `"default"` and `"value" %||% "default"` returns `"value"`. Available in base R since version 4.4.0 (April 2024); before that it lived in {rlang} and was widely used inside tidyverse packages.'
-  tags: [rstats, reminder]
+  tags: [rstats]
 - date: 2026-06-07
   tip: 'Press `Ctrl-a ?` in GNU screen to bring up the help screen listing every key binding.'
   explanation: 'When you have forgotten a command, `Ctrl-a ?` shows the full list of `screen` key bindings and the commands they map to. Press space or return to page through it and any other key to exit.'
-  tags: [screen, productivity]
+  tags: [screen]
 - date: 2026-06-08
   tip: 'Use `echo "command" | at 09:00 tomorrow` to schedule a one-off job (install with `sudo apt install at`).'
   explanation: 'Unlike `cron`, which repeats, `at` runs a command exactly once at a future time. It accepts natural times like `at 09:00`, `at now + 1 hour`, or `at 14:30 next friday`, and emails or saves the output.'
@@ -1689,7 +1689,7 @@
 - date: 2026-06-10
   tip: 'Run `defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false` so holding a key repeats it on macOS.'
   explanation: 'By default macOS shows an accent-picker popup when you hold a key, which breaks key repeat, which is annoying when holding `j`/`k` to move in Vim. Setting this to false restores repeat; log out and back in (or restart the app) for it to take effect, and use `-bool true` to revert.'
-  tags: [macos, productivity]
+  tags: [macos]
 - date: 2026-06-11
   tip: 'Use `janitor::tabyl(df, var)` for a frequency table that beats base `table()`.'
   explanation: 'Unlike `table()`, `tabyl()` returns a data frame, keeps `NA` visible by default, and chains with `adorn_*()` helpers like `adorn_totals()` and `adorn_pct_formatting()` to add totals and percentages for publication-ready cross-tabs.'
@@ -1697,27 +1697,27 @@
 - date: 2026-06-12
   tip: 'sleep 25m && while true; do say "Timer done"; sleep 2; done'
   explanation: 'On macOS, `say` can be used to say things; couple it with `sleep` and `while` to implement a simple timer!'
-  tags: [macos, productivity]
+  tags: [macos]
 - date: 2026-06-13
   tip: 'The {mcptools} package lets R act as both an MCP server and client.'
   explanation: 'Built on {ellmer}, [mcptools](https://posit-dev.github.io/mcptools/) implements the Model Context Protocol so tools like Claude Desktop or Claude Code can drive a live R session, or so R can consume external MCP servers.'
-  tags: [rstats, mcptools]
+  tags: [rstats, llm]
 - date: 2026-06-14
   tip: 'Use the {btw} package to describe your R environment to an LLM.'
   explanation: 'Call `btw()` on data frames, objects, or help pages and [btw](https://posit-dev.github.io/btw/) writes a clipboard-ready, context-rich description for pasting into a chat; it also plugs into {ellmer} as tools and can run as an MCP server via `btw_mcp_server()`.'
-  tags: [rstats, btw]
+  tags: [rstats, llm]
 - date: 2026-06-15
   tip: "alias history='fc -li -1000'"
   explanation: 'Create a Zsh alias that will show the last 1000 commands across sessions, with `-i` adding ISO date-time stamps to each entry, which makes it easier to see when a command was used!'
-  tags: [zsh, productivity]
+  tags: [zsh]
 - date: 2026-06-16
   tip: 'How many times do I multiply the base by itself to reach this number?'
   explanation: 'That question is the intuition behind a logarithm: `log_b(x)` is the exponent that turns the base `b` into `x`. For example `log_2(8) = 3` because `2 * 2 * 2 = 8`. This is why logs turn multiplication into addition and compress huge ranges, which is handy for log scales and orders of magnitude.'
-  tags: [maths, reminder]
+  tags: [maths]
 - date: 2026-06-17
   tip: '`docker run --rm -i hadolint/hadolint < Dockerfile`'
   explanation: '[hadolint](https://github.com/hadolint/hadolint) parses the Dockerfile into an AST and flags issues like unpinned packages, using `latest` tags, or `cd` instead of `WORKDIR`; piping into the official image lints it without installing anything.'
-  tags: [docker, linting]
+  tags: [docker, best-practice]
 - date: 2026-06-18
   tip: 'Add `--nv` to give a Singularity container access to the host NVIDIA GPU.'
   explanation: '`singularity exec --nv img.sif nvidia-smi` binds in the host GPU driver libraries so CUDA workloads run inside the container; use `--rocm` for AMD GPUs.'
@@ -1725,15 +1725,15 @@
 - date: 2026-06-19
   tip: 'Prefix a host variable with `SINGULARITYENV_` to pass it into the container.'
   explanation: '`export SINGULARITYENV_FOO=bar` before running makes `$FOO` available inside the container (works with `shell`/`exec`/`run`); it must be exported first. This is the controlled counterpart to `--cleanenv`, which strips host variables out. On Apptainer the native prefix is `APPTAINERENV_`.'
-  tags: [singularity, apptainer]
+  tags: [singularity]
 - date: 2026-06-20
   tip: 'Use `rg pattern` (ripgrep) instead of `grep -r pattern .`'
   explanation: 'ripgrep searches recursively by default, is much faster than `grep -r`, and automatically skips files in `.gitignore` and hidden/binary files; add `-uuu` to disable all that filtering and search everything.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2026-06-21
   tip: 'Use `fd pattern` instead of `find . -name "*pattern*"`.'
   explanation: 'fd does a recursive, regex-by-default search with much less typing, runs fast in parallel, and skips `.gitignore`d and hidden files automatically; add `-H` to include hidden files and `-I` to ignore the ignore rules. On Debian the binary is `fdfind`.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2026-06-22
   tip: 'Run `git update-server-info` to clone a bare repo over plain HTTP.'
   explanation: 'A static web server has no Git smarts, so the "dumb" HTTP protocol needs the auxiliary files in `info/refs` and `objects/info/packs`; `git update-server-info` regenerates them so `git clone https://host/repo.git` works without git-http-backend.'
@@ -1753,7 +1753,7 @@
 - date: 2026-06-26
   tip: 'Odds are not probability: odds compare favourable to unfavourable, probability to the total.'
   explanation: 'A probability of $p = 1/6$ for rolling a six is 1 outcome out of 6 total, but the odds are 1 to 5 (favourable to unfavourable); convert with `odds = p / (1 - p)` and `p = odds / (1 + odds)`.'
-  tags: [statistics, reminder]
+  tags: [statistics]
 - date: 2026-06-27
   tip: 'Use `git bundle create repo.bundle --all` to put a whole repo in one file.'
   explanation: 'A bundle is a single file you can copy over USB or email to an air-gapped machine, then `git clone repo.bundle` or `git pull` from it like any remote: history and branches intact, no server needed.'
@@ -1761,7 +1761,7 @@
 - date: 2026-06-28
   tip: 'Use `match.arg()` to validate a function''s string argument against allowed values in R.'
   explanation: 'With `f <- function(type = c("a", "b", "c"))`, a call to `type <- match.arg(type)` defaults to the first option, allows partial matching, and throws a clear error on anything else: no manual `if`/`stop()` checks needed.'
-  tags: [rstats, defensive programming, reminder]
+  tags: [rstats, defensive-programming]
 - date: 2026-06-29
   tip: 'Use `ssh -J me@gateway.example.edu me@compute01` to reach an internal host via a gateway.'
   explanation: 'The gateway is a public "jump host" fronting machines like `compute01` that you cannot SSH to directly. `-J` does not run a second `ssh` on the gateway; your client opens a TCP tunnel through it and authenticates to `compute01` itself, so your key never sits on the gateway. Make it permanent with a `ProxyJump gateway.example.edu` line under a `Host compute01` block in `~/.ssh/config`.'
@@ -1769,7 +1769,7 @@
 - date: 2026-06-30
   tip: 'A worktree lets two branches'' files exist on disk at once; `git switch` only keeps one.'
   explanation: 'A single worktree holds one branch''s files at a time, and switching overwrites them (the other versions stay only as compressed snapshots inside `.git`). `git worktree add site gh-pages` extracts a second branch into its own directory, so both branches'' files are usable at the same time without switching: handy when a build or test runs on one branch while you edit another. The worktrees share one `.git`, so it is not a clone.'
-  tags: [git, productivity]
+  tags: [git]
 - date: 2026-07-01
   tip: 'If `quarto publish gh-pages` fails with "already checked out", run `git worktree prune`.'
   explanation: '`quarto publish gh-pages` builds the site in a temporary git worktree (under `.quarto/`) and removes it afterwards; an interrupted publish can leave a stale worktree registration that blocks the next run, which `git worktree prune` clears.'
@@ -1785,7 +1785,7 @@
 - date: 2026-07-04
   tip: 'Get an image''s pinnable digest with `docker inspect --format ''{{index .RepoDigests 0}}'' ubuntu:24.04`.'
   explanation: 'This prints the `name@sha256:...` reference for an image you have already pulled, so you can copy the exact digest into a `FROM` line or `docker pull` without hunting for the hash. (`docker images --digests` lists them too.)'
-  tags: [docker, best practice]
+  tags: [docker, best-practice]
 - date: 2026-07-05
   tip: 'Use Simon Willison''s `llm` CLI to query language models from the terminal.'
   explanation: 'After `pip install llm` and `llm keys set openai`, run `llm "question"` or pipe input with a system prompt, e.g. `cat script.R | llm -s "explain this code"`; use `-m` to switch models (plugins like `llm-anthropic` or `llm-ollama` add Claude and local models), and every prompt is logged to a SQLite database you can query with `llm logs`.'
@@ -1805,7 +1805,7 @@
 - date: 2026-07-09
   tip: 'Use `tailscale up --exit-node=<node>` to route all your internet traffic through another machine on your tailnet.'
   explanation: 'An exit node acts like a personal VPN gateway: advertise one with `tailscale up --advertise-exit-node`, approve it in the admin console, then any device can send its full traffic through it.'
-  tags: [tailscale, networking, vpn]
+  tags: [networking]
 - date: 2026-07-10
   tip: 'In Quarto, add `#| layout-ncol: 3` to a code chunk to lay three plots out side by side on one row.'
   explanation: 'Quarto arranges the figures a chunk produces into a grid; `layout-ncol: 3` gives three equal-width columns, so three `plot()` calls (or images) sit on the same row instead of stacking vertically. Pair it with `fig-cap` subcaptions, or use `layout-nrow` / a nested `layout` for finer control over the arrangement.'
@@ -1816,7 +1816,7 @@
   tags: [vim]
 - date: 2026-07-12
   tip: 'In Vim, `:g/pattern/d` deletes every line matching a pattern; `:g/pat/normal @a` runs a macro on each.'
-  explanation: 'The `:global` command finds every matching line and runs an Ex command on it. `:g/DEBUG/d` strips all debug lines, `:v/keep/d` (inverse) deletes lines *not* matching, and `:g/pat/normal ...` fires any normal-mode sequence at each hit — a mini batch processor.'
+  explanation: 'The `:global` command finds every matching line and runs an Ex command on it. `:g/DEBUG/d` strips all debug lines, `:v/keep/d` (inverse) deletes lines *not* matching, and `:g/pat/normal ...` fires any normal-mode sequence at each hit: a mini batch processor.'
   tags: [vim]
 - date: 2026-07-13
   tip: 'With edgeR you can still test two conditions when only one has replicates, because the GLM estimates dispersion from residual degrees of freedom.'
@@ -1824,7 +1824,7 @@
   tags: [bioinformatics, rstats]
 - date: 2026-07-14
   tip: 'To pseudobulk scRNA-seq for edgeR, *sum* (do not average) raw counts across the cells of each sample x cell-type, then run the standard bulk pipeline.'
-  explanation: 'Summing integer counts preserves the negative-binomial mean–variance relationship edgeR assumes; averaging or using normalized/log values breaks it. `scuttle::aggregateAcrossCells()` or `Seurat::AggregateExpression()` builds the matrix, which you then feed to `DGEList()`.'
+  explanation: 'Summing integer counts preserves the negative-binomial mean-variance relationship edgeR assumes; averaging or using normalized/log values breaks it. `scuttle::aggregateAcrossCells()` or `Seurat::AggregateExpression()` builds the matrix, which you then feed to `DGEList()`.'
   tags: [bioinformatics, rstats]
 - date: 2026-07-15
   tip: 'Beware the "Google effect": you remember less of what you know you can look up later, storing *where* to find it instead of the fact itself.'
@@ -1841,15 +1841,15 @@
 - date: 2026-07-18
   tip: 'Add `truecolor on` to your `.screenrc` to enable 24-bit colour in GNU Screen 5.0.'
   explanation: 'The 5.0 series added the `truecolor [on|off]` command, so programs emitting 24-bit colour escapes (modern Neovim themes, `bat`, `delta`) render their full palette inside `screen` instead of being clamped to 256 colours.'
-  tags: [screen, productivity]
+  tags: [screen]
 - date: 2026-07-19
   tip: 'In Neovim 0.10+, toggle comments with `gcc` (current line) or `gc` over a motion/selection.'
   explanation: 'Built-in commenting landed in Neovim 0.10, using each language''s `commentstring`, so `gcip` comments a paragraph and `gc` in Visual mode toggles the selection; no Comment.nvim plugin needed.'
-  tags: [nvim]
+  tags: [vim]
 - date: 2026-07-20
   tip: 'Read and send email without leaving the terminal using [aerc](https://aerc-mail.org/): it composes messages in your own `$EDITOR`.'
   explanation: 'aerc (created by Drew DeVault) is a keyboard-driven TUI mail client that drops you into Vim (or whatever `$EDITOR` is set to) to write the body, so you get syntax highlighting, macros, and spell-check for free before hitting `:send`.'
-  tags: [aerc, email]
+  tags: [email]
 - date: 2026-07-21
   tip: 'On Apple Silicon, create a macOS VM in [UTM](https://mac.getutm.app/) via `Create a New Virtual Machine` -> `Virtualize` -> `macOS`, which is useful for testing.'
   explanation: 'UTM wraps Apple''s Virtualization.framework, so on an M-series Mac it spins up a near-native macOS guest from an Apple-signed restore image.'
@@ -1861,19 +1861,19 @@
 - date: 2026-07-23
   tip: 'Run `dust` for an intuitive `du`: it prints a coloured tree of your biggest directories with percentage bars, no flags needed.'
   explanation: '[dust](https://github.com/bootandy/dust) (du + Rust) auto-sizes to your terminal and sorts largest-first, so you spot what is eating disk instantly instead of parsing `du -h | sort -h`.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2026-07-24
   tip: 'Use `yazi` as a terminal file navigator; uses Vim keybindings to move between files and directories, and provides a nice preview of files.'
   explanation: '[yazi](https://yazi-rs.github.io/) is a blazing fast terminal file manager written in Rust, based on async I/O.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2026-07-25
   tip: 'Run SQL straight over a CSV or Parquet file with `duckdb -c "SELECT * FROM ''data.csv'' LIMIT 5"`.'
   explanation: '[DuckDB](https://duckdb.org/)''s replacement scans treat a file path in the `FROM` clause as a table, so you can join a CSV to a Parquet file to a JSON file in one query without ever creating a database.'
-  tags: [duckdb, sql]
+  tags: [sql]
 - date: 2026-07-26
   tip: 'Read JSON into R with `jsonlite::fromJSON("data.json", flatten = TRUE)`.'
   explanation: 'Jeroen Ooms'' [jsonlite](https://jeroen.r-universe.dev/jsonlite) simplifies an array of objects straight into a data frame, and `flatten = TRUE` unpacks nested data frame columns into plain `user.profile.email` style columns.'
-  tags: [rstats, json]
+  tags: [rstats, file-formats]
 - date: 2026-07-27
   tip: 'On Windows, run Ubuntu inside Warp via `Settings` -> `Features` -> `Session` -> `Startup shell for new sessions`.'
   explanation: 'Warp for Windows defaults to PowerShell 7, but selecting your WSL2 distro there gives you bash and the full Linux toolchain with Blocks and Agent Mode still working; the change applies only to sessions opened afterwards.'
@@ -1881,7 +1881,7 @@
 - date: 2026-07-28
   tip: 'Pipe output to the system clipboard with `xclip -selection clipboard`.'
   explanation: 'Without `-selection clipboard`, `xclip` writes to the X primary selection, which only pastes with a middle-click; alias it as `alias xc=''xclip -selection clipboard''` so `ls | xc` then `Ctrl-V` just works.'
-  tags: [shell, linux, productivity]
+  tags: [shell, linux]
 - date: 2026-07-29
   tip: 'Declare a Python script''s dependencies inline with a PEP 723 block that opens with `# /// script` and closes with `# ///`, then run it with `uv run script.py`.'
   explanation: 'Each line between the delimiters is TOML written as a `#` comment, such as `# dependencies = ["pandas"]`; `uv run` builds a throwaway environment with exactly those packages, so the script stays a single shareable file with no `requirements.txt`.'
@@ -1889,7 +1889,7 @@
 - date: 2026-07-30
   tip: 'Pass a function itself to `deparse()` to get its source code back as text you can search.'
   explanation: '`deparse(stats::lm)` returns the function definition as a character vector, one element per line, so `grep("qr", deparse(stats::lm), value = TRUE)` pulls out just the lines you care about.'
-  tags: [rstats, metaprogramming]
+  tags: [rstats]
 - date: 2026-07-31
   tip: 'Run a local LLM on Apple Silicon with `pip install mlx-lm` then `mlx_lm.generate --model mlx-community/Mistral-7B-Instruct-v0.3-4bit --prompt "How tall is Mt Everest?"`.'
   explanation: 'MLX is Apple''s array framework built on Metal; `mlx_lm` pulls the weights from Hugging Face on first use, and the `mlx-community` org hosts pre-quantized 4-bit conversions that fit comfortably in unified memory.'
@@ -1909,7 +1909,7 @@
 - date: 2026-08-04
   tip: 'On macOS, drop an executable `/etc/ppp/ip-up` script to run commands automatically the moment a VPN tunnel comes up.'
   explanation: '`pppd` executes it as root once the L2TP link can pass IP packets, which is the classic place to add split-tunnel routes: `/sbin/route add -net 10.0.0.0/8 -interface "$1"`. Untick "Send all traffic over the VPN connection" in the VPN settings and let this script add only the routes you actually want.'
-  tags: [macos, networking, vpn]
+  tags: [macos, networking]
 - date: 2026-08-05
   tip: 'Set `freeze: auto` under `execute:` in `_quarto.yml` so Quarto only re-runs a document''s code when that document changes.'
   explanation: 'Results are stored under `_freeze/`; commit that directory and the site rebuilds (including in CI, where R or Python may not even be installed) without re-executing expensive chunks. Use `freeze: true` to never re-execute during a project render.'
@@ -1917,27 +1917,27 @@
 - date: 2026-08-06
   tip: 'Write a cache file to `paste0(f, ".tmp")` and then `file.rename()` it into place so an interrupted write never leaves a corrupt `f`.'
   explanation: 'Renaming is a single atomic operation, so readers see either the old file or the complete new one and never a half-written one: `saveRDS(list(key = key, result = res), tmp); file.rename(tmp, f)`. An aborted render leaves a stray `.tmp` you can delete rather than a poisoned cache entry that silently returns garbage.'
-  tags: [rstats, best practice]
+  tags: [rstats, best-practice]
 - date: 2026-08-07
   tip: 'Pair every `tmp <- tempfile()` inside an R function with `on.exit(unlink(tmp), add = TRUE)` on the very next line.'
   explanation: 'The expression is stored and only evaluated when the function exits, by any route (normal return, `stop()`, or a `Ctrl-C` interrupt) so a failed run never leaves the temporary file behind and the body needs no `tryCatch()` wrapper. Always pass `add = TRUE`, because the default replaces whatever an earlier `on.exit()` call registered rather than adding to it.'
-  tags: [rstats, defensive programming]
+  tags: [rstats, defensive-programming]
 - date: 2026-08-08
   tip: 'The Wasserstein-2 distance ($W_2$) is the minimum cost of reshaping one distribution into another, where cost is mass moved times distance squared.'
   explanation: 'Hence its nickname, the earth mover''s distance: picture each distribution as a pile of dirt and ask for the cheapest transport plan between them. Unlike pointwise measures it cares _how far_ mass has to travel, so two histograms that never overlap still get a finite, meaningful distance.'
-  tags: [statistics, reminder]
+  tags: [statistics]
 - date: 2026-08-09
   tip: 'In fzf, prefix a term with `''` for an exact match, `^`/`$` to anchor it, and `!` to exclude it.'
   explanation: 'Space-separated terms are ANDed and `|` ORs them, so `^src .go$ | .rs$ !test` finds Go or Rust files under `src` while dropping anything with "test" in the path. Fuzzy matching is the default, but these operators let you tighten a noisy list without leaving the prompt.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2026-08-10
   tip: 'When using oh-my-zsh add `fzf` to `plugins=()` in `~/.zshrc` and its keybindings are set up for you.'
   explanation: 'The plugin finds your fzf install and sources its `key-bindings.zsh` and `completion.zsh`, giving you `Ctrl-T` to paste fuzzy-picked file paths onto the command line, `Ctrl-R` for fuzzy history search, and `Alt-C` to cd into a subdirectory.'
-  tags: [zsh, productivity]
+  tags: [zsh]
 - date: 2026-08-11
   tip: 'Stop work while it is still going well and you know exactly what comes next.'
   explanation: 'Hemingway''s rule from Esquire in 1935: "always stop when you are going good and when you know what will happen next... you will never be stuck." This gets sold as the Zeigarnik effect, but a 2025 meta-analysis found no recall advantage for unfinished tasks; what held up was the lesser-known Ovsiankina effect, a pull to spontaneously resume an interrupted task in roughly two-thirds of cases.'
-  tags: [self-help, productivity]
+  tags: [self-help]
 - date: 2026-08-12
   tip: 'An NVMe "bad sector" is a logical error, not physical damage; overwrite the LBA and it is fixed.'
   explanation: 'A bad sector on a hard disk is physically damaged platter: gone for good. An LBA (Logical Block Address) is just the numbered slot the OS asks for, and NVMe keeps that slot wherever it likes in flash, so a read failure is merely logical: error correction gave up and the LBA is flagged as holding nothing valid. Rewriting it binds the slot to a good page and clears the flag: `sudo nvme write-zeroes /dev/nvme0n1 -s <lba> -c 0`.'
@@ -1945,11 +1945,11 @@
 - date: 2026-08-13
   tip: 'Run `duf` instead of `df -h`: it groups mounts into local, network, and special devices with colour-coded usage bars.'
   explanation: '[duf](https://github.com/muesli/duf) (Disk Usage/Free) hides the pseudo-filesystem noise `df` dumps on you by default and colours each bar green/yellow/red by how full it is.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2026-08-14
   tip: 'Find a specific email in aerc with `:search -f alice -b invoice`, then jump between the hits with `:next-result`.'
   explanation: 'Search flags stack: `-f` sender, `-t` recipient, `-c` cc, `-b` body, `-a` the entire message, `-H Subject:report` a named header, `-u`/`-r` unread/read, and `-d 1w` or `-d 2026-01-01..2026-02-01` a date range. Run the same query with `:filter` instead and aerc hides every message that does not match rather than merely highlighting the ones that do.'
-  tags: [aerc, email]
+  tags: [email]
 - date: 2026-08-15
   tip: 'Before calling a system automated, ask who labelled the data.'
   explanation: 'For Empire of AI, Karen Hao interviewed the Kenyan workers OpenAI contracted through Sama from November 2021 to build the toxicity detector that shipped in ChatGPT, classifying not just the worst text on the internet but worse that OpenAI prompted its own models to invent. TIME put their take-home pay at $1.32 to $2 an hour against the $12.50 OpenAI paid Sama, and the contract ended eight months early with workers describing lasting trauma.'
@@ -1957,15 +1957,15 @@
 - date: 2026-08-16
   tip: 'Treat a model''s headline benchmark scores as vendor-reported until something independent confirms them.'
   explanation: 'Stanford''s AI Index 2026 found industry produced over 90% of notable AI models in 2025, and that almost all frontier developers publish capability numbers like MMLU and SWE-bench while reporting against responsible AI benchmarks stays sparse. Karen Hao calls this the empire''s knowledge monopoly in Empire of AI: the firms building the systems supply most of the evidence about them. Reach for a third-party evaluation such as HELM or a live Arena leaderboard before repeating a number.'
-  tags: [llm, best practice]
+  tags: [llm, best-practice]
 - date: 2026-08-17
   tip: 'Favour work whose output is non-rival: my copy does not consume yours.'
   explanation: 'Non-rivalry of ideas is the core assumption of Paul Romer''s endogenous growth theory, the work behind his 2018 economics Nobel: your use of an idea does not subtract from mine, so one idea can serve any number of people at once and gives increasing returns to scale in a way that land and labour cannot. That is the test for your own output: one tutorial serves the thousandth reader as fully as the first, while your hour of troubleshooting goes to one person and nobody else can have it.'
-  tags: [economics, altruism]
+  tags: [economics]
 - date: 2026-08-18
   tip: 'When you cannot coordinate explicitly, pick the option the other side would guess.'
   explanation: 'Thomas Schelling called these focal points: asked where they would meet a stranger in New York with no time or place agreed, most of his subjects chose the information booth at Grand Central, and almost all said noon. It is why a team with no naming convention still converges on `main.py`, and why an obvious default beats a better option nobody would predict.'
-  tags: [economics, productivity]
+  tags: [economics]
 - date: 2026-08-19
   tip: 'Run `nvtop` for an htop-style view of GPU utilisation, memory and the processes using them.'
   explanation: 'Handles NVIDIA, AMD and Intel GPUs out of the box, plotting per-GPU utilisation and memory over time above a process list showing which PIDs hold GPU memory. Packaged as `nvtop` on Debian buster and Ubuntu 21.10 or newer.'
@@ -1973,7 +1973,7 @@
 - date: 2026-08-20
   tip: 'Set container environment variables in `%environment`, not `%post`.'
   explanation: '`%post` runs once at build time, so an `export` there has vanished by the time anyone runs the container; put it in `%environment`, which is evaluated at runtime, or append the line to `$SINGULARITY_ENVIRONMENT` from inside `%post`.'
-  tags: [singularity, reminder]
+  tags: [singularity]
 - date: 2026-08-21
   tip: 'Sign a container with `singularity key newpair` then `singularity sign my_image.sif`.'
   explanation: '`key newpair` creates a PGP keypair under `~/.singularity/sypgp` and `sign` writes the signature into the SIF itself, so there is no detached `.sig` file to lose. Export the public half with `singularity key export -a ./public.asc`, carry it across with the image, and the far side runs `singularity key import ./public.asc` before `singularity verify my_image.sif`.'
@@ -1981,7 +1981,7 @@
 - date: 2026-08-22
   tip: 'Re-wrap a long line to a fixed width with `fold -w 60 file.txt`.'
   explanation: 'It splits at 80 columns by default and never joins lines, so it is the quick way to re-wrap FASTA sequence or make a one-line file diffable; `-s` prefers breaking at spaces, though a word longer than the width still gets chopped. Use `fmt` for prose, since it reflows whole paragraphs instead of just counting columns.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2026-08-23
   tip: 'Point `SINGULARITY_CACHEDIR` at scratch space before pulling large images.'
   explanation: 'Pulls cache their layers under `~/.singularity/cache` by default, which quietly eats an HPC home quota after a few Docker conversions. Check what is there with `singularity cache list -v` and reclaim it with `singularity cache clean`.'
@@ -2001,11 +2001,11 @@
 - date: 2026-08-27
   tip: 'Wrap scratch work in `local({ ... })` so only the result escapes and the temporary names never reach your global environment.'
   explanation: '`local()` evaluates the block in a fresh environment and returns its last expression, so `dat <- local({ tmp <- readr::read_csv("raw.csv"); dplyr::filter(tmp, ok) })` leaves `dat` behind and discards `tmp`. Name lookup still falls through to the caller, so everything you already have loaded stays visible inside the block.'
-  tags: [rstats, reminder]
+  tags: [rstats]
 - date: 2026-08-28
   tip: 'Use `tea`, the Gitea CLI, as the `gh` equivalent for self-hosted Gitea and Forgejo servers.'
   explanation: '`gh` only speaks the GitHub API, but Forgejo implements the Gitea API, so one tool covers both: `tea login add --name work --url https://git.example.com --token <PAT>` registers an instance, after which `tea repos ls`, `tea issues ls` and `tea pr create` work against it.'
-  tags: [git, productivity]
+  tags: [git]
 - date: 2026-08-29
   tip: 'Keep a token in a file and pass it with command substitution: `tea login add --token "$(cat ~/.gitea_pat)"`.'
   explanation: 'The shell expands `$(cat ...)` before running the command, so your history records the literal text `$(cat ~/.gitea_pat)` and never the token itself; `chmod 600 ~/.gitea_pat` keeps the file readable only by you. Always quote the substitution so a stray newline or space cannot split it into two arguments.'
@@ -2013,15 +2013,15 @@
 - date: 2026-08-30
   tip: 'Tag repositories with GitHub topics, then find them again with `gh repo list --topic`.'
   explanation: 'Topics are repository-level labels, added from the "About" panel on the repository''s GitHub page or with `gh repo edit --add-topic rnaseq`, and `gh repo list davetang --topic rnaseq --limit 100` filters on them, which beats trying to encode categories in repository names. Repeat `--topic` to require several at once.'
-  tags: [git, productivity]
+  tags: [git]
 - date: 2026-08-31
   tip: 'Pipe `gh repo list --json` through `--jq` to bulk clone: `gh repo list davetang --topic rnaseq --json nameWithOwner --jq ".[].nameWithOwner" | xargs -n1 gh repo clone`.'
   explanation: 'Any `gh` command that accepts `--json` also accepts `--jq`, so the filtering happens inside `gh` with no separate `jq` install; `xargs -n1` then hands each `owner/repo` to `gh repo clone` one at a time. Add `--limit 100` because the default caps the list at 30.'
-  tags: [git, github]
+  tags: [git]
 - date: 2026-09-01
   tip: 'Start a project skeleton on Gitea or Forgejo with `tea repos create --name rnaseq-skeleton --init --template`.'
   explanation: 'The `--init` flag asks the server for an initial commit so the repo is not empty, and `--template` sets the template bit that makes it selectable by `tea repos create-from-template`; you then clone it and push the skeleton files themselves. Add `--license mit --gitignores R` to have those seeded in the first commit too.'
-  tags: [git, productivity]
+  tags: [git]
 - date: 2026-09-02
   tip: 'Run `curl -sI https://example.com/` to see just the response headers, including `Server:`.'
   explanation: '`-I` sends a `HEAD` request so you get headers without the body, and `-s` silences the progress meter. The `Server:` line usually names the software outright, such as `nginx/1.24.0` or `Apache/2.4.58 (Ubuntu)`, which settles "is this nginx or Apache?" in one command.'
@@ -2029,11 +2029,11 @@
 - date: 2026-09-03
   tip: 'Use docsify to publish a folder of Markdown files as a documentation site with no build step.'
   explanation: 'A docsify site is a single `index.html` that loads the library from a CDN and fetches your `.md` files in the browser at runtime, so there is no generated HTML to commit.'
-  tags: [docsify, markdown]
+  tags: [markdown]
 - date: 2026-09-04
   tip: 'In Inkscape, press `Shift+Ctrl+R` to resize the page to fit your drawing, or to fit only the objects you have selected.'
   explanation: 'Press `Escape` first to deselect everything if you want the page to hug the whole canvas, or select specific objects to crop to just those. The same action lives in Document Properties (`Shift+Ctrl+D`) under the Page tab, in the "Resize page to content" section. On macOS use `Cmd` in place of `Ctrl`.'
-  tags: [inkscape, productivity]
+  tags: [graphics]
 - date: 2026-09-05
   tip: 'Wrap a command that is allowed to fail in `set +e` and `set -e` to keep the rest of the script under `errexit`.'
   explanation: 'Capture the status immediately after the command, before anything else overwrites `$?`: `set +e; grep -q pattern file; rc=$?; set -e`. Without the toggle, `set -e` kills the script the moment `grep` finds nothing.'
@@ -2041,11 +2041,11 @@
 - date: 2026-09-06
   tip: 'Add your own tldr pages by dropping a `<command>.page.md` file into the tealdeer custom pages directory.'
   explanation: 'Run `tldr --show-paths` to find the directory, then write your own page for an in-house script. A `<command>.patch.md` file instead appends your extra examples to the official page rather than replacing it.'
-  tags: [shell, documentation]
+  tags: [shell]
 - date: 2026-09-07
   tip: 'Pipe `tldr --list` into `fzf` to browse every cached tldr page: `tldr --list | fzf | xargs tldr`.'
   explanation: '`--list` prints every page available for your platform, so fuzzy-finding it turns tealdeer into a searchable catalogue of commands you did not know existed.'
-  tags: [shell, productivity]
+  tags: [shell]
 - date: 2026-09-08
   tip: 'File descriptor 3 is just the first number the shell has not already reserved: `exec 3>notes.txt` turns `>&3` into your own output stream.'
   explanation: 'Every process starts with 0, 1 and 2 wired to stdin, stdout and stderr, which is why `2>&1` reads as "point 2 at whatever 1 is". Nothing is special about those numbers, so once you open 3 yourself, `echo done >&3` writes to `notes.txt` while stdout and stderr carry on untouched.'
@@ -2061,23 +2061,23 @@
 - date: 2026-09-11
   tip: 'Build an MCP server in Python with `from mcp.server import MCPServer`, then decorate a type-hinted function with `@mcp.tool()`.'
   explanation: 'The signature is the schema: `def add(a: int, b: int) -> int` plus a docstring gives the tool its JSON Schema, its description and its structured output, so you write no schema, no request parsing and no validation. Install with `pip install "mcp[cli]"`.'
-  tags: [python, mcp]
+  tags: [python, llm]
 - date: 2026-09-12
   tip: 'Call `reticulate::py_require("polars")` near the top of a Quarto doc instead of pre-building a virtualenv.'
   explanation: 'Since reticulate 1.41 the declared packages are resolved with `uv` into an ephemeral environment on first use, so the `.qmd` carries its own Python dependencies and a colleague renders it without any setup step. `py_require(python_version = "3.12")` pins the interpreter the same way.'
-  tags: [quarto, python, reticulate]
+  tags: [quarto, python]
 - date: 2026-09-13
   tip: 'Put a `.dockerignore` in the root of your build context so `docker build .` stops shipping `.git`, `.env` and data files to the builder.'
   explanation: 'Everything in the context is sent before the first instruction runs, and anything `COPY . .` picks up can bust the cache or leak into the image. Unlike `.gitignore`, patterns are anchored to the context root, so `*.bam` only matches top-level files; write `**/*.bam` to match everywhere.'
-  tags: [docker, best practice]
+  tags: [docker, best-practice]
 - date: 2026-09-14
   tip: 'Loop over files with `for file in *.pdf; do ...; done` instead of `for file in $(ls *.pdf)`.'
   explanation: 'The shell splits the output of `$(ls ...)` on spaces, tabs and newlines, so `My Report.pdf` arrives as `My` and `Report.pdf`; a glob expands straight into one word per filename. Keep `"$file"` quoted inside the loop or the name gets split again.'
-  tags: [shell, bash, best practice]
+  tags: [shell, bash, best-practice]
 - date: 2026-09-15
   tip: 'Write `rm -rf "${dir:?}/"*` instead of `rm -rf "$dir/"*`, so the script stops if `dir` is empty rather than deleting everything under `/`.'
   explanation: 'This is the same parameter expansion family as `${dir:-default}`: where `:-` swaps in a default value when `dir` is unset or empty, `:?` swaps in an error, printing `dir: parameter null or not set` and exiting the script before `rm` ever runs.'
-  tags: [shell, bash, best practice]
+  tags: [shell, bash, best-practice]
 - date: 2026-09-16
   tip: 'Migrate a repo with `git clone --mirror`, then `git push --all` and `git push --tags` to the new host.'
   explanation: 'A plain `git clone` makes a local branch only for the default branch, and `git push --all` pushes local branches, so you would move `main` and nothing else; in a mirror clone every branch is local, so `--all` really does move them all.'
@@ -2113,23 +2113,23 @@
 - date: 2026-09-24
   tip: 'Read HTML emails in aerc by adding `text/html=w3m -dump -T text/html -I utf-8 -O utf-8` under `[filters]` in `~/.config/aerc/aerc.conf`.'
   explanation: 'aerc sends each message part to the filter for its MIME type and shows the output. `-dump` makes w3m print rendered text instead of opening its browser, `-T text/html` tells it the input is HTML rather than plain text, and `-I`/`-O` set the input and output character sets to UTF-8.'
-  tags: [aerc, email]
+  tags: [email]
 - date: 2026-09-25
   tip: 'Make a closed-source binary carry its own glibc with `patchelf --set-interpreter /opt/glibc-2.39/lib/ld-linux-x86-64.so.2 --set-rpath /opt/glibc-2.39/lib ./tool`.'
   explanation: 'The loader has to come along with `libc.so.6` because the two share `GLIBC_PRIVATE` internals and must come from the same build. If you point only the rpath at a newer libc, the old system `ld-linux` stays in charge and fails with a `GLIBC_PRIVATE` relocation error.'
-  tags: [patchelf, linux]
+  tags: [linux]
 - date: 2026-09-26
   tip: 'Copy a rectangular block in GNU screen: `Ctrl-a [`, move to one corner, Space, `c`, move to the right edge, `C`, `j`/`k` to select lines, Space, then `Ctrl-a ]` to paste.'
   explanation: 'The first Space starts the mark, `c` fixes the left margin at the cursor column and `C` fixes the right margin, so the closing Space copies only the columns between the two margins on every marked line. Handy for grabbing a single column out of `ls -l` or `ps` output.'
-  tags: [screen, reminder]
+  tags: [screen]
 - date: 2026-09-27
   tip: 'Put `status top right` in your `.screenrc` so GNU screen messages stop covering your prompt.'
   explanation: 'Messages such as `Copy mode - Column 0 Line 0` or `Activity in window 2` normally overwrite the bottom-left corner, which is where your prompt usually sits. The `status` command, new in 5.0, moves them to any corner you choose with `top`/`bottom` plus `left`/`right`.'
-  tags: [screen, productivity]
+  tags: [screen]
 - date: 2026-09-28
   tip: 'Run `Ctrl-a :source ~/.screenrc` to apply `.screenrc` edits to a GNU screen session that is already running.'
   explanation: 'screen reads `.screenrc` only when a session starts, and reattaching with `screen -r` does not reload it, so a new line such as `status top right` does nothing in older sessions until you source the file. Every command in the file runs again, so any `screen -t name 0 cmd` lines will open extra windows.'
-  tags: [screen, productivity]
+  tags: [screen]
 - date: 2026-09-29
   tip: 'Run `docker run --rm -e TZ=Asia/Tokyo <image> date` to set a container''s timezone without rebuilding the image.'
   explanation: 'Containers default to UTC, and the C library reads the `TZ` variable at run time to look up the zone in `/usr/share/zoneinfo`, so the same image can show Tokyo time on one run and UTC on the next.'
@@ -2141,15 +2141,15 @@
 - date: 2026-10-01
   tip: 'Use `git show HEAD` to show the changes in the latest commit; use `git show HEAD~1` for the second latest commit.'
   explanation: 'As written in `tldr`, `git show` shows information about a specific commit, tag, or branch (such as `HEAD` for the latest commit).'
-  tags: [git, reminder]
+  tags: [git]
 - date: 2026-10-02
   tip: 'Add `-prune` after `-name` to list only the top-level matches: `find . -name "*proj*" -prune` prints `proj/` but nothing inside it.'
   explanation: '`-prune` tells `find` not to go into a directory that has just matched, so `proj/proj_old` and `proj/proj.txt` are skipped. It is also faster on large trees, because `find` never reads the contents of matched directories.'
-  tags: [shell, find]
+  tags: [shell]
 - date: 2026-10-03
   tip: 'Use `find / -name "*.conf" 2>&1 | grep -v ''Permission denied''` to hide permission errors but keep every other error.'
   explanation: '`2>/dev/null` throws away all of stderr, including useful messages like `No such file or directory` when a starting path has a typo. Merging stderr into stdout and removing only the `Permission denied` lines cuts the noise without hiding real problems.'
-  tags: [shell, find]
+  tags: [shell]
 - date: 2026-10-04
   tip: 'Give a tunnel its own `Host` entry in `~/.ssh/config` and open it with `ssh -fN myserver-web`, so it runs in the background without a shell.'
   explanation: 'The entry is `Host myserver-web` followed by two indented lines, `HostName server.example.org` and `LocalForward 8765 127.0.0.1:8765` (add `User` if your login name is different). `-N` runs no remote command and `-f` sends `ssh` to the background after it logs in, so only the forward is left running; close it with `pkill -f ''ssh -fN myserver-web''`.'
@@ -2161,11 +2161,11 @@
 - date: 2026-10-06
   tip: 'When using splits in `nvim`, `:resize 20` will set height to 20 lines and `:vertical resize 80` will set width to 80 columns.'
   explanation: 'In Neovim, some plugins create splits that are either too big or small; use `:resize` and `:vertical resize` to adjust the horizontal and vertical splits, respectively.'
-  tags: [nvim]
+  tags: [vim]
 - date: 2026-10-07
   tip: 'Delete several emails at once in aerc: press `Space` on each one to mark it, then `D` to delete them all.'
   explanation: '`Space` runs `:mark -t` then `:next`, so you can work down the list marking as you go, while `v` toggles the mark without moving. Commands like `:delete` act on every marked message instead of only the highlighted one, and `:unmark -a` clears the marks if you change your mind.'
-  tags: [aerc, email]
+  tags: [email]
 - date: 2026-10-08
   tip: 'Add `-e TERM=xterm-256color` to `docker run -it` so programs in the container use 256 colours.'
   explanation: 'With `-t`, Docker sets `TERM=xterm`, which the terminfo database lists as 8 colours, so vim, htop and prompt themes look washed out. `tput colors` prints the colour count for the current `TERM`, so `docker run --rm -t debian tput colors` prints `8`, while adding `-e TERM=xterm-256color` makes it print `256`.'
@@ -2185,7 +2185,7 @@
 - date: 2026-10-12
   tip: 'Run `infocmp` to see the terminfo entry that full-screen programs load for your `$TERM`.'
   explanation: 'An escape code is a byte sequence starting with the Escape character (`\E`) that the terminal acts on instead of printing. Terminals differ in which codes they understand, so programs such as `less` and `vim` use the ncurses library to look up `$TERM` in the terminfo database rather than hard-coding them. `infocmp` prints that entry, where `clear=\E[H\E[2J` is the code that clears the screen.'
-  tags: [terminal, ncurses]
+  tags: [terminal]
 - date: 2026-10-13
   tip: 'Set `networkingMode=mirrored` in `.wslconfig` so WSL2 and Windows reach each other on `127.0.0.1`.'
   explanation: 'By default WSL2 sits behind NAT, so from Linux a Windows server is not at `127.0.0.1` but at a host address like `172.30.96.1` that can change after a reboot. Mirrored mode copies the Windows network interfaces into Linux, so `curl http://127.0.0.1:8080` in WSL reaches a Windows service on port 8080. Add `networkingMode=mirrored` under `[wsl2]` in `%UserProfile%\.wslconfig`, then run `wsl --shutdown` (Windows 11 22H2 or later).'
@@ -2197,12 +2197,12 @@
 - date: 2026-10-15
   tip: 'In WSL2, move projects off the Windows drive into your Linux home: `mv /mnt/c/Users/dave/project ~/`.'
   explanation: 'Your home directory sits on WSL2''s own ext4 disk, while `/mnt/c` reaches Windows through a file-sharing protocol, so commands that touch many small files, like `git status` or `npm install`, run several times slower there. Windows apps can still open the moved files at `\\wsl.localhost\Ubuntu\home\dave\project`.'
-  tags: [windows, linux, best practice]
+  tags: [windows, linux, best-practice]
 - date: 2026-10-16
   tip: 'In RAG, reranking is a second pass that re-scores the retrieved chunks with a slower, more accurate model.'
   explanation: 'Retrieval-augmented generation (RAG) answers a question by first pulling a shortlist of text chunks from a vector index, ranked by how close each chunk''s embedding is to the question''s embedding. That search is fast but rough, so a reranker reads the question and each candidate chunk together, gives every pair a relevance score, and reorders the list. Only the top few after reranking are pasted into the LLM''s prompt, so the model sees fewer, better passages.'
-  tags: [llm, rag]
+  tags: [llm]
 - date: 2026-10-17
   tip: 'Rerank with a cross-encoder: it reads the query and chunk together instead of embedding them separately.'
   explanation: 'A bi-encoder, the model behind vector search, turns each chunk into one vector ahead of time, so it never sees the query and the chunk at once. A cross-encoder takes the query and chunk as a single input, so every query word can attend to every chunk word; it is slower but much better at judging whether a chunk actually answers the question. Asked "How tall is Mount Everest?", the bi-encoder `all-MiniLM-L6-v2` ranked a title that only echoed the question ("how tall is it really?") first, while the cross-encoder `ms-marco-MiniLM-L6-v2` put "Everest stands 29,032 feet tall." on top.'
-  tags: [llm, rag]
+  tags: [llm]
