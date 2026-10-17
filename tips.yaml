@@ -20,7 +20,7 @@
   tags: [shell]
 - date: 2025-04-19
   tip: "`script mysession.log`"
-  explanation: "`script` save entire shell session (incl. input/output) for logging; use `exit` to stop session."
+  explanation: "`script` saves the entire shell session (incl. input/output) for logging; use `exit` to stop the session."
   tags: [shell]
 - date: 2025-04-20
   tip: "Use `--containall` with Singularity for better isolation."
@@ -52,7 +52,7 @@
   tags: [shell]
 - date: 2025-04-27
   tip: "`watch -n 1 vcgencmd measure_temp`"
-  explanation: "Measure the temperature every second; `watch` polls every 2 seconds by default, so pass `-n 1` for a 1-second interval."
+  explanation: "Measure a Raspberry Pi's temperature every second; `watch` polls every 2 seconds by default, so pass `-n 1` for a 1-second interval."
   tags: [linux]
 - date: 2025-04-28
   tip: "Use the dot placeholder with {purrr}."
@@ -121,7 +121,7 @@
 - date: 2025-05-14
   tip: "`git config --global help.autocorrect 1`"
   explanation: 'Auto-correct typos in Git commands; the value is in tenths of a second, so `1` means a 0.1s pause before the corrected command runs. Use a larger value like `20` for a 2-second grace period to cancel.'
-  tags: [shell]
+  tags: [git]
 - date: 2025-05-15
   tip: '`readarray -t FILES < <(find .)`'
   explanation: 'Use `readarray` to read stuff into an array.'
@@ -144,7 +144,7 @@
   tags: [networking]
 - date: 2025-05-20
   tip: 'Use the {targets} package to build workflows in R.'
-  explanation: 'The {targets} package allows you build reproducible workflows entirely within R.'
+  explanation: 'The {targets} package allows you to build reproducible workflows entirely within R.'
   tags: [rstats]
 - date: 2025-05-21
   tip: '`git blame -w`'
@@ -272,7 +272,7 @@
   tags: [bash]
 - date: 2025-06-21
   tip: '`readarray` is synonym for `mapfile`.'
-  explanation: '`mapfile` read lines from the standard input into the indexed array.'
+  explanation: '`mapfile` reads lines from standard input into an indexed array.'
   tags: [bash]
 - date: 2025-06-22
   tip: "Be aware of Cognitive Debt and don't build it up!"
@@ -289,7 +289,7 @@
 - date: 2025-06-25
   tip: "Buy The Secret Rules of the Terminal at https://wizardzines.com/zines/terminal/"
   explanation: 'Understanding just a little more about the terminal can make your experience WAY better.'
-  tags: [shell]
+  tags: [terminal]
 - date: 2025-06-26
   tip: "`which -a python3`"
   explanation: 'Use `which -a` to show ALL matches in your PATH for a program, in order!'
@@ -304,7 +304,7 @@
   tags: [screen]
 - date: 2025-06-29
   tip: 'The terminal emulator is a translator.'
-  explanation: 'The terminal emulator translates all typing/clicks into bytes and and it takes all the bytes from a program and displays them on the screen.'
+  explanation: 'The terminal emulator translates all typing/clicks into bytes, and it takes all the bytes from a program and displays them on the screen.'
   tags: [terminal]
 - date: 2025-06-30
   tip: 'The terminal emulator turns actions into text, escape codes or control characters.'
@@ -400,7 +400,7 @@
   tags: [debian]
 - date: 2025-07-23
   tip: 'Always keep a "live install" image lying around for when your server runs into issues!'
-  explanation: "Get a live install Debian image from https://www.debian.org/CD/live/; in case you were wondering, this is unrelated to yesterday's tip!"
+  explanation: "Get a live install image from the [Debian live install page](https://www.debian.org/CD/live/)."
   tags: [debian]
 - date: 2025-07-24
   tip: 'Use `getSimpleName()` to get the path name without any extension in Nextflow.'
@@ -420,7 +420,7 @@
   tags: [rstats, functional-programming]
 - date: 2025-07-28
   tip: '`purrr::pmap(list(list(1900), list(80), list(4)), \(x,y,z) x+y+z)`'
-  explanation: "Use `purrr::pmap()` to map over multiple input simultaneously."
+  explanation: "Use `purrr::pmap()` to map over multiple inputs simultaneously."
   tags: [rstats, functional-programming]
 - date: 2025-07-29
   tip: 'Learn [Lua](https://www.lua.org/start.html)!'
@@ -432,7 +432,7 @@
   tags: [zsh]
 - date: 2025-07-31
   tip: 'Check out marimo!'
-  explanation: "marimo is an open-source reactive notebook for Python - reproducible, Git-friendly, AI-native, SQL built-in, executable as a script, shareable as an app."
+  explanation: "marimo is an open-source reactive notebook for Python: reproducible, Git-friendly, AI-native, SQL built-in, executable as a script, shareable as an app."
   tags: [python]
 - date: 2025-08-01
   tip: 'Using GNU screen, `Ctrl-a [`, space, space, Esc, and then `Ctrl-a ]` to paste!'
@@ -453,7 +453,7 @@
 - date: 2025-08-05
   tip: '`ssh-copy-id -i ~/.ssh/id_rsa.pub username@server-ip`'
   explanation: "Use `ssh-copy-id` to copy a public key to a server, so you can SSH using your private key."
-  tags: [linux]
+  tags: [linux, ssh]
 - date: 2025-08-06
   tip: 'Put `bindkey -v` in `~/.zshrc` to enable Zsh Vi mode!'
   explanation: "Your Zsh shell behaves like a mini Vim editor for command-line editing!"
@@ -505,7 +505,7 @@
 - date: 2025-08-18
   tip: 'In Linux, `<`, `<<`, and `<<<` are redirection operators used for input handling.'
   explanation: '`<` reads from an existing file; `<<` creates temporary multi-line input; `<<<` provides immediate string input.'
-  tags: [linux]
+  tags: [shell]
 - date: 2025-08-19
   tip: 'Use a block, i.e., `{}` to group together packages to keep quiet: `suppressPackageStartupMessages({ library(ggplot2) })`'
   explanation: '`{}` denote a block and they allow you to group multiple expressions together and treat them as a single expression.'
@@ -616,7 +616,7 @@
   tags: [vim]
 - date: 2025-09-15
   tip: 'Use [shfmt](https://github.com/mvdan/sh#shfmt) to format shell scripts consistently!'
-  explanation: '`shfmt` is a shell parser, formatter, and interpreter'
+  explanation: '`shfmt` is a shell parser, formatter, and interpreter.'
   tags: [shell, scripting]
 - date: 2025-09-16
   tip: 'Use the [bash-language-server](https://github.com/bash-lsp/bash-language-server) to make it easier to write Bash scripts!'
@@ -684,7 +684,7 @@
   tags: [quarto]
 - date: 2025-10-02
   tip: 'Use Quarto projects to nicely organise multiple Quarto documents!'
-  explanation: '[Quarto projects](https://quarto.org/docs/projects/quarto-projects.html) provides a way to render all files with a single command, share configurations, and more!'
+  explanation: '[Quarto projects](https://quarto.org/docs/projects/quarto-projects.html) provide a way to render all files with a single command, share configurations, and more!'
   tags: [quarto]
 - date: 2025-10-03
   tip: 'Use [gitlab-ci-local](https://github.com/firecow/gitlab-ci-local) for testing CI/CD locally!'
@@ -807,7 +807,7 @@
   explanation: 'Use `difftime()` in R to calculate differences in times.'
   tags: [rstats]
 - date: 2025-11-02
-  tip: 'Check out the [Quarto Extensions](https://quarto.org/docs/extensions/) page for useful extentions!'
+  tip: 'Check out the [Quarto Extensions](https://quarto.org/docs/extensions/) page for useful extensions!'
   explanation: 'Extensions are a powerful way to modify and extend the behavior of Quarto.'
   tags: [quarto]
 - date: 2025-11-03
@@ -873,7 +873,7 @@
 - date: 2025-11-18
   tip: '`ldd $(which samtools)`'
   explanation: '`ldd $(which samtools)` shows all the shared libraries (dynamic dependencies) that `samtools` needs in order to run.'
-  tags: [debian]
+  tags: [linux]
 - date: 2025-11-19
   tip: '`file ~/bin/go-1.25.1/go/bin/go`'
   explanation: 'You can use `file` to check whether a binary is statically linked or not!'
@@ -881,7 +881,7 @@
 - date: 2025-11-20
   tip: '`dpkg -S /usr/bin/env`'
   explanation: 'Use `dpkg -S` to find which package a file belongs to!'
-  tags: [linux]
+  tags: [debian]
 - date: 2025-11-21
   tip: '`setopt extended_glob`'
   explanation: "Use Zsh's extended globbing to allow for more additional globbing patterns."
@@ -980,7 +980,7 @@
   tags: [statistics]
 - date: 2025-12-15
   tip: 'Check out AkaRank, an improved Alexa Rank substitute.'
-  explanation: '[AkaRank](https://www.akamai.com/security-research/akarank) provides these critical global rank metrics to the infosec and security research community as a public service'
+  explanation: '[AkaRank](https://www.akamai.com/security-research/akarank) provides these critical global rank metrics to the infosec and security research community as a public service.'
   tags: [browser]
 - date: 2025-12-16
   tip: 'Follow the two-minute rule.'
@@ -1012,7 +1012,7 @@
   tags: [vim]
 - date: 2025-12-23
   tip: '`:.,$norm I#`'
-  explanation: 'Use `:.,$norm I#` to add a `#` to the current line until the end; use `:1,.norm I# for start to current line.`'
+  explanation: 'Use `:.,$norm I#` to add a `#` to every line from the current line to the end; use `:1,.norm I#` for the first line to the current line.'
   tags: [vim]
 - date: 2025-12-24
   tip: 'Data serialisation is like "packaging" data for travel.'
@@ -1035,11 +1035,11 @@
   explanation: 'High variance in arrival or service times increases wait times dramatically, even at the same average utilisation.'
   tags: [maths]
 - date: 2025-12-29
-  tip: '`g0`'
-  explanation: 'Use `g0` to go to the first tab and `g$` to go the last tab.'
+  tip: 'In Vimium, press `g0` to go to the first tab.'
+  explanation: 'Vimium is a browser extension that adds Vim-style keyboard shortcuts; use `g0` to go to the first tab and `g$` to go to the last tab.'
   tags: [browser]
 - date: 2025-12-30
-  tip: '`X`'
+  tip: 'In Vimium, press `X` to restore the tab you just closed.'
   explanation: 'Use `x` to close the current tab and `X` to restore the closed tab.'
   tags: [browser]
 - date: 2025-12-31
@@ -1068,11 +1068,11 @@
   tags: [python]
 - date: 2026-01-06
   tip: 'Incentives are the cornerstone of modern life.'
-  explanation: 'Understanding incentives or ferreting them out is the key to solving just about any riddle.'
+  explanation: 'From *Freakonomics* (Levitt and Dubner, 2005): understanding incentives, or ferreting them out, is the key to solving just about any riddle.'
   tags: [economics]
 - date: 2026-01-07
   tip: 'There are three basic flavours of incentive: economic, social, and moral.'
-  explanation: 'Each type of incentive has different effects depending on the situation; sometimes social incentives are very strong and sometimes economic incentives are very weak.'
+  explanation: 'This is the breakdown used in *Freakonomics*. Each type of incentive has different effects depending on the situation; sometimes social incentives are very strong and sometimes economic incentives are very weak.'
   tags: [economics]
 - date: 2026-01-08
   tip: 'A consumable resource is a resource that Grid Engine tracks and subtracts as jobs are scheduled.'
@@ -1095,7 +1095,7 @@
   explanation: 'Get more information about a process using `ps -fp <PID>`.'
   tags: [shell]
 - date: 2026-01-13
-  tip: '`ge`'
+  tip: 'In Vimium, press `ge` to edit the current URL.'
   explanation: 'Use `ge` to edit the current URL and `gE` to edit and open in a new tab.'
   tags: [browser]
 - date: 2026-01-14
@@ -1156,11 +1156,11 @@
   tags: [rstats]
 - date: 2026-01-28
   tip: 'Yank the current line into register `a` using `"ayy` and paste using `"ap`.'
-  explanation: '`"` introduces a register in Vim and the next single character is the name. '
+  explanation: '`"` introduces a register in Vim and the next single character is the name.'
   tags: [vim]
 - date: 2026-01-29
   tip: '`sudo journalctl -f`'
-  explanation: '`sudo journalctl -f` will continuously displays new log entries as they are written.'
+  explanation: '`sudo journalctl -f` continuously displays new log entries as they are written.'
   tags: [linux, sysadmin]
 - date: 2026-01-30
   tip: '`sudo apt-get install fail2ban`'
@@ -1185,7 +1185,7 @@
 - date: 2026-02-04
   tip: '`ssh -o "ConnectTimeout 10"`'
   explanation: 'Use `ssh -o "ConnectTimeout 10"` to stop SSH trying to connect after 10 seconds.'
-  tags: [shell]
+  tags: [shell, ssh]
 - date: 2026-02-05
   tip: '`make.names(c("123", "1)3"))`'
   explanation: '`make.names()` is a function in base R that can make syntactically valid names out of character vectors.'
@@ -1209,7 +1209,7 @@
 - date: 2026-02-10
   tip: '`ssh-copy-id -i key.pub user@ipaddr`'
   explanation: 'Use `ssh-copy-id -i key.pub user@ipaddr` to easily set up SSHing with a key (instead of manually preparing `~/.ssh/authorized_keys`).'
-  tags: [shell]
+  tags: [shell, ssh]
 - date: 2026-02-11
   tip: 'Use the [Quarto clean theme](https://github.com/grantmcdermott/quarto-revealjs-clean) for a minimalist and elegant presentation theme.'
   explanation: 'The clean theme provides an elegant and academic-friendly design, which looks very nice.'
@@ -1248,15 +1248,15 @@
   tags: [linux, sysadmin]
 - date: 2026-02-20
   tip: '`pdftotext file.pdf file.txt`'
-  explanation: 'Extracts text from a PDF and saves it to a plain text file. Install via `sudo apt install poppler-utils` on Debian/Ubuntu).'
+  explanation: 'Extracts text from a PDF and saves it to a plain text file. Install via `sudo apt install poppler-utils` on Debian/Ubuntu.'
   tags: [linux]
 - date: 2026-02-21
   tip: '`flock -n /tmp/myjob.lock ./myjob.sh`'
-  explanation: 'Runs `myjob.sh` only if no other instance is running; `-n` exits immediately if the lock is already held rather than waiting. The lock is kernel-level, not file-existence-based, so it is released automatically when the process ends - no cleanup needed.'
+  explanation: 'Runs `myjob.sh` only if no other instance is running; `-n` exits immediately if the lock is already held rather than waiting. The lock is kernel-level, not file-existence-based, so it is released automatically when the process ends, so no cleanup is needed.'
   tags: [linux, shell, scripting]
 - date: 2026-02-22
   tip: '`sudo unshare --net ./my_tool`'
-  explanation: 'Runs `my_tool` in an isolated network namespace with no interfaces, routes, or connectivity - useful for testing whether a tool works without network access. The namespace is kernel-level and disappears automatically when the process exits.'
+  explanation: 'Runs `my_tool` in an isolated network namespace with no interfaces, routes, or connectivity, which is useful for testing whether a tool works without network access. The namespace is kernel-level and disappears automatically when the process exits.'
   tags: [linux, networking]
 - date: 2026-02-23
   tip: '`pgrep -la pattern`'
@@ -1528,7 +1528,7 @@
   tags: [economics]
 - date: 2026-05-01
   tip: 'Ship small, frequent pull requests instead of one big-bang merge.'
-  explanation: 'Small PRs get reviewed within hours rather than days, surface design problems before you have built on top of them, are dramatically easier to revert, and keep the team unblocked because nobody is waiting on a 2,000-line review'
+  explanation: 'Small PRs get reviewed within hours rather than days, surface design problems before you have built on top of them, are dramatically easier to revert, and keep the team unblocked because nobody is waiting on a 2,000-line review.'
   tags: [teamwork]
 - date: 2026-05-02
   tip: 'Write a team working agreement: an explicit, one-page contract for *how* you work together.'
@@ -1536,7 +1536,7 @@
   tags: [teamwork]
 - date: 2026-05-03
   tip: 'Agree on a "Definition of Done" so the team shares one quality bar.'
-  explanation: 'A short checklist including tests pass, docs updated, monitored in production, reviewed by one other engineer, turns "is this finished?" from an opinion into a fact'
+  explanation: 'A short checklist including tests pass, docs updated, monitored in production, reviewed by one other engineer, turns "is this finished?" from an opinion into a fact.'
   tags: [teamwork]
 - date: 2026-05-04
   tip: 'Default to written, async communication; reserve meetings for decisions and disagreement.'
@@ -1896,7 +1896,7 @@
   tags: [macos, llm]
 - date: 2026-08-01
   tip: 'Serve a local MLX model behind an OpenAI-compatible API with `mlx_lm.server --model mlx-community/Mistral-7B-Instruct-v0.3-4bit`.'
-  explanation: 'It listens on `http://localhost:8080/v1`, so any OpenAI client works by pointing `base_url` there with a dummy `api_key` letting you drop a local Mac model into code already written against the OpenAI SDK.'
+  explanation: 'It listens on `http://localhost:8080/v1`, so any OpenAI client works by pointing `base_url` there with a dummy `api_key`, letting you drop a local Mac model into code already written against the OpenAI SDK.'
   tags: [macos, llm]
 - date: 2026-08-02
   tip: 'Bind-mount as yourself with `docker run --user $(id -u):$(id -g) -v "$PWD":/work -w /work <image>`.'
