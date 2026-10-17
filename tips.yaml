@@ -35,8 +35,8 @@
   explanation: "A working solution now is more useful than a perfect one that never arrives."
   tags: [teamwork]
 - date: 2025-04-23
-  tip: "Consider using `tryCatch()` over `stopifnot()`."
-  explanation: "`tryCatch()` can handle and recover from errors, while `stopifnot()` halts execution."
+  tip: 'Use `stopifnot()` to check assumptions and `tryCatch()` to recover from errors you expect.'
+  explanation: '`stopifnot()` stops with an error as soon as a condition is `FALSE`, so bad input fails early; `tryCatch()` catches an error or warning and runs a handler, so the code can carry on. They work together: wrap a call in `tryCatch()` to handle the error that a `stopifnot()` inside it raises.'
   tags: [rstats, defensive-programming]
 - date: 2025-04-24
   tip: "`apropos unzip`"
@@ -55,8 +55,8 @@
   explanation: "Measure a Raspberry Pi's temperature every second; `watch` polls every 2 seconds by default, so pass `-n 1` for a 1-second interval."
   tags: [linux]
 - date: 2025-04-28
-  tip: "Use the dot placeholder with {purrr}."
-  explanation: "`purrr::map_int(1:5, ~ . + 1L)` vs. `purrr::map_int(1:5, function(x) x + 1L)`; use `1L` (or `map_dbl()`) since `map_int()` errors on the double `. + 1`."
+  tip: 'Use R''s shorthand lambda `\(x)` with {purrr}.'
+  explanation: '`purrr::map_int(1:5, \(x) x + 1L)` is short for `purrr::map_int(1:5, function(x) x + 1L)` (R 4.1+) and is now recommended over the `~ . + 1L` formula; use `1L` (or `map_dbl()`) since `map_int()` errors on the double `x + 1`.'
   tags: [rstats, functional-programming]
 - date: 2025-04-29
   tip: "Use `date` and `bc` to measure elapsed time."
@@ -71,7 +71,7 @@
   explanation: 'Find files in your home directory that are larger than 100M using `find`.'
   tags: [shell]
 - date: 2025-05-02
-  tip: '`purrr::discard(~ stringr::str_detect(., "old"))`'
+  tip: '`purrr::discard(\(x) stringr::str_detect(x, "old"))`'
   explanation: 'Use `purrr::discard` to discard elements based on their values.'
   tags: [rstats, functional-programming]
 - date: 2025-05-03
@@ -127,8 +127,8 @@
   explanation: 'Use `readarray` to read stuff into an array.'
   tags: [bash, scripting]
 - date: 2025-05-16
-  tip: '`tidyr::separate(df, group, c("key", "value"), sep = "\\s", extra = "merge")`'
-  explanation: 'Use `extra = "merge"` to split at most `length(into)` times, keeping any remainder in the last column; the default `"warn"` drops the extra pieces instead.'
+  tip: '`tidyr::separate_wider_delim(df, group, delim = " ", names = c("key", "value"), too_many = "merge")`'
+  explanation: 'Use `too_many = "merge"` to keep any extra pieces together in the last column, so "a b c" becomes "a" and "b c"; the default `"error"` stops instead.'
   tags: [rstats, tidyverse]
 - date: 2025-05-17
   tip: 'Use `tidyr::separate_wider_delim()` instead of `tidyr::separate()`.'
@@ -411,8 +411,8 @@
   explanation: "Use `fsck` (File System Consistency Check) to scan and fix disk errors automatically."
   tags: [linux, sysadmin]
 - date: 2025-07-26
-  tip: '`imap(my_list, ~ paste0("Key ", .y, " has value ", .x))`'
-  explanation: "Use `imap()` if you want both the element and its name/index."
+  tip: '`imap(my_list, \(x, name) paste0("Key ", name, " has value ", x))`'
+  explanation: "Use `imap()` if you want both the element and its name/index; the function gets the element first and the name second."
   tags: [rstats, functional-programming]
 - date: 2025-07-27
   tip: '`safe_fn <- safely(some_function)`'
@@ -503,8 +503,8 @@
   explanation: 'It does not matter what kind of signal, it could be words, a picture, or even electric impulses.'
   tags: [maths]
 - date: 2025-08-18
-  tip: 'In Linux, `<`, `<<`, and `<<<` are redirection operators used for input handling.'
-  explanation: '`<` reads from an existing file; `<<` creates temporary multi-line input; `<<<` provides immediate string input.'
+  tip: 'In the shell, `<`, `<<`, and `<<<` are redirection operators used for input handling.'
+  explanation: '`<` reads from an existing file; `<<` creates temporary multi-line input (a heredoc); `<<<` provides immediate string input (a here-string, which bash and zsh support but POSIX `sh` does not).'
   tags: [shell]
 - date: 2025-08-19
   tip: 'Use a block, i.e., `{}` to group together packages to keep quiet: `suppressPackageStartupMessages({ library(ggplot2) })`'
@@ -563,8 +563,8 @@
   explanation: 'See the [Example Lightbox Document](https://quarto-ext.github.io/lightbox/) for a demo!'
   tags: [quarto]
 - date: 2025-09-02
-  tip: '`convert input.png -trim +repage output.png`'
-  explanation: 'Use ImageMagick to trim the whitespace from an image; the `+repage` parameter will reset the page size.'
+  tip: '`magick input.png -trim +repage output.png`'
+  explanation: 'Use ImageMagick to trim the whitespace from an image; the `+repage` parameter will reset the page size. ImageMagick 7 uses `magick`; on version 6, the command is `convert`.'
   tags: [graphics]
 - date: 2025-09-03
   tip: '[Queueing theory](https://en.wikipedia.org/wiki/Queueing_theory) is the mathematical study of waiting lines, or queues.'
@@ -663,15 +663,15 @@
   explanation: 'Every one needs a break! Remember to take a holiday to refresh yourself, physically and mentally.'
   tags: [self-help]
 - date: 2025-09-27
-  tip: 'Using [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter), press `gnn` to perform incremental selection, and `grn`/`grm` to increase/decrease!'
-  explanation: 'nvim-treesitter makes it easy to select different levels of nested code blocks!'
+  tip: 'In Neovim 0.12+, press `v` then `an` to select the enclosing syntax node; press `an` again to grow the selection and `in` to shrink it.'
+  explanation: 'These built-in treesitter mappings replace the `gnn`/`grn`/`grm` incremental selection from the old `master` branch of nvim-treesitter, which its `main` branch dropped. In Visual mode, `]n` and `[n` select the next and previous node; without a treesitter parser, `an` and `in` fall back to LSP selection ranges.'
   tags: [vim]
 - date: 2025-09-28
   tip: 'Using [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim), press `<leader>ff` to find and preview files then `<C-n>`/`<C-p>` to go to the next/previous file.'
   explanation: 'Instead of leaving Nvim to look for files, use telescope.nvim to find, preview, and open files (in a buffer)!'
   tags: [vim]
 - date: 2025-09-29
-  tip: '`dplyr::rename_with(my_df, ~ gsub("\\.", "-", .x))`'
+  tip: '`dplyr::rename_with(my_df, \(x) gsub("\\.", "-", x))`'
   explanation: 'Use `dplyr::rename_with()` to rename columns using a function!'
   tags: [rstats, dplyr, functional-programming]
 - date: 2025-09-30
@@ -915,7 +915,7 @@
   explanation: "Order-only prerequisites are prerequisites that must exist before building a target but timestamp changes don't trigger rebuilds."
   tags: [make]
 - date: 2025-11-29
-  tip: '`git checkout feature && git rebase main`'
+  tip: '`git switch feature && git rebase main`'
   explanation: '`git rebase` replays your commits on top of another branch to keep your history linear and up-to-date.'
   tags: [git]
 - date: 2025-11-30
@@ -975,8 +975,8 @@
   explanation: 'Since `mv` (GNU coreutils) 9.5 (March 2024) there is an `--exchange` parameter that can be used to swap files atomically when source and destination are on the same filesystem.'
   tags: [shell]
 - date: 2025-12-14
-  tip: 'P = (s + 1)/(n + 2)'
-  explanation: 'If an event has occurred s times out of n trials, the probability it occurs on the next trial is P = (s + 1)/(n + 2).'
+  tip: 'Laplace''s rule of succession: `P = (s + 1)/(n + 2)`'
+  explanation: 'If an event has occurred s times out of n trials, estimate the probability it occurs on the next trial as `(s + 1)/(n + 2)`. Adding one success and one failure keeps the estimate away from 0 and 1 when there is little data: after 3 successes in 3 trials, it gives 4/5 rather than 1.'
   tags: [statistics]
 - date: 2025-12-15
   tip: 'Check out AkaRank, an improved Alexa Rank substitute.'
@@ -1359,8 +1359,8 @@
   explanation: 'Unlike `git add -A` or `git add .`, which stage everything including new untracked files, `git add -u` restricts staging to files already tracked by Git. This is useful when you have scratch files, logs, or experiments in your working tree that you do not want to accidentally commit.'
   tags: [git]
 - date: 2026-03-20
-  tip: 'Use `git checkout origin/main -- path/to/file` to grab a single updated file from the remote.'
-  explanation: '`git pull` always fetches and merges entire commits. To update just one file, run `git fetch origin` first, then `git checkout origin/main -- path/to/file` to overwrite your local copy with the remote version without merging everything else.'
+  tip: 'Use `git restore --source=origin/main -- path/to/file` to grab a single updated file from the remote.'
+  explanation: '`git pull` always fetches and merges entire commits. To update just one file, run `git fetch origin` first, then `git restore --source=origin/main -- path/to/file` to overwrite your local copy with the remote version without merging everything else; the change is left unstaged, like any other edit.'
   tags: [git]
 - date: 2026-03-21
   tip: 'Use a Git worktree when you need to context-switch without disrupting your current in-progress work.'
@@ -1660,7 +1660,7 @@
   tags: [self-help]
 - date: 2026-06-03
   tip: 'When you need to `git pull` but have uncommitted changes, run `git stash push`, then `git pull`, then `git stash pop` to reapply your work on top.'
-  explanation: '`git stash push` shelves your uncommitted changes onto a stack and gives you a clean working tree, so `git pull` can fast-forward without conflicts. `git stash pop` then reapplies the stashed changes and removes them from the stack; if the merge introduces conflicts, resolve them and the stash entry is dropped only after a successful pop, so nothing is lost.'
+  explanation: '`git stash push` shelves your uncommitted changes onto a stack and gives you a clean working tree, so `git pull` won''t refuse to overwrite files you have edited. `git stash pop` then reapplies the stashed changes and removes them from the stack. If the pop hits conflicts, Git keeps the stash entry so nothing is lost: resolve the conflicts, then run `git stash drop` yourself.'
   tags: [git]
 - date: 2026-06-04
   tip: 'Use `git restore --staged file` to unstage and `git restore file` to discard working-tree changes.'
