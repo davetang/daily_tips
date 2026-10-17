@@ -327,8 +327,8 @@
   explanation: 'R Interface to Torch!'
   tags: [rstats, machine-learning]
 - date: 2025-07-05
-  tip: 'Check out Miller!'
-  explanation: 'Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON!'
+  tip: '`mlr --icsv --opprint cat example.csv`'
+  explanation: 'Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and JSON. `--icsv` reads CSV, `--opprint` prints it as aligned columns, and `cat` passes the records through unchanged; `--c2p` is shorthand for `--icsv --opprint`.'
   tags: [terminal]
 - date: 2025-07-06
   tip: 'Try changing up your environment or daily routine.'
@@ -339,8 +339,8 @@
   explanation: 'You can always trust that a tool performs as advertised but you should verify too.'
   tags: [adage]
 - date: 2025-07-08
-  tip: '`mlr --icsv --opprint cat example.csv`'
-  explanation: 'Use Miller to output a CSV file in a pretty format!'
+  tip: '`mlr --c2p filter ''$score > 90'' example.csv`'
+  explanation: 'Miller refers to columns by their header name, so `$score` works wherever the column is; in awk you would need its position, such as `$3`. The matching rows print as aligned columns, with the header kept.'
   tags: [terminal]
 - date: 2025-07-09
   tip: '`sudo apt install lftp`'
@@ -1167,8 +1167,8 @@
   explanation: '`fail2ban` automatically blocks IP addresses that show malicious behaviour, like repeated failed login attempts.'
   tags: [linux, sysadmin]
 - date: 2026-01-31
-  tip: '`sudo iotop -oPa`'
-  explanation: '`sudo iotop -oPa` only show processes doing I/O, show processes (not threads), and accumulated mode to show processes since running iotop.'
+  tip: 'Add `-P` to `iotop` to show one row per process instead of one per thread.'
+  explanation: 'By default `iotop` lists threads, so a multi-threaded program such as a database or a browser shows up as many rows, each with a share of its I/O. `-P` adds them up into a single row per process. Combine it with `-o` (only show processes doing I/O) and `-a` (accumulate totals since `iotop` started): `sudo iotop -oPa`.'
   tags: [linux, sysadmin]
 - date: 2026-02-01
   tip: '`:sort nu`'
@@ -1243,8 +1243,8 @@
   explanation: 'Use `dmesg -T` for human-readable timestamps and `--level` to filter by severity; great for quickly spotting hardware or driver issues.'
   tags: [linux, sysadmin]
 - date: 2026-02-19
-  tip: '`sudo nvme smart-log /dev/nvme0`'
-  explanation: 'Check NVMe drive health; look at `media_errors`, `percentage_used`, and `available_spare` to assess whether your drive needs replacing.'
+  tip: 'In `nvme smart-log` output, `percentage_used`, `available_spare` and `media_errors` tell you whether an NVMe drive is wearing out.'
+  explanation: '`percentage_used` is the drive''s estimate of how much of its rated write endurance is gone, and it can go past 100%. `available_spare` is the spare capacity left; the drive raises a warning when it drops below `available_spare_threshold`. `media_errors` counts unrecovered data errors and should stay at 0. A non-zero `critical_warning` means the drive has flagged a problem itself.'
   tags: [linux, sysadmin]
 - date: 2026-02-20
   tip: '`pdftotext file.pdf file.txt`'
@@ -1575,8 +1575,8 @@
   explanation: 'Written in Rust, `uv` resolves and installs packages 10-100x faster than `pip` and rolls virtual environments, lockfiles, and Python version management into one tool. Install with `curl -LsSf https://astral.sh/uv/install.sh | sh`, then `uv --help` to see the full command surface.'
   tags: [python]
 - date: 2026-05-13
-  tip: '`git log --follow -p path/to/file.txt`'
-  explanation: '`-p` prints the full diff for every commit that touched the file, and `--follow` tells Git to keep tracing history across renames by detecting commits where most of the content moved to a new path. Without `--follow`, `git log -p` stops at whatever commit introduced the current filename, hiding everything that happened before the rename. The flag only works with a single pathspec.'
+  tip: 'Add `--follow` to `git log` to keep a file''s history going past a rename: `git log --follow -p path/to/file.txt`.'
+  explanation: 'Without `--follow`, `git log -- path` stops at the commit that created the current filename, hiding everything from before the rename. `--follow` spots commits where most of the content moved from another path and carries on from there. It only works with a single file.'
   tags: [git]
 - date: 2026-05-14
   tip: 'Run `file mystery.bin` to find out what a file really is; extensions can lie, `file` reads the bytes.'
@@ -1603,9 +1603,9 @@
   explanation: 'Popularised by Carl Sagan, the rule warns that "I did not find X" stays inconclusive on two counts: *coverage* (did you search everywhere X could be?) and *sensitivity* (would your method have detected X if it were there?). A two-minute Google fails the coverage test; a blood test with 60% sensitivity coming back negative fails the sensitivity one.'
   tags: [self-help, decision-making]
 - date: 2026-05-20
-  tip: '`cmd >file 2>&1` and `cmd 2>&1 >file` are not the same because redirections apply left to right.'
-  explanation: 'The shell processes redirections in order: `>file 2>&1` first sends stdout to the file, then duplicates stderr onto that same destination: both end up in the file. `2>&1 >file` duplicates stderr to *whatever stdout currently is* (still the terminal), and only afterwards redirects stdout to the file, so stderr keeps going to the terminal.'
-  tags: [shell, bash]
+  tip: 'Put `2>&1` after `>file`, not before: `cmd 2>&1 >file` still sends errors to the terminal.'
+  explanation: 'The shell sets up redirections left to right, and `2>&1` points stderr at wherever stdout goes at that moment. In `2>&1 >file`, that''s still the terminal, and stdout only moves to the file afterwards. In `>file 2>&1`, stdout moves first, so stderr follows it into the file.'
+  tags: [shell]
 - date: 2026-05-21
   tip: 'In `{future}`, prefer `plan(multisession)` over `plan(multicore)` because each worker is a fresh R process with its own file handles and connections.'
   explanation: '`multicore` forks the current R process, so workers inherit (and accidentally share) open file handles, database connections, and the RNG state, leading to corrupted output or deadlocks. `multisession` spawns clean R processes communicating over sockets; slower to start, but safer and cross-platform (`multicore` does not work on Windows or in RStudio).'
