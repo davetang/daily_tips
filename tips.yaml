@@ -279,8 +279,8 @@
   explanation: 'See study: Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task'
   tags: [habits]
 - date: 2025-06-23
-  tip: "Check out `fzf`, a command-line fuzzy finder"
-  explanation: '`fzf` is an interactive filter program for any kind of list; files, command history, processes, hostnames, bookmarks, git commits, etc.'
+  tip: 'Open a file you pick interactively with `vi "$(fzf)"`.'
+  explanation: '`fzf` is a fuzzy finder. With no input it lists the files under the current directory, narrows the list as you type letters from anywhere in the path, and prints the one you select with Enter. It filters any list you pipe into it, so the same trick works for other things too, such as `ps -ef | fzf`.'
   tags: [shell]
 - date: 2025-06-24
   tip: "`find . -type f -print0 | xargs -0 rm`"
@@ -347,8 +347,8 @@
   explanation: 'Legacy `ftp` is deprecated; use `lftp`, a more modern FTP client.'
   tags: [linux]
 - date: 2025-07-10
-  tip: 'Check out `tmux`'
-  explanation: 'I have been using GNU Screen for as long as I can remember; time to check out `tmux`?'
+  tip: 'Start a named `tmux` session with `tmux new -s work`, detach with `Ctrl-b d` and reattach with `tmux attach -t work`.'
+  explanation: 'These do what `screen -S work`, `Ctrl-a d` and `screen -r work` do in GNU Screen: the session and everything running in it carries on after you detach or your SSH connection drops. tmux uses `Ctrl-b` where Screen uses `Ctrl-a`, so `Ctrl-b c` opens a new window and `Ctrl-b ?` lists every key binding.'
   tags: [terminal]
 - date: 2025-07-11
   tip: 'Use `"+y` to yank to the clipboard in Nvim!'
@@ -375,8 +375,8 @@
   explanation: "Display the input offset in hexadecimal and its ASCII representation in two columns."
   tags: [terminal]
 - date: 2025-07-17
-  tip: 'Check out `pixi`, a very fast package manager.'
-  explanation: "[7 Reasons to Switch from Conda to Pixi](https://prefix.dev/blog/pixi_a_fast_conda_alternative)."
+  tip: 'Make a per-project conda environment with `pixi init`, then `pixi add python numpy` and `pixi run python script.py`.'
+  explanation: 'pixi installs conda-forge packages into `.pixi/` inside the project, lists what you asked for in `pixi.toml` and records exact versions in `pixi.lock`, so `pixi install` on another machine gives the same environment. There is no `conda activate` step: `pixi run` uses the environment directly, and `pixi shell` opens a shell inside it.'
   tags: [conda]
 - date: 2025-07-18
   tip: 'A random variable is defined as the numerical outcome of a random experiment.'
@@ -423,16 +423,16 @@
   explanation: "Use `purrr::pmap()` to map over multiple inputs simultaneously."
   tags: [rstats, functional-programming]
 - date: 2025-07-29
-  tip: 'Learn [Lua](https://www.lua.org/start.html)!'
-  explanation: "Lua is a powerful and fast programming language that is easy to learn and use and to embed into your application."
+  tip: 'Learn the Lua you need for Neovim with `:help lua-guide`, and try each line as you go with `:lua`.'
+  explanation: '`:help lua-guide` is the built-in introduction to using Lua in Neovim: setting options, key maps, autocommands and user commands. `:lua` runs a line of Lua straight away, and starting it with `=` prints the result, so `:lua =vim.o.tabstop` shows the current tab width (`:=vim.o.tabstop` is the short form). For the language itself, Neovim uses Lua 5.1, documented in `:help luaref`.'
   tags: [vim]
 - date: 2025-07-30
   tip: 'Use the [systemadmin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/systemadmin) plugin in ohmyzsh.'
   explanation: "This plugin adds a series of aliases and functions which make a System Administrator's life easier."
   tags: [zsh]
 - date: 2025-07-31
-  tip: 'Check out marimo!'
-  explanation: "marimo is an open-source reactive notebook for Python: reproducible, Git-friendly, AI-native, SQL built-in, executable as a script, shareable as an app."
+  tip: 'Try marimo, a reactive Python notebook: `pip install marimo`, then `marimo edit notebook.py`.'
+  explanation: 'When you change a cell, marimo reruns every cell that uses the variables it defines, so the notebook never shows results from stale code, as a Jupyter notebook can after cells run out of order. The notebook is saved as a plain Python file, so it diffs cleanly in Git and runs as a script with `python notebook.py`. `marimo tutorial intro` opens a guided tour.'
   tags: [python]
 - date: 2025-08-01
   tip: 'Using GNU screen, `Ctrl-a [`, space, space, Esc, and then `Ctrl-a ]` to paste!'
@@ -807,8 +807,8 @@
   explanation: 'Use `difftime()` in R to calculate differences in times.'
   tags: [rstats]
 - date: 2025-11-02
-  tip: 'Check out the [Quarto Extensions](https://quarto.org/docs/extensions/) page for useful extensions!'
-  explanation: 'Extensions are a powerful way to modify and extend the behavior of Quarto.'
+  tip: 'Install a Quarto extension into your project with `quarto add quarto-ext/fontawesome`.'
+  explanation: '`quarto add` takes a GitHub `owner/repo` and copies the extension into `_extensions/` in the current project, so commit that directory and the document renders the same anywhere. This one adds a shortcode: `{{< fa thumbs-up >}}` in a `.qmd` file renders a Font Awesome thumbs-up icon. Browse what else is available on the [Quarto Extensions](https://quarto.org/docs/extensions/) page.'
   tags: [quarto]
 - date: 2025-11-03
   tip: 'Use `vim.api.nvim_create_user_command()` to create custom Nvim commands, like one that opens a file with a list of things to practice!'
@@ -871,8 +871,8 @@
   explanation: '`apt-cache depends` lists the direct dependencies of a package showing what other packages need to be installed.'
   tags: [debian]
 - date: 2025-11-18
-  tip: '`ldd $(which samtools)`'
-  explanation: '`ldd $(which samtools)` shows all the shared libraries (dynamic dependencies) that `samtools` needs in order to run.'
+  tip: 'Run `ldd $(which samtools)` when a program won''t start; any library marked `not found` is the cause.'
+  explanation: '`ldd` lists the shared libraries a program needs and the file the loader picked for each, such as `libhts.so.3 => /usr/lib/x86_64-linux-gnu/libhts.so.3`. A missing one shows as `libhts.so.3 => not found`, matching the `error while loading shared libraries` message you get when you run the program. Install the package that provides it, or point `LD_LIBRARY_PATH` at the directory that has it. Don''t run `ldd` on a binary you don''t trust, because some versions execute it to find the libraries.'
   tags: [linux]
 - date: 2025-11-19
   tip: '`file ~/bin/go-1.25.1/go/bin/go`'
@@ -923,8 +923,8 @@
   explanation: '`git revert` creates a new commit that undoes the changes from a specific previous commit.'
   tags: [git]
 - date: 2025-12-01
-  tip: '`git diff main feature_branch`'
-  explanation: '`git diff main feature_branch` allows you to compare branches.'
+  tip: 'Use `git diff main...feature_branch` (three dots) to see only what the branch changed since it left `main`.'
+  explanation: '`git diff main feature_branch` compares the two branch tips, so any commits added to `main` since you branched show up too, as if your branch had removed them. With three dots, Git compares `feature_branch` with the commit where it split from `main` (its merge base), which is what a pull request shows. Add `--stat` for a per-file summary.'
   tags: [git]
 - date: 2025-12-02
   tip: 'An exact test computes precise probabilities by enumerating all possible outcomes rather than using approximations.'
@@ -959,12 +959,12 @@
   explanation: 'Use `iotop` to show which processes are using the most disk read/write.'
   tags: [linux, sysadmin]
 - date: 2025-12-10
-  tip: '`sudo journalctl -b -1 -r`'
-  explanation: '`journalctl -b -1 -r` shows the logs from the previous boot in reverse chronological order.'
+  tip: 'After an unexpected reboot, run `sudo journalctl -b -1 -r` to read the last messages before it went down.'
+  explanation: '`-b -1` selects the previous boot and `-r` lists the newest entries first, so the top of the output is what the system logged just before the crash or power cut. `journalctl --list-boots` shows which boots are available. Older boots are only kept if the journal is stored on disk in `/var/log/journal`, which is the default on Debian 11 and later.'
   tags: [linux, sysadmin]
 - date: 2025-12-11
-  tip: '`sudo mount /dev/cdrom /media/cdrom0`'
-  explanation: 'Use `sudo mount /dev/cdrom /media/cdrom0` to mount a CD-ROM.'
+  tip: 'Mount a CD or DVD with `sudo mount /dev/cdrom /media/cdrom0`, and run `eject` when you are done.'
+  explanation: '`/dev/cdrom` is a link to the first optical drive (usually `/dev/sr0`), and `/media/cdrom0` is the mount point the Debian installer creates. Because discs are read-only, `mount` prints `WARNING: source write-protected, mounted read-only`, which is expected. `eject` unmounts the disc and opens the tray in one step.'
   tags: [linux]
 - date: 2025-12-12
   tip: '`make --debug=b --dry-run`'
@@ -979,9 +979,9 @@
   explanation: 'If an event has occurred s times out of n trials, estimate the probability it occurs on the next trial as `(s + 1)/(n + 2)`. Adding one success and one failure keeps the estimate away from 0 and 1 when there is little data: after 3 successes in 3 trials, it gives 4/5 rather than 1.'
   tags: [statistics]
 - date: 2025-12-15
-  tip: 'Check out AkaRank, an improved Alexa Rank substitute.'
-  explanation: '[AkaRank](https://www.akamai.com/security-research/akarank) provides these critical global rank metrics to the infosec and security research community as a public service.'
-  tags: [browser]
+  tip: 'Use AkaRank, Akamai''s free daily list of the top million domains, where you once used Alexa Rank.'
+  explanation: '[AkaRank](https://www.akamai.com/security-research/akarank) ranks domains using DNS lookups seen by Akamai and its service-provider partners, and Akamai publishes it as a public service for security research; Alexa Rank shut down in May 2022. A typical use is checking a blocklist: a domain in the top million is seldom one to block outright, while a lookalike of a well-known domain that is nowhere on the list deserves a closer look.'
+  tags: [networking, security]
 - date: 2025-12-16
   tip: 'Follow the two-minute rule.'
   explanation: 'The two-minute rule: if something takes less than 2 minutes, do it now rather than defer it.'
@@ -1055,9 +1055,9 @@
   explanation: 'The first mistake is never the one that ruins you. It is the spiral of repeated mistakes that follows. Missing once is an accident. Missing twice is the start of a new habit.'
   tags: [self-help]
 - date: 2026-01-03
-  tip: "The [illusion of control](https://en.wikipedia.org/wiki/Illusion_of_control) is the tendency for people to overestimate their ability to control events."
-  explanation: 'The illusion of control is the tendency for people to overestimate their ability to control events, for example, when someone feels a sense of control over outcomes that they demonstrably do not influence.'
-  tags: [self-help]
+  tip: 'Before taking credit or blame for an outcome, ask how much of it you actually controlled.'
+  explanation: 'The [illusion of control](https://en.wikipedia.org/wiki/Illusion_of_control) is the tendency to overestimate your influence over events that are partly or wholly down to chance. Its best-known demonstration, Ellen Langer''s 1975 study, found office workers asked $8.67 on average to sell back a lottery ticket they had chosen, against $1.96 for one they were handed. Seventeen replications with over 10,000 people (Klusowski and colleagues, 2021) found no such effect, so the bias may be smaller than its fame suggests.'
+  tags: [self-help, decision-making]
 - date: 2026-01-04
   tip: 'A Python iterator is an object that implements `__next__()` and `__iter__()` (which returns `self`).'
   explanation: 'Note that iterators are typically exhausted after one pass-through; once you have iterated through an iterator, it is empty.'
@@ -1091,8 +1091,8 @@
   explanation: 'SeqKit is a cross-platform and ultrafast toolkit written in Go for FASTA/Q file manipulation.'
   tags: [bioinformatics]
 - date: 2026-01-12
-  tip: '`ps -fp <PID>`'
-  explanation: 'Get more information about a process using `ps -fp <PID>`.'
+  tip: 'Pick the columns you want with `ps -o pid,ppid,user,etime,%cpu,%mem,args -p <PID>`.'
+  explanation: '`-o` lists exactly the fields to show, in that order: `ppid` is the parent process that started it, `etime` is how long it has been running (such as `2-03:14:07` for two days, three hours), and `args` is the full command line. `ps -fp <PID>` gives a fixed set of similar columns; `man ps` lists every field under STANDARD FORMAT SPECIFIERS.'
   tags: [shell]
 - date: 2026-01-13
   tip: 'In Vimium, press `ge` to edit the current URL.'
@@ -1159,8 +1159,8 @@
   explanation: '`"` introduces a register in Vim and the next single character is the name.'
   tags: [vim]
 - date: 2026-01-29
-  tip: '`sudo journalctl -f`'
-  explanation: '`sudo journalctl -f` continuously displays new log entries as they are written.'
+  tip: 'Follow one service''s log live with `sudo journalctl -fu nginx`, like `tail -f` for a systemd unit.'
+  explanation: '`-f` keeps printing new entries as they arrive and `-u` limits them to one unit, so you can restart the service in another terminal and watch it start up or fail. It begins with the last 10 entries; add `-n 100` for more context, or `-p err` to show only errors and worse. Press `Ctrl-C` to stop.'
   tags: [linux, sysadmin]
 - date: 2026-01-30
   tip: '`sudo apt-get install fail2ban`'
