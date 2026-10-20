@@ -2214,3 +2214,7 @@
   tip: 'Put the most relevant chunks at the start or end of a RAG prompt, not in the middle.'
   explanation: 'In "Lost in the Middle" (Liu and colleagues, TACL 2024), language models answered multi-document questions best when the passage holding the answer came first or last in the context, and noticeably worse when it sat in the middle, even models built for long contexts. Accuracy also fell as more passages were added. So paste fewer chunks, ordered best first, rather than filling the context window.'
   tags: [llm]
+- date: 2026-10-20
+  tip: 'In Bash or Zsh, use `make |& less` to page through stderr along with stdout.'
+  explanation: '`|&` is shorthand for `2>&1 |`; with a plain `|`, stderr skips `less` and is printed over its screen, out of reach of scrolling and `/` search. It needs Bash 4.0+ or Zsh, so use `2>&1 |` in scripts that may run under `sh` or the Bash 3.2 that macOS ships.'
+  tags: [shell]
