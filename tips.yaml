@@ -2218,3 +2218,7 @@
   tip: 'In Bash or Zsh, use `make |& less` to page through stderr along with stdout.'
   explanation: '`|&` is shorthand for `2>&1 |`; with a plain `|`, stderr skips `less` and is printed over its screen, out of reach of scrolling and `/` search. It needs Bash 4.0+ or Zsh, so use `2>&1 |` in scripts that may run under `sh` or the Bash 3.2 that macOS ships.'
   tags: [shell]
+- date: 2026-10-21
+  tip: 'Make line 1 of a Python script `#!/usr/bin/env -S uv run --script` so `./foobar.py` replaces `uv run foobar.py`.'
+  explanation: 'Put it above an inline dependency block (`# /// script`, `# dependencies = ["requests"]`, `# ///`) and run `chmod +x foobar.py`. Running `./foobar.py` then makes the kernel call `uv run --script ./foobar.py`, which builds a cached environment with the listed packages and a Python that satisfies `requires-python`. The first run prints `Installed 5 packages`; later runs reuse the cache and start immediately.'
+  tags: [python, shell]
