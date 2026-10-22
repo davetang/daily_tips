@@ -2222,3 +2222,7 @@
   tip: 'Make line 1 of a Python script `#!/usr/bin/env -S uv run --script` so `./foobar.py` replaces `uv run foobar.py`.'
   explanation: 'Put it above an inline dependency block (`# /// script`, `# dependencies = ["requests"]`, `# ///`) and run `chmod +x foobar.py`. Running `./foobar.py` then makes the kernel call `uv run --script ./foobar.py`, which builds a cached environment with the listed packages and a Python that satisfies `requires-python`. The first run prints `Installed 5 packages`; later runs reuse the cache and start immediately.'
   tags: [python, shell]
+- date: 2026-10-22
+  tip: 'Write a Slidev deck as one Markdown file with `---` between slides, then run `npx slidev slides.md` to preview it.'
+  explanation: 'Slidev turns a single `slides.md` into a web presentation: each `---` on its own line starts a new slide, and a YAML block at the very top sets deck-wide options such as `title:`. Install it in the deck''s folder with `npm i -D @slidev/cli @slidev/theme-default`. `npx slidev slides.md` then serves the deck at `http://localhost:3030/` and reloads it each time you save, with presenter mode at `/presenter/` and a grid of all slides at `/overview/`.'
+  tags: [slidev, markdown]
