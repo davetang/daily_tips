@@ -2230,3 +2230,7 @@
   tip: 'In a Python `def`, put a bare `*` before parameters that must be passed by name: `def connect(host, *, port=22):`.'
   explanation: 'Everything after the `*` is keyword-only, so `connect("db", port=5432)` works but `connect("db", 5432)` raises `TypeError: connect() takes 1 positional argument but 2 were given`. This rules out calls like `connect("db", 5432, 30)` where nobody can tell what the numbers mean, and lets you reorder or add keyword-only parameters later without breaking existing callers.'
   tags: [python]
+- date: 2026-10-24
+  tip: 'In GNU screen copy mode (`Ctrl-a [`), Vim''s `H`, `M` and `L` jump to the top, middle and bottom line of the window.'
+  explanation: 'Copy mode is a vi-like editor over the window and its scrollback, so the motions you already use in Vim move the cursor the same way. For example, `Ctrl-a [` then `M` puts the cursor on the middle line of the window, `Y` copies that line, and `Ctrl-a ]` pastes it. One difference: screen ignores a count on these keys, so `5H` still goes to the top line, not the fifth.'
+  tags: [screen, vim]
