@@ -10,7 +10,10 @@ const chips = Array.from(controls.querySelectorAll('button.tag'));
 const search = document.getElementById('search');
 const count = document.getElementById('count');
 const clear = document.getElementById('clear');
+const randomCard = document.getElementById('random-tip');
+const hideRandom = document.getElementById('hide-random');
 let tag = '';
+let randomTip = null;
 
 function apply() {
   const terms = search.value.toLowerCase().split(/\s+/).filter(Boolean);
@@ -94,9 +97,22 @@ clear.addEventListener('click', () => {
   search.focus();
 });
 
+// Show a copy of a random tip (from those the filters leave) under the
+// button, so pressing it again doesn't mean scrolling back up the page.
 document.getElementById('random').addEventListener('click', () => {
-  const pool = tips.filter(tip => !tip.hidden && `#${tip.id}` !== location.hash);
-  if (pool.length) location.hash = pool[Math.floor(Math.random() * pool.length)].id;
+  const pool = tips.filter(tip => !tip.hidden && tip !== randomTip);
+  if (!pool.length) return;
+  randomTip = pool[Math.floor(Math.random() * pool.length)];
+  const copy = randomTip.cloneNode(true);
+  copy.removeAttribute('id');
+  randomCard.replaceChildren(hideRandom, copy);
+  randomCard.hidden = false;
+});
+
+hideRandom.addEventListener('click', () => {
+  randomCard.hidden = true;
+  randomTip = null;
+  document.getElementById('random').focus();
 });
 
 window.addEventListener('hashchange', reveal);

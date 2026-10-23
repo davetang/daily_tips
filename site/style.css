@@ -69,15 +69,16 @@ header p {
   color: var(--muted);
 }
 
-/* On this day */
-
-#on-this-day {
-  margin-top: 1.75rem;
+.card {
   padding: 0.9rem 1rem;
   border: 1px solid var(--line);
   border-radius: 10px;
   background: var(--card);
 }
+
+/* On this day */
+
+#on-this-day { margin-top: 1.75rem; }
 
 #on-this-day h2 {
   margin: 0 0 0.4rem;
@@ -133,6 +134,34 @@ header p {
 }
 
 #random:hover { border-color: var(--accent); }
+
+#random-tip {
+  position: relative;
+  margin-top: 0.75rem;
+}
+
+#random-tip .tip {
+  padding: 0;
+  border: 0;
+}
+
+#hide-random {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.5rem;
+  padding: 0.2rem 0.45rem;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  color: var(--muted);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+#hide-random:hover {
+  background: var(--code-bg);
+  color: var(--fg);
+}
 
 .chips {
   display: flex;

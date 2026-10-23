@@ -22,8 +22,16 @@ FEED_ITEMS = 50
 # Tags with fewer tips than this go behind a "more tags" toggle.
 MIN_CHIP_COUNT = 5
 REQUIRED = ("date", "tip", "explanation", "tags")
-# A run of backticks, then the shortest text up to a run of the same length.
-CODE_SPAN = re.compile(r"(?<!`)(`+)(?!`)(.+?)(?<!`)\1(?!`)")
+# The Markdown the tips use, which README.md renders: `code`, [text](url) and
+# bare URLs, plus *emphasis* or _emphasis_ in the text between them. A code
+# span is a run of backticks, then the shortest text up to a run of the same
+# length; nothing inside it is touched.
+INLINE = re.compile(
+    r"(?<!`)(?P<ticks>`+)(?!`)(?P<code>.+?)(?<!`)(?P=ticks)(?!`)"
+    r"|\[(?P<text>[^\]]+)\]\((?P<href>[^)\s]+)\)"
+    r"|(?P<url>https?://[^\s<>]*[^\s<>.,;:!?)'\"])")
+EMPHASIS = re.compile(r"(?<![*\w])\*(?=\S)(.+?)(?<=\S)\*(?![*\w])"
+                      r"|(?<![_\w])_(?=\S)(.+?)(?<=\S)_(?![_\w])")
 ATOM = "http://www.w3.org/2005/Atom"
 
 def check(tips):
@@ -56,20 +64,33 @@ def check(tips):
                     errors.append(f"{where}: tag {tag!r} must be lowercase with no spaces")
     return errors
 
+def emphasis_html(text):
+    return EMPHASIS.sub(lambda m: f"<em>{m[1] or m[2]}</em>", html.escape(text))
+
 def inline_html(text):
-    """Escape text for HTML and turn `code` spans into <code> elements."""
+    """Escape text for HTML and render its Markdown: code, links and emphasis."""
     out = []
     pos = 0
-    for match in CODE_SPAN.finditer(text):
-        out.append(html.escape(text[pos:match.start()]))
-        code = match.group(2)
-        # As in Markdown, ` `` ` is the code `` with the padding spaces removed.
-        if code.startswith(" ") and code.endswith(" ") and code.strip():
-            code = code[1:-1]
-        out.append(f"<code>{html.escape(code)}</code>")
+    for match in INLINE.finditer(text):
+        out.append(emphasis_html(text[pos:match.start()]))
+        if match["code"] is not None:
+            code = match["code"]
+            # As in Markdown, ` `` ` is the code `` with the padding spaces removed.
+            if code.startswith(" ") and code.endswith(" ") and code.strip():
+                code = code[1:-1]
+            out.append(f"<code>{html.escape(code)}</code>")
+        elif match["href"]:
+            out.append(f'<a href="{html.escape(match["href"])}">{inline_html(match["text"])}</a>')
+        else:
+            url = html.escape(match["url"])
+            out.append(f'<a href="{url}">{url}</a>')
         pos = match.end()
-    out.append(html.escape(text[pos:]))
+    out.append(emphasis_html(text[pos:]))
     return "".join(out)
+
+def plain_text(text):
+    """Text for places that show no markup, such as feed titles: links become their text."""
+    return INLINE.sub(lambda m: m["text"] if m["href"] else m[0], text)
 
 def tag_button(tag, count=None):
     tag = html.escape(tag)
@@ -117,7 +138,7 @@ def page_html(tips):
 <p>One tip every day since {first}: {len(tips)} so far.
 <a href="feed.xml">RSS feed</a> · <a href="{REPO_URL}">GitHub</a></p>
 </header>
-<section id="on-this-day" hidden>
+<section id="on-this-day" class="card" hidden>
 <h2>On this day</h2>
 <ul></ul>
 </section>
@@ -125,6 +146,9 @@ def page_html(tips):
 <div class="search-row">
 <input type="search" id="search" placeholder="Search tips" aria-label="Search tips" autocomplete="off">
 <button type="button" id="random">Random tip</button>
+</div>
+<div id="random-tip" class="card" aria-live="polite" hidden>
+<button type="button" id="hide-random" aria-label="Hide random tip">×</button>
 </div>
 <div class="chips">{common}</div>
 {more}
@@ -156,7 +180,7 @@ def feed_xml(tips, site_url):
     for entry in tips[:FEED_ITEMS]:
         link = f"{site_url}#{entry['date'].isoformat()}"
         item = ET.SubElement(channel, "item")
-        ET.SubElement(item, "title").text = entry["tip"]
+        ET.SubElement(item, "title").text = plain_text(entry["tip"])
         ET.SubElement(item, "link").text = link
         ET.SubElement(item, "guid").text = link
         ET.SubElement(item, "pubDate").text = pub_date(entry["date"])

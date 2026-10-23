@@ -4,7 +4,7 @@
 
 One tip every day. Use tags to help search for tips; tags are all lowercase.
 
-Search the tips, filter them by tag or jump to a random one at
+Search the tips, filter them by tag or pick a random one at
 <https://davetang.github.io/daily_tips/>.
 
 # Kaizen
