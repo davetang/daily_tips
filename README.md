@@ -4,6 +4,9 @@
 
 One tip every day. Use tags to help search for tips; tags are all lowercase.
 
+Search the tips, filter them by tag or jump to a random one at
+<https://davetang.github.io/daily_tips/>.
+
 # Kaizen
 
 Kaizen (改善) is a Japanese word made up of two characters:
@@ -15,7 +18,8 @@ So literally, kaizen means "change for the better."
 
 ## 📡 RSS Feed
 
-[Commits RSS](https://github.com/davetang/daily_tips/commits/main.atom)
+* [Tips RSS](https://davetang.github.io/daily_tips/feed.xml): the latest 50 tips
+* [Commits RSS](https://github.com/davetang/daily_tips/commits/main.atom)
 
 # Usage
 
@@ -29,6 +33,17 @@ pip install pyyaml
 After each tip, choose `m` to show the explanation and tags, `n` for another tip, or `q` to quit. Every tip is shown once before any repeats. Pass a path to use a different file, e.g. `./random_tip.py other_tips.yaml`.
 
 Run `./random_tip.py --quiz` to test yourself: recall the explanation, press Enter to check it, then answer `y` if you knew it or `n` if you did not. Missed tips come up more often in later quizzes and ones you know come up less. Progress is saved to `~/.local/state/daily_tips/quiz.json`.
+
+The website is built by `build_site.py`, which writes `index.html`, `feed.xml`
+and the files in `site/` to `_site/`. It stops with an error if an entry in
+`tips.yaml` is missing a field, repeats a date or has a tag that is not
+lowercase. A push to `main` that changes `tips.yaml` rebuilds the site and
+deploys it to GitHub Pages. To preview it locally:
+
+```console
+./build_site.py
+python3 -m http.server -d _site
+```
 
 # Tips
 

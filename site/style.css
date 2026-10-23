@@ -1,0 +1,245 @@
+:root {
+  color-scheme: light dark;
+  --bg: #fbfbfa;
+  --fg: #1d1d1f;
+  --muted: #66666d;
+  --line: #e2e2e6;
+  --card: #ffffff;
+  --code-bg: #efeff2;
+  --accent: #2457c5;
+  --on-accent: #ffffff;
+  --target: #fff5cc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141416;
+    --fg: #e8e8ea;
+    --muted: #9c9ca4;
+    --line: #2d2d33;
+    --card: #1c1c20;
+    --code-bg: #2a2a31;
+    --accent: #8fb0ff;
+    --on-accent: #141416;
+    --target: #3a3420;
+  }
+}
+
+[hidden] { display: none !important; }
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+a { color: var(--accent); }
+
+code {
+  font: 0.88em/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  background: var(--code-bg);
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+  overflow-wrap: anywhere;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.page {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 4rem;
+}
+
+header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 2rem;
+  letter-spacing: -0.01em;
+}
+
+header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* On this day */
+
+#on-this-day {
+  margin-top: 1.75rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--card);
+}
+
+#on-this-day h2 {
+  margin: 0 0 0.4rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+#on-this-day ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#on-this-day li {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.2rem 0;
+}
+
+#on-this-day li a {
+  flex: none;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Search, random tip and tag filters */
+
+.controls { margin: 2rem 0 0.5rem; }
+
+.search-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#search {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--card);
+  color: var(--fg);
+}
+
+#random {
+  flex: none;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--card);
+}
+
+#random:hover { border-color: var(--accent); }
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+}
+
+.tag {
+  padding: 0.1rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  font-size: 0.84rem;
+}
+
+.tag:hover { border-color: var(--accent); }
+
+.tag .count {
+  margin-left: 0.3rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.tag[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+}
+
+.tag[aria-pressed="true"] .count {
+  color: inherit;
+  opacity: 0.8;
+}
+
+.more summary {
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+#status {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 2rem;
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+#clear {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* Tips */
+
+.tip {
+  padding: 1.1rem 0;
+  border-top: 1px solid var(--line);
+  overflow-wrap: break-word;
+  scroll-margin-top: 1rem;
+}
+
+.tip:target {
+  margin: 0 -1rem;
+  padding: 1.1rem 1rem;
+  border-top-color: transparent;
+  border-radius: 8px;
+  background: var(--target);
+}
+
+.tip .date {
+  margin: 0;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.tip .date a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.tip .date a:hover { text-decoration: underline; }
+
+.tip h2 {
+  margin: 0.2rem 0 0.45rem;
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.tip p { margin: 0 0 0.5rem; }
+
+.tip .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 0.6rem 0 0;
+}
+
+.tip .tags .tag {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
