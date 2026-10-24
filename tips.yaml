@@ -2234,3 +2234,7 @@
   tip: 'In GNU screen copy mode (`Ctrl-a [`), Vim''s `H`, `M` and `L` jump to the top, middle and bottom line of the window.'
   explanation: 'Copy mode is a vi-like editor over the window and its scrollback, so the motions you already use in Vim move the cursor the same way. For example, `Ctrl-a [` then `M` puts the cursor on the middle line of the window, `Y` copies that line, and `Ctrl-a ]` pastes it. One difference: screen ignores a count on these keys, so `5H` still goes to the top line, not the fifth.'
   tags: [screen, vim]
+- date: 2026-10-25
+  tip: 'In a CodeCompanion chat, type `/file` to pick other project files and send them to the LLM with your question.'
+  explanation: '`#{buffer}` only shares the buffer you were last in, while `/file` opens a file picker (Telescope if you have it) over Neovim''s working directory. In most pickers `<Tab>` marks several files and `<CR>` adds them, and each one is listed in the chat''s Context block. Use `/buffer` instead to choose from files you already have open.'
+  tags: [vim, llm]
