@@ -1,4 +1,4 @@
-name: Daily Commit Check
+name: Daily Tip Check
 
 on:
   schedule:
@@ -6,25 +6,40 @@ on:
   workflow_dispatch:     # Allows manual triggering
 
 jobs:
-  check-commits:
+  check-tip:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Tokyo     # so "today" below is the JST date, not UTC
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v7
 
-      - name: Check for today's commit
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.x'
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Check tips.yaml for today's tip
         id: check
         run: |
-          if git log --since=midnight --oneline | grep .; then
-            echo "commit_found=true" >> $GITHUB_OUTPUT
-            >&2 echo "Commit found"
-          else
-            echo "commit_found=false" >> $GITHUB_OUTPUT
-            >&2 echo "No commit"
-          fi
+          python - <<'EOF'
+          import datetime
+          import os
+          import sys
+          from random_tip import load_tips
+
+          today = datetime.date.today().isoformat()
+          found = any(str(entry.get("date")) == today and entry.get("tip") for entry in load_tips("tips.yaml"))
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"tip_found={str(found).lower()}\n")
+          print(f"{'Tip' if found else 'No tip'} dated {today}", file=sys.stderr)
+          EOF
 
       - name: Send mail
-        if: steps.check.outputs.commit_found == 'false'
+        if: steps.check.outputs.tip_found == 'false'
         uses: dawidd6/action-send-mail@v22
         with:
           server_address: mail.davetang.org
@@ -34,7 +49,7 @@ jobs:
           subject: "No Tip Submitted Today"
           to: me@davetang.org
           from: "Daily Tip Reminder <me@davetang.org>"
-          body: "No commits were made to the daily tips repo today. Time to add your tip!"
+          body: "tips.yaml has no tip dated today. Time to add your tip!"
 
   test-email:
     if: github.event_name == 'workflow_dispatch'
