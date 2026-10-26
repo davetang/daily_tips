@@ -2238,3 +2238,7 @@
   tip: 'In a CodeCompanion chat, type `/file` to pick other project files and send them to the LLM with your question.'
   explanation: '`#{buffer}` only shares the buffer you were last in, while `/file` opens a file picker (Telescope if you have it) over Neovim''s working directory. In most pickers `<Tab>` marks several files and `<CR>` adds them, and each one is listed in the chat''s Context block. Use `/buffer` instead to choose from files you already have open.'
   tags: [vim, llm]
+- date: 2026-10-26
+  tip: 'In a CodeCompanion chat, press `gd` to see exactly what the LLM will be sent on the next turn.'
+  explanation: 'The debug window shows the adapter''s settings (such as the model and temperature), every context item and the full message history, including the system prompt that the chat buffer hides. It is a Lua buffer, so you can edit or delete a message there and press `<C-s>` to write the change back to the chat. Use it to check that a file you shared really made it into the request.'
+  tags: [vim, llm]
