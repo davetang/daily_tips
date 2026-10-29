@@ -2250,3 +2250,7 @@
   tip: 'Use `None` as the default for a list or dict parameter: `def add(item, items=None):`, never `items=[]`.'
   explanation: 'Python evaluates a default once, when the `def` runs, so every call that leaves out `items` shares one list: with `def add(item, items=[])`, calling `add("a")` and then `add("b")` returns `["a", "b"]`. Start the body with `if items is None: items = []` to get a fresh list on every call.'
   tags: [python, best-practice]
+- date: 2026-10-29
+  tip: 'Build file paths with `pathlib`: `Path("data") / "raw" / "counts.csv"` instead of joining strings.'
+  explanation: 'After `from pathlib import Path`, the `/` operator inserts the right separator for the OS, and the parts of a path are attributes rather than string slicing: for `p = Path("data/raw/counts.csv")`, `p.stem` is `counts`, `p.suffix` is `.csv`, `p.parent` is `data/raw` and `p.with_suffix(".tsv")` is `data/raw/counts.tsv`. Most functions that take a filename, including `open()` and `pandas.read_csv()`, accept a `Path` directly.'
+  tags: [python, best-practice]
