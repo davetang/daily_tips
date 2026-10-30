@@ -2254,3 +2254,7 @@
   tip: 'Build file paths with `pathlib`: `Path("data") / "raw" / "counts.csv"` instead of joining strings.'
   explanation: 'After `from pathlib import Path`, the `/` operator inserts the right separator for the OS, and the parts of a path are attributes rather than string slicing: for `p = Path("data/raw/counts.csv")`, `p.stem` is `counts`, `p.suffix` is `.csv`, `p.parent` is `data/raw` and `p.with_suffix(".tsv")` is `data/raw/counts.tsv`. Most functions that take a filename, including `open()` and `pandas.read_csv()`, accept a `Path` directly.'
   tags: [python, best-practice]
+- date: 2026-10-30
+  tip: 'Run `vmstat 1 5` to sample CPU, memory, swap and I/O once a second, five times.'
+  explanation: 'The first row is an average since boot, so ignore it and read the rows after it for what is happening now (or add `-y` to drop it). The columns are grouped: `procs` (`r` runnable, `b` blocked), `memory` in KiB (`swpd`, `free`, `buff`, `cache`), `swap` (`si`, `so`), `io` (`bi`, `bo` blocks per second), `system` (`in` interrupts, `cs` context switches) and `cpu` as percentages (`us`, `sy`, `id`, `wa`, `st`).'
+  tags: [linux, sysadmin]
