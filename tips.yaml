@@ -2258,3 +2258,7 @@
   tip: 'Run `vmstat 1 5` to sample CPU, memory, swap and I/O once a second, five times.'
   explanation: 'The first row is an average since boot, so ignore it and read the rows after it for what is happening now (or add `-y` to drop it). The columns are grouped: `procs` (`r` runnable, `b` blocked), `memory` in KiB (`swpd`, `free`, `buff`, `cache`), `swap` (`si`, `so`), `io` (`bi`, `bo` blocks per second), `system` (`in` interrupts, `cs` context switches) and `cpu` as percentages (`us`, `sy`, `id`, `wa`, `st`).'
   tags: [linux, sysadmin]
+- date: 2026-10-31
+  tip: 'In WSL2, enable systemd by adding `[boot]` and `systemd=true` to `/etc/wsl.conf`, then run `wsl --shutdown`.'
+  explanation: 'Without it, WSL starts the distro with its own small `init` as PID 1, so `systemctl` fails with `System has not been booted with systemd as init system`. Open the file inside Linux with `sudo vi /etc/wsl.conf`, put `[boot]` on one line and `systemd=true` on the next, then run `wsl --shutdown` in PowerShell and reopen the distro. It needs WSL 0.67.6 or later, which `wsl --version` shows.'
+  tags: [windows, linux, systemd]
