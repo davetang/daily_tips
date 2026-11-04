@@ -2266,3 +2266,7 @@
   tip: 'Back up a whole WSL distro to one file with `wsl --export Ubuntu D:\backup\ubuntu.tar`.'
   explanation: 'Run it in PowerShell: it writes the distro''s entire filesystem into a single tar archive. `wsl --import UbuntuTest D:\WSL\UbuntuTest D:\backup\ubuntu.tar` restores it, or clones it under a new name for a risky experiment, keeping its disk in `D:\WSL\UbuntuTest`. An imported distro logs you in as `root`, so put `[user]` and `default=dave` in its `/etc/wsl.conf`.'
   tags: [windows, sysadmin]
+- date: 2026-11-02
+  tip: 'Before you react or decide while upset, ask HALT: am I Hungry, Angry, Lonely or Tired?'
+  explanation: 'HALT is a self-check from addiction recovery, where these four states are widely treated as relapse risks; the acronym itself is folk wisdom with no known originator, and little research tests it directly. You can use it as a general check before sending a sharp email or making a big call, because each state can make you more irritable or impulsive than usual. Each also has a direct fix (eat something, wait until you cool down, talk to someone, or rest), so if any answer is yes, deal with that first and come back to the decision afterwards.'
+  tags: [self-help, decision-making]
