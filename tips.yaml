@@ -2282,3 +2282,7 @@
   tip: 'Before debating a decision as a team, ask whether it is a one-way door or a two-way door.'
   explanation: 'A two-way door is easy to reverse, such as trying a new standup format for a month, so let one or two people decide it quickly and change course if it goes wrong. A one-way door is costly or impossible to undo, such as a file format that thirty downstream pipelines will read, and that is where the full team discussion belongs. Most decisions are two-way doors, and giving them one-way-door process is what makes teams slow.'
   tags: [teamwork, decision-making]
+- date: 2026-11-06
+  tip: 'Use `git show HEAD -- path/to/file` to show only that file''s changes in the last commit.'
+  explanation: 'The `--` separates the commit from a path, which limits the output to the commit header and that file''s diff, even if the commit edited other files too. Add `--format=` to drop the header, or use another commit in place of `HEAD`, such as `HEAD~1`. The path is relative to your current directory. If the commit did not touch the file, it prints nothing and still exits 0, so empty output means no changes rather than an error.'
+  tags: [git]
