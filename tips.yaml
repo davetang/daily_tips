@@ -2290,3 +2290,7 @@
   tip: 'In Claude Code, run `/config` and set Output style to Learning so it leaves parts of the code for you to write.'
   explanation: 'Claude still writes the routine code, but where a function involves a real design choice it leaves a `TODO(human)` comment in the file, explains what is built, what to write and the trade-offs, then waits for you.'
   tags: [llm, learning]
+- date: 2026-11-08
+  tip: 'Learn a subject well enough to answer it yourself.'
+  explanation: 'Kruger and Dunning (1999, Journal of Personality and Social Psychology) argued that "the skills that engender competence in a particular domain are often the very same skills necessary to evaluate competence in that domain". Their example is grammar: the skills that let you construct a grammatical sentence are the ones you need to notice a grammatical mistake.'
+  tags: [learning]
