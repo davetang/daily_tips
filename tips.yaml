@@ -2286,3 +2286,7 @@
   tip: 'Use `git show HEAD -- path/to/file` to show only that file''s changes in the last commit.'
   explanation: 'The `--` separates the commit from a path, which limits the output to the commit header and that file''s diff, even if the commit edited other files too. Add `--format=` to drop the header, or use another commit in place of `HEAD`, such as `HEAD~1`. The path is relative to your current directory. If the commit did not touch the file, it prints nothing and still exits 0, so empty output means no changes rather than an error.'
   tags: [git]
+- date: 2026-11-07
+  tip: 'In Claude Code, run `/config` and set Output style to Learning so it leaves parts of the code for you to write.'
+  explanation: 'Claude still writes the routine code, but where a function involves a real design choice it leaves a `TODO(human)` comment in the file, explains what is built, what to write and the trade-offs, then waits for you.'
+  tags: [llm, learning]
