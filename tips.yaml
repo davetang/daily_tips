@@ -2298,3 +2298,7 @@
   tip: 'Press `Ctrl-a _` in GNU screen to get an alert when a background window has been quiet for 30 seconds.'
   explanation: 'Start a long job that prints as it goes, press `Ctrl-a _`, then switch to another window and get on with something else. When the output stops you see `Window 0: silence for 30 seconds` at the bottom, which usually means the job has finished or stalled. A job that prints nothing at all sets it off while still running, so it suits chatty jobs best. Set a different wait with `Ctrl-a :silence 120`, and press `Ctrl-a _` again to turn it off.'
   tags: [screen]
+- date: 2026-11-10
+  tip: 'Run `gsettings set org.gnome.desktop.input-sources xkb-options "[''caps:escape'']"` to make Caps Lock a second Esc key in GNOME.'
+  explanation: 'Caps Lock sits on the home row, so in Vim you can leave Insert mode without stretching to the top corner of the keyboard. The change takes effect straight away, on both Wayland and X11, and is saved in your GNOME settings so it survives a reboot. Caps Lock itself no longer works; run `gsettings reset org.gnome.desktop.input-sources xkb-options` to get it back.'
+  tags: [linux, vim]
