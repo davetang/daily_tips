@@ -2302,3 +2302,7 @@
   tip: 'Run `gsettings set org.gnome.desktop.input-sources xkb-options "[''caps:escape'']"` to make Caps Lock a second Esc key in GNOME.'
   explanation: 'Caps Lock sits on the home row, so in Vim you can leave Insert mode without stretching to the top corner of the keyboard. The change takes effect straight away, on both Wayland and X11, and is saved in your GNOME settings so it survives a reboot. Caps Lock itself no longer works; run `gsettings reset org.gnome.desktop.input-sources xkb-options` to get it back.'
   tags: [linux, vim]
+- date: 2026-11-11
+  tip: 'Follow the Boy Scout rule: leave every file you touch a little cleaner than you found it.'
+  explanation: 'Scripts keep running while they decay: names drift from what they mean, comments go stale and commented-out blocks pile up until the only fix is a rewrite. Fixing one small thing whenever you are in a file anyway (rename a confusing variable, delete dead code) costs minutes and stops that slide. Stage the cleanup separately with `git add -p` and commit it on its own, so it does not hide inside the real change.'
+  tags: [best-practice, git]
