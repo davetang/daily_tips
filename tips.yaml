@@ -2310,3 +2310,7 @@
   tip: 'Stop starting and start finishing: cap how many tasks the team has in progress at once.'
   explanation: 'Little''s law says the average time a task takes to finish equals the number of tasks in progress divided by how many the team finishes per week. A team that finishes 5 tasks a week with 20 on the go waits about 4 weeks for each one; with 10 on the go, the same team delivers each in about 2 weeks, with no extra effort. Fewer open tasks also means less switching between them and fewer half-done pieces blocking each other.'
   tags: [teamwork]
+- date: 2026-11-13
+  tip: 'Run an analysis by hand three times before you turn it into a standard pipeline.'
+  explanation: 'With one dataset you cannot tell which choices are general and which are quirks of that data. By the third run you have seen what actually changed (read length, strandedness, species, batch layout) and what stayed the same. Hard-code what stayed the same, make what changed a parameter, and leave anything you have only met once out of the standard for now.'
+  tags: [bioinformatics, best-practice]
