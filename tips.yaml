@@ -2314,3 +2314,7 @@
   tip: 'Run an analysis by hand three times before you turn it into a standard pipeline.'
   explanation: 'With one dataset you cannot tell which choices are general and which are quirks of that data. By the third run you have seen what actually changed (read length, strandedness, species, batch layout) and what stayed the same. Hard-code what stayed the same, make what changed a parameter, and leave anything you have only met once out of the standard for now.'
   tags: [bioinformatics, best-practice]
+- date: 2026-11-14
+  tip: 'Add `Compression yes` under a `Host` entry in `~/.ssh/config` to speed up SSH over a slow link.'
+  explanation: 'ssh then runs everything it sends through zlib, so text such as log output, directory listings and uncompressed FASTQ crosses the network in roughly 40 to 60% fewer bytes. When the link is the bottleneck (home broadband, phone tethering, a VPN to another country), scrolling output and full-screen redraws arrive sooner. It does not shorten the delay before a keystroke appears, which is set by the round trip to the server, not by the number of bytes.'
+  tags: [linux, ssh]
