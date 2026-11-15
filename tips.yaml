@@ -2318,3 +2318,7 @@
   tip: 'Add `Compression yes` under a `Host` entry in `~/.ssh/config` to speed up SSH over a slow link.'
   explanation: 'ssh then runs everything it sends through zlib, so text such as log output, directory listings and uncompressed FASTQ crosses the network in roughly 40 to 60% fewer bytes. When the link is the bottleneck (home broadband, phone tethering, a VPN to another country), scrolling output and full-screen redraws arrive sooner. It does not shorten the delay before a keystroke appears, which is set by the round trip to the server, not by the number of bytes.'
   tags: [linux, ssh]
+- date: 2026-11-15
+  tip: 'Run `ollama ps` while a model is loaded and check that the PROCESSOR column says `100% GPU`.'
+  explanation: 'A split such as `48%/52% CPU/GPU` means 48% of the model and its context did not fit in the graphics card''s memory and sits in system RAM, where the CPU works through it much more slowly. Answers are often several times slower, so switch to a smaller model or a smaller quantization until it shows `100% GPU`. `ollama ps` only lists loaded models (Ollama unloads them after five idle minutes), so start one with `ollama run` in another terminal first.'
+  tags: [llm, gpu]
