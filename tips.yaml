@@ -2326,3 +2326,7 @@
   tip: 'On Linux, run `sudo systemctl edit ollama` and add `Environment="OLLAMA_MODELS=/data/ollama/models"` under `[Service]`.'
   explanation: 'The install script runs Ollama as a systemd service, and `systemctl edit` saves your line in `/etc/systemd/system/ollama.service.d/override.conf`, a file that Ollama upgrades do not overwrite. The service runs as the `ollama` user, so give it the folder with `sudo chown -R ollama:ollama /data/ollama/models`. Then apply the change with `sudo systemctl daemon-reload` and `sudo systemctl restart ollama`.'
   tags: [llm, linux, systemd]
+- date: 2026-11-17
+  tip: 'Run `sudo update-alternatives --config editor` and pick `vim.basic` so sudo stops opening nano.'
+  explanation: '`sudo` clears your `$EDITOR`, so commands such as `sudo visudo` and `sudo systemctl edit` fall back to `/usr/bin/editor`, which Debian and Ubuntu point at nano by default because nano has the highest priority (40, against 30 for `vim.basic`). The command shows a numbered menu of installed editors; type the number next to `/usr/bin/vim.basic` and press Enter. The choice is saved in manual mode, so later package installs and upgrades will not switch it back.'
+  tags: [debian, vim]
