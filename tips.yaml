@@ -2334,3 +2334,7 @@
   tip: 'Turn an analysis script into a named OpenCode tool with a short JavaScript wrapper in `.opencode/tools/`.'
   explanation: 'OpenCode is a JavaScript program running on Bun, and it loads every `.js` or `.ts` file in that folder into itself with `import()`, so the wrapper must be JavaScript or TypeScript (JavaScript plus type annotations, which Bun strips); the script it calls can be Python, R or anything else. A file `summarise.js` that exports `tool({ description, args: { file: tool.schema.string() }, execute })` becomes a tool called `summarise`, and `execute` runs your script through `Bun.$`, Bun''s built-in shell. The model is then offered `summarise` with your description and a typed `file` argument, instead of having to work out a shell command.'
   tags: [llm, opencode]
+- date: 2026-11-19
+  tip: 'Link a script into your PATH with `ln -s "/full/path/to/file" ~/bin`, always giving the full path.'
+  explanation: 'A symlink just stores the path you give it, and that path is looked up from where the link lives, not from where you ran `ln`. So `ln -s run_qc.sh ~/bin` makes a link in `~/bin` that points at itself and fails. A full path works no matter where the link is.'
+  tags: [linux, shell]
