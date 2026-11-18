@@ -2330,3 +2330,7 @@
   tip: 'Run `sudo update-alternatives --config editor` and pick `vim.basic` so sudo stops opening nano.'
   explanation: '`sudo` clears your `$EDITOR`, so commands such as `sudo visudo` and `sudo systemctl edit` fall back to `/usr/bin/editor`, which Debian and Ubuntu point at nano by default because nano has the highest priority (40, against 30 for `vim.basic`). The command shows a numbered menu of installed editors; type the number next to `/usr/bin/vim.basic` and press Enter. The choice is saved in manual mode, so later package installs and upgrades will not switch it back.'
   tags: [debian, vim]
+- date: 2026-11-18
+  tip: 'Turn an analysis script into a named OpenCode tool with a short JavaScript wrapper in `.opencode/tools/`.'
+  explanation: 'OpenCode is a JavaScript program running on Bun, and it loads every `.js` or `.ts` file in that folder into itself with `import()`, so the wrapper must be JavaScript or TypeScript (JavaScript plus type annotations, which Bun strips); the script it calls can be Python, R or anything else. A file `summarise.js` that exports `tool({ description, args: { file: tool.schema.string() }, execute })` becomes a tool called `summarise`, and `execute` runs your script through `Bun.$`, Bun''s built-in shell. The model is then offered `summarise` with your description and a typed `file` argument, instead of having to work out a shell command.'
+  tags: [llm, opencode]
