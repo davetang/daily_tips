@@ -2338,3 +2338,7 @@
   tip: 'Link a script into your PATH with `ln -s "/full/path/to/file" ~/bin`, always giving the full path.'
   explanation: 'A symlink just stores the path you give it, and that path is looked up from where the link lives, not from where you ran `ln`. So `ln -s run_qc.sh ~/bin` makes a link in `~/bin` that points at itself and fails. A full path works no matter where the link is.'
   tags: [linux, shell]
+- date: 2026-11-20
+  tip: '`ollama run gemma4:26b --verbose` prints the generation rate in tokens per second after each reply.'
+  explanation: 'Using `--verbose` with `ollama` will show stats like the `total duration`, `prompt eval rate`, and `eval rate`.'
+  tags: [llm]
