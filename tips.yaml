@@ -2342,3 +2342,7 @@
   tip: '`ollama run gemma4:26b --verbose` prints the generation rate in tokens per second after each reply.'
   explanation: 'Using `--verbose` with `ollama` will show stats like the `total duration`, `prompt eval rate`, and `eval rate`.'
   tags: [llm]
+- date: 2026-11-21
+  tip: 'Use `seq_along(x)` instead of `1:length(x)` when looping over indices in R.'
+  explanation: 'If `x` is empty, `1:length(x)` produces `c(1, 0)` and your loop still runs twice. `seq_along(x)` returns an empty integer vector, so the loop correctly runs zero times.'
+  tags: [rstats]
