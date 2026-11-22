@@ -2346,3 +2346,7 @@
   tip: 'Use `seq_along(x)` instead of `1:length(x)` when looping over indices in R.'
   explanation: 'If `x` is empty, `1:length(x)` produces `c(1, 0)` and your loop still runs twice. `seq_along(x)` returns an empty integer vector, so the loop correctly runs zero times.'
   tags: [rstats]
+- date: 2026-11-22
+  tip: 'Open files with `with open(path, encoding="utf-8") as f:` so they always close and decode the same everywhere.'
+  explanation: 'The `with` block closes the file when it ends, even if an exception is raised inside it, so you never leak handles or lose buffered writes. Without `encoding=`, Python uses the locale''s default, which is UTF-8 on most Linux and macOS setups but often `cp1252` on Windows, so the same script can raise `UnicodeDecodeError` on a colleague''s machine. Naming the encoding removes that difference.'
+  tags: [python, best-practice]
