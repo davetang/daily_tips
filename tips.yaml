@@ -2354,3 +2354,7 @@
   tip: 'Lint Python with `uvx ruff check .`, then `uvx ruff check --fix .` to apply the safe fixes.'
   explanation: '`uvx` (part of `uv`) fetches Ruff into a cache and runs it without installing anything into your project. Ruff is a fast linter that reports each problem with its file, line and a rule code, such as `F401 os imported but unused` or `E722 Do not use bare except`. Fixes marked `[*]`, like deleting an unused import, are applied by `--fix`; the rest are left for you to change by hand.'
   tags: [python, best-practice]
+- date: 2026-11-24
+  tip: 'Report progress with `logging` instead of `print()`: `log.info("Loaded %d rows", n)`.'
+  explanation: 'Call `logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")` once at the start, then `log = logging.getLogger(__name__)`. Each message gets a timestamp and a level, as in `2026-11-23 08:02:10,309 INFO Loaded 1520 rows`, and goes to stderr, so your real output on stdout can still be piped or redirected cleanly. Change `level=` to `logging.DEBUG` or `logging.WARNING` to show more or less without touching the messages.'
+  tags: [python, best-practice]
