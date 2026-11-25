@@ -2358,3 +2358,7 @@
   tip: 'Report progress with `logging` instead of `print()`: `log.info("Loaded %d rows", n)`.'
   explanation: 'Call `logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")` once at the start, then `log = logging.getLogger(__name__)`. Each message gets a timestamp and a level, as in `2026-11-23 08:02:10,309 INFO Loaded 1520 rows`, and goes to stderr, so your real output on stdout can still be piped or redirected cleanly. Change `level=` to `logging.DEBUG` or `logging.WARNING` to show more or less without touching the messages.'
   tags: [python, best-practice]
+- date: 2026-11-25
+  tip: 'Make all of Windows English, update screens included, with `Set-SystemPreferredUILanguage en-AU`.'
+  explanation: 'Choosing English under Settings > Time & language only changes the display language for your account, so the sign-in screen and the screens shown while installing updates stay in the language Windows was installed with. This cmdlet changes the system preferred UI language those screens use, and accounts created afterwards get it too. Run it in PowerShell opened as administrator, after installing the language with `Install-Language en-AU`, then restart.'
+  tags: [windows, powershell]
