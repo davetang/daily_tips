@@ -2362,3 +2362,7 @@
   tip: 'Make all of Windows English, update screens included, with `Set-SystemPreferredUILanguage en-AU`.'
   explanation: 'Choosing English under Settings > Time & language only changes the display language for your account, so the sign-in screen and the screens shown while installing updates stay in the language Windows was installed with. This cmdlet changes the system preferred UI language those screens use, and accounts created afterwards get it too. Run it in PowerShell opened as administrator, after installing the language with `Install-Language en-AU`, then restart.'
   tags: [windows, powershell]
+- date: 2026-11-26
+  tip: 'Install an SSH server on Windows with `winget install --id Microsoft.OpenSSH.Preview -e`.'
+  explanation: 'Run it in PowerShell as administrator, then `Start-Service sshd` and `Set-Service sshd -StartupType Automatic` so the server runs now and after every restart. `ssh user@hostname` from another machine then gives you a Command Prompt, and `whoami` on the PC shows the user name to use.'
+  tags: [windows, ssh, sysadmin]
