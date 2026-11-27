@@ -2366,3 +2366,7 @@
   tip: 'Install an SSH server on Windows with `winget install --id Microsoft.OpenSSH.Preview -e`.'
   explanation: 'Run it in PowerShell as administrator, then `Start-Service sshd` and `Set-Service sshd -StartupType Automatic` so the server runs now and after every restart. `ssh user@hostname` from another machine then gives you a Command Prompt, and `whoami` on the PC shows the user name to use.'
   tags: [windows, ssh, sysadmin]
+- date: 2026-11-27
+  tip: 'Run `command ls` to skip any alias or shell function named `ls` and run the real program.'
+  explanation: '`command` is built into bash and zsh: it ignores aliases and functions with the name that follows and runs the program from your PATH. With `alias ls=''ls -F''`, `ls -d /tmp` prints `/tmp/` but `command ls -d /tmp` prints `/tmp`. It helps when an alias adds options you don''t want, or when a startup file or tool has replaced a command with a wrapper function that misbehaves, and it works the same for any command, such as `command ssh` or `command grep`.'
+  tags: [shell, bash]
